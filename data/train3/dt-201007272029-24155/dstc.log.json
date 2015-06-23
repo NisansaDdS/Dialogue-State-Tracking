@@ -1,0 +1,5602 @@
+{
+  "session-id": "dt-201007272029-24155", 
+  "turns": [
+    {
+      "input": {
+        "live": {
+          "asr-hyps": [
+            {
+              "asr-hyp": "sixty one c", 
+              "score": 0.745627, 
+              "type": "recognition"
+            }, 
+            {
+              "asr-hyp": "sixty one a", 
+              "score": 0.134291, 
+              "type": "recognition"
+            }, 
+            {
+              "asr-hyp": "the sixty one c", 
+              "score": 7.1e-05, 
+              "type": "recognition"
+            }
+          ], 
+          "slu-hyps": [
+            {
+              "slu-hyp": [
+                {
+                  "slots": [
+                    [
+                      "route", 
+                      "61c"
+                    ]
+                  ], 
+                  "act": "inform"
+                }
+              ], 
+              "score": 0.745627
+            }, 
+            {
+              "slu-hyp": [
+                {
+                  "slots": [
+                    [
+                      "route", 
+                      "61a"
+                    ]
+                  ], 
+                  "act": "inform"
+                }
+              ], 
+              "score": 0.134291
+            }, 
+            {
+              "slu-hyp": [
+                {
+                  "slots": [
+                    [
+                      "route", 
+                      "61c"
+                    ]
+                  ], 
+                  "act": "inform"
+                }
+              ], 
+              "score": 7.1e-05
+            }
+          ]
+        }, 
+        "audio-file": "002.raw", 
+        "start-time": 8.206
+      }, 
+      "system-specific": {
+        "beliefstate": {
+          "date": [
+            {
+              "count": 77522.0, 
+              "belief": 1.0, 
+              "slotValues": {
+                "date": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": 0.0, 
+              "logBel": 0.0, 
+              "surfaceForms": {
+                "date": "set([])"
+              }, 
+              "id": 0
+            }
+          ], 
+          "route": [
+            {
+              "count": 61266.0, 
+              "belief": 0.00279, 
+              "slotValues": {
+                "route": {
+                  "vals": "['61A', '61C']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.286, 
+              "logBel": -5.882, 
+              "surfaceForms": {
+                "route": "set([])"
+              }, 
+              "id": 0
+            }, 
+            {
+              "count": 11234.0, 
+              "belief": 0.18273, 
+              "slotValues": {
+                "route": {
+                  "vals": "['61A']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -1.982, 
+              "logBel": -1.7, 
+              "surfaceForms": {
+                "route": "set(['sixty one a'])"
+              }, 
+              "id": 3
+            }, 
+            {
+              "count": 9022.0, 
+              "belief": 0.81449, 
+              "slotValues": {
+                "route": {
+                  "vals": "['61C']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -2.201, 
+              "logBel": -0.205, 
+              "surfaceForms": {
+                "route": "set(['the sixty one c', 'sixty one c'])"
+              }, 
+              "id": 2
+            }
+          ], 
+          "fromstopids": [
+            {
+              "count": 163022.0, 
+              "belief": 1.0, 
+              "slotValues": {
+                "fromstopids": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": 0.0, 
+              "logBel": 0.0, 
+              "surfaceForms": {
+                "fromstopids": "set([])"
+              }, 
+              "id": 0
+            }
+          ], 
+          "tostopids": [
+            {
+              "count": 163222.0, 
+              "belief": 1.0, 
+              "slotValues": {
+                "tostopids": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": 0.0, 
+              "logBel": 0.0, 
+              "surfaceForms": {
+                "tostopids": "set([])"
+              }, 
+              "id": 0
+            }
+          ], 
+          "time": [
+            {
+              "count": 176762.0, 
+              "belief": 0.5, 
+              "slotValues": {
+                "searchType": {
+                  "vals": "['arrive']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }, 
+                "time": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.693, 
+              "logBel": -0.693, 
+              "surfaceForms": {
+                "searchType": "set([])", 
+                "time": "set([])"
+              }, 
+              "id": 0
+            }, 
+            {
+              "count": 176761.0, 
+              "belief": 0.5, 
+              "slotValues": {
+                "searchType": {
+                  "vals": "['depart']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }, 
+                "time": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.693, 
+              "logBel": -0.693, 
+              "surfaceForms": {
+                "searchType": "set([])", 
+                "time": "set([])"
+              }, 
+              "id": 1
+            }
+          ]
+        }, 
+        "turn_start_time": "07/27 20:29:24.557", 
+        "raw_asr_result": {
+          "audioParams": {
+            "sampleRate": 8000, 
+            "coding": "linear", 
+            "byteOrder": "LE"
+          }, 
+          "version": "watson-6.5.5632", 
+          "resultId": 2, 
+          "hostname": "dt-jdw", 
+          "nlu-sisr": [
+            {
+              "interp": {
+                "route": "61C"
+              }, 
+              "id": 0, 
+              "time": 0.0032951831817626953
+            }, 
+            {
+              "interp": {
+                "route": "61A"
+              }, 
+              "id": 1, 
+              "time": 0.0007798671722412109
+            }, 
+            {
+              "interp": {
+                "route": "61C"
+              }, 
+              "id": 2, 
+              "time": 0.0008292198181152344
+            }
+          ], 
+          "metrics": {
+            "gaussSelectSkipRatio": 0.0, 
+            "lhoodPrecalcHitRatio": 0.8991687297821045, 
+            "avgFrameBatchSize": 3.0, 
+            "audioPacketCount": 231, 
+            "decodedFrameCount": 462, 
+            "frameCount": 462
+          }, 
+          "sessionId": null, 
+          "trigger": "secondTimeout", 
+          "evType": "evPhraseResult", 
+          "wcn": {
+            "best_path_score": 0.9911121091634487, 
+            "best_path": {
+              "word": [
+                "sixty", 
+                "one", 
+                "c"
+              ], 
+              "prob": [
+                0.9960101842880249, 
+                1.0, 
+                0.9774725437164307
+              ]
+            }, 
+            "network": [
+              {
+                "word": [
+                  "sixty", 
+                  "the"
+                ], 
+                "prob": [
+                  0.9960101842880249, 
+                  0.003989787306636572
+                ]
+              }, 
+              {
+                "word": [
+                  "_epsilon", 
+                  "sixty"
+                ], 
+                "prob": [
+                  0.9960260391235352, 
+                  0.003973931539803743
+                ]
+              }, 
+              {
+                "word": [
+                  "one"
+                ], 
+                "prob": [
+                  1.0
+                ]
+              }, 
+              {
+                "word": [
+                  "c", 
+                  "a"
+                ], 
+                "prob": [
+                  0.9774725437164307, 
+                  0.02252749353647232
+                ]
+              }
+            ]
+          }, 
+          "config": {
+            "lms": [
+              "/home/jdw/sdc/prod/lms/routeList.lm"
+            ], 
+            "am": "/home/jdw/watson/data/am/gt_06.1.ep.h4.20.mmi2b", 
+            "secondTimeout": 700, 
+            "beamWidth": 250.0, 
+            "maxActiveArcs": 50000, 
+            "confidenceThreshold": 50, 
+            "firstTimeout": 400
+          }, 
+          "nbest": [
+            {
+              "normSpeechLhood": -152.5843048095703, 
+              "lastSpeechFrame": 395, 
+              "lms": [
+                "/home/jdw/sdc/prod/lms/routeList.lm"
+              ], 
+              "score": 35, 
+              "nscore": 37, 
+              "numFrames": 450, 
+              "udelta": -3.0360000133514404, 
+              "speechLikelihood": -22887.646484375, 
+              "firstSpeechFrame": 249, 
+              "ndelta": 54.757999420166016, 
+              "normCost": 143.1201934814453, 
+              "normLhood": 0.0, 
+              "gscore": 32, 
+              "cost": 64404.08984375, 
+              "hypothesis": "sixty one c", 
+              "glhood": -154.0469970703125, 
+              "uscore": 39, 
+              "numSpeechFrames": 150, 
+              "likelihood": 0.0, 
+              "gdelta": 1.4630000591278076, 
+              "ulhood": -149.54800415039062
+            }, 
+            {
+              "normSpeechLhood": -151.1802215576172, 
+              "lastSpeechFrame": 391, 
+              "lms": [
+                "/home/jdw/sdc/prod/lms/routeList.lm"
+              ], 
+              "score": 34, 
+              "nscore": 22, 
+              "numFrames": 450, 
+              "udelta": -3.24399995803833, 
+              "speechLikelihood": -19502.248046875, 
+              "firstSpeechFrame": 249, 
+              "ndelta": 33.5620002746582, 
+              "normCost": 143.24188232421875, 
+              "normLhood": 0.0, 
+              "gscore": 35, 
+              "cost": 64458.84765625, 
+              "hypothesis": "sixty one a", 
+              "glhood": -153.20399475097656, 
+              "uscore": 35, 
+              "numSpeechFrames": 129, 
+              "likelihood": 0.0, 
+              "gdelta": 2.0230000019073486, 
+              "ulhood": -147.93600463867188
+            }, 
+            {
+              "normSpeechLhood": -156.95892333984375, 
+              "lastSpeechFrame": 395, 
+              "lms": [
+                "/home/jdw/sdc/prod/lms/routeList.lm"
+              ], 
+              "score": 10, 
+              "nscore": 100, 
+              "numFrames": 450, 
+              "udelta": -5.763000011444092, 
+              "speechLikelihood": -24328.6328125, 
+              "firstSpeechFrame": 202, 
+              "ndelta": 150.0, 
+              "normCost": 143.31646728515625, 
+              "normLhood": 0.0, 
+              "gscore": 21, 
+              "cost": 64492.41015625, 
+              "hypothesis": "the sixty one c", 
+              "glhood": -156.10299682617188, 
+              "uscore": 0, 
+              "numSpeechFrames": 155, 
+              "likelihood": 0.0, 
+              "gdelta": -0.8560000061988831, 
+              "ulhood": -151.1959991455078
+            }
+          ], 
+          "fileId": 0
+        }, 
+        "uttinfo": {
+          "uttfile_status": "logged", 
+          "uttid": "002.raw"
+        }, 
+        "sys_action_details": [
+          {
+            "prompt": "file:/home/jdw/sdc/prod/lib/../prompts/START/Init.wav", 
+            "output_start_time": "07/27 20:29:24.557", 
+            "waitfor": "['evPhraseResult', 'evDtmfInput', 'evNoInputTimeout']", 
+            "dtmf": "", 
+            "input_types": "speech", 
+            "grammars": "['/home/jdw/sdc/prod/lib/../lms/routeList.lm']", 
+            "timeout": "0.1", 
+            "input_start_time": "07/27 20:29:26.316", 
+            "ACTION": "Listen", 
+            "bargein": "False", 
+            "events": [
+              "evPromptStart", 
+              "evPromptStop", 
+              "evNoInputTimeout"
+            ]
+          }, 
+          {
+            "prompt": "file:/home/jdw/sdc/prod/lib/../prompts/AskRoute/Init.wav", 
+            "output_start_time": "07/27 20:29:26.317", 
+            "waitfor": "['evPhraseResult', 'evDtmfInput', 'evNoInputTimeout']", 
+            "dtmf": "", 
+            "input_types": "speech", 
+            "grammars": "['/home/jdw/sdc/prod/lib/../lms/routeList.lm']", 
+            "timeout": "10", 
+            "input_start_time": "07/27 20:29:32.691", 
+            "ACTION": "Listen", 
+            "bargein": "False", 
+            "events": [
+              "evPromptStart", 
+              "evPromptStop", 
+              "evSpeechStart", 
+              "evPhraseResult"
+            ]
+          }
+        ], 
+        "dialog_states": [
+          {
+            "state": "START", 
+            "activity": "Initializing"
+          }, 
+          {
+            "state": "AskRoute", 
+            "activity": "Initializing"
+          }, 
+          {
+            "state": "AskRoute", 
+            "activity": "Prompt type: Init"
+          }, 
+          {
+            "state": "AskRoute", 
+            "activity": "Calling Init()"
+          }
+        ], 
+        "parsed_asr_result": {
+          "nbest": [
+            {
+              "rec_string": "sixty one c", 
+              "rec_type": "ig", 
+              "fields": {
+                "routeSurface": "sixty one c", 
+                "route-set": "set(['61C'])", 
+                "route": "61C"
+              }, 
+              "rec_conf": 0.745627
+            }, 
+            {
+              "rec_string": "sixty one a", 
+              "rec_type": "ig", 
+              "fields": {
+                "routeSurface": "sixty one a", 
+                "route-set": "set(['61A'])", 
+                "route": "61A"
+              }, 
+              "rec_conf": 0.134291
+            }, 
+            {
+              "rec_string": "the sixty one c", 
+              "rec_type": "ig", 
+              "fields": {
+                "routeSurface": "the sixty one c", 
+                "route-set": "set(['61C'])", 
+                "route": "61C"
+              }, 
+              "rec_conf": 7.1e-05
+            }
+          ]
+        }, 
+        "sys_action_summary": {
+          "struct": [
+            [
+              "request", 
+              "route"
+            ], 
+            [
+              "request", 
+              "route"
+            ]
+          ], 
+          "surface": "East Pittsburg Bus Schedules. Say a bus route, like 28X, or say I'm not sure."
+        }
+      }, 
+      "turn-index": 0, 
+      "restart": false, 
+      "output": {
+        "start-time": 0.072, 
+        "transcript": "East Pittsburg Bus Schedules. Say a bus route, like 28X, or say I'm not sure.", 
+        "dialog-acts": [
+          {
+            "slots": [], 
+            "act": "hello"
+          }, 
+          {
+            "slots": [
+              [
+                "route", 
+                null
+              ]
+            ], 
+            "act": "request"
+          }, 
+          {
+            "slots": [
+              [
+                "route", 
+                "28x"
+              ]
+            ], 
+            "act": "example"
+          }, 
+          {
+            "slots": [
+              [
+                "route", 
+                "dont_know"
+              ]
+            ], 
+            "act": "example"
+          }
+        ]
+      }
+    }, 
+    {
+      "input": {
+        "live": {
+          "asr-hyps": [
+            {
+              "asr-hyp": "yeah", 
+              "score": 0.830018, 
+              "type": "recognition"
+            }, 
+            {
+              "asr-hyp": "yes", 
+              "score": 0.143424, 
+              "type": "recognition"
+            }
+          ], 
+          "slu-hyps": [
+            {
+              "slu-hyp": [
+                {
+                  "slots": [], 
+                  "act": "affirm"
+                }
+              ], 
+              "score": 0.830018
+            }, 
+            {
+              "slu-hyp": [
+                {
+                  "slots": [], 
+                  "act": "affirm"
+                }
+              ], 
+              "score": 0.143424
+            }
+          ]
+        }, 
+        "audio-file": "004.raw", 
+        "start-time": 15.071
+      }, 
+      "system-specific": {
+        "beliefstate": {
+          "date": [
+            {
+              "count": 77522.0, 
+              "belief": 1.0, 
+              "slotValues": {
+                "date": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": 0.0, 
+              "logBel": 0.0, 
+              "surfaceForms": {
+                "date": "set([])"
+              }, 
+              "id": 0
+            }
+          ], 
+          "route": [
+            {
+              "count": 61266.0, 
+              "belief": 1e-05, 
+              "slotValues": {
+                "route": {
+                  "vals": "['61A', '61C']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.286, 
+              "logBel": -11.254, 
+              "surfaceForms": {
+                "route": "set([])"
+              }, 
+              "id": 0
+            }, 
+            {
+              "count": 11234.0, 
+              "belief": 0.00085, 
+              "slotValues": {
+                "route": {
+                  "vals": "['61A']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -1.982, 
+              "logBel": -7.072, 
+              "surfaceForms": {
+                "route": "set(['sixty one a'])"
+              }, 
+              "id": 3
+            }, 
+            {
+              "count": 9022.0, 
+              "belief": 0.99914, 
+              "slotValues": {
+                "route": {
+                  "vals": "['61C']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -2.201, 
+              "logBel": -0.001, 
+              "surfaceForms": {
+                "route": "set(['the sixty one c', 'sixty one c'])"
+              }, 
+              "id": 2
+            }
+          ], 
+          "fromstopids": [
+            {
+              "count": 163022.0, 
+              "belief": 1.0, 
+              "slotValues": {
+                "fromstopids": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": 0.0, 
+              "logBel": 0.0, 
+              "surfaceForms": {
+                "fromstopids": "set([])"
+              }, 
+              "id": 0
+            }
+          ], 
+          "tostopids": [
+            {
+              "count": 163222.0, 
+              "belief": 1.0, 
+              "slotValues": {
+                "tostopids": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": 0.0, 
+              "logBel": 0.0, 
+              "surfaceForms": {
+                "tostopids": "set([])"
+              }, 
+              "id": 0
+            }
+          ], 
+          "time": [
+            {
+              "count": 176762.0, 
+              "belief": 0.5, 
+              "slotValues": {
+                "searchType": {
+                  "vals": "['arrive']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }, 
+                "time": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.693, 
+              "logBel": -0.693, 
+              "surfaceForms": {
+                "searchType": "set([])", 
+                "time": "set([])"
+              }, 
+              "id": 0
+            }, 
+            {
+              "count": 176761.0, 
+              "belief": 0.5, 
+              "slotValues": {
+                "searchType": {
+                  "vals": "['depart']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }, 
+                "time": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.693, 
+              "logBel": -0.693, 
+              "surfaceForms": {
+                "searchType": "set([])", 
+                "time": "set([])"
+              }, 
+              "id": 1
+            }
+          ]
+        }, 
+        "turn_start_time": "07/27 20:29:34.497", 
+        "raw_asr_result": {
+          "audioParams": {
+            "sampleRate": 8000, 
+            "coding": "linear", 
+            "byteOrder": "LE"
+          }, 
+          "version": "watson-6.5.5632", 
+          "resultId": 4, 
+          "hostname": "dt-jdw", 
+          "nlu-sisr": [
+            {
+              "interp": {
+                "confirm": "yes"
+              }, 
+              "id": 0, 
+              "time": 0.0026459693908691406
+            }, 
+            {
+              "interp": {
+                "confirm": "yes"
+              }, 
+              "id": 1, 
+              "time": 0.0006568431854248047
+            }
+          ], 
+          "metrics": {
+            "gaussSelectSkipRatio": 0.0, 
+            "lhoodPrecalcHitRatio": 0.8552979826927185, 
+            "avgFrameBatchSize": 3.0, 
+            "audioPacketCount": 116, 
+            "decodedFrameCount": 187, 
+            "frameCount": 232
+          }, 
+          "sessionId": null, 
+          "trigger": "firstTimeout", 
+          "evType": "evPhraseResult", 
+          "wcn": {
+            "best_path_score": 0.9827380782710037, 
+            "best_path": {
+              "word": [
+                "yeah"
+              ], 
+              "prob": [
+                0.9827380776405334
+              ]
+            }, 
+            "network": [
+              {
+                "word": [
+                  "yeah", 
+                  "yes"
+                ], 
+                "prob": [
+                  0.9827380776405334, 
+                  0.017261913046240807
+                ]
+              }
+            ]
+          }, 
+          "config": {
+            "lms": [
+              "/home/jdw/sdc/prod/lms/confirm.lm"
+            ], 
+            "am": "/home/jdw/watson/data/am/gt_06.1.ep.h4.20.mmi2b", 
+            "secondTimeout": 700, 
+            "beamWidth": 250.0, 
+            "maxActiveArcs": 50000, 
+            "confidenceThreshold": 50, 
+            "firstTimeout": 400
+          }, 
+          "nbest": [
+            {
+              "normSpeechLhood": -142.10574340820312, 
+              "lastSpeechFrame": 150, 
+              "lms": [
+                "/home/jdw/sdc/prod/lms/confirm.lm"
+              ], 
+              "score": 72, 
+              "nscore": 48, 
+              "numFrames": 187, 
+              "udelta": -0.8220000267028809, 
+              "speechLikelihood": -13073.728515625, 
+              "firstSpeechFrame": 92, 
+              "ndelta": 72.15399932861328, 
+              "normCost": 148.4956512451172, 
+              "normLhood": 0.0, 
+              "gscore": 61, 
+              "cost": 27768.6875, 
+              "hypothesis": "yeah", 
+              "glhood": -149.39700317382812, 
+              "uscore": 84, 
+              "numSpeechFrames": 92, 
+              "likelihood": 0.0, 
+              "gdelta": 7.291999816894531, 
+              "ulhood": -141.28399658203125
+            }, 
+            {
+              "normSpeechLhood": -151.1777801513672, 
+              "lastSpeechFrame": 151, 
+              "lms": [
+                "/home/jdw/sdc/prod/lms/confirm.lm"
+              ], 
+              "score": 14, 
+              "nscore": 100, 
+              "numFrames": 187, 
+              "udelta": -5.750999927520752, 
+              "speechLikelihood": -14059.533203125, 
+              "firstSpeechFrame": 92, 
+              "ndelta": 150.0, 
+              "normCost": 148.88150024414062, 
+              "normLhood": 0.0, 
+              "gscore": 30, 
+              "cost": 27840.841796875, 
+              "hypothesis": "yes", 
+              "glhood": -152.11900329589844, 
+              "uscore": 0, 
+              "numSpeechFrames": 93, 
+              "likelihood": 0.0, 
+              "gdelta": 0.9409999847412109, 
+              "ulhood": -145.427001953125
+            }
+          ], 
+          "fileId": 0
+        }, 
+        "uttinfo": {
+          "uttfile_status": "logged", 
+          "uttid": "004.raw"
+        }, 
+        "sys_action_details": [
+          {
+            "prompt": "<prosody volume=\"x-loud\">61C.</prosody>", 
+            "output_start_time": "07/27 20:29:34.498", 
+            "waitfor": "['evPhraseResult', 'evDtmfInput', 'evNoInputTimeout']", 
+            "dtmf": "", 
+            "input_types": "speech", 
+            "grammars": "['/home/jdw/sdc/prod/lib/../lms/confirm.lm']", 
+            "timeout": "0.1", 
+            "input_start_time": "07/27 20:29:37.056", 
+            "ACTION": "Listen", 
+            "bargein": "False", 
+            "events": [
+              "evPromptStart", 
+              "evPromptStop", 
+              "evNoInputTimeout"
+            ]
+          }, 
+          {
+            "prompt": "file:/home/jdw/sdc/prod/lib/../prompts/ConfirmRoute/Init.wav", 
+            "output_start_time": "07/27 20:29:37.056", 
+            "waitfor": "['evPhraseResult', 'evDtmfInput', 'evNoInputTimeout']", 
+            "dtmf": "", 
+            "input_types": "speech", 
+            "grammars": "['/home/jdw/sdc/prod/lib/../lms/confirm.lm']", 
+            "timeout": "10", 
+            "input_start_time": "07/27 20:29:39.556", 
+            "ACTION": "Listen", 
+            "bargein": "False", 
+            "events": [
+              "evPromptStart", 
+              "evPromptStop", 
+              "evSpeechStart", 
+              "evPhraseResult"
+            ]
+          }
+        ], 
+        "dialog_states": [
+          {
+            "state": "AskRoute", 
+            "activity": "Calling OnRecognition handler"
+          }, 
+          {
+            "state": "ConfirmRoute", 
+            "activity": "Initializing"
+          }, 
+          {
+            "state": "ConfirmRoute", 
+            "activity": "Prompt type: Init"
+          }, 
+          {
+            "state": "ConfirmRoute", 
+            "activity": "Calling Init()"
+          }
+        ], 
+        "parsed_asr_result": {
+          "nbest": [
+            {
+              "rec_string": "yeah", 
+              "rec_type": "ig", 
+              "fields": {
+                "confirm": "yes"
+              }, 
+              "rec_conf": 0.830018
+            }, 
+            {
+              "rec_string": "yes", 
+              "rec_type": "ig", 
+              "fields": {
+                "confirm": "yes"
+              }, 
+              "rec_conf": 0.143424
+            }
+          ]
+        }, 
+        "sys_action_summary": {
+          "struct": [
+            [
+              "expl-confirm", 
+              {
+                "route": "the sixty one c"
+              }
+            ], 
+            [
+              "expl-confirm", 
+              {
+                "route": "the sixty one c"
+              }
+            ]
+          ], 
+          "surface": "61C. Is that right?"
+        }
+      }, 
+      "turn-index": 1, 
+      "restart": false, 
+      "output": {
+        "start-time": 10.013, 
+        "transcript": "61C. Is that right?", 
+        "dialog-acts": [
+          {
+            "slots": [
+              [
+                "route", 
+                "61c"
+              ]
+            ], 
+            "act": "expl-conf"
+          }
+        ]
+      }
+    }, 
+    {
+      "input": {
+        "live": {
+          "asr-hyps": [
+            {
+              "asr-hyp": "schenley", 
+              "score": 0.221947, 
+              "type": "recognition"
+            }, 
+            {
+              "asr-hyp": "oakland", 
+              "score": 0.158734, 
+              "type": "recognition"
+            }, 
+            {
+              "asr-hyp": "duquesne", 
+              "score": 0.008231, 
+              "type": "recognition"
+            }
+          ], 
+          "slu-hyps": [
+            {
+              "slu-hyp": [
+                {
+                  "slots": [
+                    [
+                      "from.desc", 
+                      "schenley"
+                    ]
+                  ], 
+                  "act": "inform"
+                }
+              ], 
+              "score": 0.221947
+            }, 
+            {
+              "slu-hyp": [
+                {
+                  "slots": [
+                    [
+                      "from.desc", 
+                      "oakland"
+                    ]
+                  ], 
+                  "act": "inform"
+                }
+              ], 
+              "score": 0.158734
+            }, 
+            {
+              "slu-hyp": [
+                {
+                  "slots": [
+                    [
+                      "from.desc", 
+                      "duquesne"
+                    ]
+                  ], 
+                  "act": "inform"
+                }
+              ], 
+              "score": 0.008231
+            }
+          ]
+        }, 
+        "audio-file": "005.raw", 
+        "start-time": 18.071
+      }, 
+      "system-specific": {
+        "beliefstate": {
+          "date": [
+            {
+              "count": 77522.0, 
+              "belief": 1.0, 
+              "slotValues": {
+                "date": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": 0.0, 
+              "logBel": 0.0, 
+              "surfaceForms": {
+                "date": "set([])"
+              }, 
+              "id": 0
+            }
+          ], 
+          "route": [
+            {
+              "count": 61266.0, 
+              "belief": 1e-05, 
+              "slotValues": {
+                "route": {
+                  "vals": "['61A', '61C']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.286, 
+              "logBel": -11.254, 
+              "surfaceForms": {
+                "route": "set([])"
+              }, 
+              "id": 0
+            }, 
+            {
+              "count": 11234.0, 
+              "belief": 0.00085, 
+              "slotValues": {
+                "route": {
+                  "vals": "['61A']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -1.982, 
+              "logBel": -7.072, 
+              "surfaceForms": {
+                "route": "set(['sixty one a'])"
+              }, 
+              "id": 3
+            }, 
+            {
+              "count": 9022.0, 
+              "belief": 0.99914, 
+              "slotValues": {
+                "route": {
+                  "vals": "['61C']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -2.201, 
+              "logBel": -0.001, 
+              "surfaceForms": {
+                "route": "set(['the sixty one c', 'sixty one c'])"
+              }, 
+              "id": 2
+            }
+          ], 
+          "fromstopids": [
+            {
+              "count": 199.0, 
+              "belief": 0.00091, 
+              "slotValues": {
+                "fromstopids": {
+                  "vals": "['95']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -6.708, 
+              "logBel": -7.003, 
+              "surfaceForms": {
+                "fromstopids": "set(['duquesne'])"
+              }, 
+              "id": 3
+            }, 
+            {
+              "count": 153246.0, 
+              "belief": 0.07944, 
+              "slotValues": {
+                "fromstopids": {
+                  "countHiddenVals": 45, 
+                  "valsListed": false, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.062, 
+              "logBel": -2.533, 
+              "surfaceForms": {
+                "fromstopids": "set([])"
+              }, 
+              "id": 0
+            }, 
+            {
+              "count": 784.0, 
+              "belief": 0.16191, 
+              "slotValues": {
+                "fromstopids": {
+                  "vals": "['3871', '3872', '3873']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -5.337, 
+              "logBel": -1.821, 
+              "surfaceForms": {
+                "fromstopids": "set(['oakland', 'schenley'])"
+              }, 
+              "id": 1
+            }, 
+            {
+              "count": 8793.0, 
+              "belief": 0.75774, 
+              "slotValues": {
+                "fromstopids": {
+                  "countHiddenVals": 41, 
+                  "valsListed": false, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -2.92, 
+              "logBel": -0.277, 
+              "surfaceForms": {
+                "fromstopids": "set(['oakland'])"
+              }, 
+              "id": 2
+            }
+          ], 
+          "tostopids": [
+            {
+              "count": 163222.0, 
+              "belief": 1.0, 
+              "slotValues": {
+                "tostopids": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": 0.0, 
+              "logBel": 0.0, 
+              "surfaceForms": {
+                "tostopids": "set([])"
+              }, 
+              "id": 0
+            }
+          ], 
+          "time": [
+            {
+              "count": 176762.0, 
+              "belief": 0.5, 
+              "slotValues": {
+                "searchType": {
+                  "vals": "['arrive']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }, 
+                "time": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.693, 
+              "logBel": -0.693, 
+              "surfaceForms": {
+                "searchType": "set([])", 
+                "time": "set([])"
+              }, 
+              "id": 0
+            }, 
+            {
+              "count": 176761.0, 
+              "belief": 0.5, 
+              "slotValues": {
+                "searchType": {
+                  "vals": "['depart']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }, 
+                "time": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.693, 
+              "logBel": -0.693, 
+              "surfaceForms": {
+                "searchType": "set([])", 
+                "time": "set([])"
+              }, 
+              "id": 1
+            }
+          ]
+        }, 
+        "turn_start_time": "07/27 20:29:40.331", 
+        "raw_asr_result": {
+          "audioParams": {
+            "sampleRate": 8000, 
+            "coding": "linear", 
+            "byteOrder": "LE"
+          }, 
+          "version": "watson-6.5.5632", 
+          "resultId": 5, 
+          "hostname": "dt-jdw", 
+          "nlu-sisr": [
+            {
+              "interp": {
+                "fromstopids": "3871:3872:3873"
+              }, 
+              "id": 0, 
+              "time": 0.002582073211669922
+            }, 
+            {
+              "interp": {
+                "fromstopids": "185:186:187:188:199:202:2398:2399:244:245:250:251:275:276:277:283:293:2993:2994:2995:3000:3001:3002:3003:3865:3866:3868:3871:3872:3873:3874:3875:3876:3884:3885:3893:3894:3905:3906:3930:3931:3935:3936:4884"
+              }, 
+              "id": 1, 
+              "time": 0.0006501674652099609
+            }, 
+            {
+              "interp": {
+                "fromstopids": "95"
+              }, 
+              "id": 2, 
+              "time": 0.0006232261657714844
+            }
+          ], 
+          "metrics": {
+            "gaussSelectSkipRatio": 0.0, 
+            "lhoodPrecalcHitRatio": 0.8920830488204956, 
+            "avgFrameBatchSize": 3.0, 
+            "audioPacketCount": 75, 
+            "decodedFrameCount": 150, 
+            "frameCount": 150
+          }, 
+          "sessionId": null, 
+          "trigger": "secondTimeout", 
+          "evType": "evPhraseResult", 
+          "wcn": {
+            "best_path_score": 0.8003922140623044, 
+            "best_path": {
+              "word": [
+                "schenley"
+              ], 
+              "prob": [
+                0.800392210483551
+              ]
+            }, 
+            "network": [
+              {
+                "word": [
+                  "schenley", 
+                  "duquesne", 
+                  "oakland"
+                ], 
+                "prob": [
+                  0.800392210483551, 
+                  0.09926783293485641, 
+                  0.10033994168043137
+                ]
+              }
+            ]
+          }, 
+          "config": {
+            "lms": [
+              "/home/jdw/sdc/prod/lms/stopNames.onRoute.61C.fromstopids.lm"
+            ], 
+            "am": "/home/jdw/watson/data/am/gt_06.1.ep.h4.20.mmi2b", 
+            "secondTimeout": 700, 
+            "beamWidth": 250.0, 
+            "maxActiveArcs": 50000, 
+            "confidenceThreshold": 50, 
+            "firstTimeout": 400
+          }, 
+          "nbest": [
+            {
+              "normSpeechLhood": -152.94154357910156, 
+              "lastSpeechFrame": 76, 
+              "lms": [
+                "/home/jdw/sdc/prod/lms/stopNames.onRoute.61C.fromstopids.lm"
+              ], 
+              "score": 5, 
+              "nscore": 22, 
+              "numFrames": 120, 
+              "udelta": -10.008999824523926, 
+              "speechLikelihood": -8258.84375, 
+              "firstSpeechFrame": 52, 
+              "ndelta": 33.224998474121094, 
+              "normCost": 145.8227081298828, 
+              "normLhood": 0.0, 
+              "gscore": 11, 
+              "cost": 17498.724609375, 
+              "hypothesis": "schenley", 
+              "glhood": -150.0449981689453, 
+              "uscore": 0, 
+              "numSpeechFrames": 54, 
+              "likelihood": 0.0, 
+              "gdelta": -2.8959999084472656, 
+              "ulhood": -142.9320068359375
+            }, 
+            {
+              "normSpeechLhood": -154.08900451660156, 
+              "lastSpeechFrame": 78, 
+              "lms": [
+                "/home/jdw/sdc/prod/lms/stopNames.onRoute.61C.fromstopids.lm"
+              ], 
+              "score": 0, 
+              "nscore": 0, 
+              "numFrames": 120, 
+              "udelta": -12.28600025177002, 
+              "speechLikelihood": -7858.5390625, 
+              "firstSpeechFrame": 57, 
+              "ndelta": 0.1720000058412552, 
+              "normCost": 146.09957885742188, 
+              "normLhood": 0.0, 
+              "gscore": 0, 
+              "cost": 17531.94921875, 
+              "hypothesis": "oakland", 
+              "glhood": -148.96800231933594, 
+              "uscore": 0, 
+              "numSpeechFrames": 51, 
+              "likelihood": 0.0, 
+              "gdelta": -5.119999885559082, 
+              "ulhood": -141.80299377441406
+            }, 
+            {
+              "normSpeechLhood": -153.5706329345703, 
+              "lastSpeechFrame": 75, 
+              "lms": [
+                "/home/jdw/sdc/prod/lms/stopNames.onRoute.61C.fromstopids.lm"
+              ], 
+              "score": 0, 
+              "nscore": 100, 
+              "numFrames": 120, 
+              "udelta": -12.741999626159668, 
+              "speechLikelihood": -7217.81982421875, 
+              "firstSpeechFrame": 58, 
+              "ndelta": 150.0, 
+              "normCost": 146.10101318359375, 
+              "normLhood": 0.0, 
+              "gscore": 0, 
+              "cost": 17532.12109375, 
+              "hypothesis": "duquesne", 
+              "glhood": -148.26800537109375, 
+              "uscore": 0, 
+              "numSpeechFrames": 47, 
+              "likelihood": 0.0, 
+              "gdelta": -5.302999973297119, 
+              "ulhood": -140.82899475097656
+            }
+          ], 
+          "fileId": 0
+        }, 
+        "uttinfo": {
+          "uttfile_status": "logged", 
+          "uttid": "005.raw"
+        }, 
+        "sys_action_details": [
+          {
+            "prompt": "file:/home/jdw/sdc/prod/lib/../prompts/AskOrigin/Init.wav", 
+            "output_start_time": "07/27 20:29:40.368", 
+            "waitfor": "['evPhraseResult', 'evDtmfInput', 'evNoInputTimeout']", 
+            "dtmf": "", 
+            "input_types": "speech", 
+            "grammars": "['/home/jdw/sdc/prod/lib/../lms/stopNames.onRoute.61C.fromstopids.lm']", 
+            "timeout": "10", 
+            "input_start_time": "07/27 20:29:42.556", 
+            "ACTION": "Listen", 
+            "bargein": "False", 
+            "events": [
+              "evPromptStart", 
+              "evPromptStop", 
+              "evSpeechStart", 
+              "evPhraseResult"
+            ]
+          }
+        ], 
+        "dialog_states": [
+          {
+            "state": "ConfirmRoute", 
+            "activity": "Calling OnRecognition handler"
+          }, 
+          {
+            "state": "AskOrigin", 
+            "activity": "Initializing"
+          }, 
+          {
+            "state": "AskOrigin", 
+            "activity": "Prompt type: Init"
+          }, 
+          {
+            "state": "AskOrigin", 
+            "activity": "Calling Init()"
+          }
+        ], 
+        "parsed_asr_result": {
+          "nbest": [
+            {
+              "rec_string": "schenley", 
+              "rec_type": "ig", 
+              "fields": {
+                "fromstopidsSurface": "schenley", 
+                "fromstopids": "3871:3872:3873", 
+                "fromstopids-set": "set(['3871', '3872', '3873'])"
+              }, 
+              "rec_conf": 0.221947
+            }, 
+            {
+              "rec_string": "oakland", 
+              "rec_type": "ig", 
+              "fields": {
+                "fromstopidsSurface": "oakland", 
+                "fromstopids": "185:186:187:188:199:202:2398:2399:244:245:250:251:275:276:277:283:293:2993:2994:2995:3000:3001:3002:3003:3865:3866:3868:3871:3872:3873:3874:3875:3876:3884:3885:3893:3894:3905:3906:3930:3931:3935:3936:4884", 
+                "fromstopids-set": "set(['3931', '3905', '3906', '3868', '199', '3003', '3002', '3866', '3865', '3001', '275', '276', '277', '250', '251', '186', '187', '185', '3893', '283', '3894', '202', '3935', '3871', '3872', '3873', '3874', '3875', '3876', '3930', '245', '244', '188', '3885', '3884', '3936', '2993', '2994', '2995', '4884', '2399', '293', '2398', '3000'])"
+              }, 
+              "rec_conf": 0.158734
+            }, 
+            {
+              "rec_string": "duquesne", 
+              "rec_type": "ig", 
+              "fields": {
+                "fromstopidsSurface": "duquesne", 
+                "fromstopids": "95", 
+                "fromstopids-set": "set(['95'])"
+              }, 
+              "rec_conf": 0.008231
+            }
+          ]
+        }, 
+        "sys_action_summary": {
+          "struct": [
+            [
+              "request", 
+              "fromstopids"
+            ], 
+            [
+              "request", 
+              "fromstopids"
+            ]
+          ], 
+          "surface": "Where are you leaving from?"
+        }
+      }, 
+      "turn-index": 2, 
+      "restart": false, 
+      "output": {
+        "start-time": 15.883, 
+        "transcript": "Where are you leaving from?", 
+        "dialog-acts": [
+          {
+            "slots": [
+              [
+                "from", 
+                null
+              ]
+            ], 
+            "act": "request"
+          }
+        ]
+      }
+    }, 
+    {
+      "input": {
+        "live": {
+          "asr-hyps": [
+            {
+              "asr-hyp": "go back", 
+              "score": 0.981937, 
+              "type": "recognition"
+            }
+          ], 
+          "slu-hyps": [
+            {
+              "slu-hyp": [
+                {
+                  "slots": [], 
+                  "act": "goback"
+                }
+              ], 
+              "score": 0.981937
+            }
+          ]
+        }, 
+        "audio-file": "008.raw", 
+        "start-time": 27.846
+      }, 
+      "system-specific": {
+        "beliefstate": {
+          "date": [
+            {
+              "count": 77522.0, 
+              "belief": 1.0, 
+              "slotValues": {
+                "date": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": 0.0, 
+              "logBel": 0.0, 
+              "surfaceForms": {
+                "date": "set([])"
+              }, 
+              "id": 0
+            }
+          ], 
+          "route": [
+            {
+              "count": 61266.0, 
+              "belief": 1e-05, 
+              "slotValues": {
+                "route": {
+                  "vals": "['61A', '61C']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.286, 
+              "logBel": -11.254, 
+              "surfaceForms": {
+                "route": "set([])"
+              }, 
+              "id": 0
+            }, 
+            {
+              "count": 11234.0, 
+              "belief": 0.00085, 
+              "slotValues": {
+                "route": {
+                  "vals": "['61A']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -1.982, 
+              "logBel": -7.072, 
+              "surfaceForms": {
+                "route": "set(['sixty one a'])"
+              }, 
+              "id": 3
+            }, 
+            {
+              "count": 9022.0, 
+              "belief": 0.99914, 
+              "slotValues": {
+                "route": {
+                  "vals": "['61C']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -2.201, 
+              "logBel": -0.001, 
+              "surfaceForms": {
+                "route": "set(['the sixty one c', 'sixty one c'])"
+              }, 
+              "id": 2
+            }
+          ], 
+          "fromstopids": [
+            {
+              "count": 784.0, 
+              "belief": 6e-05, 
+              "slotValues": {
+                "fromstopids": {
+                  "vals": "['3871', '3872', '3873']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -5.337, 
+              "logBel": -9.758, 
+              "surfaceForms": {
+                "fromstopids": "set(['oakland', 'schenley'])"
+              }, 
+              "id": 1
+            }, 
+            {
+              "count": 8793.0, 
+              "belief": 0.00027, 
+              "slotValues": {
+                "fromstopids": {
+                  "countHiddenVals": 41, 
+                  "valsListed": false, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -2.92, 
+              "logBel": -8.215, 
+              "surfaceForms": {
+                "fromstopids": "set(['oakland'])"
+              }, 
+              "id": 2
+            }, 
+            {
+              "count": 199.0, 
+              "belief": 0.01131, 
+              "slotValues": {
+                "fromstopids": {
+                  "vals": "['95']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -6.708, 
+              "logBel": -4.482, 
+              "surfaceForms": {
+                "fromstopids": "set(['duquesne'])"
+              }, 
+              "id": 3
+            }, 
+            {
+              "count": 153246.0, 
+              "belief": 0.98836, 
+              "slotValues": {
+                "fromstopids": {
+                  "countHiddenVals": 45, 
+                  "valsListed": false, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.062, 
+              "logBel": -0.012, 
+              "surfaceForms": {
+                "fromstopids": "set([])"
+              }, 
+              "id": 0
+            }
+          ], 
+          "tostopids": [
+            {
+              "count": 163222.0, 
+              "belief": 1.0, 
+              "slotValues": {
+                "tostopids": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": 0.0, 
+              "logBel": 0.0, 
+              "surfaceForms": {
+                "tostopids": "set([])"
+              }, 
+              "id": 0
+            }
+          ], 
+          "time": [
+            {
+              "count": 176762.0, 
+              "belief": 0.5, 
+              "slotValues": {
+                "searchType": {
+                  "vals": "['arrive']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }, 
+                "time": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.693, 
+              "logBel": -0.693, 
+              "surfaceForms": {
+                "searchType": "set([])", 
+                "time": "set([])"
+              }, 
+              "id": 0
+            }, 
+            {
+              "count": 176761.0, 
+              "belief": 0.5, 
+              "slotValues": {
+                "searchType": {
+                  "vals": "['depart']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }, 
+                "time": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.693, 
+              "logBel": -0.693, 
+              "surfaceForms": {
+                "searchType": "set([])", 
+                "time": "set([])"
+              }, 
+              "id": 1
+            }
+          ]
+        }, 
+        "turn_start_time": "07/27 20:29:43.488", 
+        "raw_asr_result": {
+          "audioParams": {
+            "sampleRate": 8000, 
+            "coding": "linear", 
+            "byteOrder": "LE"
+          }, 
+          "version": "watson-6.5.5632", 
+          "resultId": 8, 
+          "hostname": "dt-jdw", 
+          "nlu-sisr": [
+            {
+              "interp": {
+                "cmd": "go_back"
+              }, 
+              "id": 0, 
+              "time": 0.002601146697998047
+            }
+          ], 
+          "metrics": {
+            "gaussSelectSkipRatio": 0.0, 
+            "lhoodPrecalcHitRatio": 0.8896464109420776, 
+            "avgFrameBatchSize": 3.0, 
+            "audioPacketCount": 183, 
+            "decodedFrameCount": 366, 
+            "frameCount": 366
+          }, 
+          "sessionId": null, 
+          "trigger": "firstTimeout", 
+          "evType": "evPhraseResult", 
+          "wcn": {
+            "best_path_score": 1.0, 
+            "best_path": {
+              "word": [
+                "go", 
+                "back"
+              ], 
+              "prob": [
+                1.0, 
+                1.0
+              ]
+            }, 
+            "network": [
+              {
+                "word": [
+                  "go"
+                ], 
+                "prob": [
+                  1.0
+                ]
+              }, 
+              {
+                "word": [
+                  "back"
+                ], 
+                "prob": [
+                  1.0
+                ]
+              }
+            ]
+          }, 
+          "config": {
+            "lms": [
+              "/home/jdw/sdc/prod/lms/stopNames.onRoute.61C.tostopids.lm"
+            ], 
+            "am": "/home/jdw/watson/data/am/gt_06.1.ep.h4.20.mmi2b", 
+            "secondTimeout": 700, 
+            "beamWidth": 250.0, 
+            "maxActiveArcs": 50000, 
+            "confidenceThreshold": 50, 
+            "firstTimeout": 400
+          }, 
+          "nbest": [
+            {
+              "normSpeechLhood": -152.79779052734375, 
+              "lastSpeechFrame": 296, 
+              "lms": [
+                "/home/jdw/sdc/prod/lms/stopNames.onRoute.61C.tostopids.lm"
+              ], 
+              "score": 67, 
+              "numFrames": 315, 
+              "udelta": -1.9270000457763672, 
+              "speechLikelihood": -14668.587890625, 
+              "firstSpeechFrame": 249, 
+              "normLhood": 0.0, 
+              "normCost": 141.1186065673828, 
+              "gscore": 74, 
+              "cost": 44452.359375, 
+              "hypothesis": "go back", 
+              "glhood": -162.6269989013672, 
+              "uscore": 61, 
+              "numSpeechFrames": 96, 
+              "likelihood": 0.0, 
+              "gdelta": 9.829000473022461, 
+              "ulhood": -150.87100219726562
+            }
+          ], 
+          "fileId": 0
+        }, 
+        "uttinfo": {
+          "uttfile_status": "logged", 
+          "uttid": "008.raw"
+        }, 
+        "sys_action_details": [
+          {
+            "prompt": "<prosody volume=\"x-loud\">Okay, oakland.</prosody>", 
+            "output_start_time": "07/27 20:29:43.511", 
+            "waitfor": "['evPhraseResult', 'evDtmfInput', 'evNoInputTimeout']", 
+            "dtmf": "", 
+            "input_types": "speech", 
+            "grammars": "['/home/jdw/sdc/prod/lib/../lms/stopNames.onRoute.61C.tostopids.lm']", 
+            "timeout": "0.1", 
+            "input_start_time": "07/27 20:29:46.055", 
+            "ACTION": "Listen", 
+            "bargein": "False", 
+            "events": [
+              "evPromptStart", 
+              "evPromptStop", 
+              "evNoInputTimeout"
+            ]
+          }, 
+          {
+            "prompt": "file:/home/jdw/sdc/prod/lib/../prompts/CommonPrompts/goback_1.wav", 
+            "output_start_time": "07/27 20:29:46.055", 
+            "waitfor": "['evPhraseResult', 'evDtmfInput', 'evNoInputTimeout']", 
+            "dtmf": "", 
+            "input_types": "speech", 
+            "grammars": "['/home/jdw/sdc/prod/lib/../lms/stopNames.onRoute.61C.tostopids.lm']", 
+            "timeout": "0.1", 
+            "input_start_time": "07/27 20:29:48.015", 
+            "ACTION": "Listen", 
+            "bargein": "False", 
+            "events": [
+              "evPromptStart", 
+              "evPromptStop", 
+              "evNoInputTimeout"
+            ]
+          }, 
+          {
+            "prompt": "file:/home/jdw/sdc/prod/lib/../prompts/AskDest/Init.wav", 
+            "output_start_time": "07/27 20:29:48.015", 
+            "waitfor": "['evPhraseResult', 'evDtmfInput', 'evNoInputTimeout']", 
+            "dtmf": "", 
+            "input_types": "speech", 
+            "grammars": "['/home/jdw/sdc/prod/lib/../lms/stopNames.onRoute.61C.tostopids.lm']", 
+            "timeout": "10", 
+            "input_start_time": "07/27 20:29:52.331", 
+            "ACTION": "Listen", 
+            "bargein": "False", 
+            "events": [
+              "evPromptStart", 
+              "evPromptStop", 
+              "evSpeechStart", 
+              "evPhraseResult"
+            ]
+          }
+        ], 
+        "dialog_states": [
+          {
+            "state": "AskOrigin", 
+            "activity": "Calling OnRecognition handler"
+          }, 
+          {
+            "state": "AskDest", 
+            "activity": "Initializing"
+          }, 
+          {
+            "state": "AskDest", 
+            "activity": "Prompt type: Init"
+          }, 
+          {
+            "state": "AskDest", 
+            "activity": "Calling Init()"
+          }
+        ], 
+        "parsed_asr_result": {
+          "nbest": [
+            {
+              "rec_string": "go back", 
+              "rec_type": "ig", 
+              "fields": {
+                "cmd": "go_back"
+              }, 
+              "rec_conf": 0.981937
+            }
+          ]
+        }, 
+        "sys_action_summary": {
+          "struct": [
+            [
+              "impl-confirm", 
+              {
+                "fromstopids": "oakland"
+              }
+            ], 
+            [
+              "request", 
+              "tostopids"
+            ], 
+            [
+              "request", 
+              "tostopids"
+            ]
+          ], 
+          "surface": "Okay, oakland. To change, say go back. And where are you going to?"
+        }
+      }, 
+      "turn-index": 3, 
+      "restart": false, 
+      "output": {
+        "start-time": 19.026, 
+        "transcript": "Okay, oakland. To change, say go back. And where are you going to?", 
+        "dialog-acts": [
+          {
+            "slots": [
+              [
+                "from.desc", 
+                "oakland"
+              ]
+            ], 
+            "act": "impl-conf"
+          }, 
+          {
+            "slots": [
+              [
+                "act", 
+                "goback"
+              ]
+            ], 
+            "act": "example"
+          }, 
+          {
+            "slots": [
+              [
+                "to", 
+                null
+              ]
+            ], 
+            "act": "request"
+          }
+        ]
+      }
+    }, 
+    {
+      "input": {
+        "live": {
+          "asr-hyps": [
+            {
+              "asr-hyp": "kennywood", 
+              "score": 0.816754, 
+              "type": "recognition"
+            }
+          ], 
+          "slu-hyps": [
+            {
+              "slu-hyp": [
+                {
+                  "slots": [
+                    [
+                      "from.desc", 
+                      "kennywood"
+                    ]
+                  ], 
+                  "act": "inform"
+                }
+              ], 
+              "score": 0.816754
+            }
+          ]
+        }, 
+        "audio-file": "010.raw", 
+        "start-time": 32.07
+      }, 
+      "system-specific": {
+        "beliefstate": {
+          "date": [
+            {
+              "count": 77522.0, 
+              "belief": 1.0, 
+              "slotValues": {
+                "date": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": 0.0, 
+              "logBel": 0.0, 
+              "surfaceForms": {
+                "date": "set([])"
+              }, 
+              "id": 0
+            }
+          ], 
+          "route": [
+            {
+              "count": 61266.0, 
+              "belief": 1e-05, 
+              "slotValues": {
+                "route": {
+                  "vals": "['61A', '61C']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.286, 
+              "logBel": -11.254, 
+              "surfaceForms": {
+                "route": "set([])"
+              }, 
+              "id": 0
+            }, 
+            {
+              "count": 11234.0, 
+              "belief": 0.00085, 
+              "slotValues": {
+                "route": {
+                  "vals": "['61A']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -1.982, 
+              "logBel": -7.072, 
+              "surfaceForms": {
+                "route": "set(['sixty one a'])"
+              }, 
+              "id": 3
+            }, 
+            {
+              "count": 9022.0, 
+              "belief": 0.99914, 
+              "slotValues": {
+                "route": {
+                  "vals": "['61C']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -2.201, 
+              "logBel": -0.001, 
+              "surfaceForms": {
+                "route": "set(['the sixty one c', 'sixty one c'])"
+              }, 
+              "id": 2
+            }
+          ], 
+          "fromstopids": [
+            {
+              "count": 784.0, 
+              "belief": 0.0, 
+              "slotValues": {
+                "fromstopids": {
+                  "vals": "['3871', '3872', '3873']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -5.337, 
+              "logBel": -12.898, 
+              "surfaceForms": {
+                "fromstopids": "set(['oakland', 'schenley'])"
+              }, 
+              "id": 1
+            }, 
+            {
+              "count": 8793.0, 
+              "belief": 1e-05, 
+              "slotValues": {
+                "fromstopids": {
+                  "countHiddenVals": 41, 
+                  "valsListed": false, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -2.92, 
+              "logBel": -11.355, 
+              "surfaceForms": {
+                "fromstopids": "set(['oakland'])"
+              }, 
+              "id": 2
+            }, 
+            {
+              "count": 199.0, 
+              "belief": 0.00049, 
+              "slotValues": {
+                "fromstopids": {
+                  "vals": "['95']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -6.708, 
+              "logBel": -7.622, 
+              "surfaceForms": {
+                "fromstopids": "set(['duquesne'])"
+              }, 
+              "id": 3
+            }, 
+            {
+              "count": 152046.0, 
+              "belief": 0.04245, 
+              "slotValues": {
+                "fromstopids": {
+                  "countHiddenVals": 52, 
+                  "valsListed": false, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.07, 
+              "logBel": -3.159, 
+              "surfaceForms": {
+                "fromstopids": "set([])"
+              }, 
+              "id": 0
+            }, 
+            {
+              "count": 1200.0, 
+              "belief": 0.95704, 
+              "slotValues": {
+                "fromstopids": {
+                  "countHiddenVals": 7, 
+                  "valsListed": false, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -4.912, 
+              "logBel": -0.044, 
+              "surfaceForms": {
+                "fromstopids": "set(['kennywood'])"
+              }, 
+              "id": 1
+            }
+          ], 
+          "tostopids": [
+            {
+              "count": 163222.0, 
+              "belief": 1.0, 
+              "slotValues": {
+                "tostopids": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": 0.0, 
+              "logBel": 0.0, 
+              "surfaceForms": {
+                "tostopids": "set([])"
+              }, 
+              "id": 0
+            }
+          ], 
+          "time": [
+            {
+              "count": 176762.0, 
+              "belief": 0.5, 
+              "slotValues": {
+                "searchType": {
+                  "vals": "['arrive']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }, 
+                "time": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.693, 
+              "logBel": -0.693, 
+              "surfaceForms": {
+                "searchType": "set([])", 
+                "time": "set([])"
+              }, 
+              "id": 0
+            }, 
+            {
+              "count": 176761.0, 
+              "belief": 0.5, 
+              "slotValues": {
+                "searchType": {
+                  "vals": "['depart']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }, 
+                "time": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.693, 
+              "logBel": -0.693, 
+              "surfaceForms": {
+                "searchType": "set([])", 
+                "time": "set([])"
+              }, 
+              "id": 1
+            }
+          ]
+        }, 
+        "turn_start_time": "07/27 20:29:53.131", 
+        "raw_asr_result": {
+          "audioParams": {
+            "sampleRate": 8000, 
+            "coding": "linear", 
+            "byteOrder": "LE"
+          }, 
+          "version": "watson-6.5.5632", 
+          "resultId": 10, 
+          "hostname": "dt-jdw", 
+          "nlu-sisr": [
+            {
+              "interp": {
+                "fromstopids": "5945:5946:5947:5949:5950:5952:5953"
+              }, 
+              "id": 0, 
+              "time": 0.0038480758666992188
+            }
+          ], 
+          "metrics": {
+            "gaussSelectSkipRatio": 0.0, 
+            "lhoodPrecalcHitRatio": 0.883367657661438, 
+            "avgFrameBatchSize": 3.0, 
+            "audioPacketCount": 115, 
+            "decodedFrameCount": 202, 
+            "frameCount": 230
+          }, 
+          "sessionId": null, 
+          "trigger": "secondTimeout", 
+          "evType": "evPhraseResult", 
+          "wcn": {
+            "best_path_score": 1.0, 
+            "best_path": {
+              "word": [
+                "kennywood"
+              ], 
+              "prob": [
+                1.0
+              ]
+            }, 
+            "network": [
+              {
+                "word": [
+                  "kennywood"
+                ], 
+                "prob": [
+                  1.0
+                ]
+              }
+            ]
+          }, 
+          "config": {
+            "lms": [
+              "/home/jdw/sdc/prod/lms/stopNames.onRoute.61C.fromstopids.lm"
+            ], 
+            "am": "/home/jdw/watson/data/am/gt_06.1.ep.h4.20.mmi2b", 
+            "secondTimeout": 700, 
+            "beamWidth": 250.0, 
+            "maxActiveArcs": 50000, 
+            "confidenceThreshold": 50, 
+            "firstTimeout": 400
+          }, 
+          "nbest": [
+            {
+              "normSpeechLhood": -152.71170043945312, 
+              "lastSpeechFrame": 135, 
+              "lms": [
+                "/home/jdw/sdc/prod/lms/stopNames.onRoute.61C.fromstopids.lm"
+              ], 
+              "score": 17, 
+              "numFrames": 202, 
+              "udelta": -6.941999912261963, 
+              "speechLikelihood": -13744.052734375, 
+              "firstSpeechFrame": 68, 
+              "normLhood": 0.0, 
+              "normCost": 145.94699096679688, 
+              "gscore": 36, 
+              "cost": 29481.291015625, 
+              "hypothesis": "kennywood", 
+              "glhood": -154.93099975585938, 
+              "uscore": 0, 
+              "numSpeechFrames": 90, 
+              "likelihood": 0.0, 
+              "gdelta": 2.2200000286102295, 
+              "ulhood": -145.7689971923828
+            }
+          ], 
+          "fileId": 0
+        }, 
+        "uttinfo": {
+          "uttfile_status": "logged", 
+          "uttid": "010.raw"
+        }, 
+        "sys_action_details": [
+          {
+            "prompt": "file:/home/jdw/sdc/prod/lib/../prompts/CommonPrompts/going_back.wav", 
+            "output_start_time": "07/27 20:29:53.132", 
+            "waitfor": "['evPhraseResult', 'evDtmfInput', 'evNoInputTimeout']", 
+            "dtmf": "", 
+            "input_types": "speech", 
+            "grammars": "['/home/jdw/sdc/prod/lib/../lms/stopNames.onRoute.61C.fromstopids.lm']", 
+            "timeout": "0.1", 
+            "input_start_time": "07/27 20:29:54.174", 
+            "ACTION": "Listen", 
+            "bargein": "False", 
+            "events": [
+              "evPromptStart", 
+              "evPromptStop", 
+              "evNoInputTimeout"
+            ]
+          }, 
+          {
+            "prompt": "file:/home/jdw/sdc/prod/lib/../prompts/AskOrigin/Init_goback.wav", 
+            "output_start_time": "07/27 20:29:54.175", 
+            "waitfor": "['evPhraseResult', 'evDtmfInput', 'evNoInputTimeout']", 
+            "dtmf": "", 
+            "input_types": "speech", 
+            "grammars": "['/home/jdw/sdc/prod/lib/../lms/stopNames.onRoute.61C.fromstopids.lm']", 
+            "timeout": "10", 
+            "input_start_time": "07/27 20:29:56.555", 
+            "ACTION": "Listen", 
+            "bargein": "False", 
+            "events": [
+              "evPromptStart", 
+              "evPromptStop", 
+              "evSpeechStart", 
+              "evPhraseResult"
+            ]
+          }
+        ], 
+        "dialog_states": [
+          {
+            "state": "AskDest", 
+            "activity": "Calling OnRecognition handler"
+          }, 
+          {
+            "state": "AskOrigin", 
+            "activity": "Initializing"
+          }, 
+          {
+            "state": "AskOrigin", 
+            "activity": "Prompt type: Init"
+          }, 
+          {
+            "state": "AskOrigin", 
+            "activity": "Calling Init()"
+          }
+        ], 
+        "parsed_asr_result": {
+          "nbest": [
+            {
+              "rec_string": "kennywood", 
+              "rec_type": "ig", 
+              "fields": {
+                "fromstopidsSurface": "kennywood", 
+                "fromstopids": "5945:5946:5947:5949:5950:5952:5953", 
+                "fromstopids-set": "set(['5946', '5947', '5953', '5945', '5950', '5949', '5952'])"
+              }, 
+              "rec_conf": 0.816754
+            }
+          ]
+        }, 
+        "sys_action_summary": {
+          "struct": [
+            [
+              "request", 
+              "fromstopids"
+            ], 
+            [
+              "request", 
+              "fromstopids"
+            ]
+          ], 
+          "surface": "Going back. Where are you leaving from?"
+        }
+      }, 
+      "turn-index": 4, 
+      "restart": false, 
+      "output": {
+        "start-time": 28.647, 
+        "transcript": "Going back. Where are you leaving from?", 
+        "dialog-acts": [
+          {
+            "slots": [], 
+            "act": "goback"
+          }, 
+          {
+            "slots": [
+              [
+                "from", 
+                null
+              ]
+            ], 
+            "act": "request"
+          }
+        ]
+      }
+    }, 
+    {
+      "input": {
+        "live": {
+          "asr-hyps": [
+            {
+              "asr-hyp": "go back", 
+              "score": 0.860201, 
+              "type": "recognition"
+            }
+          ], 
+          "slu-hyps": [
+            {
+              "slu-hyp": [
+                {
+                  "slots": [], 
+                  "act": "goback"
+                }
+              ], 
+              "score": 0.860201
+            }
+          ]
+        }, 
+        "audio-file": "013.raw", 
+        "start-time": 40.749
+      }, 
+      "system-specific": {
+        "beliefstate": {
+          "date": [
+            {
+              "count": 77522.0, 
+              "belief": 1.0, 
+              "slotValues": {
+                "date": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": 0.0, 
+              "logBel": 0.0, 
+              "surfaceForms": {
+                "date": "set([])"
+              }, 
+              "id": 0
+            }
+          ], 
+          "route": [
+            {
+              "count": 61266.0, 
+              "belief": 1e-05, 
+              "slotValues": {
+                "route": {
+                  "vals": "['61A', '61C']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.286, 
+              "logBel": -11.254, 
+              "surfaceForms": {
+                "route": "set([])"
+              }, 
+              "id": 0
+            }, 
+            {
+              "count": 11234.0, 
+              "belief": 0.00085, 
+              "slotValues": {
+                "route": {
+                  "vals": "['61A']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -1.982, 
+              "logBel": -7.072, 
+              "surfaceForms": {
+                "route": "set(['sixty one a'])"
+              }, 
+              "id": 3
+            }, 
+            {
+              "count": 9022.0, 
+              "belief": 0.99914, 
+              "slotValues": {
+                "route": {
+                  "vals": "['61C']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -2.201, 
+              "logBel": -0.001, 
+              "surfaceForms": {
+                "route": "set(['the sixty one c', 'sixty one c'])"
+              }, 
+              "id": 2
+            }
+          ], 
+          "fromstopids": [
+            {
+              "count": 784.0, 
+              "belief": 6e-05, 
+              "slotValues": {
+                "fromstopids": {
+                  "vals": "['3871', '3872', '3873']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -5.337, 
+              "logBel": -9.756, 
+              "surfaceForms": {
+                "fromstopids": "set(['oakland', 'schenley'])"
+              }, 
+              "id": 1
+            }, 
+            {
+              "count": 8793.0, 
+              "belief": 0.00027, 
+              "slotValues": {
+                "fromstopids": {
+                  "countHiddenVals": 41, 
+                  "valsListed": false, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -2.92, 
+              "logBel": -8.213, 
+              "surfaceForms": {
+                "fromstopids": "set(['oakland'])"
+              }, 
+              "id": 2
+            }, 
+            {
+              "count": 1200.0, 
+              "belief": 0.00562, 
+              "slotValues": {
+                "fromstopids": {
+                  "countHiddenVals": 7, 
+                  "valsListed": false, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -4.912, 
+              "logBel": -5.182, 
+              "surfaceForms": {
+                "fromstopids": "set(['kennywood'])"
+              }, 
+              "id": 1
+            }, 
+            {
+              "count": 199.0, 
+              "belief": 0.01133, 
+              "slotValues": {
+                "fromstopids": {
+                  "vals": "['95']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -6.708, 
+              "logBel": -4.48, 
+              "surfaceForms": {
+                "fromstopids": "set(['duquesne'])"
+              }, 
+              "id": 3
+            }, 
+            {
+              "count": 152046.0, 
+              "belief": 0.98272, 
+              "slotValues": {
+                "fromstopids": {
+                  "countHiddenVals": 52, 
+                  "valsListed": false, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.07, 
+              "logBel": -0.017, 
+              "surfaceForms": {
+                "fromstopids": "set([])"
+              }, 
+              "id": 0
+            }
+          ], 
+          "tostopids": [
+            {
+              "count": 163222.0, 
+              "belief": 1.0, 
+              "slotValues": {
+                "tostopids": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": 0.0, 
+              "logBel": 0.0, 
+              "surfaceForms": {
+                "tostopids": "set([])"
+              }, 
+              "id": 0
+            }
+          ], 
+          "time": [
+            {
+              "count": 176762.0, 
+              "belief": 0.5, 
+              "slotValues": {
+                "searchType": {
+                  "vals": "['arrive']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }, 
+                "time": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.693, 
+              "logBel": -0.693, 
+              "surfaceForms": {
+                "searchType": "set([])", 
+                "time": "set([])"
+              }, 
+              "id": 0
+            }, 
+            {
+              "count": 176761.0, 
+              "belief": 0.5, 
+              "slotValues": {
+                "searchType": {
+                  "vals": "['depart']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }, 
+                "time": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.693, 
+              "logBel": -0.693, 
+              "surfaceForms": {
+                "searchType": "set([])", 
+                "time": "set([])"
+              }, 
+              "id": 1
+            }
+          ]
+        }, 
+        "turn_start_time": "07/27 20:29:57.782", 
+        "raw_asr_result": {
+          "audioParams": {
+            "sampleRate": 8000, 
+            "coding": "linear", 
+            "byteOrder": "LE"
+          }, 
+          "version": "watson-6.5.5632", 
+          "resultId": 13, 
+          "hostname": "dt-jdw", 
+          "nlu-sisr": [
+            {
+              "interp": {
+                "cmd": "go_back"
+              }, 
+              "id": 0, 
+              "time": 0.003957033157348633
+            }
+          ], 
+          "metrics": {
+            "gaussSelectSkipRatio": 0.0, 
+            "lhoodPrecalcHitRatio": 0.8618302941322327, 
+            "avgFrameBatchSize": 3.0, 
+            "audioPacketCount": 141, 
+            "decodedFrameCount": 282, 
+            "frameCount": 282
+          }, 
+          "sessionId": null, 
+          "trigger": "secondTimeout", 
+          "evType": "evPhraseResult", 
+          "wcn": {
+            "best_path_score": 1.0, 
+            "best_path": {
+              "word": [
+                "go", 
+                "back"
+              ], 
+              "prob": [
+                1.0, 
+                1.0
+              ]
+            }, 
+            "network": [
+              {
+                "word": [
+                  "go"
+                ], 
+                "prob": [
+                  1.0
+                ]
+              }, 
+              {
+                "word": [
+                  "back"
+                ], 
+                "prob": [
+                  1.0
+                ]
+              }
+            ]
+          }, 
+          "config": {
+            "lms": [
+              "/home/jdw/sdc/prod/lms/stopNames.onRoute.61C.tostopids.lm"
+            ], 
+            "am": "/home/jdw/watson/data/am/gt_06.1.ep.h4.20.mmi2b", 
+            "secondTimeout": 700, 
+            "beamWidth": 250.0, 
+            "maxActiveArcs": 50000, 
+            "confidenceThreshold": 50, 
+            "firstTimeout": 400
+          }, 
+          "nbest": [
+            {
+              "normSpeechLhood": -159.0573272705078, 
+              "lastSpeechFrame": 183, 
+              "lms": [
+                "/home/jdw/sdc/prod/lms/stopNames.onRoute.61C.tostopids.lm"
+              ], 
+              "score": 23, 
+              "numFrames": 258, 
+              "udelta": -6.068999767303467, 
+              "speechLikelihood": -11293.0703125, 
+              "firstSpeechFrame": 131, 
+              "normLhood": 0.0, 
+              "normCost": 151.1793670654297, 
+              "gscore": 48, 
+              "cost": 39004.27734375, 
+              "hypothesis": "go back", 
+              "glhood": -163.75599670410156, 
+              "uscore": 0, 
+              "numSpeechFrames": 71, 
+              "likelihood": 0.0, 
+              "gdelta": 4.698999881744385, 
+              "ulhood": -152.98800659179688
+            }
+          ], 
+          "fileId": 0
+        }, 
+        "uttinfo": {
+          "uttfile_status": "logged", 
+          "uttid": "013.raw"
+        }, 
+        "sys_action_details": [
+          {
+            "prompt": "<prosody volume=\"x-loud\">Okay, kennywood.</prosody>", 
+            "output_start_time": "07/27 20:29:57.805", 
+            "waitfor": "['evPhraseResult', 'evDtmfInput', 'evNoInputTimeout']", 
+            "dtmf": "", 
+            "input_types": "speech", 
+            "grammars": "['/home/jdw/sdc/prod/lib/../lms/stopNames.onRoute.61C.tostopids.lm']", 
+            "timeout": "0.1", 
+            "input_start_time": "07/27 20:30:00.594", 
+            "ACTION": "Listen", 
+            "bargein": "False", 
+            "events": [
+              "evPromptStart", 
+              "evPromptStop", 
+              "evNoInputTimeout"
+            ]
+          }, 
+          {
+            "prompt": "file:/home/jdw/sdc/prod/lib/../prompts/CommonPrompts/goback_2.wav", 
+            "output_start_time": "07/27 20:30:00.594", 
+            "waitfor": "['evPhraseResult', 'evDtmfInput', 'evNoInputTimeout']", 
+            "dtmf": "", 
+            "input_types": "speech", 
+            "grammars": "['/home/jdw/sdc/prod/lib/../lms/stopNames.onRoute.61C.tostopids.lm']", 
+            "timeout": "0.1", 
+            "input_start_time": "07/27 20:30:02.314", 
+            "ACTION": "Listen", 
+            "bargein": "False", 
+            "events": [
+              "evPromptStart", 
+              "evPromptStop", 
+              "evNoInputTimeout"
+            ]
+          }, 
+          {
+            "prompt": "file:/home/jdw/sdc/prod/lib/../prompts/AskDest/Init.wav", 
+            "output_start_time": "07/27 20:30:02.314", 
+            "waitfor": "['evPhraseResult', 'evDtmfInput', 'evNoInputTimeout']", 
+            "dtmf": "", 
+            "input_types": "speech", 
+            "grammars": "['/home/jdw/sdc/prod/lib/../lms/stopNames.onRoute.61C.tostopids.lm']", 
+            "timeout": "10", 
+            "input_start_time": "07/27 20:30:05.234", 
+            "ACTION": "Listen", 
+            "bargein": "False", 
+            "events": [
+              "evPromptStart", 
+              "evPromptStop", 
+              "evSpeechStart", 
+              "evPhraseResult"
+            ]
+          }
+        ], 
+        "dialog_states": [
+          {
+            "state": "AskOrigin", 
+            "activity": "Calling OnRecognition handler"
+          }, 
+          {
+            "state": "AskDest", 
+            "activity": "Initializing"
+          }, 
+          {
+            "state": "AskDest", 
+            "activity": "Prompt type: Init"
+          }, 
+          {
+            "state": "AskDest", 
+            "activity": "Calling Init()"
+          }
+        ], 
+        "parsed_asr_result": {
+          "nbest": [
+            {
+              "rec_string": "go back", 
+              "rec_type": "ig", 
+              "fields": {
+                "cmd": "go_back"
+              }, 
+              "rec_conf": 0.860201
+            }
+          ]
+        }, 
+        "sys_action_summary": {
+          "struct": [
+            [
+              "impl-confirm", 
+              {
+                "fromstopids": "kennywood"
+              }
+            ], 
+            [
+              "request", 
+              "tostopids"
+            ], 
+            [
+              "request", 
+              "tostopids"
+            ]
+          ], 
+          "surface": "Okay, kennywood. You can always say go back. And where are you going to?"
+        }
+      }, 
+      "turn-index": 5, 
+      "restart": false, 
+      "output": {
+        "start-time": 33.32, 
+        "transcript": "Okay, kennywood. You can always say go back. And where are you going to?", 
+        "dialog-acts": [
+          {
+            "slots": [
+              [
+                "from.desc", 
+                "kennywood"
+              ]
+            ], 
+            "act": "impl-conf"
+          }, 
+          {
+            "slots": [
+              [
+                "act", 
+                "goback"
+              ]
+            ], 
+            "act": "example"
+          }, 
+          {
+            "slots": [
+              [
+                "to", 
+                null
+              ]
+            ], 
+            "act": "request"
+          }
+        ]
+      }
+    }, 
+    {
+      "input": {
+        "live": {
+          "asr-hyps": [
+            {
+              "asr-hyp": "kennywood", 
+              "score": 0.783953, 
+              "type": "recognition"
+            }
+          ], 
+          "slu-hyps": [
+            {
+              "slu-hyp": [
+                {
+                  "slots": [
+                    [
+                      "from.desc", 
+                      "kennywood"
+                    ]
+                  ], 
+                  "act": "inform"
+                }
+              ], 
+              "score": 0.783953
+            }
+          ]
+        }, 
+        "audio-file": "015.raw", 
+        "start-time": 45.969
+      }, 
+      "system-specific": {
+        "beliefstate": {
+          "date": [
+            {
+              "count": 77522.0, 
+              "belief": 1.0, 
+              "slotValues": {
+                "date": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": 0.0, 
+              "logBel": 0.0, 
+              "surfaceForms": {
+                "date": "set([])"
+              }, 
+              "id": 0
+            }
+          ], 
+          "route": [
+            {
+              "count": 61266.0, 
+              "belief": 1e-05, 
+              "slotValues": {
+                "route": {
+                  "vals": "['61A', '61C']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.286, 
+              "logBel": -11.254, 
+              "surfaceForms": {
+                "route": "set([])"
+              }, 
+              "id": 0
+            }, 
+            {
+              "count": 11234.0, 
+              "belief": 0.00085, 
+              "slotValues": {
+                "route": {
+                  "vals": "['61A']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -1.982, 
+              "logBel": -7.072, 
+              "surfaceForms": {
+                "route": "set(['sixty one a'])"
+              }, 
+              "id": 3
+            }, 
+            {
+              "count": 9022.0, 
+              "belief": 0.99914, 
+              "slotValues": {
+                "route": {
+                  "vals": "['61C']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -2.201, 
+              "logBel": -0.001, 
+              "surfaceForms": {
+                "route": "set(['the sixty one c', 'sixty one c'])"
+              }, 
+              "id": 2
+            }
+          ], 
+          "fromstopids": [
+            {
+              "count": 784.0, 
+              "belief": 0.0, 
+              "slotValues": {
+                "fromstopids": {
+                  "vals": "['3871', '3872', '3873']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -5.337, 
+              "logBel": -12.399, 
+              "surfaceForms": {
+                "fromstopids": "set(['oakland', 'schenley'])"
+              }, 
+              "id": 1
+            }, 
+            {
+              "count": 8793.0, 
+              "belief": 2e-05, 
+              "slotValues": {
+                "fromstopids": {
+                  "countHiddenVals": 41, 
+                  "valsListed": false, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -2.92, 
+              "logBel": -10.856, 
+              "surfaceForms": {
+                "fromstopids": "set(['oakland'])"
+              }, 
+              "id": 2
+            }, 
+            {
+              "count": 199.0, 
+              "belief": 0.00081, 
+              "slotValues": {
+                "fromstopids": {
+                  "vals": "['95']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -6.708, 
+              "logBel": -7.124, 
+              "surfaceForms": {
+                "fromstopids": "set(['duquesne'])"
+              }, 
+              "id": 3
+            }, 
+            {
+              "count": 152046.0, 
+              "belief": 0.0699, 
+              "slotValues": {
+                "fromstopids": {
+                  "countHiddenVals": 52, 
+                  "valsListed": false, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.07, 
+              "logBel": -2.661, 
+              "surfaceForms": {
+                "fromstopids": "set([])"
+              }, 
+              "id": 0
+            }, 
+            {
+              "count": 1200.0, 
+              "belief": 0.92927, 
+              "slotValues": {
+                "fromstopids": {
+                  "countHiddenVals": 7, 
+                  "valsListed": false, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -4.912, 
+              "logBel": -0.073, 
+              "surfaceForms": {
+                "fromstopids": "set(['kennywood'])"
+              }, 
+              "id": 1
+            }
+          ], 
+          "tostopids": [
+            {
+              "count": 163222.0, 
+              "belief": 1.0, 
+              "slotValues": {
+                "tostopids": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": 0.0, 
+              "logBel": 0.0, 
+              "surfaceForms": {
+                "tostopids": "set([])"
+              }, 
+              "id": 0
+            }
+          ], 
+          "time": [
+            {
+              "count": 176762.0, 
+              "belief": 0.5, 
+              "slotValues": {
+                "searchType": {
+                  "vals": "['arrive']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }, 
+                "time": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.693, 
+              "logBel": -0.693, 
+              "surfaceForms": {
+                "searchType": "set([])", 
+                "time": "set([])"
+              }, 
+              "id": 0
+            }, 
+            {
+              "count": 176761.0, 
+              "belief": 0.5, 
+              "slotValues": {
+                "searchType": {
+                  "vals": "['depart']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }, 
+                "time": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.693, 
+              "logBel": -0.693, 
+              "surfaceForms": {
+                "searchType": "set([])", 
+                "time": "set([])"
+              }, 
+              "id": 1
+            }
+          ]
+        }, 
+        "turn_start_time": "07/27 20:30:06.550", 
+        "raw_asr_result": {
+          "audioParams": {
+            "sampleRate": 8000, 
+            "coding": "linear", 
+            "byteOrder": "LE"
+          }, 
+          "version": "watson-6.5.5632", 
+          "resultId": 15, 
+          "hostname": "dt-jdw", 
+          "nlu-sisr": [
+            {
+              "interp": {
+                "fromstopids": "5945:5946:5947:5949:5950:5952:5953"
+              }, 
+              "id": 0, 
+              "time": 0.002852916717529297
+            }
+          ], 
+          "metrics": {
+            "gaussSelectSkipRatio": 0.0, 
+            "lhoodPrecalcHitRatio": 0.8920026421546936, 
+            "avgFrameBatchSize": 3.0, 
+            "audioPacketCount": 161, 
+            "decodedFrameCount": 322, 
+            "frameCount": 322
+          }, 
+          "sessionId": null, 
+          "trigger": "secondTimeout", 
+          "evType": "evPhraseResult", 
+          "wcn": {
+            "best_path_score": 1.0, 
+            "best_path": {
+              "word": [
+                "kennywood"
+              ], 
+              "prob": [
+                1.0
+              ]
+            }, 
+            "network": [
+              {
+                "word": [
+                  "kennywood"
+                ], 
+                "prob": [
+                  1.0
+                ]
+              }
+            ]
+          }, 
+          "config": {
+            "lms": [
+              "/home/jdw/sdc/prod/lms/stopNames.onRoute.61C.fromstopids.lm"
+            ], 
+            "am": "/home/jdw/watson/data/am/gt_06.1.ep.h4.20.mmi2b", 
+            "secondTimeout": 700, 
+            "beamWidth": 250.0, 
+            "maxActiveArcs": 50000, 
+            "confidenceThreshold": 50, 
+            "firstTimeout": 400
+          }, 
+          "nbest": [
+            {
+              "normSpeechLhood": -151.83743286132812, 
+              "lastSpeechFrame": 237, 
+              "lms": [
+                "/home/jdw/sdc/prod/lms/stopNames.onRoute.61C.fromstopids.lm"
+              ], 
+              "score": 15, 
+              "numFrames": 316, 
+              "udelta": -7.9629998207092285, 
+              "speechLikelihood": -18372.330078125, 
+              "firstSpeechFrame": 116, 
+              "normLhood": 0.0, 
+              "normCost": 147.45382690429688, 
+              "gscore": 32, 
+              "cost": 46595.41015625, 
+              "hypothesis": "kennywood", 
+              "glhood": -153.29200744628906, 
+              "uscore": 0, 
+              "numSpeechFrames": 121, 
+              "likelihood": 0.0, 
+              "gdelta": 1.4539999961853027, 
+              "ulhood": -143.87399291992188
+            }
+          ], 
+          "fileId": 0
+        }, 
+        "uttinfo": {
+          "uttfile_status": "logged", 
+          "uttid": "015.raw"
+        }, 
+        "sys_action_details": [
+          {
+            "prompt": "file:/home/jdw/sdc/prod/lib/../prompts/CommonPrompts/going_back.wav", 
+            "output_start_time": "07/27 20:30:06.551", 
+            "waitfor": "['evPhraseResult', 'evDtmfInput', 'evNoInputTimeout']", 
+            "dtmf": "", 
+            "input_types": "speech", 
+            "grammars": "['/home/jdw/sdc/prod/lib/../lms/stopNames.onRoute.61C.fromstopids.lm']", 
+            "timeout": "0.1", 
+            "input_start_time": "07/27 20:30:07.593", 
+            "ACTION": "Listen", 
+            "bargein": "False", 
+            "events": [
+              "evPromptStart", 
+              "evPromptStop", 
+              "evNoInputTimeout"
+            ]
+          }, 
+          {
+            "prompt": "file:/home/jdw/sdc/prod/lib/../prompts/AskOrigin/Init_goback.wav", 
+            "output_start_time": "07/27 20:30:07.593", 
+            "waitfor": "['evPhraseResult', 'evDtmfInput', 'evNoInputTimeout']", 
+            "dtmf": "", 
+            "input_types": "speech", 
+            "grammars": "['/home/jdw/sdc/prod/lib/../lms/stopNames.onRoute.61C.fromstopids.lm']", 
+            "timeout": "10", 
+            "input_start_time": "07/27 20:30:10.454", 
+            "ACTION": "Listen", 
+            "bargein": "False", 
+            "events": [
+              "evPromptStart", 
+              "evPromptStop", 
+              "evSpeechStart", 
+              "evPhraseResult"
+            ]
+          }
+        ], 
+        "dialog_states": [
+          {
+            "state": "AskDest", 
+            "activity": "Calling OnRecognition handler"
+          }, 
+          {
+            "state": "AskOrigin", 
+            "activity": "Initializing"
+          }, 
+          {
+            "state": "AskOrigin", 
+            "activity": "Prompt type: Init"
+          }, 
+          {
+            "state": "AskOrigin", 
+            "activity": "Calling Init()"
+          }
+        ], 
+        "parsed_asr_result": {
+          "nbest": [
+            {
+              "rec_string": "kennywood", 
+              "rec_type": "ig", 
+              "fields": {
+                "fromstopidsSurface": "kennywood", 
+                "fromstopids": "5945:5946:5947:5949:5950:5952:5953", 
+                "fromstopids-set": "set(['5946', '5947', '5953', '5945', '5950', '5949', '5952'])"
+              }, 
+              "rec_conf": 0.783953
+            }
+          ]
+        }, 
+        "sys_action_summary": {
+          "struct": [
+            [
+              "request", 
+              "fromstopids"
+            ], 
+            [
+              "request", 
+              "fromstopids"
+            ]
+          ], 
+          "surface": "Going back. Where are you leaving from?"
+        }
+      }, 
+      "turn-index": 6, 
+      "restart": false, 
+      "output": {
+        "start-time": 42.066, 
+        "transcript": "Going back. Where are you leaving from?", 
+        "dialog-acts": [
+          {
+            "slots": [], 
+            "act": "goback"
+          }, 
+          {
+            "slots": [
+              [
+                "from", 
+                null
+              ]
+            ], 
+            "act": "request"
+          }
+        ]
+      }
+    }, 
+    {
+      "input": {
+        "live": {
+          "asr-hyps": [
+            {
+              "asr-hyp": "mckeesport", 
+              "score": 0.956722, 
+              "type": "recognition"
+            }
+          ], 
+          "slu-hyps": [
+            {
+              "slu-hyp": [
+                {
+                  "slots": [
+                    [
+                      "to.desc", 
+                      "mckeesport"
+                    ]
+                  ], 
+                  "act": "inform"
+                }
+              ], 
+              "score": 0.956722
+            }
+          ]
+        }, 
+        "audio-file": "017.raw", 
+        "start-time": 53.269
+      }, 
+      "system-specific": {
+        "beliefstate": {
+          "date": [
+            {
+              "count": 77522.0, 
+              "belief": 1.0, 
+              "slotValues": {
+                "date": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": 0.0, 
+              "logBel": 0.0, 
+              "surfaceForms": {
+                "date": "set([])"
+              }, 
+              "id": 0
+            }
+          ], 
+          "route": [
+            {
+              "count": 61266.0, 
+              "belief": 1e-05, 
+              "slotValues": {
+                "route": {
+                  "vals": "['61A', '61C']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.286, 
+              "logBel": -11.254, 
+              "surfaceForms": {
+                "route": "set([])"
+              }, 
+              "id": 0
+            }, 
+            {
+              "count": 11234.0, 
+              "belief": 0.00085, 
+              "slotValues": {
+                "route": {
+                  "vals": "['61A']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -1.982, 
+              "logBel": -7.072, 
+              "surfaceForms": {
+                "route": "set(['sixty one a'])"
+              }, 
+              "id": 3
+            }, 
+            {
+              "count": 9022.0, 
+              "belief": 0.99914, 
+              "slotValues": {
+                "route": {
+                  "vals": "['61C']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -2.201, 
+              "logBel": -0.001, 
+              "surfaceForms": {
+                "route": "set(['the sixty one c', 'sixty one c'])"
+              }, 
+              "id": 2
+            }
+          ], 
+          "fromstopids": [
+            {
+              "count": 784.0, 
+              "belief": 0.0, 
+              "slotValues": {
+                "fromstopids": {
+                  "vals": "['3871', '3872', '3873']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -5.337, 
+              "logBel": -12.399, 
+              "surfaceForms": {
+                "fromstopids": "set(['oakland', 'schenley'])"
+              }, 
+              "id": 1
+            }, 
+            {
+              "count": 8793.0, 
+              "belief": 2e-05, 
+              "slotValues": {
+                "fromstopids": {
+                  "countHiddenVals": 41, 
+                  "valsListed": false, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -2.92, 
+              "logBel": -10.856, 
+              "surfaceForms": {
+                "fromstopids": "set(['oakland'])"
+              }, 
+              "id": 2
+            }, 
+            {
+              "count": 199.0, 
+              "belief": 0.00081, 
+              "slotValues": {
+                "fromstopids": {
+                  "vals": "['95']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -6.708, 
+              "logBel": -7.124, 
+              "surfaceForms": {
+                "fromstopids": "set(['duquesne'])"
+              }, 
+              "id": 3
+            }, 
+            {
+              "count": 152046.0, 
+              "belief": 0.0699, 
+              "slotValues": {
+                "fromstopids": {
+                  "countHiddenVals": 52, 
+                  "valsListed": false, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.07, 
+              "logBel": -2.661, 
+              "surfaceForms": {
+                "fromstopids": "set([])"
+              }, 
+              "id": 0
+            }, 
+            {
+              "count": 1200.0, 
+              "belief": 0.92927, 
+              "slotValues": {
+                "fromstopids": {
+                  "countHiddenVals": 7, 
+                  "valsListed": false, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -4.912, 
+              "logBel": -0.073, 
+              "surfaceForms": {
+                "fromstopids": "set(['kennywood'])"
+              }, 
+              "id": 1
+            }
+          ], 
+          "tostopids": [
+            {
+              "count": 162453.0, 
+              "belief": 0.01469, 
+              "slotValues": {
+                "tostopids": {
+                  "countHiddenVals": 5, 
+                  "valsListed": false, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.005, 
+              "logBel": -4.22, 
+              "surfaceForms": {
+                "tostopids": "set([])"
+              }, 
+              "id": 0
+            }, 
+            {
+              "count": 769.0, 
+              "belief": 0.98531, 
+              "slotValues": {
+                "tostopids": {
+                  "countHiddenVals": 5, 
+                  "valsListed": false, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -5.358, 
+              "logBel": -0.015, 
+              "surfaceForms": {
+                "tostopids": "set(['mckeesport'])"
+              }, 
+              "id": 1
+            }
+          ], 
+          "time": [
+            {
+              "count": 176762.0, 
+              "belief": 0.5, 
+              "slotValues": {
+                "searchType": {
+                  "vals": "['arrive']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }, 
+                "time": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.693, 
+              "logBel": -0.693, 
+              "surfaceForms": {
+                "searchType": "set([])", 
+                "time": "set([])"
+              }, 
+              "id": 0
+            }, 
+            {
+              "count": 176761.0, 
+              "belief": 0.5, 
+              "slotValues": {
+                "searchType": {
+                  "vals": "['depart']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }, 
+                "time": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.693, 
+              "logBel": -0.693, 
+              "surfaceForms": {
+                "searchType": "set([])", 
+                "time": "set([])"
+              }, 
+              "id": 1
+            }
+          ]
+        }, 
+        "turn_start_time": "07/27 20:30:12.113", 
+        "raw_asr_result": {
+          "audioParams": {
+            "sampleRate": 8000, 
+            "coding": "linear", 
+            "byteOrder": "LE"
+          }, 
+          "version": "watson-6.5.5632", 
+          "resultId": 17, 
+          "hostname": "dt-jdw", 
+          "nlu-sisr": [
+            {
+              "interp": {
+                "tostopids": "6562:6989:6990:6991:6995"
+              }, 
+              "id": 0, 
+              "time": 0.0038919448852539062
+            }
+          ], 
+          "metrics": {
+            "gaussSelectSkipRatio": 0.0, 
+            "lhoodPrecalcHitRatio": 0.8526894450187683, 
+            "avgFrameBatchSize": 3.0, 
+            "audioPacketCount": 161, 
+            "decodedFrameCount": 306, 
+            "frameCount": 322
+          }, 
+          "sessionId": null, 
+          "trigger": "secondTimeout", 
+          "evType": "evPhraseResult", 
+          "wcn": {
+            "best_path_score": 1.0, 
+            "best_path": {
+              "word": [
+                "mckeesport"
+              ], 
+              "prob": [
+                1.0
+              ]
+            }, 
+            "network": [
+              {
+                "word": [
+                  "mckeesport"
+                ], 
+                "prob": [
+                  1.0
+                ]
+              }
+            ]
+          }, 
+          "config": {
+            "lms": [
+              "/home/jdw/sdc/prod/lms/stopNames.onRoute.61C.tostopids.lm"
+            ], 
+            "am": "/home/jdw/watson/data/am/gt_06.1.ep.h4.20.mmi2b", 
+            "secondTimeout": 700, 
+            "beamWidth": 250.0, 
+            "maxActiveArcs": 50000, 
+            "confidenceThreshold": 50, 
+            "firstTimeout": 400
+          }, 
+          "nbest": [
+            {
+              "normSpeechLhood": -156.1720733642578, 
+              "lastSpeechFrame": 234, 
+              "lms": [
+                "/home/jdw/sdc/prod/lms/stopNames.onRoute.61C.tostopids.lm"
+              ], 
+              "score": 49, 
+              "numFrames": 306, 
+              "udelta": -2.9590001106262207, 
+              "speechLikelihood": -15461.03515625, 
+              "firstSpeechFrame": 139, 
+              "normLhood": 0.0, 
+              "normCost": 148.90020751953125, 
+              "gscore": 58, 
+              "cost": 45563.46484375, 
+              "hypothesis": "mckeesport", 
+              "glhood": -162.71299743652344, 
+              "uscore": 41, 
+              "numSpeechFrames": 99, 
+              "likelihood": 0.0, 
+              "gdelta": 6.540999889373779, 
+              "ulhood": -153.21299743652344
+            }
+          ], 
+          "fileId": 0
+        }, 
+        "uttinfo": {
+          "uttfile_status": "logged", 
+          "uttid": "017.raw"
+        }, 
+        "sys_action_details": [
+          {
+            "prompt": "<prosody volume=\"x-loud\">Okay, kennywood.</prosody>", 
+            "output_start_time": "07/27 20:30:12.137", 
+            "waitfor": "['evPhraseResult', 'evDtmfInput', 'evNoInputTimeout']", 
+            "dtmf": "", 
+            "input_types": "speech", 
+            "grammars": "['/home/jdw/sdc/prod/lib/../lms/stopNames.onRoute.61C.tostopids.lm']", 
+            "timeout": "0.1", 
+            "input_start_time": "07/27 20:30:14.793", 
+            "ACTION": "Listen", 
+            "bargein": "False", 
+            "events": [
+              "evPromptStart", 
+              "evPromptStop", 
+              "evNoInputTimeout"
+            ]
+          }, 
+          {
+            "prompt": "file:/home/jdw/sdc/prod/lib/../prompts/AskDest/Init.wav", 
+            "output_start_time": "07/27 20:30:14.793", 
+            "waitfor": "['evPhraseResult', 'evDtmfInput', 'evNoInputTimeout']", 
+            "dtmf": "", 
+            "input_types": "speech", 
+            "grammars": "['/home/jdw/sdc/prod/lib/../lms/stopNames.onRoute.61C.tostopids.lm']", 
+            "timeout": "10", 
+            "input_start_time": "07/27 20:30:17.754", 
+            "ACTION": "Listen", 
+            "bargein": "False", 
+            "events": [
+              "evPromptStart", 
+              "evPromptStop", 
+              "evSpeechStart", 
+              "evPhraseResult"
+            ]
+          }
+        ], 
+        "dialog_states": [
+          {
+            "state": "AskOrigin", 
+            "activity": "Calling OnRecognition handler"
+          }, 
+          {
+            "state": "AskDest", 
+            "activity": "Initializing"
+          }, 
+          {
+            "state": "AskDest", 
+            "activity": "Prompt type: Init"
+          }, 
+          {
+            "state": "AskDest", 
+            "activity": "Calling Init()"
+          }
+        ], 
+        "parsed_asr_result": {
+          "nbest": [
+            {
+              "rec_string": "mckeesport", 
+              "rec_type": "ig", 
+              "fields": {
+                "tostopidsSurface": "mckeesport", 
+                "tostopids-set": "set(['6995', '6990', '6991', '6989', '6562'])", 
+                "tostopids": "6562:6989:6990:6991:6995"
+              }, 
+              "rec_conf": 0.956722
+            }
+          ]
+        }, 
+        "sys_action_summary": {
+          "struct": [
+            [
+              "impl-confirm", 
+              {
+                "fromstopids": "kennywood"
+              }
+            ], 
+            [
+              "request", 
+              "tostopids"
+            ], 
+            [
+              "request", 
+              "tostopids"
+            ]
+          ], 
+          "surface": "Okay, kennywood. And where are you going to?"
+        }
+      }, 
+      "turn-index": 7, 
+      "restart": false, 
+      "output": {
+        "start-time": 47.652, 
+        "transcript": "Okay, kennywood. And where are you going to?", 
+        "dialog-acts": [
+          {
+            "slots": [
+              [
+                "from.desc", 
+                "kennywood"
+              ]
+            ], 
+            "act": "impl-conf"
+          }, 
+          {
+            "slots": [
+              [
+                "to", 
+                null
+              ]
+            ], 
+            "act": "request"
+          }
+        ]
+      }
+    }, 
+    {
+      "input": {
+        "live": {
+          "asr-hyps": [
+            {
+              "asr-hyp": "yeah", 
+              "score": 0.902602, 
+              "type": "recognition"
+            }, 
+            {
+              "asr-hyp": "yes", 
+              "score": 0.055748, 
+              "type": "recognition"
+            }
+          ], 
+          "slu-hyps": [
+            {
+              "slu-hyp": [
+                {
+                  "slots": [], 
+                  "act": "affirm"
+                }
+              ], 
+              "score": 0.902602
+            }, 
+            {
+              "slu-hyp": [
+                {
+                  "slots": [], 
+                  "act": "affirm"
+                }
+              ], 
+              "score": 0.055748
+            }
+          ]
+        }, 
+        "audio-file": "020.raw", 
+        "start-time": 63.048
+      }, 
+      "system-specific": {
+        "beliefstate": {
+          "date": [
+            {
+              "count": 77522.0, 
+              "belief": 1.0, 
+              "slotValues": {
+                "date": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": 0.0, 
+              "logBel": 0.0, 
+              "surfaceForms": {
+                "date": "set([])"
+              }, 
+              "id": 0
+            }
+          ], 
+          "route": [
+            {
+              "count": 61266.0, 
+              "belief": 1e-05, 
+              "slotValues": {
+                "route": {
+                  "vals": "['61A', '61C']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.286, 
+              "logBel": -11.254, 
+              "surfaceForms": {
+                "route": "set([])"
+              }, 
+              "id": 0
+            }, 
+            {
+              "count": 11234.0, 
+              "belief": 0.00085, 
+              "slotValues": {
+                "route": {
+                  "vals": "['61A']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -1.982, 
+              "logBel": -7.072, 
+              "surfaceForms": {
+                "route": "set(['sixty one a'])"
+              }, 
+              "id": 3
+            }, 
+            {
+              "count": 9022.0, 
+              "belief": 0.99914, 
+              "slotValues": {
+                "route": {
+                  "vals": "['61C']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -2.201, 
+              "logBel": -0.001, 
+              "surfaceForms": {
+                "route": "set(['the sixty one c', 'sixty one c'])"
+              }, 
+              "id": 2
+            }
+          ], 
+          "fromstopids": [
+            {
+              "count": 784.0, 
+              "belief": 0.0, 
+              "slotValues": {
+                "fromstopids": {
+                  "vals": "['3871', '3872', '3873']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -5.337, 
+              "logBel": -12.399, 
+              "surfaceForms": {
+                "fromstopids": "set(['oakland', 'schenley'])"
+              }, 
+              "id": 1
+            }, 
+            {
+              "count": 8793.0, 
+              "belief": 2e-05, 
+              "slotValues": {
+                "fromstopids": {
+                  "countHiddenVals": 41, 
+                  "valsListed": false, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -2.92, 
+              "logBel": -10.856, 
+              "surfaceForms": {
+                "fromstopids": "set(['oakland'])"
+              }, 
+              "id": 2
+            }, 
+            {
+              "count": 199.0, 
+              "belief": 0.00081, 
+              "slotValues": {
+                "fromstopids": {
+                  "vals": "['95']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -6.708, 
+              "logBel": -7.124, 
+              "surfaceForms": {
+                "fromstopids": "set(['duquesne'])"
+              }, 
+              "id": 3
+            }, 
+            {
+              "count": 152046.0, 
+              "belief": 0.0699, 
+              "slotValues": {
+                "fromstopids": {
+                  "countHiddenVals": 52, 
+                  "valsListed": false, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.07, 
+              "logBel": -2.661, 
+              "surfaceForms": {
+                "fromstopids": "set([])"
+              }, 
+              "id": 0
+            }, 
+            {
+              "count": 1200.0, 
+              "belief": 0.92927, 
+              "slotValues": {
+                "fromstopids": {
+                  "countHiddenVals": 7, 
+                  "valsListed": false, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -4.912, 
+              "logBel": -0.073, 
+              "surfaceForms": {
+                "fromstopids": "set(['kennywood'])"
+              }, 
+              "id": 1
+            }
+          ], 
+          "tostopids": [
+            {
+              "count": 162453.0, 
+              "belief": 0.01469, 
+              "slotValues": {
+                "tostopids": {
+                  "countHiddenVals": 5, 
+                  "valsListed": false, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.005, 
+              "logBel": -4.22, 
+              "surfaceForms": {
+                "tostopids": "set([])"
+              }, 
+              "id": 0
+            }, 
+            {
+              "count": 769.0, 
+              "belief": 0.98531, 
+              "slotValues": {
+                "tostopids": {
+                  "countHiddenVals": 5, 
+                  "valsListed": false, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -5.358, 
+              "logBel": -0.015, 
+              "surfaceForms": {
+                "tostopids": "set(['mckeesport'])"
+              }, 
+              "id": 1
+            }
+          ], 
+          "time": [
+            {
+              "count": 176762.0, 
+              "belief": 0.5, 
+              "slotValues": {
+                "searchType": {
+                  "vals": "['arrive']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }, 
+                "time": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.693, 
+              "logBel": -0.693, 
+              "surfaceForms": {
+                "searchType": "set([])", 
+                "time": "set([])"
+              }, 
+              "id": 0
+            }, 
+            {
+              "count": 176761.0, 
+              "belief": 0.5, 
+              "slotValues": {
+                "searchType": {
+                  "vals": "['depart']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }, 
+                "time": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.693, 
+              "logBel": -0.693, 
+              "surfaceForms": {
+                "searchType": "set([])", 
+                "time": "set([])"
+              }, 
+              "id": 1
+            }
+          ]
+        }, 
+        "turn_start_time": "07/27 20:30:19.425", 
+        "raw_asr_result": {
+          "audioParams": {
+            "sampleRate": 8000, 
+            "coding": "linear", 
+            "byteOrder": "LE"
+          }, 
+          "version": "watson-6.5.5632", 
+          "resultId": 20, 
+          "hostname": "dt-jdw", 
+          "nlu-sisr": [
+            {
+              "interp": {
+                "confirm": "yes"
+              }, 
+              "id": 0, 
+              "time": 0.0025298595428466797
+            }, 
+            {
+              "interp": {
+                "confirm": "yes"
+              }, 
+              "id": 1, 
+              "time": 0.0006229877471923828
+            }
+          ], 
+          "metrics": {
+            "gaussSelectSkipRatio": 0.0, 
+            "lhoodPrecalcHitRatio": 0.8347771763801575, 
+            "avgFrameBatchSize": 3.0, 
+            "audioPacketCount": 86, 
+            "decodedFrameCount": 123, 
+            "frameCount": 172
+          }, 
+          "sessionId": null, 
+          "trigger": "firstTimeout", 
+          "evType": "evPhraseResult", 
+          "wcn": {
+            "best_path_score": 0.9993132352981516, 
+            "best_path": {
+              "word": [
+                "yeah"
+              ], 
+              "prob": [
+                0.999313235282898
+              ]
+            }, 
+            "network": [
+              {
+                "word": [
+                  "yeah", 
+                  "yes"
+                ], 
+                "prob": [
+                  0.999313235282898, 
+                  0.0006867611082270741
+                ]
+              }
+            ]
+          }, 
+          "config": {
+            "lms": [
+              "/home/jdw/sdc/prod/lms/askNextBus.lm"
+            ], 
+            "am": "/home/jdw/watson/data/am/gt_06.1.ep.h4.20.mmi2b", 
+            "secondTimeout": 700, 
+            "beamWidth": 250.0, 
+            "maxActiveArcs": 50000, 
+            "confidenceThreshold": 50, 
+            "firstTimeout": 400
+          }, 
+          "nbest": [
+            {
+              "normSpeechLhood": -137.26937866210938, 
+              "lastSpeechFrame": 104, 
+              "lms": [
+                "/home/jdw/sdc/prod/lms/askNextBus.lm"
+              ], 
+              "score": 66, 
+              "nscore": 78, 
+              "numFrames": 123, 
+              "udelta": -1.100000023841858, 
+              "speechLikelihood": -15374.169921875, 
+              "firstSpeechFrame": 36, 
+              "ndelta": 116.5250015258789, 
+              "normCost": 144.15606689453125, 
+              "normLhood": 0.0, 
+              "gscore": 56, 
+              "cost": 17731.1953125, 
+              "hypothesis": "yeah", 
+              "glhood": -143.4969940185547, 
+              "uscore": 78, 
+              "numSpeechFrames": 112, 
+              "likelihood": 0.0, 
+              "gdelta": 6.228000164031982, 
+              "ulhood": -136.16900634765625
+            }, 
+            {
+              "normSpeechLhood": -145.66566467285156, 
+              "lastSpeechFrame": 90, 
+              "lms": [
+                "/home/jdw/sdc/prod/lms/askNextBus.lm"
+              ], 
+              "score": 4, 
+              "nscore": 100, 
+              "numFrames": 123, 
+              "udelta": -10.388999938964844, 
+              "speechLikelihood": -14275.2353515625, 
+              "firstSpeechFrame": 36, 
+              "ndelta": 150.0, 
+              "normCost": 145.10342407226562, 
+              "normLhood": 0.0, 
+              "gscore": 9, 
+              "cost": 17847.720703125, 
+              "hypothesis": "yes", 
+              "glhood": -142.36700439453125, 
+              "uscore": 0, 
+              "numSpeechFrames": 98, 
+              "likelihood": 0.0, 
+              "gdelta": -3.2990000247955322, 
+              "ulhood": -135.27699279785156
+            }
+          ], 
+          "fileId": 0
+        }, 
+        "uttinfo": {
+          "uttfile_status": "logged", 
+          "uttid": "020.raw"
+        }, 
+        "sys_action_details": [
+          {
+            "prompt": "<prosody volume=\"x-loud\">Okay, mckeesport.</prosody>", 
+            "output_start_time": "07/27 20:30:19.428", 
+            "waitfor": "['evPhraseResult', 'evDtmfInput', 'evNoInputTimeout']", 
+            "dtmf": "", 
+            "input_types": "speech", 
+            "grammars": "['/home/jdw/sdc/prod/lib/../lms/askNextBus.lm']", 
+            "timeout": "0.1", 
+            "input_start_time": "07/27 20:30:22.232", 
+            "ACTION": "Listen", 
+            "bargein": "False", 
+            "events": [
+              "evPromptStart", 
+              "evPromptStop", 
+              "evNoInputTimeout"
+            ]
+          }, 
+          {
+            "prompt": "file:/home/jdw/sdc/prod/lib/../prompts/CommonPrompts/goback_4.wav", 
+            "output_start_time": "07/27 20:30:22.232", 
+            "waitfor": "['evPhraseResult', 'evDtmfInput', 'evNoInputTimeout']", 
+            "dtmf": "", 
+            "input_types": "speech", 
+            "grammars": "['/home/jdw/sdc/prod/lib/../lms/askNextBus.lm']", 
+            "timeout": "0.1", 
+            "input_start_time": "07/27 20:30:23.852", 
+            "ACTION": "Listen", 
+            "bargein": "False", 
+            "events": [
+              "evPromptStart", 
+              "evPromptStop", 
+              "evNoInputTimeout"
+            ]
+          }, 
+          {
+            "prompt": "file:/home/jdw/sdc/prod/lib/../prompts/AskNextBus/Init.wav", 
+            "output_start_time": "07/27 20:30:23.852", 
+            "waitfor": "['evPhraseResult', 'evDtmfInput', 'evNoInputTimeout']", 
+            "dtmf": "", 
+            "input_types": "speech", 
+            "grammars": "['/home/jdw/sdc/prod/lib/../lms/askNextBus.lm']", 
+            "timeout": "10", 
+            "input_start_time": "07/27 20:30:27.533", 
+            "ACTION": "Listen", 
+            "bargein": "False", 
+            "events": [
+              "evPromptStart", 
+              "evPromptStop", 
+              "evSpeechStart", 
+              "evPhraseResult"
+            ]
+          }
+        ], 
+        "dialog_states": [
+          {
+            "state": "AskDest", 
+            "activity": "Calling OnRecognition handler"
+          }, 
+          {
+            "state": "AskNextBus", 
+            "activity": "Initializing"
+          }, 
+          {
+            "state": "AskNextBus", 
+            "activity": "Prompt type: Init"
+          }, 
+          {
+            "state": "AskNextBus", 
+            "activity": "Calling Init()"
+          }
+        ], 
+        "parsed_asr_result": {
+          "nbest": [
+            {
+              "rec_string": "yeah", 
+              "rec_type": "ig", 
+              "fields": {
+                "confirm": "yes"
+              }, 
+              "rec_conf": 0.902602
+            }, 
+            {
+              "rec_string": "yes", 
+              "rec_type": "ig", 
+              "fields": {
+                "confirm": "yes"
+              }, 
+              "rec_conf": 0.055748
+            }
+          ]
+        }, 
+        "sys_action_summary": {
+          "struct": [
+            [
+              "impl-confirm", 
+              {
+                "tostopids": "mckeesport"
+              }
+            ]
+          ], 
+          "surface": "Okay, mckeesport. You can always say go back. Do you want times for the next few buses? Say yes or no."
+        }
+      }, 
+      "turn-index": 8, 
+      "restart": false, 
+      "output": {
+        "start-time": 54.943, 
+        "transcript": "Okay, mckeesport. You can always say go back. Do you want times for the next few buses? Say yes or no.", 
+        "dialog-acts": [
+          {
+            "slots": [
+              [
+                "to.desc", 
+                "mckeesport"
+              ]
+            ], 
+            "act": "impl-conf"
+          }, 
+          {
+            "slots": [
+              [
+                "act", 
+                "goback"
+              ]
+            ], 
+            "act": "example"
+          }, 
+          {
+            "slots": [
+              [
+                "act", 
+                "want-next-bus"
+              ]
+            ], 
+            "act": "expl-conf"
+          }, 
+          {
+            "slots": [
+              [
+                "act", 
+                "affirm"
+              ]
+            ], 
+            "act": "example"
+          }, 
+          {
+            "slots": [
+              [
+                "act", 
+                "negate"
+              ]
+            ], 
+            "act": "example"
+          }
+        ]
+      }
+    }, 
+    {
+      "input": {
+        "live": {
+          "asr-hyps": [
+            {
+              "asr-hyp": "repeat", 
+              "score": 0.887524, 
+              "type": "recognition"
+            }
+          ], 
+          "slu-hyps": [
+            {
+              "slu-hyp": [
+                {
+                  "slots": [], 
+                  "act": "repeat"
+                }
+              ], 
+              "score": 0.887524
+            }
+          ]
+        }, 
+        "audio-file": "029.raw", 
+        "start-time": 97.564
+      }, 
+      "system-specific": {
+        "beliefstate": {
+          "date": [
+            {
+              "count": 77522.0, 
+              "belief": 1.0, 
+              "slotValues": {
+                "date": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": 0.0, 
+              "logBel": 0.0, 
+              "surfaceForms": {
+                "date": "set([])"
+              }, 
+              "id": 0
+            }
+          ], 
+          "route": [
+            {
+              "count": 61266.0, 
+              "belief": 1e-05, 
+              "slotValues": {
+                "route": {
+                  "vals": "['61A', '61C']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.286, 
+              "logBel": -11.254, 
+              "surfaceForms": {
+                "route": "set([])"
+              }, 
+              "id": 0
+            }, 
+            {
+              "count": 11234.0, 
+              "belief": 0.00085, 
+              "slotValues": {
+                "route": {
+                  "vals": "['61A']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -1.982, 
+              "logBel": -7.072, 
+              "surfaceForms": {
+                "route": "set(['sixty one a'])"
+              }, 
+              "id": 3
+            }, 
+            {
+              "count": 9022.0, 
+              "belief": 0.99914, 
+              "slotValues": {
+                "route": {
+                  "vals": "['61C']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -2.201, 
+              "logBel": -0.001, 
+              "surfaceForms": {
+                "route": "set(['the sixty one c', 'sixty one c'])"
+              }, 
+              "id": 2
+            }
+          ], 
+          "fromstopids": [
+            {
+              "count": 784.0, 
+              "belief": 0.0, 
+              "slotValues": {
+                "fromstopids": {
+                  "vals": "['3871', '3872', '3873']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -5.337, 
+              "logBel": -12.399, 
+              "surfaceForms": {
+                "fromstopids": "set(['oakland', 'schenley'])"
+              }, 
+              "id": 1
+            }, 
+            {
+              "count": 8793.0, 
+              "belief": 2e-05, 
+              "slotValues": {
+                "fromstopids": {
+                  "countHiddenVals": 41, 
+                  "valsListed": false, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -2.92, 
+              "logBel": -10.856, 
+              "surfaceForms": {
+                "fromstopids": "set(['oakland'])"
+              }, 
+              "id": 2
+            }, 
+            {
+              "count": 199.0, 
+              "belief": 0.00081, 
+              "slotValues": {
+                "fromstopids": {
+                  "vals": "['95']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -6.708, 
+              "logBel": -7.124, 
+              "surfaceForms": {
+                "fromstopids": "set(['duquesne'])"
+              }, 
+              "id": 3
+            }, 
+            {
+              "count": 152046.0, 
+              "belief": 0.0699, 
+              "slotValues": {
+                "fromstopids": {
+                  "countHiddenVals": 52, 
+                  "valsListed": false, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.07, 
+              "logBel": -2.661, 
+              "surfaceForms": {
+                "fromstopids": "set([])"
+              }, 
+              "id": 0
+            }, 
+            {
+              "count": 1200.0, 
+              "belief": 0.92927, 
+              "slotValues": {
+                "fromstopids": {
+                  "countHiddenVals": 7, 
+                  "valsListed": false, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -4.912, 
+              "logBel": -0.073, 
+              "surfaceForms": {
+                "fromstopids": "set(['kennywood'])"
+              }, 
+              "id": 1
+            }
+          ], 
+          "tostopids": [
+            {
+              "count": 162453.0, 
+              "belief": 0.01469, 
+              "slotValues": {
+                "tostopids": {
+                  "countHiddenVals": 5, 
+                  "valsListed": false, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.005, 
+              "logBel": -4.22, 
+              "surfaceForms": {
+                "tostopids": "set([])"
+              }, 
+              "id": 0
+            }, 
+            {
+              "count": 769.0, 
+              "belief": 0.98531, 
+              "slotValues": {
+                "tostopids": {
+                  "countHiddenVals": 5, 
+                  "valsListed": false, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -5.358, 
+              "logBel": -0.015, 
+              "surfaceForms": {
+                "tostopids": "set(['mckeesport'])"
+              }, 
+              "id": 1
+            }
+          ], 
+          "time": [
+            {
+              "count": 176762.0, 
+              "belief": 0.5, 
+              "slotValues": {
+                "searchType": {
+                  "vals": "['arrive']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }, 
+                "time": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.693, 
+              "logBel": -0.693, 
+              "surfaceForms": {
+                "searchType": "set([])", 
+                "time": "set([])"
+              }, 
+              "id": 0
+            }, 
+            {
+              "count": 176761.0, 
+              "belief": 0.5, 
+              "slotValues": {
+                "searchType": {
+                  "vals": "['depart']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }, 
+                "time": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.693, 
+              "logBel": -0.693, 
+              "surfaceForms": {
+                "searchType": "set([])", 
+                "time": "set([])"
+              }, 
+              "id": 1
+            }
+          ]
+        }, 
+        "turn_start_time": "07/27 20:30:28.742", 
+        "raw_asr_result": {
+          "audioParams": {
+            "sampleRate": 8000, 
+            "coding": "linear", 
+            "byteOrder": "LE"
+          }, 
+          "version": "watson-6.5.5632", 
+          "resultId": 29, 
+          "hostname": "dt-jdw", 
+          "nlu-sisr": [
+            {
+              "interp": {
+                "cmd": "repeat"
+              }, 
+              "id": 0, 
+              "time": 0.0025179386138916016
+            }
+          ], 
+          "metrics": {
+            "gaussSelectSkipRatio": 0.0, 
+            "lhoodPrecalcHitRatio": 0.8328673243522644, 
+            "avgFrameBatchSize": 3.0, 
+            "audioPacketCount": 327, 
+            "decodedFrameCount": 654, 
+            "frameCount": 654
+          }, 
+          "sessionId": null, 
+          "trigger": "firstTimeout", 
+          "evType": "evPhraseResult", 
+          "wcn": {
+            "best_path_score": 1.0, 
+            "best_path": {
+              "word": [
+                "repeat"
+              ], 
+              "prob": [
+                1.0
+              ]
+            }, 
+            "network": [
+              {
+                "word": [
+                  "repeat"
+                ], 
+                "prob": [
+                  1.0
+                ]
+              }
+            ]
+          }, 
+          "config": {
+            "lms": [
+              "/home/jdw/sdc/prod/lms/listNav.lm"
+            ], 
+            "am": "/home/jdw/watson/data/am/gt_06.1.ep.h4.20.mmi2b", 
+            "secondTimeout": 700, 
+            "beamWidth": 250.0, 
+            "maxActiveArcs": 50000, 
+            "confidenceThreshold": 50, 
+            "firstTimeout": 400
+          }, 
+          "nbest": [
+            {
+              "normSpeechLhood": -160.45980834960938, 
+              "lastSpeechFrame": 562, 
+              "lms": [
+                "/home/jdw/sdc/prod/lms/listNav.lm"
+              ], 
+              "score": 52, 
+              "numFrames": 611, 
+              "udelta": -1.6790000200271606, 
+              "speechLikelihood": -15083.2216796875, 
+              "firstSpeechFrame": 496, 
+              "normLhood": 0.0, 
+              "normCost": 148.85447692871094, 
+              "gscore": 40, 
+              "cost": 90950.0859375, 
+              "hypothesis": "repeat", 
+              "glhood": -163.54400634765625, 
+              "uscore": 66, 
+              "numSpeechFrames": 94, 
+              "likelihood": 0.0, 
+              "gdelta": 3.0840001106262207, 
+              "ulhood": -158.781005859375
+            }
+          ], 
+          "fileId": 0
+        }, 
+        "uttinfo": {
+          "uttfile_status": "logged", 
+          "uttid": "029.raw"
+        }, 
+        "sys_action_details": [
+          {
+            "prompt": "file:/home/jdw/sdc/prod/lib/../prompts/AskNextBus/OkNextFewBuses.wav", 
+            "output_start_time": "07/27 20:30:28.897", 
+            "waitfor": "['evPhraseResult', 'evDtmfInput', 'evNoInputTimeout']", 
+            "dtmf": "", 
+            "input_types": "speech", 
+            "grammars": "['/home/jdw/sdc/prod/lib/../lms/listNav.lm']", 
+            "timeout": "0.1", 
+            "input_start_time": "07/27 20:30:30.692", 
+            "ACTION": "Listen", 
+            "bargein": "True", 
+            "events": [
+              "evPromptStart", 
+              "evPromptStop", 
+              "evNoInputTimeout"
+            ]
+          }, 
+          {
+            "prompt": "file:/home/jdw/sdc/prod/lib/../prompts/CommonPrompts/goback_1.wav", 
+            "output_start_time": "07/27 20:30:30.692", 
+            "waitfor": "['evPhraseResult', 'evDtmfInput', 'evNoInputTimeout']", 
+            "dtmf": "", 
+            "input_types": "speech", 
+            "grammars": "['/home/jdw/sdc/prod/lib/../lms/listNav.lm']", 
+            "timeout": "0.1", 
+            "input_start_time": "07/27 20:30:32.591", 
+            "ACTION": "Listen", 
+            "bargein": "True", 
+            "events": [
+              "evPromptStart", 
+              "evPromptStop", 
+              "evNoInputTimeout"
+            ]
+          }, 
+          {
+            "prompt": "file:/home/jdw/sdc/prod/lib/../prompts/SearchForBuses/more_buses_a.wav", 
+            "output_start_time": "07/27 20:30:32.592", 
+            "waitfor": "['evPhraseResult', 'evDtmfInput', 'evNoInputTimeout']", 
+            "dtmf": "", 
+            "input_types": "speech", 
+            "grammars": "['/home/jdw/sdc/prod/lib/../lms/listNav.lm']", 
+            "timeout": "0.1", 
+            "input_start_time": "07/27 20:30:34.452", 
+            "ACTION": "Listen", 
+            "bargein": "True", 
+            "events": [
+              "evPromptStart", 
+              "evPromptStop", 
+              "evNoInputTimeout"
+            ]
+          }, 
+          {
+            "prompt": "<prosody volume=\"x-loud\">61C,</prosody>", 
+            "output_start_time": "07/27 20:30:34.452", 
+            "waitfor": "['evPhraseResult', 'evDtmfInput', 'evNoInputTimeout']", 
+            "dtmf": "", 
+            "input_types": "speech", 
+            "grammars": "['/home/jdw/sdc/prod/lib/../lms/listNav.lm']", 
+            "timeout": "0.1", 
+            "input_start_time": "07/27 20:30:36.291", 
+            "ACTION": "Listen", 
+            "bargein": "True", 
+            "events": [
+              "evPromptStart", 
+              "evPromptStop", 
+              "evNoInputTimeout"
+            ]
+          }, 
+          {
+            "prompt": "file:/home/jdw/sdc/prod/lib/../prompts/SearchForBuses/more_buses_b.wav", 
+            "output_start_time": "07/27 20:30:36.291", 
+            "waitfor": "['evPhraseResult', 'evDtmfInput', 'evNoInputTimeout']", 
+            "dtmf": "", 
+            "input_types": "speech", 
+            "grammars": "['/home/jdw/sdc/prod/lib/../lms/listNav.lm']", 
+            "timeout": "0.1", 
+            "input_start_time": "07/27 20:30:37.132", 
+            "ACTION": "Listen", 
+            "bargein": "True", 
+            "events": [
+              "evPromptStart", 
+              "evPromptStop", 
+              "evNoInputTimeout"
+            ]
+          }, 
+          {
+            "prompt": "<prosody volume=\"x-loud\">from kennywood to mckeesport.</prosody>", 
+            "output_start_time": "07/27 20:30:37.132", 
+            "waitfor": "['evPhraseResult', 'evDtmfInput', 'evNoInputTimeout']", 
+            "dtmf": "", 
+            "input_types": "speech", 
+            "grammars": "['/home/jdw/sdc/prod/lib/../lms/listNav.lm']", 
+            "timeout": "0.1", 
+            "input_start_time": "07/27 20:30:40.333", 
+            "ACTION": "Listen", 
+            "bargein": "True", 
+            "events": [
+              "evPromptStart", 
+              "evPromptStop", 
+              "evNoInputTimeout"
+            ]
+          }, 
+          {
+            "prompt": "file:/home/jdw/sdc/prod/lib/../prompts/SearchForBuses/more_buses_c.wav", 
+            "output_start_time": "07/27 20:30:40.333", 
+            "waitfor": "['evPhraseResult', 'evDtmfInput', 'evNoInputTimeout']", 
+            "dtmf": "", 
+            "input_types": "speech", 
+            "grammars": "['/home/jdw/sdc/prod/lib/../lms/listNav.lm']", 
+            "timeout": "0.1", 
+            "input_start_time": "07/27 20:30:42.033", 
+            "ACTION": "Listen", 
+            "bargein": "True", 
+            "events": [
+              "evPromptStart", 
+              "evPromptStop", 
+              "evNoInputTimeout"
+            ]
+          }, 
+          {
+            "prompt": "<prosody volume=\"x-loud\">At 8:44 PM today, there is a 61 C, from Kennywood Boulevard And Mifflin Street, arriving Mckeesport Transportation Center Bay Number 3, at 9:05 PM.</prosody>", 
+            "output_start_time": "07/27 20:30:42.033", 
+            "waitfor": "['evPhraseResult', 'evDtmfInput', 'evNoInputTimeout']", 
+            "dtmf": "", 
+            "input_types": "speech", 
+            "grammars": "['/home/jdw/sdc/prod/lib/../lms/listNav.lm']", 
+            "timeout": "0.1", 
+            "input_start_time": "07/27 20:30:56.812", 
+            "ACTION": "Listen", 
+            "bargein": "True", 
+            "events": [
+              "evPromptStart", 
+              "evPromptStop", 
+              "evNoInputTimeout"
+            ]
+          }, 
+          {
+            "prompt": "file:/home/jdw/sdc/prod/lib/../prompts/ListNav/cmd_list.wav", 
+            "output_start_time": "07/27 20:30:56.813", 
+            "waitfor": "['evPhraseResult', 'evDtmfInput', 'evNoInputTimeout']", 
+            "dtmf": "", 
+            "input_types": "speech", 
+            "grammars": "['/home/jdw/sdc/prod/lib/../lms/listNav.lm']", 
+            "timeout": "10", 
+            "input_start_time": "07/27 20:31:02.049", 
+            "ACTION": "Listen", 
+            "bargein": "True", 
+            "events": [
+              "evPromptStart", 
+              "evPromptStop", 
+              "evSpeechStart", 
+              "evPhraseResult"
+            ]
+          }
+        ], 
+        "dialog_states": [
+          {
+            "state": "AskNextBus", 
+            "activity": "Calling OnRecognition handler"
+          }, 
+          {
+            "state": "SearchForBuses", 
+            "activity": "Initializing"
+          }, 
+          {
+            "state": "ListNav", 
+            "activity": "Initializing"
+          }, 
+          {
+            "state": "ListNav", 
+            "activity": "Prompt type: Init"
+          }, 
+          {
+            "state": "ListNav", 
+            "activity": "Calling Init()"
+          }
+        ], 
+        "parsed_asr_result": {
+          "nbest": [
+            {
+              "rec_string": "repeat", 
+              "rec_type": "ig", 
+              "fields": {
+                "cmd": "repeat"
+              }, 
+              "rec_conf": 0.887524
+            }
+          ]
+        }, 
+        "sys_action_summary": {
+          "struct": [], 
+          "surface": "Ok, the next few buses. To change, say go back. There are more buses than just the 61C, that run from kennywood to mckeesport. I'll tell you about all of them. At 8:44 PM today, there is a 61 C, from Kennywood Boulevard And Mifflin Street, arriving Mckeesport Transportation Center Bay Number 3, at 9:05 PM. Say repeat, next, previous, or start over."
+        }
+      }, 
+      "turn-index": 9, 
+      "restart": false, 
+      "output": {
+        "start-time": 64.412, 
+        "transcript": "Ok, the next few buses. To change, say go back. There are more buses than just the 61C, that run from kennywood to mckeesport. I'll tell you about all of them. At 8:44 PM today, there is a 61 C, from Kennywood Boulevard And Mifflin Street, arriving Mckeesport Transportation Center Bay Number 3, at 9:05 PM. Say repeat, next, previous, or start over.", 
+        "dialog-acts": [
+          {
+            "slots": [
+              [
+                "act", 
+                "want-next-bus"
+              ]
+            ], 
+            "act": "impl-conf"
+          }, 
+          {
+            "slots": [
+              [
+                "act", 
+                "goback"
+              ]
+            ], 
+            "act": "example"
+          }, 
+          {
+            "slots": [
+              [
+                "route", 
+                "61c"
+              ], 
+              [
+                "from.desc", 
+                "kennywood"
+              ], 
+              [
+                "to.desc", 
+                "mckeesport"
+              ]
+            ], 
+            "act": "morebuses"
+          }, 
+          {
+            "slots": [
+              [
+                "result.from.time.hour", 
+                8
+              ], 
+              [
+                "result.from.time.minute", 
+                44
+              ], 
+              [
+                "result.from.time.ampm", 
+                "pm"
+              ], 
+              [
+                "result.from.date.day", 
+                "today"
+              ], 
+              [
+                "result.route", 
+                "61c"
+              ], 
+              [
+                "result.from.desc", 
+                "kennywood boulevard and mifflin street"
+              ], 
+              [
+                "result.to.desc", 
+                "mckeesport transportation center bay number 3"
+              ], 
+              [
+                "result.to.time.hour", 
+                9
+              ], 
+              [
+                "result.to.time.minute", 
+                5
+              ], 
+              [
+                "result.to.time.ampm", 
+                "pm"
+              ]
+            ], 
+            "act": "schedule"
+          }, 
+          {
+            "slots": [
+              [
+                "act", 
+                "repeat"
+              ]
+            ], 
+            "act": "example"
+          }, 
+          {
+            "slots": [
+              [
+                "act", 
+                "nextbus"
+              ]
+            ], 
+            "act": "example"
+          }, 
+          {
+            "slots": [
+              [
+                "act", 
+                "prevbus"
+              ]
+            ], 
+            "act": "example"
+          }, 
+          {
+            "slots": [
+              [
+                "act", 
+                "restart"
+              ]
+            ], 
+            "act": "example"
+          }
+        ]
+      }
+    }, 
+    {
+      "input": {
+        "live": {
+          "asr-hyps": [], 
+          "slu-hyps": []
+        }, 
+        "audio-file": null, 
+        "start-time": null
+      }, 
+      "system-specific": {
+        "beliefstate": {}, 
+        "turn_start_time": "07/27 20:31:03.442", 
+        "raw_asr_result": null, 
+        "uttinfo": {
+          "uttfile_status": "not_expected", 
+          "uttid": null
+        }, 
+        "sys_action_details": [
+          {
+            "prompt": "file:/home/jdw/sdc/prod/lib/../prompts/ListNav/heres_that_again.wav", 
+            "output_start_time": "07/27 20:31:03.444", 
+            "waitfor": "['evPhraseResult', 'evDtmfInput', 'evNoInputTimeout']", 
+            "dtmf": "", 
+            "input_types": "speech", 
+            "grammars": "['/home/jdw/sdc/prod/lib/../lms/listNav.lm']", 
+            "timeout": "0.1", 
+            "input_start_time": "07/27 20:31:04.612", 
+            "ACTION": "Listen", 
+            "bargein": "True", 
+            "events": [
+              "evPromptStart", 
+              "evPromptStop", 
+              "evNoInputTimeout"
+            ]
+          }, 
+          {
+            "prompt": "<prosody volume=\"x-loud\">At 8:44 PM today, there is a 61 C, from Kennywood Boulevard And Mifflin Street, arriving Mckeesport Transportation Center Bay Number 3, at 9:05 PM.</prosody>", 
+            "output_start_time": "07/27 20:31:04.612", 
+            "waitfor": "['evPhraseResult', 'evDtmfInput', 'evNoInputTimeout']", 
+            "dtmf": "", 
+            "input_types": "speech", 
+            "grammars": "['/home/jdw/sdc/prod/lib/../lms/listNav.lm']", 
+            "timeout": "0.1", 
+            "input_start_time": null, 
+            "ACTION": "Listen", 
+            "bargein": "True", 
+            "events": [
+              "evPromptStart", 
+              "evPromptStop"
+            ]
+          }
+        ], 
+        "dialog_states": [
+          {
+            "state": "ListNav", 
+            "activity": "Calling OnRecognition handler"
+          }
+        ], 
+        "parsed_asr_result": null, 
+        "sys_action_summary": {
+          "struct": [], 
+          "surface": "Here's that again. At 8:44 PM today, there is a 61 C, from Kennywood Boulevard And Mifflin Street, arriving Mckeesport Transportation Center Bay Number 3, at 9:05 PM. Say repeat, next, previous, or start over."
+        }
+      }, 
+      "turn-index": 10, 
+      "restart": false, 
+      "output": {
+        "start-time": 98.959, 
+        "transcript": "Here's that again. At 8:44 PM today, there is a 61 C, from Kennywood Boulevard And Mifflin Street, arriving Mckeesport Transportation Center Bay Number 3, at 9:05 PM. Say repeat, next, previous, or start over.", 
+        "dialog-acts": [
+          {
+            "slots": [
+              [
+                "act", 
+                "repeat"
+              ]
+            ], 
+            "act": "impl-conf"
+          }, 
+          {
+            "slots": [
+              [
+                "result.from.time.hour", 
+                8
+              ], 
+              [
+                "result.from.time.minute", 
+                44
+              ], 
+              [
+                "result.from.time.ampm", 
+                "pm"
+              ], 
+              [
+                "result.from.date.day", 
+                "today"
+              ], 
+              [
+                "result.route", 
+                "61c"
+              ], 
+              [
+                "result.from.desc", 
+                "kennywood boulevard and mifflin street"
+              ], 
+              [
+                "result.to.desc", 
+                "mckeesport transportation center bay number 3"
+              ], 
+              [
+                "result.to.time.hour", 
+                9
+              ], 
+              [
+                "result.to.time.minute", 
+                5
+              ], 
+              [
+                "result.to.time.ampm", 
+                "pm"
+              ]
+            ], 
+            "act": "schedule"
+          }, 
+          {
+            "slots": [
+              [
+                "act", 
+                "repeat"
+              ]
+            ], 
+            "act": "example"
+          }, 
+          {
+            "slots": [
+              [
+                "act", 
+                "nextbus"
+              ]
+            ], 
+            "act": "example"
+          }, 
+          {
+            "slots": [
+              [
+                "act", 
+                "prevbus"
+              ]
+            ], 
+            "act": "example"
+          }, 
+          {
+            "slots": [
+              [
+                "act", 
+                "restart"
+              ]
+            ], 
+            "act": "example"
+          }
+        ]
+      }
+    }
+  ], 
+  "session-time": "20:29:24", 
+  "system-specific": {
+    "initial_belief_state": {
+      "date": [
+        {
+          "count": 77522.0, 
+          "belief": 1.0, 
+          "slotValues": {
+            "date": {
+              "vals": "[]", 
+              "valsListed": true, 
+              "inclOrExcl": "x"
+            }
+          }, 
+          "pid": null, 
+          "logPri": 0.0, 
+          "logBel": 0.0, 
+          "surfaceForms": {
+            "date": "set([])"
+          }, 
+          "id": 0
+        }
+      ], 
+      "route": [
+        {
+          "count": 81522.0, 
+          "belief": 1.0, 
+          "slotValues": {
+            "route": {
+              "vals": "[]", 
+              "valsListed": true, 
+              "inclOrExcl": "x"
+            }
+          }, 
+          "pid": null, 
+          "logPri": 0.0, 
+          "logBel": 0.0, 
+          "surfaceForms": {
+            "route": "set([])"
+          }, 
+          "id": 0
+        }
+      ], 
+      "fromstopids": [
+        {
+          "count": 163022.0, 
+          "belief": 1.0, 
+          "slotValues": {
+            "fromstopids": {
+              "vals": "[]", 
+              "valsListed": true, 
+              "inclOrExcl": "x"
+            }
+          }, 
+          "pid": null, 
+          "logPri": 0.0, 
+          "logBel": 0.0, 
+          "surfaceForms": {
+            "fromstopids": "set([])"
+          }, 
+          "id": 0
+        }
+      ], 
+      "tostopids": [
+        {
+          "count": 163222.0, 
+          "belief": 1.0, 
+          "slotValues": {
+            "tostopids": {
+              "vals": "[]", 
+              "valsListed": true, 
+              "inclOrExcl": "x"
+            }
+          }, 
+          "pid": null, 
+          "logPri": 0.0, 
+          "logBel": 0.0, 
+          "surfaceForms": {
+            "tostopids": "set([])"
+          }, 
+          "id": 0
+        }
+      ], 
+      "time": [
+        {
+          "count": 176762.0, 
+          "belief": 0.5, 
+          "slotValues": {
+            "searchType": {
+              "vals": "['arrive']", 
+              "valsListed": true, 
+              "inclOrExcl": "="
+            }, 
+            "time": {
+              "vals": "[]", 
+              "valsListed": true, 
+              "inclOrExcl": "x"
+            }
+          }, 
+          "pid": null, 
+          "logPri": -0.693, 
+          "logBel": -0.693, 
+          "surfaceForms": {
+            "searchType": "set([])", 
+            "time": "set([])"
+          }, 
+          "id": 0
+        }, 
+        {
+          "count": 176761.0, 
+          "belief": 0.5, 
+          "slotValues": {
+            "searchType": {
+              "vals": "['depart']", 
+              "valsListed": true, 
+              "inclOrExcl": "="
+            }, 
+            "time": {
+              "vals": "[]", 
+              "valsListed": true, 
+              "inclOrExcl": "x"
+            }
+          }, 
+          "pid": null, 
+          "logPri": -0.693, 
+          "logBel": -0.693, 
+          "surfaceForms": {
+            "searchType": "set([])", 
+            "time": "set([])"
+          }, 
+          "id": 1
+        }
+      ]
+    }, 
+    "session-start-time": "07/27 20:29:24.485"
+  }, 
+  "session-date": "07-27-2010"
+}

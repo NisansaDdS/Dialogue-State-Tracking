@@ -1,0 +1,5056 @@
+{
+  "session-id": "dt-201008151843-59126", 
+  "turns": [
+    {
+      "input": {
+        "live": {
+          "asr-hyps": [
+            {
+              "asr-hyp": "sixty one a", 
+              "score": 0.872163, 
+              "type": "recognition"
+            }, 
+            {
+              "asr-hyp": "sixty one", 
+              "score": 0.076979, 
+              "type": "recognition"
+            }, 
+            {
+              "asr-hyp": "sixty one d", 
+              "score": 4.1e-05, 
+              "type": "recognition"
+            }
+          ], 
+          "slu-hyps": [
+            {
+              "slu-hyp": [
+                {
+                  "slots": [
+                    [
+                      "route", 
+                      "61a"
+                    ]
+                  ], 
+                  "act": "inform"
+                }
+              ], 
+              "score": 0.872163
+            }, 
+            {
+              "slu-hyp": [
+                {
+                  "slots": [
+                    [
+                      "route", 
+                      "61"
+                    ]
+                  ], 
+                  "act": "inform"
+                }
+              ], 
+              "score": 0.076979
+            }, 
+            {
+              "slu-hyp": [
+                {
+                  "slots": [
+                    [
+                      "route", 
+                      "61d"
+                    ]
+                  ], 
+                  "act": "inform"
+                }
+              ], 
+              "score": 4.1e-05
+            }
+          ]
+        }, 
+        "audio-file": "002.raw", 
+        "start-time": 12.102
+      }, 
+      "system-specific": {
+        "beliefstate": {
+          "date": [
+            {
+              "count": 77522.0, 
+              "belief": 1.0, 
+              "slotValues": {
+                "date": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": 0.0, 
+              "logBel": 0.0, 
+              "surfaceForms": {
+                "date": "set([])"
+              }, 
+              "id": 0
+            }
+          ], 
+          "route": [
+            {
+              "count": 4540.0, 
+              "belief": 3e-05, 
+              "slotValues": {
+                "route": {
+                  "vals": "['61D']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -2.888, 
+              "logBel": -10.301, 
+              "surfaceForms": {
+                "route": "set(['sixty one d'])"
+              }, 
+              "id": 4
+            }, 
+            {
+              "count": 100.0, 
+              "belief": 0.00078, 
+              "slotValues": {
+                "route": {
+                  "vals": "['61']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -6.703, 
+              "logBel": -7.15, 
+              "surfaceForms": {
+                "route": "set(['sixty one'])"
+              }, 
+              "id": 3
+            }, 
+            {
+              "count": 65648.0, 
+              "belief": 0.00106, 
+              "slotValues": {
+                "route": {
+                  "vals": "['61', '61A', '61D']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.217, 
+              "logBel": -6.845, 
+              "surfaceForms": {
+                "route": "set([])"
+              }, 
+              "id": 0
+            }, 
+            {
+              "count": 11234.0, 
+              "belief": 0.99812, 
+              "slotValues": {
+                "route": {
+                  "vals": "['61A']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -1.982, 
+              "logBel": -0.002, 
+              "surfaceForms": {
+                "route": "set(['sixty one a'])"
+              }, 
+              "id": 2
+            }
+          ], 
+          "fromstopids": [
+            {
+              "count": 163022.0, 
+              "belief": 1.0, 
+              "slotValues": {
+                "fromstopids": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": 0.0, 
+              "logBel": 0.0, 
+              "surfaceForms": {
+                "fromstopids": "set([])"
+              }, 
+              "id": 0
+            }
+          ], 
+          "tostopids": [
+            {
+              "count": 163222.0, 
+              "belief": 1.0, 
+              "slotValues": {
+                "tostopids": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": 0.0, 
+              "logBel": 0.0, 
+              "surfaceForms": {
+                "tostopids": "set([])"
+              }, 
+              "id": 0
+            }
+          ], 
+          "time": [
+            {
+              "count": 176762.0, 
+              "belief": 0.5, 
+              "slotValues": {
+                "searchType": {
+                  "vals": "['arrive']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }, 
+                "time": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.693, 
+              "logBel": -0.693, 
+              "surfaceForms": {
+                "searchType": "set([])", 
+                "time": "set([])"
+              }, 
+              "id": 0
+            }, 
+            {
+              "count": 176761.0, 
+              "belief": 0.5, 
+              "slotValues": {
+                "searchType": {
+                  "vals": "['depart']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }, 
+                "time": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.693, 
+              "logBel": -0.693, 
+              "surfaceForms": {
+                "searchType": "set([])", 
+                "time": "set([])"
+              }, 
+              "id": 1
+            }
+          ]
+        }, 
+        "turn_start_time": "08/15 18:43:59.576", 
+        "raw_asr_result": {
+          "audioParams": {
+            "sampleRate": 8000, 
+            "coding": "linear", 
+            "byteOrder": "LE"
+          }, 
+          "version": "watson-6.5.5733", 
+          "resultId": 2, 
+          "hostname": "dt-jdw", 
+          "nlu-sisr": [
+            {
+              "interp": {
+                "route": "61A"
+              }, 
+              "id": 0, 
+              "time": 0.003323078155517578
+            }, 
+            {
+              "interp": {
+                "route": "61"
+              }, 
+              "id": 1, 
+              "time": 0.0007200241088867188
+            }, 
+            {
+              "interp": {
+                "route": "61D"
+              }, 
+              "id": 2, 
+              "time": 0.0007679462432861328
+            }
+          ], 
+          "metrics": {
+            "audioBytes": 140160, 
+            "gaussSelectSkipRatio": 0.8346268534660339, 
+            "lhoodPrecalcHitRatio": 0.8916915655136108, 
+            "avgFrameBatchSize": 3.0, 
+            "decodedFrameCount": 876, 
+            "bytesPerPacket": 320.0, 
+            "audioPackets": 438, 
+            "frameCount": 876
+          }, 
+          "sessionId": "", 
+          "trigger": "secondTimeout", 
+          "evType": "evPhraseResult", 
+          "wcn": {
+            "best_path_score": 0.9995863912571377, 
+            "best_path": {
+              "word": [
+                "sixty", 
+                "one", 
+                "a"
+              ], 
+              "prob": [
+                1.0, 
+                1.0, 
+                0.9987596869468689
+              ]
+            }, 
+            "network": [
+              {
+                "word": [
+                  "sixty"
+                ], 
+                "prob": [
+                  1.0
+                ]
+              }, 
+              {
+                "word": [
+                  "one"
+                ], 
+                "prob": [
+                  1.0
+                ]
+              }, 
+              {
+                "word": [
+                  "a", 
+                  "d", 
+                  "_epsilon"
+                ], 
+                "prob": [
+                  0.9987596869468689, 
+                  0.000419597519794479, 
+                  0.0008206965285353363
+                ]
+              }
+            ]
+          }, 
+          "config": {
+            "lms": [
+              "/home/jdw/sdc/prod/lms/routeList.lm"
+            ], 
+            "am": "/home/jdw/watson/data/am/gt_06.1.ep.h4.20.mmi2b", 
+            "secondTimeout": 700, 
+            "beamWidth": 250.0, 
+            "maxActiveArcs": 50000, 
+            "confidenceThreshold": 50, 
+            "firstTimeout": 400
+          }, 
+          "nbest": [
+            {
+              "normSpeechLhood": -153.52793884277344, 
+              "lastSpeechFrame": 790, 
+              "lms": [
+                "/home/jdw/sdc/prod/lms/routeList.lm"
+              ], 
+              "score": 46, 
+              "nscore": 70, 
+              "numFrames": 876, 
+              "udelta": -3.0739998817443848, 
+              "speechLikelihood": -14738.681640625, 
+              "firstSpeechFrame": 684, 
+              "ndelta": 105.5469970703125, 
+              "normCost": 137.90966796875, 
+              "normLhood": 0.0, 
+              "gscore": 54, 
+              "cost": 120808.8671875, 
+              "hypothesis": "sixty one a", 
+              "glhood": -159.3179931640625, 
+              "uscore": 39, 
+              "numSpeechFrames": 96, 
+              "likelihood": 0.0, 
+              "gdelta": 5.789999961853027, 
+              "ulhood": -150.45399475097656
+            }, 
+            {
+              "normSpeechLhood": -160.51751708984375, 
+              "lastSpeechFrame": 753, 
+              "lms": [
+                "/home/jdw/sdc/prod/lms/routeList.lm"
+              ], 
+              "score": 42, 
+              "nscore": 7, 
+              "numFrames": 876, 
+              "udelta": -3.7679998874664307, 
+              "speechLikelihood": -11075.708984375, 
+              "firstSpeechFrame": 684, 
+              "ndelta": 10.734000205993652, 
+              "normCost": 138.0301513671875, 
+              "normLhood": 0.0, 
+              "gscore": 61, 
+              "cost": 120914.4140625, 
+              "hypothesis": "sixty one", 
+              "glhood": -167.79100036621094, 
+              "uscore": 25, 
+              "numSpeechFrames": 69, 
+              "likelihood": 0.0, 
+              "gdelta": 7.2729997634887695, 
+              "ulhood": -156.74899291992188
+            }, 
+            {
+              "normSpeechLhood": -155.124755859375, 
+              "lastSpeechFrame": 790, 
+              "lms": [
+                "/home/jdw/sdc/prod/lms/routeList.lm"
+              ], 
+              "score": 21, 
+              "nscore": 100, 
+              "numFrames": 876, 
+              "udelta": -5.877999782562256, 
+              "speechLikelihood": -13340.728515625, 
+              "firstSpeechFrame": 684, 
+              "ndelta": 150.0, 
+              "normCost": 138.0424041748047, 
+              "normLhood": 0.0, 
+              "gscore": 43, 
+              "cost": 120925.1484375, 
+              "hypothesis": "sixty one d", 
+              "glhood": -158.69000244140625, 
+              "uscore": 0, 
+              "numSpeechFrames": 86, 
+              "likelihood": 0.0, 
+              "gdelta": 3.565000057220459, 
+              "ulhood": -149.24600219726562
+            }
+          ], 
+          "fileId": 0
+        }, 
+        "uttinfo": {
+          "uttfile_status": "logged", 
+          "uttid": "002.raw"
+        }, 
+        "sys_action_details": [
+          {
+            "prompt": "file:/home/jdw/sdc/prod/lib/../prompts/START/Init.wav", 
+            "output_start_time": "08/15 18:43:59.577", 
+            "waitfor": "['evPhraseResult', 'evDtmfInput', 'evNoInputTimeout']", 
+            "dtmf": "", 
+            "input_types": "speech", 
+            "grammars": "['/home/jdw/sdc/prod/lib/../lms/routeList.lm']", 
+            "timeout": "0.1", 
+            "input_start_time": "08/15 18:44:01.345", 
+            "ACTION": "Listen", 
+            "bargein": "False", 
+            "events": [
+              "evPromptStart", 
+              "evPromptStop", 
+              "evNoInputTimeout"
+            ]
+          }, 
+          {
+            "prompt": "file:/home/jdw/sdc/prod/lib/../prompts/AskRoute/Init.wav", 
+            "output_start_time": "08/15 18:44:01.345", 
+            "waitfor": "['evPhraseResult', 'evDtmfInput', 'evNoInputTimeout']", 
+            "dtmf": "", 
+            "input_types": "speech", 
+            "grammars": "['/home/jdw/sdc/prod/lib/../lms/routeList.lm']", 
+            "timeout": "10", 
+            "input_start_time": "08/15 18:44:11.608", 
+            "ACTION": "Listen", 
+            "bargein": "False", 
+            "events": [
+              "evPromptStart", 
+              "evPromptStop", 
+              "evSpeechStart", 
+              "evPhraseResult"
+            ]
+          }
+        ], 
+        "dialog_states": [
+          {
+            "state": "START", 
+            "activity": "Initializing"
+          }, 
+          {
+            "state": "AskRoute", 
+            "activity": "Initializing"
+          }, 
+          {
+            "state": "AskRoute", 
+            "activity": "Prompt type: Init"
+          }, 
+          {
+            "state": "AskRoute", 
+            "activity": "Calling Init()"
+          }
+        ], 
+        "parsed_asr_result": {
+          "nbest": [
+            {
+              "rec_string": "sixty one a", 
+              "rec_type": "ig", 
+              "fields": {
+                "routeSurface": "sixty one a", 
+                "route-set": "set(['61A'])", 
+                "route": "61A"
+              }, 
+              "rec_conf": 0.872163
+            }, 
+            {
+              "rec_string": "sixty one", 
+              "rec_type": "ig", 
+              "fields": {
+                "routeSurface": "sixty one", 
+                "route-set": "set(['61'])", 
+                "route": "61"
+              }, 
+              "rec_conf": 0.076979
+            }, 
+            {
+              "rec_string": "sixty one d", 
+              "rec_type": "ig", 
+              "fields": {
+                "routeSurface": "sixty one d", 
+                "route-set": "set(['61D'])", 
+                "route": "61D"
+              }, 
+              "rec_conf": 4.1e-05
+            }
+          ]
+        }, 
+        "sys_action_summary": {
+          "struct": [
+            [
+              "request", 
+              "route"
+            ], 
+            [
+              "request", 
+              "route"
+            ]
+          ], 
+          "surface": "East Pittsburg Bus Schedules. Say a bus route, like 28X, or say I'm not sure."
+        }
+      }, 
+      "turn-index": 0, 
+      "restart": false, 
+      "output": {
+        "start-time": 0.071, 
+        "transcript": "East Pittsburg Bus Schedules. Say a bus route, like 28X, or say I'm not sure.", 
+        "dialog-acts": [
+          {
+            "slots": [], 
+            "act": "hello"
+          }, 
+          {
+            "slots": [
+              [
+                "route", 
+                null
+              ]
+            ], 
+            "act": "request"
+          }, 
+          {
+            "slots": [
+              [
+                "route", 
+                "28x"
+              ]
+            ], 
+            "act": "example"
+          }, 
+          {
+            "slots": [
+              [
+                "route", 
+                "dont_know"
+              ]
+            ], 
+            "act": "example"
+          }
+        ]
+      }
+    }, 
+    {
+      "input": {
+        "live": {
+          "asr-hyps": [
+            {
+              "asr-hyp": "east pittsburgh", 
+              "score": 0.824815, 
+              "type": "recognition"
+            }, 
+            {
+              "asr-hyp": "from east pittsburgh", 
+              "score": 0.056689, 
+              "type": "recognition"
+            }
+          ], 
+          "slu-hyps": [
+            {
+              "slu-hyp": [
+                {
+                  "slots": [
+                    [
+                      "from.desc", 
+                      "east pittsburgh"
+                    ]
+                  ], 
+                  "act": "inform"
+                }
+              ], 
+              "score": 0.824815
+            }, 
+            {
+              "slu-hyp": [
+                {
+                  "slots": [
+                    [
+                      "from.desc", 
+                      "from east pittsburgh"
+                    ]
+                  ], 
+                  "act": "inform"
+                }
+              ], 
+              "score": 0.056689
+            }
+          ]
+        }, 
+        "audio-file": "006.raw", 
+        "start-time": 24.299
+      }, 
+      "system-specific": {
+        "beliefstate": {
+          "date": [
+            {
+              "count": 77522.0, 
+              "belief": 1.0, 
+              "slotValues": {
+                "date": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": 0.0, 
+              "logBel": 0.0, 
+              "surfaceForms": {
+                "date": "set([])"
+              }, 
+              "id": 0
+            }
+          ], 
+          "route": [
+            {
+              "count": 4540.0, 
+              "belief": 3e-05, 
+              "slotValues": {
+                "route": {
+                  "vals": "['61D']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -2.888, 
+              "logBel": -10.301, 
+              "surfaceForms": {
+                "route": "set(['sixty one d'])"
+              }, 
+              "id": 4
+            }, 
+            {
+              "count": 100.0, 
+              "belief": 0.00078, 
+              "slotValues": {
+                "route": {
+                  "vals": "['61']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -6.703, 
+              "logBel": -7.15, 
+              "surfaceForms": {
+                "route": "set(['sixty one'])"
+              }, 
+              "id": 3
+            }, 
+            {
+              "count": 65648.0, 
+              "belief": 0.00106, 
+              "slotValues": {
+                "route": {
+                  "vals": "['61', '61A', '61D']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.217, 
+              "logBel": -6.845, 
+              "surfaceForms": {
+                "route": "set([])"
+              }, 
+              "id": 0
+            }, 
+            {
+              "count": 11234.0, 
+              "belief": 0.99812, 
+              "slotValues": {
+                "route": {
+                  "vals": "['61A']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -1.982, 
+              "logBel": -0.002, 
+              "surfaceForms": {
+                "route": "set(['sixty one a'])"
+              }, 
+              "id": 2
+            }
+          ], 
+          "fromstopids": [
+            {
+              "count": 162611.0, 
+              "belief": 0.07672, 
+              "slotValues": {
+                "fromstopids": {
+                  "vals": "['3288', '6451', '6452']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.003, 
+              "logBel": -2.568, 
+              "surfaceForms": {
+                "fromstopids": "set([])"
+              }, 
+              "id": 0
+            }, 
+            {
+              "count": 411.0, 
+              "belief": 0.92328, 
+              "slotValues": {
+                "fromstopids": {
+                  "vals": "['3288', '6451', '6452']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -5.983, 
+              "logBel": -0.08, 
+              "surfaceForms": {
+                "fromstopids": "set(['east pittsburgh', 'from east pittsburgh'])"
+              }, 
+              "id": 1
+            }
+          ], 
+          "tostopids": [
+            {
+              "count": 163222.0, 
+              "belief": 1.0, 
+              "slotValues": {
+                "tostopids": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": 0.0, 
+              "logBel": 0.0, 
+              "surfaceForms": {
+                "tostopids": "set([])"
+              }, 
+              "id": 0
+            }
+          ], 
+          "time": [
+            {
+              "count": 176762.0, 
+              "belief": 0.5, 
+              "slotValues": {
+                "searchType": {
+                  "vals": "['arrive']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }, 
+                "time": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.693, 
+              "logBel": -0.693, 
+              "surfaceForms": {
+                "searchType": "set([])", 
+                "time": "set([])"
+              }, 
+              "id": 0
+            }, 
+            {
+              "count": 176761.0, 
+              "belief": 0.5, 
+              "slotValues": {
+                "searchType": {
+                  "vals": "['depart']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }, 
+                "time": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.693, 
+              "logBel": -0.693, 
+              "surfaceForms": {
+                "searchType": "set([])", 
+                "time": "set([])"
+              }, 
+              "id": 1
+            }
+          ]
+        }, 
+        "turn_start_time": "08/15 18:44:13.757", 
+        "raw_asr_result": {
+          "audioParams": {
+            "sampleRate": 8000, 
+            "coding": "linear", 
+            "byteOrder": "LE"
+          }, 
+          "version": "watson-6.5.5733", 
+          "resultId": 6, 
+          "hostname": "dt-jdw", 
+          "nlu-sisr": [
+            {
+              "interp": {
+                "fromstopids": "3288:6451:6452"
+              }, 
+              "id": 0, 
+              "time": 0.0025408267974853516
+            }, 
+            {
+              "interp": {
+                "fromstopids": "3288:6451:6452"
+              }, 
+              "id": 1, 
+              "time": 0.0008780956268310547
+            }
+          ], 
+          "metrics": {
+            "audioBytes": 109120, 
+            "gaussSelectSkipRatio": 0.8506072759628296, 
+            "lhoodPrecalcHitRatio": 0.8824501037597656, 
+            "avgFrameBatchSize": 3.0, 
+            "decodedFrameCount": 682, 
+            "bytesPerPacket": 320.0, 
+            "audioPackets": 341, 
+            "frameCount": 682
+          }, 
+          "sessionId": "", 
+          "trigger": "secondTimeout", 
+          "evType": "evPhraseResult", 
+          "wcn": {
+            "best_path_score": 0.9984151380435526, 
+            "best_path": {
+              "word": [
+                "east", 
+                "pittsburgh"
+              ], 
+              "prob": [
+                0.9968327879905701, 
+                1.0
+              ]
+            }, 
+            "network": [
+              {
+                "word": [
+                  "east", 
+                  "from"
+                ], 
+                "prob": [
+                  0.9968327879905701, 
+                  0.0031671978067606688
+                ]
+              }, 
+              {
+                "word": [
+                  "_epsilon", 
+                  "east"
+                ], 
+                "prob": [
+                  0.9968428611755371, 
+                  0.003157197730615735
+                ]
+              }, 
+              {
+                "word": [
+                  "pittsburgh"
+                ], 
+                "prob": [
+                  1.0
+                ]
+              }
+            ]
+          }, 
+          "config": {
+            "lms": [
+              "/home/jdw/sdc/prod/lms/stopNames.onRoute.61A.fromstopids.lm"
+            ], 
+            "am": "/home/jdw/watson/data/am/gt_06.1.ep.h4.20.mmi2b", 
+            "secondTimeout": 700, 
+            "beamWidth": 250.0, 
+            "maxActiveArcs": 50000, 
+            "confidenceThreshold": 50, 
+            "firstTimeout": 400
+          }, 
+          "nbest": [
+            {
+              "normSpeechLhood": -162.88650512695312, 
+              "lastSpeechFrame": 597, 
+              "lms": [
+                "/home/jdw/sdc/prod/lms/stopNames.onRoute.61A.fromstopids.lm"
+              ], 
+              "score": 31, 
+              "nscore": 65, 
+              "numFrames": 682, 
+              "udelta": -3.812999963760376, 
+              "speechLikelihood": -14822.671875, 
+              "firstSpeechFrame": 501, 
+              "ndelta": 97.05500030517578, 
+              "normCost": 151.13031005859375, 
+              "normLhood": 0.0, 
+              "gscore": 39, 
+              "cost": 103070.8671875, 
+              "hypothesis": "east pittsburgh", 
+              "glhood": -165.62899780273438, 
+              "uscore": 24, 
+              "numSpeechFrames": 91, 
+              "likelihood": 0.0, 
+              "gdelta": 2.743000030517578, 
+              "ulhood": -159.072998046875
+            }, 
+            {
+              "normSpeechLhood": -158.8388671875, 
+              "lastSpeechFrame": 597, 
+              "lms": [
+                "/home/jdw/sdc/prod/lms/stopNames.onRoute.61A.fromstopids.lm"
+              ], 
+              "score": 16, 
+              "nscore": 100, 
+              "numFrames": 682, 
+              "udelta": -4.872000217437744, 
+              "speechLikelihood": -19696.01953125, 
+              "firstSpeechFrame": 361, 
+              "ndelta": 150.0, 
+              "normCost": 151.27261352539062, 
+              "normLhood": 0.0, 
+              "gscore": 31, 
+              "cost": 103167.921875, 
+              "hypothesis": "from east pittsburgh", 
+              "glhood": -160.09300231933594, 
+              "uscore": 3, 
+              "numSpeechFrames": 124, 
+              "likelihood": 0.0, 
+              "gdelta": 1.2549999952316284, 
+              "ulhood": -153.9669952392578
+            }
+          ], 
+          "fileId": 0
+        }, 
+        "uttinfo": {
+          "uttfile_status": "logged", 
+          "uttid": "006.raw"
+        }, 
+        "sys_action_details": [
+          {
+            "prompt": "file:/home/jdw/sdc/prod/lib/../prompts/AskRoute/Okay.wav", 
+            "output_start_time": "08/15 18:44:13.789", 
+            "waitfor": "['evPhraseResult', 'evDtmfInput', 'evNoInputTimeout']", 
+            "dtmf": "", 
+            "input_types": "speech", 
+            "grammars": "['/home/jdw/sdc/prod/lib/../lms/stopNames.onRoute.61A.fromstopids.lm']", 
+            "timeout": "0.1", 
+            "input_start_time": "08/15 18:44:14.585", 
+            "ACTION": "Listen", 
+            "bargein": "False", 
+            "events": [
+              "evPromptStart", 
+              "evPromptStop", 
+              "evNoInputTimeout"
+            ]
+          }, 
+          {
+            "prompt": "<prosody volume=\"x-loud\">61A.</prosody>", 
+            "output_start_time": "08/15 18:44:14.585", 
+            "waitfor": "['evPhraseResult', 'evDtmfInput', 'evNoInputTimeout']", 
+            "dtmf": "", 
+            "input_types": "speech", 
+            "grammars": "['/home/jdw/sdc/prod/lib/../lms/stopNames.onRoute.61A.fromstopids.lm']", 
+            "timeout": "0.1", 
+            "input_start_time": "08/15 18:44:17.125", 
+            "ACTION": "Listen", 
+            "bargein": "False", 
+            "events": [
+              "evPromptStart", 
+              "evPromptStop", 
+              "evNoInputTimeout"
+            ]
+          }, 
+          {
+            "prompt": "file:/home/jdw/sdc/prod/lib/../prompts/CommonPrompts/goback_1.wav", 
+            "output_start_time": "08/15 18:44:17.125", 
+            "waitfor": "['evPhraseResult', 'evDtmfInput', 'evNoInputTimeout']", 
+            "dtmf": "", 
+            "input_types": "speech", 
+            "grammars": "['/home/jdw/sdc/prod/lib/../lms/stopNames.onRoute.61A.fromstopids.lm']", 
+            "timeout": "0.1", 
+            "input_start_time": "08/15 18:44:19.084", 
+            "ACTION": "Listen", 
+            "bargein": "False", 
+            "events": [
+              "evPromptStart", 
+              "evPromptStop", 
+              "evNoInputTimeout"
+            ]
+          }, 
+          {
+            "prompt": "file:/home/jdw/sdc/prod/lib/../prompts/AskOrigin/Init.wav", 
+            "output_start_time": "08/15 18:44:19.085", 
+            "waitfor": "['evPhraseResult', 'evDtmfInput', 'evNoInputTimeout']", 
+            "dtmf": "", 
+            "input_types": "speech", 
+            "grammars": "['/home/jdw/sdc/prod/lib/../lms/stopNames.onRoute.61A.fromstopids.lm']", 
+            "timeout": "10", 
+            "input_start_time": "08/15 18:44:23.805", 
+            "ACTION": "Listen", 
+            "bargein": "False", 
+            "events": [
+              "evPromptStart", 
+              "evPromptStop", 
+              "evSpeechStart", 
+              "evPhraseResult"
+            ]
+          }
+        ], 
+        "dialog_states": [
+          {
+            "state": "AskRoute", 
+            "activity": "Calling OnRecognition handler"
+          }, 
+          {
+            "state": "AskOrigin", 
+            "activity": "Initializing"
+          }, 
+          {
+            "state": "AskOrigin", 
+            "activity": "Prompt type: Init"
+          }, 
+          {
+            "state": "AskOrigin", 
+            "activity": "Calling Init()"
+          }
+        ], 
+        "parsed_asr_result": {
+          "nbest": [
+            {
+              "rec_string": "east pittsburgh", 
+              "rec_type": "ig", 
+              "fields": {
+                "fromstopidsSurface": "east pittsburgh", 
+                "fromstopids": "3288:6451:6452", 
+                "fromstopids-set": "set(['6451', '6452', '3288'])"
+              }, 
+              "rec_conf": 0.824815
+            }, 
+            {
+              "rec_string": "from east pittsburgh", 
+              "rec_type": "ig", 
+              "fields": {
+                "fromstopidsSurface": "from east pittsburgh", 
+                "fromstopids": "3288:6451:6452", 
+                "fromstopids-set": "set(['6451', '6452', '3288'])"
+              }, 
+              "rec_conf": 0.056689
+            }
+          ]
+        }, 
+        "sys_action_summary": {
+          "struct": [
+            [
+              "impl-confirm", 
+              {
+                "route": "61A"
+              }
+            ], 
+            [
+              "request", 
+              "fromstopids"
+            ], 
+            [
+              "request", 
+              "fromstopids"
+            ]
+          ], 
+          "surface": "Okay, 61A. To change, say go back. Where are you leaving from?"
+        }
+      }, 
+      "turn-index": 1, 
+      "restart": false, 
+      "output": {
+        "start-time": 14.283, 
+        "transcript": "Okay, 61A. To change, say go back. Where are you leaving from?", 
+        "dialog-acts": [
+          {
+            "slots": [
+              [
+                "route", 
+                "61a"
+              ]
+            ], 
+            "act": "impl-conf"
+          }, 
+          {
+            "slots": [
+              [
+                "act", 
+                "goback"
+              ]
+            ], 
+            "act": "example"
+          }, 
+          {
+            "slots": [
+              [
+                "from", 
+                null
+              ]
+            ], 
+            "act": "request"
+          }
+        ]
+      }
+    }, 
+    {
+      "input": {
+        "live": {
+          "asr-hyps": [
+            {
+              "asr-hyp": "schenley", 
+              "score": 0.174673, 
+              "type": "recognition"
+            }, 
+            {
+              "asr-hyp": "oakland", 
+              "score": 0.151734, 
+              "type": "recognition"
+            }, 
+            {
+              "asr-hyp": "steps", 
+              "score": 0.011559, 
+              "type": "recognition"
+            }, 
+            {
+              "asr-hyp": "uptown", 
+              "score": 0.002729, 
+              "type": "recognition"
+            }
+          ], 
+          "slu-hyps": [
+            {
+              "slu-hyp": [
+                {
+                  "slots": [
+                    [
+                      "to.desc", 
+                      "schenley"
+                    ]
+                  ], 
+                  "act": "inform"
+                }
+              ], 
+              "score": 0.174673
+            }, 
+            {
+              "slu-hyp": [
+                {
+                  "slots": [
+                    [
+                      "to.desc", 
+                      "oakland"
+                    ]
+                  ], 
+                  "act": "inform"
+                }
+              ], 
+              "score": 0.151734
+            }, 
+            {
+              "slu-hyp": [
+                {
+                  "slots": [
+                    [
+                      "to.desc", 
+                      "steps"
+                    ]
+                  ], 
+                  "act": "inform"
+                }
+              ], 
+              "score": 0.011559
+            }, 
+            {
+              "slu-hyp": [
+                {
+                  "slots": [
+                    [
+                      "to.desc", 
+                      "uptown"
+                    ]
+                  ], 
+                  "act": "inform"
+                }
+              ], 
+              "score": 0.002729
+            }
+          ]
+        }, 
+        "audio-file": "009.raw", 
+        "start-time": 34.818
+      }, 
+      "system-specific": {
+        "beliefstate": {
+          "date": [
+            {
+              "count": 77522.0, 
+              "belief": 1.0, 
+              "slotValues": {
+                "date": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": 0.0, 
+              "logBel": 0.0, 
+              "surfaceForms": {
+                "date": "set([])"
+              }, 
+              "id": 0
+            }
+          ], 
+          "route": [
+            {
+              "count": 4540.0, 
+              "belief": 3e-05, 
+              "slotValues": {
+                "route": {
+                  "vals": "['61D']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -2.888, 
+              "logBel": -10.301, 
+              "surfaceForms": {
+                "route": "set(['sixty one d'])"
+              }, 
+              "id": 4
+            }, 
+            {
+              "count": 100.0, 
+              "belief": 0.00078, 
+              "slotValues": {
+                "route": {
+                  "vals": "['61']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -6.703, 
+              "logBel": -7.15, 
+              "surfaceForms": {
+                "route": "set(['sixty one'])"
+              }, 
+              "id": 3
+            }, 
+            {
+              "count": 65648.0, 
+              "belief": 0.00106, 
+              "slotValues": {
+                "route": {
+                  "vals": "['61', '61A', '61D']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.217, 
+              "logBel": -6.845, 
+              "surfaceForms": {
+                "route": "set([])"
+              }, 
+              "id": 0
+            }, 
+            {
+              "count": 11234.0, 
+              "belief": 0.99812, 
+              "slotValues": {
+                "route": {
+                  "vals": "['61A']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -1.982, 
+              "logBel": -0.002, 
+              "surfaceForms": {
+                "route": "set(['sixty one a'])"
+              }, 
+              "id": 2
+            }
+          ], 
+          "fromstopids": [
+            {
+              "count": 162611.0, 
+              "belief": 0.07672, 
+              "slotValues": {
+                "fromstopids": {
+                  "vals": "['3288', '6451', '6452']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.003, 
+              "logBel": -2.568, 
+              "surfaceForms": {
+                "fromstopids": "set([])"
+              }, 
+              "id": 0
+            }, 
+            {
+              "count": 411.0, 
+              "belief": 0.92328, 
+              "slotValues": {
+                "fromstopids": {
+                  "vals": "['3288', '6451', '6452']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -5.983, 
+              "logBel": -0.08, 
+              "surfaceForms": {
+                "fromstopids": "set(['east pittsburgh', 'from east pittsburgh'])"
+              }, 
+              "id": 1
+            }
+          ], 
+          "tostopids": [
+            {
+              "count": 299.0, 
+              "belief": 0.00222, 
+              "slotValues": {
+                "tostopids": {
+                  "vals": "['6455', '6459']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -6.302, 
+              "logBel": -6.112, 
+              "surfaceForms": {
+                "tostopids": "set(['steps'])"
+              }, 
+              "id": 3
+            }, 
+            {
+              "count": 1352.0, 
+              "belief": 0.0025, 
+              "slotValues": {
+                "tostopids": {
+                  "countHiddenVals": 6, 
+                  "valsListed": false, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -4.794, 
+              "logBel": -5.991, 
+              "surfaceForms": {
+                "tostopids": "set(['uptown'])"
+              }, 
+              "id": 4
+            }, 
+            {
+              "count": 152778.0, 
+              "belief": 0.09944, 
+              "slotValues": {
+                "tostopids": {
+                  "countHiddenVals": 52, 
+                  "valsListed": false, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.066, 
+              "logBel": -2.308, 
+              "surfaceForms": {
+                "tostopids": "set([])"
+              }, 
+              "id": 0
+            }, 
+            {
+              "count": 489.0, 
+              "belief": 0.10066, 
+              "slotValues": {
+                "tostopids": {
+                  "vals": "['3871', '3872', '3873']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -5.811, 
+              "logBel": -2.296, 
+              "surfaceForms": {
+                "tostopids": "set(['oakland', 'schenley'])"
+              }, 
+              "id": 1
+            }, 
+            {
+              "count": 8304.0, 
+              "belief": 0.79518, 
+              "slotValues": {
+                "tostopids": {
+                  "countHiddenVals": 41, 
+                  "valsListed": false, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -2.978, 
+              "logBel": -0.229, 
+              "surfaceForms": {
+                "tostopids": "set(['oakland'])"
+              }, 
+              "id": 2
+            }
+          ], 
+          "time": [
+            {
+              "count": 176762.0, 
+              "belief": 0.5, 
+              "slotValues": {
+                "searchType": {
+                  "vals": "['arrive']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }, 
+                "time": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.693, 
+              "logBel": -0.693, 
+              "surfaceForms": {
+                "searchType": "set([])", 
+                "time": "set([])"
+              }, 
+              "id": 0
+            }, 
+            {
+              "count": 176761.0, 
+              "belief": 0.5, 
+              "slotValues": {
+                "searchType": {
+                  "vals": "['depart']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }, 
+                "time": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.693, 
+              "logBel": -0.693, 
+              "surfaceForms": {
+                "searchType": "set([])", 
+                "time": "set([])"
+              }, 
+              "id": 1
+            }
+          ]
+        }, 
+        "turn_start_time": "08/15 18:44:27.435", 
+        "raw_asr_result": {
+          "audioParams": {
+            "sampleRate": 8000, 
+            "coding": "linear", 
+            "byteOrder": "LE"
+          }, 
+          "version": "watson-6.5.5733", 
+          "resultId": 9, 
+          "hostname": "dt-jdw", 
+          "nlu-sisr": [
+            {
+              "interp": {
+                "tostopids": "3871:3872:3873"
+              }, 
+              "id": 0, 
+              "time": 0.0025000572204589844
+            }, 
+            {
+              "interp": {
+                "tostopids": "185:186:187:188:199:202:2398:2399:244:245:250:251:275:276:277:283:293:2993:2994:2995:3000:3001:3002:3003:3865:3866:3868:3871:3872:3873:3874:3875:3876:3884:3885:3893:3894:3905:3906:3930:3931:3935:3936:4884"
+              }, 
+              "id": 1, 
+              "time": 0.0006668567657470703
+            }, 
+            {
+              "interp": {
+                "tostopids": "6455:6459"
+              }, 
+              "id": 2, 
+              "time": 0.0006511211395263672
+            }, 
+            {
+              "interp": {
+                "tostopids": "1392:1399:248:249:3916:3917"
+              }, 
+              "id": 3, 
+              "time": 0.000637054443359375
+            }
+          ], 
+          "metrics": {
+            "audioBytes": 27840, 
+            "gaussSelectSkipRatio": 0.8595282435417175, 
+            "lhoodPrecalcHitRatio": 0.8943759799003601, 
+            "avgFrameBatchSize": 3.0, 
+            "decodedFrameCount": 174, 
+            "bytesPerPacket": 320.0, 
+            "audioPackets": 87, 
+            "frameCount": 174
+          }, 
+          "sessionId": "", 
+          "trigger": "secondTimeout", 
+          "evType": "evPhraseResult", 
+          "wcn": {
+            "best_path_score": 0.6482741254725295, 
+            "best_path": {
+              "word": [
+                "schenley"
+              ], 
+              "prob": [
+                0.6482741236686707
+              ]
+            }, 
+            "network": [
+              {
+                "word": [
+                  "schenley", 
+                  "uptown", 
+                  "steps", 
+                  "oakland"
+                ], 
+                "prob": [
+                  0.6482741236686707, 
+                  0.0035761904437094927, 
+                  0.045910634100437164, 
+                  0.3022390604019165
+                ]
+              }
+            ]
+          }, 
+          "config": {
+            "lms": [
+              "/home/jdw/sdc/prod/lms/stopNames.onRoute.61A.tostopids.lm"
+            ], 
+            "am": "/home/jdw/watson/data/am/gt_06.1.ep.h4.20.mmi2b", 
+            "secondTimeout": 700, 
+            "beamWidth": 250.0, 
+            "maxActiveArcs": 50000, 
+            "confidenceThreshold": 50, 
+            "firstTimeout": 400
+          }, 
+          "nbest": [
+            {
+              "normSpeechLhood": -149.1750946044922, 
+              "lastSpeechFrame": 88, 
+              "lms": [
+                "/home/jdw/sdc/prod/lms/stopNames.onRoute.61A.tostopids.lm"
+              ], 
+              "score": 5, 
+              "nscore": 8, 
+              "numFrames": 174, 
+              "udelta": -9.630000114440918, 
+              "speechLikelihood": -2834.326904296875, 
+              "firstSpeechFrame": 69, 
+              "ndelta": 12.116999626159668, 
+              "normCost": 155.8409881591797, 
+              "normLhood": 0.0, 
+              "gscore": 11, 
+              "cost": 27116.33203125, 
+              "hypothesis": "schenley", 
+              "glhood": -146.33299255371094, 
+              "uscore": 0, 
+              "numSpeechFrames": 19, 
+              "likelihood": 0.0, 
+              "gdelta": -2.8429999351501465, 
+              "ulhood": -139.5449981689453
+            }, 
+            {
+              "normSpeechLhood": -154.68063354492188, 
+              "lastSpeechFrame": 86, 
+              "lms": [
+                "/home/jdw/sdc/prod/lms/stopNames.onRoute.61A.tostopids.lm"
+              ], 
+              "score": 9, 
+              "nscore": 20, 
+              "numFrames": 174, 
+              "udelta": -8.946999549865723, 
+              "speechLikelihood": -5104.4609375, 
+              "firstSpeechFrame": 53, 
+              "ndelta": 30.152000427246094, 
+              "normCost": 155.91062927246094, 
+              "normLhood": 0.0, 
+              "gscore": 19, 
+              "cost": 27128.44921875, 
+              "hypothesis": "oakland", 
+              "glhood": -153.5019989013672, 
+              "uscore": 0, 
+              "numSpeechFrames": 33, 
+              "likelihood": 0.0, 
+              "gdelta": -1.1790000200271606, 
+              "ulhood": -145.73399353027344
+            }, 
+            {
+              "normSpeechLhood": -163.22695922851562, 
+              "lastSpeechFrame": 78, 
+              "lms": [
+                "/home/jdw/sdc/prod/lms/stopNames.onRoute.61A.tostopids.lm"
+              ], 
+              "score": 2, 
+              "nscore": 27, 
+              "numFrames": 174, 
+              "udelta": -12.800000190734863, 
+              "speechLikelihood": -3754.219970703125, 
+              "firstSpeechFrame": 55, 
+              "ndelta": 40.84000015258789, 
+              "normCost": 156.08392333984375, 
+              "normLhood": 0.0, 
+              "gscore": 5, 
+              "cost": 27158.6015625, 
+              "hypothesis": "steps", 
+              "glhood": -159.1929931640625, 
+              "uscore": 0, 
+              "numSpeechFrames": 23, 
+              "likelihood": 0.0, 
+              "gdelta": -4.033999919891357, 
+              "ulhood": -150.427001953125
+            }, 
+            {
+              "normSpeechLhood": -161.25164794921875, 
+              "lastSpeechFrame": 86, 
+              "lms": [
+                "/home/jdw/sdc/prod/lms/stopNames.onRoute.61A.tostopids.lm"
+              ], 
+              "score": 5, 
+              "nscore": 100, 
+              "numFrames": 174, 
+              "udelta": -11.008000373840332, 
+              "speechLikelihood": -5482.55615234375, 
+              "firstSpeechFrame": 52, 
+              "ndelta": 150.0, 
+              "normCost": 156.31863403320312, 
+              "normLhood": 0.0, 
+              "gscore": 12, 
+              "cost": 27199.44140625, 
+              "hypothesis": "uptown", 
+              "glhood": -158.6269989013672, 
+              "uscore": 0, 
+              "numSpeechFrames": 34, 
+              "likelihood": 0.0, 
+              "gdelta": -2.625, 
+              "ulhood": -150.24400329589844
+            }
+          ], 
+          "fileId": 0
+        }, 
+        "uttinfo": {
+          "uttfile_status": "logged", 
+          "uttid": "009.raw"
+        }, 
+        "sys_action_details": [
+          {
+            "prompt": "<prosody volume=\"x-loud\">Okay, east pittsburgh.</prosody>", 
+            "output_start_time": "08/15 18:44:27.467", 
+            "waitfor": "['evPhraseResult', 'evDtmfInput', 'evNoInputTimeout']", 
+            "dtmf": "", 
+            "input_types": "speech", 
+            "grammars": "['/home/jdw/sdc/prod/lib/../lms/stopNames.onRoute.61A.tostopids.lm']", 
+            "timeout": "0.1", 
+            "input_start_time": "08/15 18:44:30.384", 
+            "ACTION": "Listen", 
+            "bargein": "False", 
+            "events": [
+              "evPromptStart", 
+              "evPromptStop", 
+              "evNoInputTimeout"
+            ]
+          }, 
+          {
+            "prompt": "file:/home/jdw/sdc/prod/lib/../prompts/CommonPrompts/goback_2.wav", 
+            "output_start_time": "08/15 18:44:30.384", 
+            "waitfor": "['evPhraseResult', 'evDtmfInput', 'evNoInputTimeout']", 
+            "dtmf": "", 
+            "input_types": "speech", 
+            "grammars": "['/home/jdw/sdc/prod/lib/../lms/stopNames.onRoute.61A.tostopids.lm']", 
+            "timeout": "0.1", 
+            "input_start_time": "08/15 18:44:32.104", 
+            "ACTION": "Listen", 
+            "bargein": "False", 
+            "events": [
+              "evPromptStart", 
+              "evPromptStop", 
+              "evNoInputTimeout"
+            ]
+          }, 
+          {
+            "prompt": "file:/home/jdw/sdc/prod/lib/../prompts/AskDest/Init.wav", 
+            "output_start_time": "08/15 18:44:32.104", 
+            "waitfor": "['evPhraseResult', 'evDtmfInput', 'evNoInputTimeout']", 
+            "dtmf": "", 
+            "input_types": "speech", 
+            "grammars": "['/home/jdw/sdc/prod/lib/../lms/stopNames.onRoute.61A.tostopids.lm']", 
+            "timeout": "10", 
+            "input_start_time": "08/15 18:44:34.324", 
+            "ACTION": "Listen", 
+            "bargein": "False", 
+            "events": [
+              "evPromptStart", 
+              "evPromptStop", 
+              "evSpeechStart", 
+              "evPhraseResult"
+            ]
+          }
+        ], 
+        "dialog_states": [
+          {
+            "state": "AskOrigin", 
+            "activity": "Calling OnRecognition handler"
+          }, 
+          {
+            "state": "AskDest", 
+            "activity": "Initializing"
+          }, 
+          {
+            "state": "AskDest", 
+            "activity": "Prompt type: Init"
+          }, 
+          {
+            "state": "AskDest", 
+            "activity": "Calling Init()"
+          }
+        ], 
+        "parsed_asr_result": {
+          "nbest": [
+            {
+              "rec_string": "schenley", 
+              "rec_type": "ig", 
+              "fields": {
+                "tostopidsSurface": "schenley", 
+                "tostopids-set": "set(['3871', '3872', '3873'])", 
+                "tostopids": "3871:3872:3873"
+              }, 
+              "rec_conf": 0.174673
+            }, 
+            {
+              "rec_string": "oakland", 
+              "rec_type": "ig", 
+              "fields": {
+                "tostopidsSurface": "oakland", 
+                "tostopids-set": "set(['3931', '3905', '3906', '3868', '199', '3003', '3002', '3866', '3865', '3001', '275', '276', '277', '250', '251', '186', '187', '185', '3893', '283', '3894', '202', '3935', '3871', '3872', '3873', '3874', '3875', '3876', '3930', '245', '244', '188', '3885', '3884', '3936', '2993', '2994', '2995', '4884', '2399', '293', '2398', '3000'])", 
+                "tostopids": "185:186:187:188:199:202:2398:2399:244:245:250:251:275:276:277:283:293:2993:2994:2995:3000:3001:3002:3003:3865:3866:3868:3871:3872:3873:3874:3875:3876:3884:3885:3893:3894:3905:3906:3930:3931:3935:3936:4884"
+              }, 
+              "rec_conf": 0.151734
+            }, 
+            {
+              "rec_string": "steps", 
+              "rec_type": "ig", 
+              "fields": {
+                "tostopidsSurface": "steps", 
+                "tostopids-set": "set(['6459', '6455'])", 
+                "tostopids": "6455:6459"
+              }, 
+              "rec_conf": 0.011559
+            }, 
+            {
+              "rec_string": "uptown", 
+              "rec_type": "ig", 
+              "fields": {
+                "tostopidsSurface": "uptown", 
+                "tostopids-set": "set(['3917', '3916', '248', '1399', '249', '1392'])", 
+                "tostopids": "1392:1399:248:249:3916:3917"
+              }, 
+              "rec_conf": 0.002729
+            }
+          ]
+        }, 
+        "sys_action_summary": {
+          "struct": [
+            [
+              "impl-confirm", 
+              {
+                "fromstopids": "east pittsburgh"
+              }
+            ], 
+            [
+              "request", 
+              "tostopids"
+            ], 
+            [
+              "request", 
+              "tostopids"
+            ]
+          ], 
+          "surface": "Okay, east pittsburgh. You can always say go back. And where are you going to?"
+        }
+      }, 
+      "turn-index": 2, 
+      "restart": false, 
+      "output": {
+        "start-time": 27.961, 
+        "transcript": "Okay, east pittsburgh. You can always say go back. And where are you going to?", 
+        "dialog-acts": [
+          {
+            "slots": [
+              [
+                "from.desc", 
+                "east pittsburgh"
+              ]
+            ], 
+            "act": "impl-conf"
+          }, 
+          {
+            "slots": [
+              [
+                "act", 
+                "goback"
+              ]
+            ], 
+            "act": "example"
+          }, 
+          {
+            "slots": [
+              [
+                "to", 
+                null
+              ]
+            ], 
+            "act": "request"
+          }
+        ]
+      }
+    }, 
+    {
+      "input": {
+        "live": {
+          "asr-hyps": [
+            {
+              "asr-hyp": "no", 
+              "score": 0.521767, 
+              "type": "recognition"
+            }, 
+            {
+              "asr-hyp": "yeah", 
+              "score": 0.036818, 
+              "type": "recognition"
+            }
+          ], 
+          "slu-hyps": [
+            {
+              "slu-hyp": [
+                {
+                  "slots": [], 
+                  "act": "negate"
+                }
+              ], 
+              "score": 0.521767
+            }, 
+            {
+              "slu-hyp": [
+                {
+                  "slots": [], 
+                  "act": "affirm"
+                }
+              ], 
+              "score": 0.036818
+            }
+          ]
+        }, 
+        "audio-file": "011.raw", 
+        "start-time": 40.238
+      }, 
+      "system-specific": {
+        "beliefstate": {
+          "date": [
+            {
+              "count": 77522.0, 
+              "belief": 1.0, 
+              "slotValues": {
+                "date": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": 0.0, 
+              "logBel": 0.0, 
+              "surfaceForms": {
+                "date": "set([])"
+              }, 
+              "id": 0
+            }
+          ], 
+          "route": [
+            {
+              "count": 4540.0, 
+              "belief": 3e-05, 
+              "slotValues": {
+                "route": {
+                  "vals": "['61D']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -2.888, 
+              "logBel": -10.301, 
+              "surfaceForms": {
+                "route": "set(['sixty one d'])"
+              }, 
+              "id": 4
+            }, 
+            {
+              "count": 100.0, 
+              "belief": 0.00078, 
+              "slotValues": {
+                "route": {
+                  "vals": "['61']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -6.703, 
+              "logBel": -7.15, 
+              "surfaceForms": {
+                "route": "set(['sixty one'])"
+              }, 
+              "id": 3
+            }, 
+            {
+              "count": 65648.0, 
+              "belief": 0.00106, 
+              "slotValues": {
+                "route": {
+                  "vals": "['61', '61A', '61D']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.217, 
+              "logBel": -6.845, 
+              "surfaceForms": {
+                "route": "set([])"
+              }, 
+              "id": 0
+            }, 
+            {
+              "count": 11234.0, 
+              "belief": 0.99812, 
+              "slotValues": {
+                "route": {
+                  "vals": "['61A']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -1.982, 
+              "logBel": -0.002, 
+              "surfaceForms": {
+                "route": "set(['sixty one a'])"
+              }, 
+              "id": 2
+            }
+          ], 
+          "fromstopids": [
+            {
+              "count": 162611.0, 
+              "belief": 0.07672, 
+              "slotValues": {
+                "fromstopids": {
+                  "vals": "['3288', '6451', '6452']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.003, 
+              "logBel": -2.568, 
+              "surfaceForms": {
+                "fromstopids": "set([])"
+              }, 
+              "id": 0
+            }, 
+            {
+              "count": 411.0, 
+              "belief": 0.92328, 
+              "slotValues": {
+                "fromstopids": {
+                  "vals": "['3288', '6451', '6452']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -5.983, 
+              "logBel": -0.08, 
+              "surfaceForms": {
+                "fromstopids": "set(['east pittsburgh', 'from east pittsburgh'])"
+              }, 
+              "id": 1
+            }
+          ], 
+          "tostopids": [
+            {
+              "count": 299.0, 
+              "belief": 0.01189, 
+              "slotValues": {
+                "tostopids": {
+                  "vals": "['6455', '6459']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -6.302, 
+              "logBel": -4.432, 
+              "surfaceForms": {
+                "tostopids": "set(['steps'])"
+              }, 
+              "id": 3
+            }, 
+            {
+              "count": 1352.0, 
+              "belief": 0.01341, 
+              "slotValues": {
+                "tostopids": {
+                  "countHiddenVals": 6, 
+                  "valsListed": false, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -4.794, 
+              "logBel": -4.312, 
+              "surfaceForms": {
+                "tostopids": "set(['uptown'])"
+              }, 
+              "id": 4
+            }, 
+            {
+              "count": 489.0, 
+              "belief": 0.04961, 
+              "slotValues": {
+                "tostopids": {
+                  "vals": "['3871', '3872', '3873']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -5.811, 
+              "logBel": -3.004, 
+              "surfaceForms": {
+                "tostopids": "set(['oakland', 'schenley'])"
+              }, 
+              "id": 1
+            }, 
+            {
+              "count": 8304.0, 
+              "belief": 0.39188, 
+              "slotValues": {
+                "tostopids": {
+                  "countHiddenVals": 41, 
+                  "valsListed": false, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -2.978, 
+              "logBel": -0.937, 
+              "surfaceForms": {
+                "tostopids": "set(['oakland'])"
+              }, 
+              "id": 2
+            }, 
+            {
+              "count": 152778.0, 
+              "belief": 0.53322, 
+              "slotValues": {
+                "tostopids": {
+                  "countHiddenVals": 52, 
+                  "valsListed": false, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.066, 
+              "logBel": -0.629, 
+              "surfaceForms": {
+                "tostopids": "set([])"
+              }, 
+              "id": 0
+            }
+          ], 
+          "time": [
+            {
+              "count": 176762.0, 
+              "belief": 0.5, 
+              "slotValues": {
+                "searchType": {
+                  "vals": "['arrive']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }, 
+                "time": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.693, 
+              "logBel": -0.693, 
+              "surfaceForms": {
+                "searchType": "set([])", 
+                "time": "set([])"
+              }, 
+              "id": 0
+            }, 
+            {
+              "count": 176761.0, 
+              "belief": 0.5, 
+              "slotValues": {
+                "searchType": {
+                  "vals": "['depart']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }, 
+                "time": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.693, 
+              "logBel": -0.693, 
+              "surfaceForms": {
+                "searchType": "set([])", 
+                "time": "set([])"
+              }, 
+              "id": 1
+            }
+          ]
+        }, 
+        "turn_start_time": "08/15 18:44:35.440", 
+        "raw_asr_result": {
+          "audioParams": {
+            "sampleRate": 8000, 
+            "coding": "linear", 
+            "byteOrder": "LE"
+          }, 
+          "version": "watson-6.5.5733", 
+          "resultId": 11, 
+          "hostname": "dt-jdw", 
+          "nlu-sisr": [
+            {
+              "interp": {
+                "confirm": "no"
+              }, 
+              "id": 0, 
+              "time": 0.00251007080078125
+            }, 
+            {
+              "interp": {
+                "confirm": "yes"
+              }, 
+              "id": 1, 
+              "time": 0.0006499290466308594
+            }
+          ], 
+          "metrics": {
+            "audioBytes": 48000, 
+            "gaussSelectSkipRatio": 0.7385249733924866, 
+            "lhoodPrecalcHitRatio": 0.8634346127510071, 
+            "avgFrameBatchSize": 3.0, 
+            "decodedFrameCount": 300, 
+            "bytesPerPacket": 320.0, 
+            "audioPackets": 150, 
+            "frameCount": 300
+          }, 
+          "sessionId": "", 
+          "trigger": "secondTimeout", 
+          "evType": "evPhraseResult", 
+          "wcn": {
+            "best_path_score": 0.9995061755444393, 
+            "best_path": {
+              "word": [
+                "no"
+              ], 
+              "prob": [
+                0.9995061755180359
+              ]
+            }, 
+            "network": [
+              {
+                "word": [
+                  "no", 
+                  "yeah"
+                ], 
+                "prob": [
+                  0.9995061755180359, 
+                  0.0004938459023833275
+                ]
+              }
+            ]
+          }, 
+          "config": {
+            "lms": [
+              "/home/jdw/sdc/prod/lms/confirm.lm"
+            ], 
+            "am": "/home/jdw/watson/data/am/gt_06.1.ep.h4.20.mmi2b", 
+            "secondTimeout": 700, 
+            "beamWidth": 250.0, 
+            "maxActiveArcs": 50000, 
+            "confidenceThreshold": 50, 
+            "firstTimeout": 400
+          }, 
+          "nbest": [
+            {
+              "normSpeechLhood": -151.82130432128906, 
+              "lastSpeechFrame": 217, 
+              "lms": [
+                "/home/jdw/sdc/prod/lms/confirm.lm"
+              ], 
+              "score": 28, 
+              "nscore": 81, 
+              "numFrames": 300, 
+              "udelta": -3.750999927520752, 
+              "speechLikelihood": -5465.56689453125, 
+              "firstSpeechFrame": 181, 
+              "ndelta": 121.80500030517578, 
+              "normCost": 144.16781616210938, 
+              "normLhood": 0.0, 
+              "gscore": 33, 
+              "cost": 43250.34375, 
+              "hypothesis": "no", 
+              "glhood": -153.4199981689453, 
+              "uscore": 25, 
+              "numSpeechFrames": 36, 
+              "likelihood": 0.0, 
+              "gdelta": 1.5989999771118164, 
+              "ulhood": -148.07000732421875
+            }, 
+            {
+              "normSpeechLhood": -157.15567016601562, 
+              "lastSpeechFrame": 217, 
+              "lms": [
+                "/home/jdw/sdc/prod/lms/confirm.lm"
+              ], 
+              "score": 4, 
+              "nscore": 100, 
+              "numFrames": 300, 
+              "udelta": -8.552000045776367, 
+              "speechLikelihood": -5500.4482421875, 
+              "firstSpeechFrame": 182, 
+              "ndelta": 150.0, 
+              "normCost": 144.57382202148438, 
+              "normLhood": 0.0, 
+              "gscore": 10, 
+              "cost": 43372.1484375, 
+              "hypothesis": "yeah", 
+              "glhood": -154.08299255371094, 
+              "uscore": 0, 
+              "numSpeechFrames": 35, 
+              "likelihood": 0.0, 
+              "gdelta": -3.072999954223633, 
+              "ulhood": -148.60400390625
+            }
+          ], 
+          "fileId": 0
+        }, 
+        "uttinfo": {
+          "uttfile_status": "logged", 
+          "uttid": "011.raw"
+        }, 
+        "sys_action_details": [
+          {
+            "prompt": "<prosody volume=\"x-loud\">oakland.</prosody>", 
+            "output_start_time": "08/15 18:44:35.450", 
+            "waitfor": "['evPhraseResult', 'evDtmfInput', 'evNoInputTimeout']", 
+            "dtmf": "", 
+            "input_types": "speech", 
+            "grammars": "['/home/jdw/sdc/prod/lib/../lms/confirm.lm']", 
+            "timeout": "0.1", 
+            "input_start_time": "08/15 18:44:37.184", 
+            "ACTION": "Listen", 
+            "bargein": "False", 
+            "events": [
+              "evPromptStart", 
+              "evPromptStop", 
+              "evNoInputTimeout"
+            ]
+          }, 
+          {
+            "prompt": "file:/home/jdw/sdc/prod/lib/../prompts/ConfirmDest/Init.wav", 
+            "output_start_time": "08/15 18:44:37.184", 
+            "waitfor": "['evPhraseResult', 'evDtmfInput', 'evNoInputTimeout']", 
+            "dtmf": "", 
+            "input_types": "speech", 
+            "grammars": "['/home/jdw/sdc/prod/lib/../lms/confirm.lm']", 
+            "timeout": "10", 
+            "input_start_time": "08/15 18:44:39.744", 
+            "ACTION": "Listen", 
+            "bargein": "False", 
+            "events": [
+              "evPromptStart", 
+              "evPromptStop", 
+              "evSpeechStart", 
+              "evPhraseResult"
+            ]
+          }
+        ], 
+        "dialog_states": [
+          {
+            "state": "AskDest", 
+            "activity": "Calling OnRecognition handler"
+          }, 
+          {
+            "state": "ConfirmDest", 
+            "activity": "Initializing"
+          }, 
+          {
+            "state": "ConfirmDest", 
+            "activity": "Prompt type: Init"
+          }, 
+          {
+            "state": "ConfirmDest", 
+            "activity": "Calling Init()"
+          }
+        ], 
+        "parsed_asr_result": {
+          "nbest": [
+            {
+              "rec_string": "no", 
+              "rec_type": "ig", 
+              "fields": {
+                "confirm": "no"
+              }, 
+              "rec_conf": 0.521767
+            }, 
+            {
+              "rec_string": "yeah", 
+              "rec_type": "ig", 
+              "fields": {
+                "confirm": "yes"
+              }, 
+              "rec_conf": 0.036818
+            }
+          ]
+        }, 
+        "sys_action_summary": {
+          "struct": [
+            [
+              "expl-confirm", 
+              {
+                "tostopids": "oakland"
+              }
+            ], 
+            [
+              "expl-confirm", 
+              {
+                "tostopids": "oakland"
+              }
+            ]
+          ], 
+          "surface": "oakland. Is that right?"
+        }
+      }, 
+      "turn-index": 3, 
+      "restart": false, 
+      "output": {
+        "start-time": 35.944, 
+        "transcript": "oakland. Is that right?", 
+        "dialog-acts": [
+          {
+            "slots": [
+              [
+                "to.desc", 
+                "oakland"
+              ]
+            ], 
+            "act": "expl-conf"
+          }
+        ]
+      }
+    }, 
+    {
+      "input": {
+        "live": {
+          "asr-hyps": [
+            {
+              "asr-hyp": "no", 
+              "score": 0.979408, 
+              "type": "recognition"
+            }
+          ], 
+          "slu-hyps": [
+            {
+              "slu-hyp": [
+                {
+                  "slots": [], 
+                  "act": "negate"
+                }
+              ], 
+              "score": 0.979408
+            }
+          ]
+        }, 
+        "audio-file": "014.raw", 
+        "start-time": 47.267
+      }, 
+      "system-specific": {
+        "beliefstate": {
+          "date": [
+            {
+              "count": 77522.0, 
+              "belief": 1.0, 
+              "slotValues": {
+                "date": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": 0.0, 
+              "logBel": 0.0, 
+              "surfaceForms": {
+                "date": "set([])"
+              }, 
+              "id": 0
+            }
+          ], 
+          "route": [
+            {
+              "count": 4540.0, 
+              "belief": 3e-05, 
+              "slotValues": {
+                "route": {
+                  "vals": "['61D']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -2.888, 
+              "logBel": -10.301, 
+              "surfaceForms": {
+                "route": "set(['sixty one d'])"
+              }, 
+              "id": 4
+            }, 
+            {
+              "count": 100.0, 
+              "belief": 0.00078, 
+              "slotValues": {
+                "route": {
+                  "vals": "['61']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -6.703, 
+              "logBel": -7.15, 
+              "surfaceForms": {
+                "route": "set(['sixty one'])"
+              }, 
+              "id": 3
+            }, 
+            {
+              "count": 65648.0, 
+              "belief": 0.00106, 
+              "slotValues": {
+                "route": {
+                  "vals": "['61', '61A', '61D']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.217, 
+              "logBel": -6.845, 
+              "surfaceForms": {
+                "route": "set([])"
+              }, 
+              "id": 0
+            }, 
+            {
+              "count": 11234.0, 
+              "belief": 0.99812, 
+              "slotValues": {
+                "route": {
+                  "vals": "['61A']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -1.982, 
+              "logBel": -0.002, 
+              "surfaceForms": {
+                "route": "set(['sixty one a'])"
+              }, 
+              "id": 2
+            }
+          ], 
+          "fromstopids": [
+            {
+              "count": 162611.0, 
+              "belief": 0.07672, 
+              "slotValues": {
+                "fromstopids": {
+                  "vals": "['3288', '6451', '6452']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.003, 
+              "logBel": -2.568, 
+              "surfaceForms": {
+                "fromstopids": "set([])"
+              }, 
+              "id": 0
+            }, 
+            {
+              "count": 411.0, 
+              "belief": 0.92328, 
+              "slotValues": {
+                "fromstopids": {
+                  "vals": "['3288', '6451', '6452']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -5.983, 
+              "logBel": -0.08, 
+              "surfaceForms": {
+                "fromstopids": "set(['east pittsburgh', 'from east pittsburgh'])"
+              }, 
+              "id": 1
+            }
+          ], 
+          "tostopids": [
+            {
+              "count": 489.0, 
+              "belief": 0.00023, 
+              "slotValues": {
+                "tostopids": {
+                  "vals": "['3871', '3872', '3873']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -5.811, 
+              "logBel": -8.365, 
+              "surfaceForms": {
+                "tostopids": "set(['oakland', 'schenley'])"
+              }, 
+              "id": 1
+            }, 
+            {
+              "count": 8304.0, 
+              "belief": 0.00184, 
+              "slotValues": {
+                "tostopids": {
+                  "countHiddenVals": 41, 
+                  "valsListed": false, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -2.978, 
+              "logBel": -6.298, 
+              "surfaceForms": {
+                "tostopids": "set(['oakland'])"
+              }, 
+              "id": 2
+            }, 
+            {
+              "count": 299.0, 
+              "belief": 0.02124, 
+              "slotValues": {
+                "tostopids": {
+                  "vals": "['6455', '6459']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -6.302, 
+              "logBel": -3.852, 
+              "surfaceForms": {
+                "tostopids": "set(['steps'])"
+              }, 
+              "id": 3
+            }, 
+            {
+              "count": 1352.0, 
+              "belief": 0.02396, 
+              "slotValues": {
+                "tostopids": {
+                  "countHiddenVals": 6, 
+                  "valsListed": false, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -4.794, 
+              "logBel": -3.731, 
+              "surfaceForms": {
+                "tostopids": "set(['uptown'])"
+              }, 
+              "id": 4
+            }, 
+            {
+              "count": 152778.0, 
+              "belief": 0.95272, 
+              "slotValues": {
+                "tostopids": {
+                  "countHiddenVals": 52, 
+                  "valsListed": false, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.066, 
+              "logBel": -0.048, 
+              "surfaceForms": {
+                "tostopids": "set([])"
+              }, 
+              "id": 0
+            }
+          ], 
+          "time": [
+            {
+              "count": 176762.0, 
+              "belief": 0.5, 
+              "slotValues": {
+                "searchType": {
+                  "vals": "['arrive']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }, 
+                "time": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.693, 
+              "logBel": -0.693, 
+              "surfaceForms": {
+                "searchType": "set([])", 
+                "time": "set([])"
+              }, 
+              "id": 0
+            }, 
+            {
+              "count": 176761.0, 
+              "belief": 0.5, 
+              "slotValues": {
+                "searchType": {
+                  "vals": "['depart']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }, 
+                "time": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.693, 
+              "logBel": -0.693, 
+              "surfaceForms": {
+                "searchType": "set([])", 
+                "time": "set([])"
+              }, 
+              "id": 1
+            }
+          ]
+        }, 
+        "turn_start_time": "08/15 18:44:41.114", 
+        "raw_asr_result": {
+          "audioParams": {
+            "sampleRate": 8000, 
+            "coding": "linear", 
+            "byteOrder": "LE"
+          }, 
+          "version": "watson-6.5.5733", 
+          "resultId": 14, 
+          "hostname": "dt-jdw", 
+          "nlu-sisr": [
+            {
+              "interp": {
+                "confirm": "no"
+              }, 
+              "id": 0, 
+              "time": 0.0025551319122314453
+            }
+          ], 
+          "metrics": {
+            "audioBytes": 28800, 
+            "gaussSelectSkipRatio": 0.6278975605964661, 
+            "lhoodPrecalcHitRatio": 0.8057052493095398, 
+            "avgFrameBatchSize": 3.0, 
+            "decodedFrameCount": 180, 
+            "bytesPerPacket": 320.0, 
+            "audioPackets": 90, 
+            "frameCount": 180
+          }, 
+          "sessionId": "", 
+          "trigger": "firstTimeout", 
+          "evType": "evPhraseResult", 
+          "wcn": {
+            "best_path_score": 1.0, 
+            "best_path": {
+              "word": [
+                "no"
+              ], 
+              "prob": [
+                1.0
+              ]
+            }, 
+            "network": [
+              {
+                "word": [
+                  "no"
+                ], 
+                "prob": [
+                  1.0
+                ]
+              }
+            ]
+          }, 
+          "config": {
+            "lms": [
+              "/home/jdw/sdc/prod/lms/confirm.lm"
+            ], 
+            "am": "/home/jdw/watson/data/am/gt_06.1.ep.h4.20.mmi2b", 
+            "secondTimeout": 700, 
+            "beamWidth": 250.0, 
+            "maxActiveArcs": 50000, 
+            "confidenceThreshold": 50, 
+            "firstTimeout": 400
+          }, 
+          "nbest": [
+            {
+              "normSpeechLhood": -137.18032836914062, 
+              "lastSpeechFrame": 113, 
+              "lms": [
+                "/home/jdw/sdc/prod/lms/confirm.lm"
+              ], 
+              "score": 73, 
+              "numFrames": 180, 
+              "udelta": -0.6740000247955322, 
+              "speechLikelihood": -8230.8193359375, 
+              "firstSpeechFrame": 48, 
+              "normLhood": 0.0, 
+              "normCost": 138.76443481445312, 
+              "gscore": 60, 
+              "cost": 24977.599609375, 
+              "hypothesis": "no", 
+              "glhood": -144.10299682617188, 
+              "uscore": 87, 
+              "numSpeechFrames": 60, 
+              "likelihood": 0.0, 
+              "gdelta": 6.922999858856201, 
+              "ulhood": -136.50599670410156
+            }
+          ], 
+          "fileId": 0
+        }, 
+        "uttinfo": {
+          "uttfile_status": "logged", 
+          "uttid": "014.raw"
+        }, 
+        "sys_action_details": [
+          {
+            "prompt": "file:/home/jdw/sdc/prod/lib/../prompts/ConfirmDest/NM1_a.wav", 
+            "output_start_time": "08/15 18:44:41.116", 
+            "waitfor": "['evPhraseResult', 'evDtmfInput', 'evNoInputTimeout']", 
+            "dtmf": "", 
+            "input_types": "speech", 
+            "grammars": "['/home/jdw/sdc/prod/lib/../lms/confirm.lm']", 
+            "timeout": "0.1", 
+            "input_start_time": "08/15 18:44:43.006", 
+            "ACTION": "Listen", 
+            "bargein": "False", 
+            "events": [
+              "evPromptStart", 
+              "evPromptStop", 
+              "evNoInputTimeout"
+            ]
+          }, 
+          {
+            "prompt": "<prosody volume=\"x-loud\">oakland?</prosody>", 
+            "output_start_time": "08/15 18:44:43.006", 
+            "waitfor": "['evPhraseResult', 'evDtmfInput', 'evNoInputTimeout']", 
+            "dtmf": "", 
+            "input_types": "speech", 
+            "grammars": "['/home/jdw/sdc/prod/lib/../lms/confirm.lm']", 
+            "timeout": "0.1", 
+            "input_start_time": "08/15 18:44:44.733", 
+            "ACTION": "Listen", 
+            "bargein": "False", 
+            "events": [
+              "evPromptStart", 
+              "evPromptStop", 
+              "evNoInputTimeout"
+            ]
+          }, 
+          {
+            "prompt": "file:/home/jdw/sdc/prod/lib/../prompts/ConfirmDest/NM1_b.wav", 
+            "output_start_time": "08/15 18:44:44.733", 
+            "waitfor": "['evPhraseResult', 'evDtmfInput', 'evNoInputTimeout']", 
+            "dtmf": "", 
+            "input_types": "speech", 
+            "grammars": "['/home/jdw/sdc/prod/lib/../lms/confirm.lm']", 
+            "timeout": "10", 
+            "input_start_time": "08/15 18:44:46.773", 
+            "ACTION": "Listen", 
+            "bargein": "False", 
+            "events": [
+              "evPromptStart", 
+              "evPromptStop", 
+              "evSpeechStart", 
+              "evPhraseResult"
+            ]
+          }
+        ], 
+        "dialog_states": [
+          {
+            "state": "ConfirmDest", 
+            "activity": "Calling OnRecognition handler"
+          }, 
+          {
+            "state": "ConfirmDest", 
+            "activity": "Looking for NM1"
+          }, 
+          {
+            "state": "ConfirmDest", 
+            "activity": "Calling NM1()"
+          }
+        ], 
+        "parsed_asr_result": {
+          "nbest": [
+            {
+              "rec_string": "no", 
+              "rec_type": "ig", 
+              "fields": {
+                "confirm": "no"
+              }, 
+              "rec_conf": 0.979408
+            }
+          ]
+        }, 
+        "sys_action_summary": {
+          "struct": [
+            [
+              "expl-confirm", 
+              {
+                "tostopids": "oakland"
+              }
+            ]
+          ], 
+          "surface": "Sorry, are you going to oakland? Please say yes or no."
+        }
+      }, 
+      "turn-index": 4, 
+      "restart": false, 
+      "output": {
+        "start-time": 41.61, 
+        "transcript": "Sorry, are you going to oakland? Please say yes or no.", 
+        "dialog-acts": [
+          {
+            "slots": [], 
+            "act": "sorry"
+          }, 
+          {
+            "slots": [
+              [
+                "to.desc", 
+                "oakland"
+              ]
+            ], 
+            "act": "expl-conf"
+          }, 
+          {
+            "slots": [
+              [
+                "act", 
+                "affirm"
+              ]
+            ], 
+            "act": "example"
+          }, 
+          {
+            "slots": [
+              [
+                "act", 
+                "negate"
+              ]
+            ], 
+            "act": "example"
+          }
+        ]
+      }
+    }, 
+    {
+      "input": {
+        "live": {
+          "asr-hyps": [
+            {
+              "asr-hyp": "downtown", 
+              "score": 0.969873, 
+              "type": "recognition"
+            }
+          ], 
+          "slu-hyps": [
+            {
+              "slu-hyp": [
+                {
+                  "slots": [
+                    [
+                      "to.desc", 
+                      "downtown"
+                    ]
+                  ], 
+                  "act": "inform"
+                }
+              ], 
+              "score": 0.969873
+            }
+          ]
+        }, 
+        "audio-file": "015.raw", 
+        "start-time": 51.387
+      }, 
+      "system-specific": {
+        "beliefstate": {
+          "date": [
+            {
+              "count": 77522.0, 
+              "belief": 1.0, 
+              "slotValues": {
+                "date": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": 0.0, 
+              "logBel": 0.0, 
+              "surfaceForms": {
+                "date": "set([])"
+              }, 
+              "id": 0
+            }
+          ], 
+          "route": [
+            {
+              "count": 4540.0, 
+              "belief": 3e-05, 
+              "slotValues": {
+                "route": {
+                  "vals": "['61D']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -2.888, 
+              "logBel": -10.301, 
+              "surfaceForms": {
+                "route": "set(['sixty one d'])"
+              }, 
+              "id": 4
+            }, 
+            {
+              "count": 100.0, 
+              "belief": 0.00078, 
+              "slotValues": {
+                "route": {
+                  "vals": "['61']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -6.703, 
+              "logBel": -7.15, 
+              "surfaceForms": {
+                "route": "set(['sixty one'])"
+              }, 
+              "id": 3
+            }, 
+            {
+              "count": 65648.0, 
+              "belief": 0.00106, 
+              "slotValues": {
+                "route": {
+                  "vals": "['61', '61A', '61D']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.217, 
+              "logBel": -6.845, 
+              "surfaceForms": {
+                "route": "set([])"
+              }, 
+              "id": 0
+            }, 
+            {
+              "count": 11234.0, 
+              "belief": 0.99812, 
+              "slotValues": {
+                "route": {
+                  "vals": "['61A']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -1.982, 
+              "logBel": -0.002, 
+              "surfaceForms": {
+                "route": "set(['sixty one a'])"
+              }, 
+              "id": 2
+            }
+          ], 
+          "fromstopids": [
+            {
+              "count": 162611.0, 
+              "belief": 0.07672, 
+              "slotValues": {
+                "fromstopids": {
+                  "vals": "['3288', '6451', '6452']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.003, 
+              "logBel": -2.568, 
+              "surfaceForms": {
+                "fromstopids": "set([])"
+              }, 
+              "id": 0
+            }, 
+            {
+              "count": 411.0, 
+              "belief": 0.92328, 
+              "slotValues": {
+                "fromstopids": {
+                  "vals": "['3288', '6451', '6452']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -5.983, 
+              "logBel": -0.08, 
+              "surfaceForms": {
+                "fromstopids": "set(['east pittsburgh', 'from east pittsburgh'])"
+              }, 
+              "id": 1
+            }
+          ], 
+          "tostopids": [
+            {
+              "count": 489.0, 
+              "belief": 0.0, 
+              "slotValues": {
+                "tostopids": {
+                  "vals": "['3871', '3872', '3873']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -5.811, 
+              "logBel": -14.787, 
+              "surfaceForms": {
+                "tostopids": "set(['oakland', 'schenley'])"
+              }, 
+              "id": 1
+            }, 
+            {
+              "count": 8304.0, 
+              "belief": 0.0, 
+              "slotValues": {
+                "tostopids": {
+                  "countHiddenVals": 41, 
+                  "valsListed": false, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -2.978, 
+              "logBel": -12.72, 
+              "surfaceForms": {
+                "tostopids": "set(['oakland'])"
+              }, 
+              "id": 2
+            }, 
+            {
+              "count": 299.0, 
+              "belief": 3e-05, 
+              "slotValues": {
+                "tostopids": {
+                  "vals": "['6455', '6459']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -6.302, 
+              "logBel": -10.273, 
+              "surfaceForms": {
+                "tostopids": "set(['steps'])"
+              }, 
+              "id": 3
+            }, 
+            {
+              "count": 1352.0, 
+              "belief": 4e-05, 
+              "slotValues": {
+                "tostopids": {
+                  "countHiddenVals": 6, 
+                  "valsListed": false, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -4.794, 
+              "logBel": -10.153, 
+              "surfaceForms": {
+                "tostopids": "set(['uptown'])"
+              }, 
+              "id": 4
+            }, 
+            {
+              "count": 148005.0, 
+              "belief": 0.0015, 
+              "slotValues": {
+                "tostopids": {
+                  "countHiddenVals": 69, 
+                  "valsListed": false, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.098, 
+              "logBel": -6.502, 
+              "surfaceForms": {
+                "tostopids": "set([])"
+              }, 
+              "id": 0
+            }, 
+            {
+              "count": 4773.0, 
+              "belief": 0.99842, 
+              "slotValues": {
+                "tostopids": {
+                  "countHiddenVals": 17, 
+                  "valsListed": false, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -3.532, 
+              "logBel": -0.002, 
+              "surfaceForms": {
+                "tostopids": "set(['downtown'])"
+              }, 
+              "id": 5
+            }
+          ], 
+          "time": [
+            {
+              "count": 176762.0, 
+              "belief": 0.5, 
+              "slotValues": {
+                "searchType": {
+                  "vals": "['arrive']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }, 
+                "time": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.693, 
+              "logBel": -0.693, 
+              "surfaceForms": {
+                "searchType": "set([])", 
+                "time": "set([])"
+              }, 
+              "id": 0
+            }, 
+            {
+              "count": 176761.0, 
+              "belief": 0.5, 
+              "slotValues": {
+                "searchType": {
+                  "vals": "['depart']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }, 
+                "time": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.693, 
+              "logBel": -0.693, 
+              "surfaceForms": {
+                "searchType": "set([])", 
+                "time": "set([])"
+              }, 
+              "id": 1
+            }
+          ]
+        }, 
+        "turn_start_time": "08/15 18:44:47.969", 
+        "raw_asr_result": {
+          "audioParams": {
+            "sampleRate": 8000, 
+            "coding": "linear", 
+            "byteOrder": "LE"
+          }, 
+          "version": "watson-6.5.5733", 
+          "resultId": 15, 
+          "hostname": "dt-jdw", 
+          "nlu-sisr": [
+            {
+              "interp": {
+                "tostopids": "13:14:228:253:2650:2651:2652:318:3186:3188:323:324:325:351:6246:6257:6272"
+              }, 
+              "id": 0, 
+              "time": 0.0025739669799804688
+            }
+          ], 
+          "metrics": {
+            "audioBytes": 35200, 
+            "gaussSelectSkipRatio": 0.828690230846405, 
+            "lhoodPrecalcHitRatio": 0.8509032726287842, 
+            "avgFrameBatchSize": 3.0, 
+            "decodedFrameCount": 220, 
+            "bytesPerPacket": 320.0, 
+            "audioPackets": 110, 
+            "frameCount": 220
+          }, 
+          "sessionId": "", 
+          "trigger": "secondTimeout", 
+          "evType": "evPhraseResult", 
+          "wcn": {
+            "best_path_score": 1.0, 
+            "best_path": {
+              "word": [
+                "downtown"
+              ], 
+              "prob": [
+                1.0
+              ]
+            }, 
+            "network": [
+              {
+                "word": [
+                  "downtown"
+                ], 
+                "prob": [
+                  1.0
+                ]
+              }
+            ]
+          }, 
+          "config": {
+            "lms": [
+              "/home/jdw/sdc/prod/lms/stopNames.onRoute.61A.tostopids.lm"
+            ], 
+            "am": "/home/jdw/watson/data/am/gt_06.1.ep.h4.20.mmi2b", 
+            "secondTimeout": 700, 
+            "beamWidth": 250.0, 
+            "maxActiveArcs": 50000, 
+            "confidenceThreshold": 50, 
+            "firstTimeout": 400
+          }, 
+          "nbest": [
+            {
+              "normSpeechLhood": -148.7068634033203, 
+              "lastSpeechFrame": 149, 
+              "lms": [
+                "/home/jdw/sdc/prod/lms/stopNames.onRoute.61A.tostopids.lm"
+              ], 
+              "score": 56, 
+              "numFrames": 220, 
+              "udelta": -2.4070000648498535, 
+              "speechLikelihood": -11747.841796875, 
+              "firstSpeechFrame": 66, 
+              "normLhood": 0.0, 
+              "normCost": 140.0465087890625, 
+              "gscore": 61, 
+              "cost": 30810.232421875, 
+              "hypothesis": "downtown", 
+              "glhood": -155.8800048828125, 
+              "uscore": 52, 
+              "numSpeechFrames": 79, 
+              "likelihood": 0.0, 
+              "gdelta": 7.172999858856201, 
+              "ulhood": -146.3000030517578
+            }
+          ], 
+          "fileId": 0
+        }, 
+        "uttinfo": {
+          "uttfile_status": "logged", 
+          "uttid": "015.raw"
+        }, 
+        "sys_action_details": [
+          {
+            "prompt": "file:/home/jdw/sdc/prod/lib/../prompts/AskDest/Init_retry.wav", 
+            "output_start_time": "08/15 18:44:47.970", 
+            "waitfor": "['evPhraseResult', 'evDtmfInput', 'evNoInputTimeout']", 
+            "dtmf": "", 
+            "input_types": "speech", 
+            "grammars": "['/home/jdw/sdc/prod/lib/../lms/stopNames.onRoute.61A.tostopids.lm']", 
+            "timeout": "10", 
+            "input_start_time": "08/15 18:44:50.893", 
+            "ACTION": "Listen", 
+            "bargein": "False", 
+            "events": [
+              "evPromptStart", 
+              "evPromptStop", 
+              "evSpeechStart", 
+              "evPhraseResult"
+            ]
+          }
+        ], 
+        "dialog_states": [
+          {
+            "state": "ConfirmDest", 
+            "activity": "Calling OnRecognition handler"
+          }, 
+          {
+            "state": "AskDest", 
+            "activity": "Initializing"
+          }, 
+          {
+            "state": "AskDest", 
+            "activity": "Prompt type: Init"
+          }, 
+          {
+            "state": "AskDest", 
+            "activity": "Calling Init()"
+          }
+        ], 
+        "parsed_asr_result": {
+          "nbest": [
+            {
+              "rec_string": "downtown", 
+              "rec_type": "ig", 
+              "fields": {
+                "tostopidsSurface": "downtown", 
+                "tostopids-set": "set(['13', '318', '14', '351', '2652', '2651', '2650', '323', '3186', '6272', '325', '324', '228', '253', '6257', '3188', '6246'])", 
+                "tostopids": "13:14:228:253:2650:2651:2652:318:3186:3188:323:324:325:351:6246:6257:6272"
+              }, 
+              "rec_conf": 0.969873
+            }
+          ]
+        }, 
+        "sys_action_summary": {
+          "struct": [
+            [
+              "request", 
+              "tostopids"
+            ], 
+            [
+              "request", 
+              "tostopids"
+            ]
+          ], 
+          "surface": "Oh, sorry, where are you going to?"
+        }
+      }, 
+      "turn-index": 5, 
+      "restart": false, 
+      "output": {
+        "start-time": 48.464, 
+        "transcript": "Oh, sorry, where are you going to?", 
+        "dialog-acts": [
+          {
+            "slots": [], 
+            "act": "sorry"
+          }, 
+          {
+            "slots": [
+              [
+                "to", 
+                null
+              ]
+            ], 
+            "act": "request"
+          }
+        ]
+      }
+    }, 
+    {
+      "input": {
+        "live": {
+          "asr-hyps": [
+            {
+              "asr-hyp": "no", 
+              "score": 0.336084, 
+              "type": "recognition"
+            }, 
+            {
+              "asr-hyp": "yeah", 
+              "score": 0.044499, 
+              "type": "recognition"
+            }
+          ], 
+          "slu-hyps": [
+            {
+              "slu-hyp": [
+                {
+                  "slots": [], 
+                  "act": "negate"
+                }
+              ], 
+              "score": 0.336084
+            }, 
+            {
+              "slu-hyp": [
+                {
+                  "slots": [], 
+                  "act": "affirm"
+                }
+              ], 
+              "score": 0.044499
+            }
+          ]
+        }, 
+        "audio-file": "017.raw", 
+        "start-time": 59.847
+      }, 
+      "system-specific": {
+        "beliefstate": {
+          "date": [
+            {
+              "count": 77522.0, 
+              "belief": 1.0, 
+              "slotValues": {
+                "date": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": 0.0, 
+              "logBel": 0.0, 
+              "surfaceForms": {
+                "date": "set([])"
+              }, 
+              "id": 0
+            }
+          ], 
+          "route": [
+            {
+              "count": 4540.0, 
+              "belief": 3e-05, 
+              "slotValues": {
+                "route": {
+                  "vals": "['61D']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -2.888, 
+              "logBel": -10.301, 
+              "surfaceForms": {
+                "route": "set(['sixty one d'])"
+              }, 
+              "id": 4
+            }, 
+            {
+              "count": 100.0, 
+              "belief": 0.00078, 
+              "slotValues": {
+                "route": {
+                  "vals": "['61']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -6.703, 
+              "logBel": -7.15, 
+              "surfaceForms": {
+                "route": "set(['sixty one'])"
+              }, 
+              "id": 3
+            }, 
+            {
+              "count": 65648.0, 
+              "belief": 0.00106, 
+              "slotValues": {
+                "route": {
+                  "vals": "['61', '61A', '61D']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.217, 
+              "logBel": -6.845, 
+              "surfaceForms": {
+                "route": "set([])"
+              }, 
+              "id": 0
+            }, 
+            {
+              "count": 11234.0, 
+              "belief": 0.99812, 
+              "slotValues": {
+                "route": {
+                  "vals": "['61A']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -1.982, 
+              "logBel": -0.002, 
+              "surfaceForms": {
+                "route": "set(['sixty one a'])"
+              }, 
+              "id": 2
+            }
+          ], 
+          "fromstopids": [
+            {
+              "count": 162611.0, 
+              "belief": 0.07672, 
+              "slotValues": {
+                "fromstopids": {
+                  "vals": "['3288', '6451', '6452']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.003, 
+              "logBel": -2.568, 
+              "surfaceForms": {
+                "fromstopids": "set([])"
+              }, 
+              "id": 0
+            }, 
+            {
+              "count": 411.0, 
+              "belief": 0.92328, 
+              "slotValues": {
+                "fromstopids": {
+                  "vals": "['3288', '6451', '6452']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -5.983, 
+              "logBel": -0.08, 
+              "surfaceForms": {
+                "fromstopids": "set(['east pittsburgh', 'from east pittsburgh'])"
+              }, 
+              "id": 1
+            }
+          ], 
+          "tostopids": [
+            {
+              "count": 489.0, 
+              "belief": 0.0, 
+              "slotValues": {
+                "tostopids": {
+                  "vals": "['3871', '3872', '3873']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -5.811, 
+              "logBel": -14.787, 
+              "surfaceForms": {
+                "tostopids": "set(['oakland', 'schenley'])"
+              }, 
+              "id": 1
+            }, 
+            {
+              "count": 8304.0, 
+              "belief": 0.0, 
+              "slotValues": {
+                "tostopids": {
+                  "countHiddenVals": 41, 
+                  "valsListed": false, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -2.978, 
+              "logBel": -12.72, 
+              "surfaceForms": {
+                "tostopids": "set(['oakland'])"
+              }, 
+              "id": 2
+            }, 
+            {
+              "count": 299.0, 
+              "belief": 3e-05, 
+              "slotValues": {
+                "tostopids": {
+                  "vals": "['6455', '6459']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -6.302, 
+              "logBel": -10.273, 
+              "surfaceForms": {
+                "tostopids": "set(['steps'])"
+              }, 
+              "id": 3
+            }, 
+            {
+              "count": 1352.0, 
+              "belief": 4e-05, 
+              "slotValues": {
+                "tostopids": {
+                  "countHiddenVals": 6, 
+                  "valsListed": false, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -4.794, 
+              "logBel": -10.153, 
+              "surfaceForms": {
+                "tostopids": "set(['uptown'])"
+              }, 
+              "id": 4
+            }, 
+            {
+              "count": 148005.0, 
+              "belief": 0.0015, 
+              "slotValues": {
+                "tostopids": {
+                  "countHiddenVals": 69, 
+                  "valsListed": false, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.098, 
+              "logBel": -6.502, 
+              "surfaceForms": {
+                "tostopids": "set([])"
+              }, 
+              "id": 0
+            }, 
+            {
+              "count": 4773.0, 
+              "belief": 0.99842, 
+              "slotValues": {
+                "tostopids": {
+                  "countHiddenVals": 17, 
+                  "valsListed": false, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -3.532, 
+              "logBel": -0.002, 
+              "surfaceForms": {
+                "tostopids": "set(['downtown'])"
+              }, 
+              "id": 5
+            }
+          ], 
+          "time": [
+            {
+              "count": 176762.0, 
+              "belief": 0.5, 
+              "slotValues": {
+                "searchType": {
+                  "vals": "['arrive']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }, 
+                "time": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.693, 
+              "logBel": -0.693, 
+              "surfaceForms": {
+                "searchType": "set([])", 
+                "time": "set([])"
+              }, 
+              "id": 0
+            }, 
+            {
+              "count": 176761.0, 
+              "belief": 0.5, 
+              "slotValues": {
+                "searchType": {
+                  "vals": "['depart']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }, 
+                "time": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.693, 
+              "logBel": -0.693, 
+              "surfaceForms": {
+                "searchType": "set([])", 
+                "time": "set([])"
+              }, 
+              "id": 1
+            }
+          ]
+        }, 
+        "turn_start_time": "08/15 18:44:52.136", 
+        "raw_asr_result": {
+          "audioParams": {
+            "sampleRate": 8000, 
+            "coding": "linear", 
+            "byteOrder": "LE"
+          }, 
+          "version": "watson-6.5.5733", 
+          "resultId": 17, 
+          "hostname": "dt-jdw", 
+          "nlu-sisr": [
+            {
+              "interp": {
+                "confirm": "no"
+              }, 
+              "id": 0, 
+              "time": 0.003912925720214844
+            }, 
+            {
+              "interp": {
+                "confirm": "yes"
+              }, 
+              "id": 1, 
+              "time": 0.0010230541229248047
+            }
+          ], 
+          "metrics": {
+            "audioBytes": 42880, 
+            "gaussSelectSkipRatio": 0.7368019819259644, 
+            "lhoodPrecalcHitRatio": 0.8729687333106995, 
+            "avgFrameBatchSize": 3.0, 
+            "decodedFrameCount": 268, 
+            "bytesPerPacket": 320.0, 
+            "audioPackets": 134, 
+            "frameCount": 268
+          }, 
+          "sessionId": "", 
+          "trigger": "secondTimeout", 
+          "evType": "evPhraseResult", 
+          "wcn": {
+            "best_path_score": 0.9958640339141519, 
+            "best_path": {
+              "word": [
+                "no"
+              ], 
+              "prob": [
+                0.9958640336990356
+              ]
+            }, 
+            "network": [
+              {
+                "word": [
+                  "no", 
+                  "yeah"
+                ], 
+                "prob": [
+                  0.9958640336990356, 
+                  0.0041359784081578255
+                ]
+              }
+            ]
+          }, 
+          "config": {
+            "lms": [
+              "/home/jdw/sdc/prod/lms/askNextBus.lm"
+            ], 
+            "am": "/home/jdw/watson/data/am/gt_06.1.ep.h4.20.mmi2b", 
+            "secondTimeout": 700, 
+            "beamWidth": 250.0, 
+            "maxActiveArcs": 50000, 
+            "confidenceThreshold": 50, 
+            "firstTimeout": 400
+          }, 
+          "nbest": [
+            {
+              "normSpeechLhood": -141.97821044921875, 
+              "lastSpeechFrame": 146, 
+              "lms": [
+                "/home/jdw/sdc/prod/lms/askNextBus.lm"
+              ], 
+              "score": 19, 
+              "nscore": 58, 
+              "numFrames": 268, 
+              "udelta": -4.119999885559082, 
+              "speechLikelihood": -4685.28076171875, 
+              "firstSpeechFrame": 113, 
+              "ndelta": 87.74199676513672, 
+              "normCost": 141.72572326660156, 
+              "normLhood": 0.0, 
+              "gscore": 22, 
+              "cost": 37982.4921875, 
+              "hypothesis": "no", 
+              "glhood": -141.343994140625, 
+              "uscore": 18, 
+              "numSpeechFrames": 33, 
+              "likelihood": 0.0, 
+              "gdelta": -0.6340000033378601, 
+              "ulhood": -137.85800170898438
+            }, 
+            {
+              "normSpeechLhood": -144.17129516601562, 
+              "lastSpeechFrame": 134, 
+              "lms": [
+                "/home/jdw/sdc/prod/lms/askNextBus.lm"
+              ], 
+              "score": 5, 
+              "nscore": 100, 
+              "numFrames": 268, 
+              "udelta": -6.269000053405762, 
+              "speechLikelihood": -2450.912109375, 
+              "firstSpeechFrame": 117, 
+              "ndelta": 150.0, 
+              "normCost": 142.05311584472656, 
+              "normLhood": 0.0, 
+              "gscore": 11, 
+              "cost": 38070.234375, 
+              "hypothesis": "yeah", 
+              "glhood": -141.41600036621094, 
+              "uscore": 0, 
+              "numSpeechFrames": 17, 
+              "likelihood": 0.0, 
+              "gdelta": -2.75600004196167, 
+              "ulhood": -137.9029998779297
+            }
+          ], 
+          "fileId": 0
+        }, 
+        "uttinfo": {
+          "uttfile_status": "logged", 
+          "uttid": "017.raw"
+        }, 
+        "sys_action_details": [
+          {
+            "prompt": "<prosody volume=\"x-loud\">Okay, downtown.</prosody>", 
+            "output_start_time": "08/15 18:44:52.139", 
+            "waitfor": "['evPhraseResult', 'evDtmfInput', 'evNoInputTimeout']", 
+            "dtmf": "", 
+            "input_types": "speech", 
+            "grammars": "['/home/jdw/sdc/prod/lib/../lms/askNextBus.lm']", 
+            "timeout": "0.1", 
+            "input_start_time": "08/15 18:44:54.892", 
+            "ACTION": "Listen", 
+            "bargein": "False", 
+            "events": [
+              "evPromptStart", 
+              "evPromptStop", 
+              "evNoInputTimeout"
+            ]
+          }, 
+          {
+            "prompt": "file:/home/jdw/sdc/prod/lib/../prompts/AskNextBus/Init.wav", 
+            "output_start_time": "08/15 18:44:54.892", 
+            "waitfor": "['evPhraseResult', 'evDtmfInput', 'evNoInputTimeout']", 
+            "dtmf": "", 
+            "input_types": "speech", 
+            "grammars": "['/home/jdw/sdc/prod/lib/../lms/askNextBus.lm']", 
+            "timeout": "10", 
+            "input_start_time": "08/15 18:44:59.353", 
+            "ACTION": "Listen", 
+            "bargein": "False", 
+            "events": [
+              "evPromptStart", 
+              "evPromptStop", 
+              "evSpeechStart", 
+              "evPhraseResult"
+            ]
+          }
+        ], 
+        "dialog_states": [
+          {
+            "state": "AskDest", 
+            "activity": "Calling OnRecognition handler"
+          }, 
+          {
+            "state": "AskNextBus", 
+            "activity": "Initializing"
+          }, 
+          {
+            "state": "AskNextBus", 
+            "activity": "Prompt type: Init"
+          }, 
+          {
+            "state": "AskNextBus", 
+            "activity": "Calling Init()"
+          }
+        ], 
+        "parsed_asr_result": {
+          "nbest": [
+            {
+              "rec_string": "no", 
+              "rec_type": "ig", 
+              "fields": {
+                "confirm": "no"
+              }, 
+              "rec_conf": 0.336084
+            }, 
+            {
+              "rec_string": "yeah", 
+              "rec_type": "ig", 
+              "fields": {
+                "confirm": "yes"
+              }, 
+              "rec_conf": 0.044499
+            }
+          ]
+        }, 
+        "sys_action_summary": {
+          "struct": [
+            [
+              "impl-confirm", 
+              {
+                "tostopids": "downtown"
+              }
+            ]
+          ], 
+          "surface": "Okay, downtown. Do you want times for the next few buses? Say yes or no."
+        }
+      }, 
+      "turn-index": 6, 
+      "restart": false, 
+      "output": {
+        "start-time": 52.633, 
+        "transcript": "Okay, downtown. Do you want times for the next few buses? Say yes or no.", 
+        "dialog-acts": [
+          {
+            "slots": [
+              [
+                "to.desc", 
+                "downtown"
+              ]
+            ], 
+            "act": "impl-conf"
+          }, 
+          {
+            "slots": [
+              [
+                "act", 
+                "want-next-bus"
+              ]
+            ], 
+            "act": "expl-conf"
+          }, 
+          {
+            "slots": [
+              [
+                "act", 
+                "affirm"
+              ]
+            ], 
+            "act": "example"
+          }, 
+          {
+            "slots": [
+              [
+                "act", 
+                "negate"
+              ]
+            ], 
+            "act": "example"
+          }
+        ]
+      }
+    }, 
+    {
+      "input": {
+        "live": {
+          "asr-hyps": [
+            {
+              "asr-hyp": "yes", 
+              "score": 0.979825, 
+              "type": "recognition"
+            }
+          ], 
+          "slu-hyps": [
+            {
+              "slu-hyp": [
+                {
+                  "slots": [], 
+                  "act": "affirm"
+                }
+              ], 
+              "score": 0.979825
+            }
+          ]
+        }, 
+        "audio-file": "018.raw", 
+        "start-time": 67.406
+      }, 
+      "system-specific": {
+        "beliefstate": {
+          "date": [
+            {
+              "count": 77522.0, 
+              "belief": 1.0, 
+              "slotValues": {
+                "date": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": 0.0, 
+              "logBel": 0.0, 
+              "surfaceForms": {
+                "date": "set([])"
+              }, 
+              "id": 0
+            }
+          ], 
+          "route": [
+            {
+              "count": 4540.0, 
+              "belief": 3e-05, 
+              "slotValues": {
+                "route": {
+                  "vals": "['61D']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -2.888, 
+              "logBel": -10.301, 
+              "surfaceForms": {
+                "route": "set(['sixty one d'])"
+              }, 
+              "id": 4
+            }, 
+            {
+              "count": 100.0, 
+              "belief": 0.00078, 
+              "slotValues": {
+                "route": {
+                  "vals": "['61']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -6.703, 
+              "logBel": -7.15, 
+              "surfaceForms": {
+                "route": "set(['sixty one'])"
+              }, 
+              "id": 3
+            }, 
+            {
+              "count": 65648.0, 
+              "belief": 0.00106, 
+              "slotValues": {
+                "route": {
+                  "vals": "['61', '61A', '61D']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.217, 
+              "logBel": -6.845, 
+              "surfaceForms": {
+                "route": "set([])"
+              }, 
+              "id": 0
+            }, 
+            {
+              "count": 11234.0, 
+              "belief": 0.99812, 
+              "slotValues": {
+                "route": {
+                  "vals": "['61A']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -1.982, 
+              "logBel": -0.002, 
+              "surfaceForms": {
+                "route": "set(['sixty one a'])"
+              }, 
+              "id": 2
+            }
+          ], 
+          "fromstopids": [
+            {
+              "count": 162611.0, 
+              "belief": 0.07672, 
+              "slotValues": {
+                "fromstopids": {
+                  "vals": "['3288', '6451', '6452']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.003, 
+              "logBel": -2.568, 
+              "surfaceForms": {
+                "fromstopids": "set([])"
+              }, 
+              "id": 0
+            }, 
+            {
+              "count": 411.0, 
+              "belief": 0.92328, 
+              "slotValues": {
+                "fromstopids": {
+                  "vals": "['3288', '6451', '6452']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -5.983, 
+              "logBel": -0.08, 
+              "surfaceForms": {
+                "fromstopids": "set(['east pittsburgh', 'from east pittsburgh'])"
+              }, 
+              "id": 1
+            }
+          ], 
+          "tostopids": [
+            {
+              "count": 489.0, 
+              "belief": 0.0, 
+              "slotValues": {
+                "tostopids": {
+                  "vals": "['3871', '3872', '3873']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -5.811, 
+              "logBel": -14.787, 
+              "surfaceForms": {
+                "tostopids": "set(['oakland', 'schenley'])"
+              }, 
+              "id": 1
+            }, 
+            {
+              "count": 8304.0, 
+              "belief": 0.0, 
+              "slotValues": {
+                "tostopids": {
+                  "countHiddenVals": 41, 
+                  "valsListed": false, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -2.978, 
+              "logBel": -12.72, 
+              "surfaceForms": {
+                "tostopids": "set(['oakland'])"
+              }, 
+              "id": 2
+            }, 
+            {
+              "count": 299.0, 
+              "belief": 3e-05, 
+              "slotValues": {
+                "tostopids": {
+                  "vals": "['6455', '6459']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -6.302, 
+              "logBel": -10.273, 
+              "surfaceForms": {
+                "tostopids": "set(['steps'])"
+              }, 
+              "id": 3
+            }, 
+            {
+              "count": 1352.0, 
+              "belief": 4e-05, 
+              "slotValues": {
+                "tostopids": {
+                  "countHiddenVals": 6, 
+                  "valsListed": false, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -4.794, 
+              "logBel": -10.153, 
+              "surfaceForms": {
+                "tostopids": "set(['uptown'])"
+              }, 
+              "id": 4
+            }, 
+            {
+              "count": 148005.0, 
+              "belief": 0.0015, 
+              "slotValues": {
+                "tostopids": {
+                  "countHiddenVals": 69, 
+                  "valsListed": false, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.098, 
+              "logBel": -6.502, 
+              "surfaceForms": {
+                "tostopids": "set([])"
+              }, 
+              "id": 0
+            }, 
+            {
+              "count": 4773.0, 
+              "belief": 0.99842, 
+              "slotValues": {
+                "tostopids": {
+                  "countHiddenVals": 17, 
+                  "valsListed": false, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -3.532, 
+              "logBel": -0.002, 
+              "surfaceForms": {
+                "tostopids": "set(['downtown'])"
+              }, 
+              "id": 5
+            }
+          ], 
+          "time": [
+            {
+              "count": 176762.0, 
+              "belief": 0.5, 
+              "slotValues": {
+                "searchType": {
+                  "vals": "['arrive']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }, 
+                "time": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.693, 
+              "logBel": -0.693, 
+              "surfaceForms": {
+                "searchType": "set([])", 
+                "time": "set([])"
+              }, 
+              "id": 0
+            }, 
+            {
+              "count": 176761.0, 
+              "belief": 0.5, 
+              "slotValues": {
+                "searchType": {
+                  "vals": "['depart']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }, 
+                "time": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.693, 
+              "logBel": -0.693, 
+              "surfaceForms": {
+                "searchType": "set([])", 
+                "time": "set([])"
+              }, 
+              "id": 1
+            }
+          ]
+        }, 
+        "turn_start_time": "08/15 18:45:00.711", 
+        "raw_asr_result": {
+          "audioParams": {
+            "sampleRate": 8000, 
+            "coding": "linear", 
+            "byteOrder": "LE"
+          }, 
+          "version": "watson-6.5.5733", 
+          "resultId": 18, 
+          "hostname": "dt-jdw", 
+          "nlu-sisr": [
+            {
+              "interp": {
+                "confirm": "yes"
+              }, 
+              "id": 0, 
+              "time": 0.0025560855865478516
+            }
+          ], 
+          "metrics": {
+            "audioBytes": 40000, 
+            "gaussSelectSkipRatio": 0.6593161821365356, 
+            "lhoodPrecalcHitRatio": 0.8689701557159424, 
+            "avgFrameBatchSize": 3.0, 
+            "decodedFrameCount": 250, 
+            "bytesPerPacket": 320.0, 
+            "audioPackets": 125, 
+            "frameCount": 250
+          }, 
+          "sessionId": "", 
+          "trigger": "firstTimeout", 
+          "evType": "evPhraseResult", 
+          "wcn": {
+            "best_path_score": 1.0, 
+            "best_path": {
+              "word": [
+                "yes"
+              ], 
+              "prob": [
+                1.0
+              ]
+            }, 
+            "network": [
+              {
+                "word": [
+                  "yes"
+                ], 
+                "prob": [
+                  1.0
+                ]
+              }
+            ]
+          }, 
+          "config": {
+            "lms": [
+              "/home/jdw/sdc/prod/lms/askNextBus.lm"
+            ], 
+            "am": "/home/jdw/watson/data/am/gt_06.1.ep.h4.20.mmi2b", 
+            "secondTimeout": 700, 
+            "beamWidth": 250.0, 
+            "maxActiveArcs": 50000, 
+            "confidenceThreshold": 50, 
+            "firstTimeout": 400
+          }, 
+          "nbest": [
+            {
+              "normSpeechLhood": -148.9039764404297, 
+              "lastSpeechFrame": 177, 
+              "lms": [
+                "/home/jdw/sdc/prod/lms/askNextBus.lm"
+              ], 
+              "score": 73, 
+              "numFrames": 250, 
+              "udelta": -0.7419999837875366, 
+              "speechLikelihood": -9678.7587890625, 
+              "firstSpeechFrame": 108, 
+              "normLhood": 0.0, 
+              "normCost": 141.1569366455078, 
+              "gscore": 63, 
+              "cost": 35289.234375, 
+              "hypothesis": "yes", 
+              "glhood": -156.44400024414062, 
+              "uscore": 85, 
+              "numSpeechFrames": 65, 
+              "likelihood": 0.0, 
+              "gdelta": 7.539999961853027, 
+              "ulhood": -148.16099548339844
+            }
+          ], 
+          "fileId": 0
+        }, 
+        "uttinfo": {
+          "uttfile_status": "logged", 
+          "uttid": "018.raw"
+        }, 
+        "sys_action_details": [
+          {
+            "prompt": "file:/home/jdw/sdc/prod/lib/../prompts/AskNextBus/NM1.wav", 
+            "output_start_time": "08/15 18:45:00.712", 
+            "waitfor": "['evPhraseResult', 'evDtmfInput', 'evNoInputTimeout']", 
+            "dtmf": "", 
+            "input_types": "speech", 
+            "grammars": "['/home/jdw/sdc/prod/lib/../lms/askNextBus.lm']", 
+            "timeout": "10", 
+            "input_start_time": "08/15 18:45:06.912", 
+            "ACTION": "Listen", 
+            "bargein": "False", 
+            "events": [
+              "evPromptStart", 
+              "evPromptStop", 
+              "evSpeechStart", 
+              "evPhraseResult"
+            ]
+          }
+        ], 
+        "dialog_states": [
+          {
+            "state": "AskNextBus", 
+            "activity": "Prompt type: NM"
+          }, 
+          {
+            "state": "AskNextBus", 
+            "activity": "Looking for NM1"
+          }, 
+          {
+            "state": "AskNextBus", 
+            "activity": "Automatically queuing prompts[NM1]"
+          }
+        ], 
+        "parsed_asr_result": {
+          "nbest": [
+            {
+              "rec_string": "yes", 
+              "rec_type": "ig", 
+              "fields": {
+                "confirm": "yes"
+              }, 
+              "rec_conf": 0.979825
+            }
+          ]
+        }, 
+        "sys_action_summary": {
+          "struct": [], 
+          "surface": "Sorry, do you want to get the times for the next few buses today?  Say yes or no."
+        }
+      }, 
+      "turn-index": 7, 
+      "restart": false, 
+      "output": {
+        "start-time": 61.206, 
+        "transcript": "Sorry, do you want to get the times for the next few buses today?  Say yes or no.", 
+        "dialog-acts": [
+          {
+            "slots": [], 
+            "act": "sorry"
+          }, 
+          {
+            "slots": [
+              [
+                "act", 
+                "want-next-bus"
+              ]
+            ], 
+            "act": "expl-conf"
+          }, 
+          {
+            "slots": [
+              [
+                "act", 
+                "affirm"
+              ]
+            ], 
+            "act": "example"
+          }, 
+          {
+            "slots": [
+              [
+                "act", 
+                "negate"
+              ]
+            ], 
+            "act": "example"
+          }
+        ]
+      }
+    }, 
+    {
+      "input": {
+        "live": {
+          "asr-hyps": [], 
+          "slu-hyps": []
+        }, 
+        "audio-file": null, 
+        "start-time": null
+      }, 
+      "system-specific": {
+        "beliefstate": {}, 
+        "turn_start_time": "08/15 18:45:07.771", 
+        "raw_asr_result": null, 
+        "uttinfo": {
+          "uttfile_status": "not_expected", 
+          "uttid": null
+        }, 
+        "sys_action_details": [
+          {
+            "prompt": "file:/home/jdw/sdc/prod/lib/../prompts/AskNextBus/OkNextFewBuses.wav", 
+            "output_start_time": "08/15 18:45:07.950", 
+            "waitfor": "['evPhraseResult', 'evDtmfInput', 'evNoInputTimeout']", 
+            "dtmf": "", 
+            "input_types": "speech", 
+            "grammars": "['/home/jdw/sdc/prod/lib/../lms/listNav.lm']", 
+            "timeout": "0.1", 
+            "input_start_time": "08/15 18:45:09.731", 
+            "ACTION": "Listen", 
+            "bargein": "True", 
+            "events": [
+              "evPromptStart", 
+              "evPromptStop", 
+              "evNoInputTimeout"
+            ]
+          }, 
+          {
+            "prompt": "file:/home/jdw/sdc/prod/lib/../prompts/CommonPrompts/goback_1.wav", 
+            "output_start_time": "08/15 18:45:09.731", 
+            "waitfor": "['evPhraseResult', 'evDtmfInput', 'evNoInputTimeout']", 
+            "dtmf": "", 
+            "input_types": "speech", 
+            "grammars": "['/home/jdw/sdc/prod/lib/../lms/listNav.lm']", 
+            "timeout": "0.1", 
+            "input_start_time": "08/15 18:45:11.651", 
+            "ACTION": "Listen", 
+            "bargein": "True", 
+            "events": [
+              "evPromptStart", 
+              "evPromptStop", 
+              "evNoInputTimeout"
+            ]
+          }, 
+          {
+            "prompt": "file:/home/jdw/sdc/prod/lib/../prompts/SearchForBuses/more_buses_a.wav", 
+            "output_start_time": "08/15 18:45:11.652", 
+            "waitfor": "['evPhraseResult', 'evDtmfInput', 'evNoInputTimeout']", 
+            "dtmf": "", 
+            "input_types": "speech", 
+            "grammars": "['/home/jdw/sdc/prod/lib/../lms/listNav.lm']", 
+            "timeout": "0.1", 
+            "input_start_time": "08/15 18:45:13.511", 
+            "ACTION": "Listen", 
+            "bargein": "True", 
+            "events": [
+              "evPromptStart", 
+              "evPromptStop", 
+              "evNoInputTimeout"
+            ]
+          }, 
+          {
+            "prompt": "<prosody volume=\"x-loud\">61A,</prosody>", 
+            "output_start_time": "08/15 18:45:13.511", 
+            "waitfor": "['evPhraseResult', 'evDtmfInput', 'evNoInputTimeout']", 
+            "dtmf": "", 
+            "input_types": "speech", 
+            "grammars": "['/home/jdw/sdc/prod/lib/../lms/listNav.lm']", 
+            "timeout": "0.1", 
+            "input_start_time": "08/15 18:45:15.250", 
+            "ACTION": "Listen", 
+            "bargein": "True", 
+            "events": [
+              "evPromptStart", 
+              "evPromptStop", 
+              "evNoInputTimeout"
+            ]
+          }, 
+          {
+            "prompt": "file:/home/jdw/sdc/prod/lib/../prompts/SearchForBuses/more_buses_b.wav", 
+            "output_start_time": "08/15 18:45:15.251", 
+            "waitfor": "['evPhraseResult', 'evDtmfInput', 'evNoInputTimeout']", 
+            "dtmf": "", 
+            "input_types": "speech", 
+            "grammars": "['/home/jdw/sdc/prod/lib/../lms/listNav.lm']", 
+            "timeout": "0.1", 
+            "input_start_time": "08/15 18:45:16.110", 
+            "ACTION": "Listen", 
+            "bargein": "True", 
+            "events": [
+              "evPromptStart", 
+              "evPromptStop", 
+              "evNoInputTimeout"
+            ]
+          }, 
+          {
+            "prompt": "<prosody volume=\"x-loud\">from east pittsburgh to downtown.</prosody>", 
+            "output_start_time": "08/15 18:45:16.111", 
+            "waitfor": "['evPhraseResult', 'evDtmfInput', 'evNoInputTimeout']", 
+            "dtmf": "", 
+            "input_types": "speech", 
+            "grammars": "['/home/jdw/sdc/prod/lib/../lms/listNav.lm']", 
+            "timeout": "0.1", 
+            "input_start_time": "08/15 18:45:19.410", 
+            "ACTION": "Listen", 
+            "bargein": "True", 
+            "events": [
+              "evPromptStart", 
+              "evPromptStop", 
+              "evNoInputTimeout"
+            ]
+          }, 
+          {
+            "prompt": "file:/home/jdw/sdc/prod/lib/../prompts/SearchForBuses/more_buses_c.wav", 
+            "output_start_time": "08/15 18:45:19.411", 
+            "waitfor": "['evPhraseResult', 'evDtmfInput', 'evNoInputTimeout']", 
+            "dtmf": "", 
+            "input_types": "speech", 
+            "grammars": "['/home/jdw/sdc/prod/lib/../lms/listNav.lm']", 
+            "timeout": "0.1", 
+            "input_start_time": "08/15 18:45:21.110", 
+            "ACTION": "Listen", 
+            "bargein": "True", 
+            "events": [
+              "evPromptStart", 
+              "evPromptStop", 
+              "evNoInputTimeout"
+            ]
+          }, 
+          {
+            "prompt": "<prosody volume=\"x-loud\">At 7:09 PM today, there is a 61 A, from Dynamo Alley And Beech Avenue, In East Pittsburgh, arriving Fifth Avenue And Market Street, Downtown, at 8:07 PM.</prosody>", 
+            "output_start_time": "08/15 18:45:21.110", 
+            "waitfor": "['evPhraseResult', 'evDtmfInput', 'evNoInputTimeout']", 
+            "dtmf": "", 
+            "input_types": "speech", 
+            "grammars": "['/home/jdw/sdc/prod/lib/../lms/listNav.lm']", 
+            "timeout": "0.1", 
+            "input_start_time": "08/15 18:45:36.633", 
+            "ACTION": "Listen", 
+            "bargein": "True", 
+            "events": [
+              "evPromptStart", 
+              "evPromptStop", 
+              "evNoInputTimeout"
+            ]
+          }, 
+          {
+            "prompt": "file:/home/jdw/sdc/prod/lib/../prompts/ListNav/cmd_list.wav", 
+            "output_start_time": "08/15 18:45:36.633", 
+            "waitfor": "['evPhraseResult', 'evDtmfInput', 'evNoInputTimeout']", 
+            "dtmf": "", 
+            "input_types": "speech", 
+            "grammars": "['/home/jdw/sdc/prod/lib/../lms/listNav.lm']", 
+            "timeout": "10", 
+            "input_start_time": null, 
+            "ACTION": "Listen", 
+            "bargein": "True", 
+            "events": [
+              "evPromptStart", 
+              "evPromptStop"
+            ]
+          }
+        ], 
+        "dialog_states": [
+          {
+            "state": "AskNextBus", 
+            "activity": "Calling OnRecognition handler"
+          }, 
+          {
+            "state": "SearchForBuses", 
+            "activity": "Initializing"
+          }, 
+          {
+            "state": "ListNav", 
+            "activity": "Initializing"
+          }, 
+          {
+            "state": "ListNav", 
+            "activity": "Prompt type: Init"
+          }, 
+          {
+            "state": "ListNav", 
+            "activity": "Calling Init()"
+          }
+        ], 
+        "parsed_asr_result": null, 
+        "sys_action_summary": {
+          "struct": [], 
+          "surface": "Ok, the next few buses. To change, say go back. There are more buses than just the 61A, that run from east pittsburgh to downtown. I'll tell you about all of them. At 7:09 PM today, there is a 61 A, from Dynamo Alley And Beech Avenue, In East Pittsburgh, arriving Fifth Avenue And Market Street, Downtown, at 8:07 PM. Say repeat, next, previous, or start over."
+        }
+      }, 
+      "turn-index": 8, 
+      "restart": false, 
+      "output": {
+        "start-time": 68.444, 
+        "transcript": "Ok, the next few buses. To change, say go back. There are more buses than just the 61A, that run from east pittsburgh to downtown. I'll tell you about all of them. At 7:09 PM today, there is a 61 A, from Dynamo Alley And Beech Avenue, In East Pittsburgh, arriving Fifth Avenue And Market Street, Downtown, at 8:07 PM. Say repeat, next, previous, or start over.", 
+        "dialog-acts": [
+          {
+            "slots": [
+              [
+                "act", 
+                "want-next-bus"
+              ]
+            ], 
+            "act": "impl-conf"
+          }, 
+          {
+            "slots": [
+              [
+                "act", 
+                "goback"
+              ]
+            ], 
+            "act": "example"
+          }, 
+          {
+            "slots": [
+              [
+                "route", 
+                "61a"
+              ], 
+              [
+                "from.desc", 
+                "east pittsburgh"
+              ], 
+              [
+                "to.desc", 
+                "downtown"
+              ]
+            ], 
+            "act": "morebuses"
+          }, 
+          {
+            "slots": [
+              [
+                "result.from.time.hour", 
+                7
+              ], 
+              [
+                "result.from.time.minute", 
+                9
+              ], 
+              [
+                "result.from.time.ampm", 
+                "pm"
+              ], 
+              [
+                "result.from.date.day", 
+                "today"
+              ], 
+              [
+                "result.route", 
+                "61a"
+              ], 
+              [
+                "result.from.desc", 
+                "dynamo alley and beech avenue, in east pittsburgh"
+              ], 
+              [
+                "result.to.desc", 
+                "fifth avenue and market street, downtown"
+              ], 
+              [
+                "result.to.time.hour", 
+                8
+              ], 
+              [
+                "result.to.time.minute", 
+                7
+              ], 
+              [
+                "result.to.time.ampm", 
+                "pm"
+              ]
+            ], 
+            "act": "schedule"
+          }, 
+          {
+            "slots": [
+              [
+                "act", 
+                "repeat"
+              ]
+            ], 
+            "act": "example"
+          }, 
+          {
+            "slots": [
+              [
+                "act", 
+                "nextbus"
+              ]
+            ], 
+            "act": "example"
+          }, 
+          {
+            "slots": [
+              [
+                "act", 
+                "prevbus"
+              ]
+            ], 
+            "act": "example"
+          }, 
+          {
+            "slots": [
+              [
+                "act", 
+                "restart"
+              ]
+            ], 
+            "act": "example"
+          }
+        ]
+      }
+    }
+  ], 
+  "session-time": "18:43:59", 
+  "system-specific": {
+    "initial_belief_state": {
+      "date": [
+        {
+          "count": 77522.0, 
+          "belief": 1.0, 
+          "slotValues": {
+            "date": {
+              "vals": "[]", 
+              "valsListed": true, 
+              "inclOrExcl": "x"
+            }
+          }, 
+          "pid": null, 
+          "logPri": 0.0, 
+          "logBel": 0.0, 
+          "surfaceForms": {
+            "date": "set([])"
+          }, 
+          "id": 0
+        }
+      ], 
+      "route": [
+        {
+          "count": 81522.0, 
+          "belief": 1.0, 
+          "slotValues": {
+            "route": {
+              "vals": "[]", 
+              "valsListed": true, 
+              "inclOrExcl": "x"
+            }
+          }, 
+          "pid": null, 
+          "logPri": 0.0, 
+          "logBel": 0.0, 
+          "surfaceForms": {
+            "route": "set([])"
+          }, 
+          "id": 0
+        }
+      ], 
+      "fromstopids": [
+        {
+          "count": 163022.0, 
+          "belief": 1.0, 
+          "slotValues": {
+            "fromstopids": {
+              "vals": "[]", 
+              "valsListed": true, 
+              "inclOrExcl": "x"
+            }
+          }, 
+          "pid": null, 
+          "logPri": 0.0, 
+          "logBel": 0.0, 
+          "surfaceForms": {
+            "fromstopids": "set([])"
+          }, 
+          "id": 0
+        }
+      ], 
+      "tostopids": [
+        {
+          "count": 163222.0, 
+          "belief": 1.0, 
+          "slotValues": {
+            "tostopids": {
+              "vals": "[]", 
+              "valsListed": true, 
+              "inclOrExcl": "x"
+            }
+          }, 
+          "pid": null, 
+          "logPri": 0.0, 
+          "logBel": 0.0, 
+          "surfaceForms": {
+            "tostopids": "set([])"
+          }, 
+          "id": 0
+        }
+      ], 
+      "time": [
+        {
+          "count": 176762.0, 
+          "belief": 0.5, 
+          "slotValues": {
+            "searchType": {
+              "vals": "['arrive']", 
+              "valsListed": true, 
+              "inclOrExcl": "="
+            }, 
+            "time": {
+              "vals": "[]", 
+              "valsListed": true, 
+              "inclOrExcl": "x"
+            }
+          }, 
+          "pid": null, 
+          "logPri": -0.693, 
+          "logBel": -0.693, 
+          "surfaceForms": {
+            "searchType": "set([])", 
+            "time": "set([])"
+          }, 
+          "id": 0
+        }, 
+        {
+          "count": 176761.0, 
+          "belief": 0.5, 
+          "slotValues": {
+            "searchType": {
+              "vals": "['depart']", 
+              "valsListed": true, 
+              "inclOrExcl": "="
+            }, 
+            "time": {
+              "vals": "[]", 
+              "valsListed": true, 
+              "inclOrExcl": "x"
+            }
+          }, 
+          "pid": null, 
+          "logPri": -0.693, 
+          "logBel": -0.693, 
+          "surfaceForms": {
+            "searchType": "set([])", 
+            "time": "set([])"
+          }, 
+          "id": 1
+        }
+      ]
+    }, 
+    "session-start-time": "08/15 18:43:59.506"
+  }, 
+  "session-date": "08-15-2010"
+}

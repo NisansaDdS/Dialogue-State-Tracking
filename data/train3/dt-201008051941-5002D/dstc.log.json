@@ -1,0 +1,5527 @@
+{
+  "session-id": "dt-201008051941-5002D", 
+  "turns": [
+    {
+      "input": {
+        "live": {
+          "asr-hyps": [], 
+          "slu-hyps": []
+        }, 
+        "audio-file": null, 
+        "start-time": 6.512
+      }, 
+      "system-specific": {
+        "beliefstate": {
+          "date": [
+            {
+              "count": 77522.0, 
+              "belief": 1.0, 
+              "slotValues": {
+                "date": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": 0.0, 
+              "logBel": 0.0, 
+              "surfaceForms": {
+                "date": "set([])"
+              }, 
+              "id": 0
+            }
+          ], 
+          "route": [
+            {
+              "count": 81522.0, 
+              "belief": 1.0, 
+              "slotValues": {
+                "route": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": 0.0, 
+              "logBel": 0.0, 
+              "surfaceForms": {
+                "route": "set([])"
+              }, 
+              "id": 0
+            }
+          ], 
+          "fromstopids": [
+            {
+              "count": 163022.0, 
+              "belief": 1.0, 
+              "slotValues": {
+                "fromstopids": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": 0.0, 
+              "logBel": 0.0, 
+              "surfaceForms": {
+                "fromstopids": "set([])"
+              }, 
+              "id": 0
+            }
+          ], 
+          "tostopids": [
+            {
+              "count": 163222.0, 
+              "belief": 1.0, 
+              "slotValues": {
+                "tostopids": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": 0.0, 
+              "logBel": 0.0, 
+              "surfaceForms": {
+                "tostopids": "set([])"
+              }, 
+              "id": 0
+            }
+          ], 
+          "time": [
+            {
+              "count": 176762.0, 
+              "belief": 0.5, 
+              "slotValues": {
+                "searchType": {
+                  "vals": "['arrive']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }, 
+                "time": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.693, 
+              "logBel": -0.693, 
+              "surfaceForms": {
+                "searchType": "set([])", 
+                "time": "set([])"
+              }, 
+              "id": 0
+            }, 
+            {
+              "count": 176761.0, 
+              "belief": 0.5, 
+              "slotValues": {
+                "searchType": {
+                  "vals": "['depart']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }, 
+                "time": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.693, 
+              "logBel": -0.693, 
+              "surfaceForms": {
+                "searchType": "set([])", 
+                "time": "set([])"
+              }, 
+              "id": 1
+            }
+          ]
+        }, 
+        "turn_start_time": "08/05 19:41:51.484", 
+        "raw_asr_result": {
+          "audioParams": {
+            "sampleRate": 8000, 
+            "coding": "linear", 
+            "byteOrder": "LE"
+          }, 
+          "resultId": 2, 
+          "hostname": "dt-jdw", 
+          "metrics": {}, 
+          "sessionId": "", 
+          "version": "watson-6.5.5700", 
+          "evType": "evPhraseResult", 
+          "config": {
+            "lms": [
+              "/home/jdw/sdc/prod/lms/routeList.lm"
+            ], 
+            "am": "/home/jdw/watson/data/am/gt_06.1.ep.h4.20.mmi2b", 
+            "secondTimeout": 700, 
+            "beamWidth": 250.0, 
+            "maxActiveArcs": 50000, 
+            "firstTimeout": 400
+          }, 
+          "fileId": 0
+        }, 
+        "uttinfo": {
+          "uttfile_status": "not_expected", 
+          "uttid": null
+        }, 
+        "sys_action_details": [
+          {
+            "prompt": "file:/home/jdw/sdc/prod/lib/../prompts/START/Init.wav", 
+            "output_start_time": "08/05 19:41:51.485", 
+            "waitfor": "['evPhraseResult', 'evDtmfInput', 'evNoInputTimeout']", 
+            "dtmf": "", 
+            "input_types": "speech", 
+            "grammars": "['/home/jdw/sdc/prod/lib/../lms/routeList.lm']", 
+            "timeout": "0.1", 
+            "input_start_time": "08/05 19:41:53.253", 
+            "ACTION": "Listen", 
+            "bargein": "False", 
+            "events": [
+              "evPromptStart", 
+              "evPromptStop", 
+              "evNoInputTimeout"
+            ]
+          }, 
+          {
+            "prompt": "file:/home/jdw/sdc/prod/lib/../prompts/AskRoute/Init.wav", 
+            "output_start_time": "08/05 19:41:53.254", 
+            "waitfor": "['evPhraseResult', 'evDtmfInput', 'evNoInputTimeout']", 
+            "dtmf digit": "3", 
+            "dtmf": "", 
+            "input_types": "speech", 
+            "grammars": "['/home/jdw/sdc/prod/lib/../lms/routeList.lm']", 
+            "timeout": "10", 
+            "input_start_time": "08/05 19:41:57.894", 
+            "ACTION": "Listen", 
+            "bargein": "False", 
+            "events": [
+              "evPromptStart", 
+              "evPromptStop", 
+              "evSpeechStart", 
+              "evDtmfInput"
+            ]
+          }
+        ], 
+        "dialog_states": [
+          {
+            "state": "START", 
+            "activity": "Initializing"
+          }, 
+          {
+            "state": "AskRoute", 
+            "activity": "Initializing"
+          }, 
+          {
+            "state": "AskRoute", 
+            "activity": "Prompt type: Init"
+          }, 
+          {
+            "state": "AskRoute", 
+            "activity": "Calling Init()"
+          }
+        ], 
+        "parsed_asr_result": {
+          "nbest": [
+            {
+              "rec_type": "offlist", 
+              "rec_conf": 1.0
+            }
+          ]
+        }, 
+        "sys_action_summary": {
+          "struct": [
+            [
+              "request", 
+              "route"
+            ], 
+            [
+              "request", 
+              "route"
+            ]
+          ], 
+          "surface": "East Pittsburg Bus Schedules. Say a bus route, like 28X, or say I'm not sure."
+        }
+      }, 
+      "turn-index": 0, 
+      "restart": false, 
+      "output": {
+        "start-time": 0.103, 
+        "transcript": "East Pittsburg Bus Schedules. Say a bus route, like 28X, or say I'm not sure.", 
+        "dialog-acts": [
+          {
+            "slots": [], 
+            "act": "hello"
+          }, 
+          {
+            "slots": [
+              [
+                "route", 
+                null
+              ]
+            ], 
+            "act": "request"
+          }, 
+          {
+            "slots": [
+              [
+                "route", 
+                "28x"
+              ]
+            ], 
+            "act": "example"
+          }, 
+          {
+            "slots": [
+              [
+                "route", 
+                "dont_know"
+              ]
+            ], 
+            "act": "example"
+          }
+        ]
+      }
+    }, 
+    {
+      "input": {
+        "live": {
+          "asr-hyps": [
+            {
+              "asr-hyp": "g c", 
+              "score": 0.21643, 
+              "type": "recognition"
+            }, 
+            {
+              "asr-hyp": "sixty", 
+              "score": 0.273538, 
+              "type": "recognition"
+            }, 
+            {
+              "asr-hyp": "one d", 
+              "score": 0.011982, 
+              "type": "recognition"
+            }, 
+            {
+              "asr-hyp": "p", 
+              "score": 0.000936, 
+              "type": "recognition"
+            }, 
+            {
+              "asr-hyp": "six c", 
+              "score": 5.3e-05, 
+              "type": "recognition"
+            }, 
+            {
+              "asr-hyp": "g", 
+              "score": 2e-06, 
+              "type": "recognition"
+            }, 
+            {
+              "asr-hyp": "forty eight", 
+              "score": 0.0, 
+              "type": "recognition"
+            }, 
+            {
+              "asr-hyp": "eleven c", 
+              "score": 0.0, 
+              "type": "recognition"
+            }
+          ], 
+          "slu-hyps": [
+            {
+              "slu-hyp": [
+                {
+                  "slots": [
+                    [
+                      "route", 
+                      "gc"
+                    ]
+                  ], 
+                  "act": "inform"
+                }
+              ], 
+              "score": 0.21643
+            }, 
+            {
+              "slu-hyp": [
+                {
+                  "slots": [
+                    [
+                      "route", 
+                      "60"
+                    ]
+                  ], 
+                  "act": "inform"
+                }
+              ], 
+              "score": 0.273538
+            }, 
+            {
+              "slu-hyp": [
+                {
+                  "slots": [
+                    [
+                      "route", 
+                      "1d"
+                    ]
+                  ], 
+                  "act": "inform"
+                }
+              ], 
+              "score": 0.011982
+            }, 
+            {
+              "slu-hyp": [
+                {
+                  "slots": [
+                    [
+                      "route", 
+                      "p"
+                    ]
+                  ], 
+                  "act": "inform"
+                }
+              ], 
+              "score": 0.000936
+            }, 
+            {
+              "slu-hyp": [
+                {
+                  "slots": [
+                    [
+                      "route", 
+                      "6c"
+                    ]
+                  ], 
+                  "act": "inform"
+                }
+              ], 
+              "score": 5.3e-05
+            }, 
+            {
+              "slu-hyp": [
+                {
+                  "slots": [
+                    [
+                      "route", 
+                      "g"
+                    ]
+                  ], 
+                  "act": "inform"
+                }
+              ], 
+              "score": 2e-06
+            }, 
+            {
+              "slu-hyp": [
+                {
+                  "slots": [
+                    [
+                      "route", 
+                      "48"
+                    ]
+                  ], 
+                  "act": "inform"
+                }
+              ], 
+              "score": 0.0
+            }, 
+            {
+              "slu-hyp": [
+                {
+                  "slots": [
+                    [
+                      "route", 
+                      "11c"
+                    ]
+                  ], 
+                  "act": "inform"
+                }
+              ], 
+              "score": 0.0
+            }
+          ]
+        }, 
+        "audio-file": "003.raw", 
+        "start-time": 14.072
+      }, 
+      "system-specific": {
+        "beliefstate": {
+          "date": [
+            {
+              "count": 77522.0, 
+              "belief": 1.0, 
+              "slotValues": {
+                "date": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": 0.0, 
+              "logBel": 0.0, 
+              "surfaceForms": {
+                "date": "set([])"
+              }, 
+              "id": 0
+            }
+          ], 
+          "route": [
+            {
+              "count": 100.0, 
+              "belief": 0.00018, 
+              "slotValues": {
+                "route": {
+                  "vals": "['11C']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -6.703, 
+              "logBel": -8.637, 
+              "surfaceForms": {
+                "route": "set(['eleven c'])"
+              }, 
+              "id": 9
+            }, 
+            {
+              "count": 100.0, 
+              "belief": 0.00018, 
+              "slotValues": {
+                "route": {
+                  "vals": "['48']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -6.703, 
+              "logBel": -8.637, 
+              "surfaceForms": {
+                "route": "set(['forty eight'])"
+              }, 
+              "id": 8
+            }, 
+            {
+              "count": 100.0, 
+              "belief": 0.00018, 
+              "slotValues": {
+                "route": {
+                  "vals": "['G']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -6.703, 
+              "logBel": -8.632, 
+              "surfaceForms": {
+                "route": "set(['g'])"
+              }, 
+              "id": 7
+            }, 
+            {
+              "count": 100.0, 
+              "belief": 0.00021, 
+              "slotValues": {
+                "route": {
+                  "vals": "['6C']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -6.703, 
+              "logBel": -8.481, 
+              "surfaceForms": {
+                "route": "set(['six c'])"
+              }, 
+              "id": 6
+            }, 
+            {
+              "count": 100.0, 
+              "belief": 0.0007, 
+              "slotValues": {
+                "route": {
+                  "vals": "['P']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -6.703, 
+              "logBel": -7.259, 
+              "surfaceForms": {
+                "route": "set(['p'])"
+              }, 
+              "id": 5
+            }, 
+            {
+              "count": 100.0, 
+              "belief": 0.00692, 
+              "slotValues": {
+                "route": {
+                  "vals": "['1D']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -6.703, 
+              "logBel": -4.974, 
+              "surfaceForms": {
+                "route": "set(['one d'])"
+              }, 
+              "id": 4
+            }, 
+            {
+              "count": 100.0, 
+              "belief": 0.12188, 
+              "slotValues": {
+                "route": {
+                  "vals": "['GC']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -6.703, 
+              "logBel": -2.105, 
+              "surfaceForms": {
+                "route": "set(['g c'])"
+              }, 
+              "id": 2
+            }, 
+            {
+              "count": 100.0, 
+              "belief": 0.15399, 
+              "slotValues": {
+                "route": {
+                  "vals": "['60']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -6.703, 
+              "logBel": -1.871, 
+              "surfaceForms": {
+                "route": "set(['sixty'])"
+              }, 
+              "id": 3
+            }, 
+            {
+              "count": 80722.0, 
+              "belief": 0.71578, 
+              "slotValues": {
+                "route": {
+                  "countHiddenVals": 8, 
+                  "valsListed": false, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.01, 
+              "logBel": -0.334, 
+              "surfaceForms": {
+                "route": "set([])"
+              }, 
+              "id": 0
+            }
+          ], 
+          "fromstopids": [
+            {
+              "count": 163022.0, 
+              "belief": 1.0, 
+              "slotValues": {
+                "fromstopids": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": 0.0, 
+              "logBel": 0.0, 
+              "surfaceForms": {
+                "fromstopids": "set([])"
+              }, 
+              "id": 0
+            }
+          ], 
+          "tostopids": [
+            {
+              "count": 163222.0, 
+              "belief": 1.0, 
+              "slotValues": {
+                "tostopids": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": 0.0, 
+              "logBel": 0.0, 
+              "surfaceForms": {
+                "tostopids": "set([])"
+              }, 
+              "id": 0
+            }
+          ], 
+          "time": [
+            {
+              "count": 176762.0, 
+              "belief": 0.5, 
+              "slotValues": {
+                "searchType": {
+                  "vals": "['arrive']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }, 
+                "time": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.693, 
+              "logBel": -0.693, 
+              "surfaceForms": {
+                "searchType": "set([])", 
+                "time": "set([])"
+              }, 
+              "id": 0
+            }, 
+            {
+              "count": 176761.0, 
+              "belief": 0.5, 
+              "slotValues": {
+                "searchType": {
+                  "vals": "['depart']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }, 
+                "time": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.693, 
+              "logBel": -0.693, 
+              "surfaceForms": {
+                "searchType": "set([])", 
+                "time": "set([])"
+              }, 
+              "id": 1
+            }
+          ]
+        }, 
+        "turn_start_time": "08/05 19:41:59.356", 
+        "raw_asr_result": {
+          "audioParams": {
+            "sampleRate": 8000, 
+            "coding": "linear", 
+            "byteOrder": "LE"
+          }, 
+          "version": "watson-6.5.5700", 
+          "resultId": 3, 
+          "hostname": "dt-jdw", 
+          "nlu-sisr": [
+            {
+              "interp": {
+                "route": "GC"
+              }, 
+              "id": 0, 
+              "time": 0.0036859512329101562
+            }, 
+            {
+              "interp": {
+                "route": "60"
+              }, 
+              "id": 1, 
+              "time": 0.0008001327514648438
+            }, 
+            {
+              "interp": {
+                "route": "1D"
+              }, 
+              "id": 2, 
+              "time": 0.0007801055908203125
+            }, 
+            {
+              "interp": {
+                "route": "P"
+              }, 
+              "id": 3, 
+              "time": 0.0007419586181640625
+            }, 
+            {
+              "interp": {
+                "route": "6C"
+              }, 
+              "id": 4, 
+              "time": 0.0007660388946533203
+            }, 
+            {
+              "interp": {
+                "route": "G"
+              }, 
+              "id": 5, 
+              "time": 0.0007221698760986328
+            }, 
+            {
+              "interp": {
+                "route": "48"
+              }, 
+              "id": 6, 
+              "time": 0.0007901191711425781
+            }, 
+            {
+              "interp": {
+                "route": "11C"
+              }, 
+              "id": 7, 
+              "time": 0.000820159912109375
+            }
+          ], 
+          "metrics": {
+            "audioBytes": 44800, 
+            "gaussSelectSkipRatio": 0.8204345703125, 
+            "lhoodPrecalcHitRatio": 0.9050127863883972, 
+            "avgFrameBatchSize": 3.0, 
+            "decodedFrameCount": 270, 
+            "bytesPerPacket": 320.0, 
+            "audioPackets": 140, 
+            "frameCount": 280
+          }, 
+          "sessionId": "", 
+          "trigger": "secondTimeout", 
+          "evType": "evPhraseResult", 
+          "wcn": {
+            "best_path_score": 0.9523796892143873, 
+            "best_path": {
+              "word": [
+                "g", 
+                "c"
+              ], 
+              "prob": [
+                0.9489538669586182, 
+                0.9558178782463074
+              ]
+            }, 
+            "network": [
+              {
+                "word": [
+                  "g", 
+                  "one", 
+                  "forty", 
+                  "six", 
+                  "eleven", 
+                  "_epsilon"
+                ], 
+                "prob": [
+                  0.9489538669586182, 
+                  0.014958585612475872, 
+                  0.0008294450235553086, 
+                  0.006284887902438641, 
+                  0.0005791166331619024, 
+                  0.028394104912877083
+                ]
+              }, 
+              {
+                "word": [
+                  "c", 
+                  "p", 
+                  "g", 
+                  "sixty", 
+                  "eight", 
+                  "d"
+                ], 
+                "prob": [
+                  0.9558178782463074, 
+                  0.008682144805788994, 
+                  0.0022248642053455114, 
+                  0.017487099394202232, 
+                  0.0008294450235553086, 
+                  0.014958585612475872
+                ]
+              }
+            ]
+          }, 
+          "config": {
+            "lms": [
+              "/home/jdw/sdc/prod/lms/routeList.lm"
+            ], 
+            "am": "/home/jdw/watson/data/am/gt_06.1.ep.h4.20.mmi2b", 
+            "secondTimeout": 700, 
+            "beamWidth": 250.0, 
+            "maxActiveArcs": 50000, 
+            "confidenceThreshold": 50, 
+            "firstTimeout": 400
+          }, 
+          "nbest": [
+            {
+              "normSpeechLhood": -164.18551635742188, 
+              "lastSpeechFrame": 206, 
+              "lms": [
+                "/home/jdw/sdc/prod/lms/routeList.lm"
+              ], 
+              "score": 13, 
+              "nscore": 43, 
+              "numFrames": 270, 
+              "udelta": -7.357999801635742, 
+              "speechLikelihood": -8701.83203125, 
+              "firstSpeechFrame": 140, 
+              "ndelta": 63.902000427246094, 
+              "normCost": 143.6463623046875, 
+              "normLhood": 0.0, 
+              "gscore": 27, 
+              "cost": 38784.51953125, 
+              "hypothesis": "g c", 
+              "glhood": -164.51600646972656, 
+              "uscore": 0, 
+              "numSpeechFrames": 53, 
+              "likelihood": 0.0, 
+              "gdelta": 0.3310000002384186, 
+              "ulhood": -156.8280029296875
+            }, 
+            {
+              "normSpeechLhood": -163.8065948486328, 
+              "lastSpeechFrame": 206, 
+              "lms": [
+                "/home/jdw/sdc/prod/lms/routeList.lm"
+              ], 
+              "score": 0, 
+              "nscore": 5, 
+              "numFrames": 270, 
+              "udelta": -13.586999893188477, 
+              "speechLikelihood": -8190.330078125, 
+              "firstSpeechFrame": 162, 
+              "ndelta": 7.5269999504089355, 
+              "normCost": 143.88304138183594, 
+              "normLhood": 0.0, 
+              "gscore": 0, 
+              "cost": 38848.421875, 
+              "hypothesis": "sixty", 
+              "glhood": -158.2429962158203, 
+              "uscore": 0, 
+              "numSpeechFrames": 50, 
+              "likelihood": 0.0, 
+              "gdelta": -5.563000202178955, 
+              "ulhood": -150.22000122070312
+            }, 
+            {
+              "normSpeechLhood": -158.70359802246094, 
+              "lastSpeechFrame": 206, 
+              "lms": [
+                "/home/jdw/sdc/prod/lms/routeList.lm"
+              ], 
+              "score": 1, 
+              "nscore": 2, 
+              "numFrames": 270, 
+              "udelta": -12.09000015258789, 
+              "speechLikelihood": -7141.662109375, 
+              "firstSpeechFrame": 157, 
+              "ndelta": 3.6760001182556152, 
+              "normCost": 143.91091918945312, 
+              "normLhood": 0.0, 
+              "gscore": 4, 
+              "cost": 38855.94921875, 
+              "hypothesis": "one d", 
+              "glhood": -154.51400756835938, 
+              "uscore": 0, 
+              "numSpeechFrames": 45, 
+              "likelihood": 0.0, 
+              "gdelta": -4.189000129699707, 
+              "ulhood": -146.61300659179688
+            }, 
+            {
+              "normSpeechLhood": -151.36883544921875, 
+              "lastSpeechFrame": 205, 
+              "lms": [
+                "/home/jdw/sdc/prod/lms/routeList.lm"
+              ], 
+              "score": 13, 
+              "nscore": 3, 
+              "numFrames": 270, 
+              "udelta": -6.723999977111816, 
+              "speechLikelihood": -5449.27783203125, 
+              "firstSpeechFrame": 176, 
+              "ndelta": 5.171999931335449, 
+              "normCost": 143.92453002929688, 
+              "normLhood": 0.0, 
+              "gscore": 27, 
+              "cost": 38859.625, 
+              "hypothesis": "p", 
+              "glhood": -151.6739959716797, 
+              "uscore": 0, 
+              "numSpeechFrames": 36, 
+              "likelihood": 0.0, 
+              "gdelta": 0.3050000071525574, 
+              "ulhood": -144.6439971923828
+            }, 
+            {
+              "normSpeechLhood": -159.4064178466797, 
+              "lastSpeechFrame": 206, 
+              "lms": [
+                "/home/jdw/sdc/prod/lms/routeList.lm"
+              ], 
+              "score": 4, 
+              "nscore": 11, 
+              "numFrames": 270, 
+              "udelta": -10.84000015258789, 
+              "speechLikelihood": -7970.32080078125, 
+              "firstSpeechFrame": 162, 
+              "ndelta": 16.613000869750977, 
+              "normCost": 143.94369506835938, 
+              "normLhood": 0.0, 
+              "gscore": 10, 
+              "cost": 38864.796875, 
+              "hypothesis": "six c", 
+              "glhood": -156.3979949951172, 
+              "uscore": 0, 
+              "numSpeechFrames": 50, 
+              "likelihood": 0.0, 
+              "gdelta": -3.009000062942505, 
+              "ulhood": -148.56700134277344
+            }, 
+            {
+              "normSpeechLhood": -154.44143676757812, 
+              "lastSpeechFrame": 202, 
+              "lms": [
+                "/home/jdw/sdc/prod/lms/routeList.lm"
+              ], 
+              "score": 9, 
+              "nscore": 11, 
+              "numFrames": 270, 
+              "udelta": -8.774999618530273, 
+              "speechLikelihood": -6332.09912109375, 
+              "firstSpeechFrame": 171, 
+              "ndelta": 15.78499984741211, 
+              "normCost": 144.00521850585938, 
+              "normLhood": 0.0, 
+              "gscore": 20, 
+              "cost": 38881.41015625, 
+              "hypothesis": "g", 
+              "glhood": -153.42300415039062, 
+              "uscore": 0, 
+              "numSpeechFrames": 41, 
+              "likelihood": 0.0, 
+              "gdelta": -1.0190000534057617, 
+              "ulhood": -145.66600036621094
+            }, 
+            {
+              "normSpeechLhood": -151.13766479492188, 
+              "lastSpeechFrame": 206, 
+              "lms": [
+                "/home/jdw/sdc/prod/lms/routeList.lm"
+              ], 
+              "score": 13, 
+              "nscore": 4, 
+              "numFrames": 270, 
+              "udelta": -7.968999862670898, 
+              "speechLikelihood": -9672.810546875, 
+              "firstSpeechFrame": 148, 
+              "ndelta": 5.75, 
+              "normCost": 144.06369018554688, 
+              "normLhood": 0.0, 
+              "gscore": 27, 
+              "cost": 38897.1953125, 
+              "hypothesis": "forty eight", 
+              "glhood": -151.46800231933594, 
+              "uscore": 0, 
+              "numSpeechFrames": 64, 
+              "likelihood": 0.0, 
+              "gdelta": 0.3310000002384186, 
+              "ulhood": -143.16900634765625
+            }, 
+            {
+              "normSpeechLhood": -163.53842163085938, 
+              "lastSpeechFrame": 206, 
+              "lms": [
+                "/home/jdw/sdc/prod/lms/routeList.lm"
+              ], 
+              "score": 0, 
+              "nscore": 100, 
+              "numFrames": 270, 
+              "udelta": -12.779000282287598, 
+              "speechLikelihood": -11284.1513671875, 
+              "firstSpeechFrame": 143, 
+              "ndelta": 150.0, 
+              "normCost": 144.08497619628906, 
+              "normLhood": 0.0, 
+              "gscore": 0, 
+              "cost": 38902.9453125, 
+              "hypothesis": "eleven c", 
+              "glhood": -158.21299743652344, 
+              "uscore": 0, 
+              "numSpeechFrames": 69, 
+              "likelihood": 0.0, 
+              "gdelta": -5.326000213623047, 
+              "ulhood": -150.75900268554688
+            }
+          ], 
+          "fileId": 0
+        }, 
+        "uttinfo": {
+          "uttfile_status": "logged", 
+          "uttid": "003.raw"
+        }, 
+        "sys_action_details": [
+          {
+            "prompt": "file:/home/jdw/sdc/prod/lib/../prompts/AskRoute/NM1.wav", 
+            "output_start_time": "08/05 19:41:59.356", 
+            "waitfor": "['evPhraseResult', 'evDtmfInput', 'evNoInputTimeout']", 
+            "dtmf": "", 
+            "input_types": "speech", 
+            "grammars": "['/home/jdw/sdc/prod/lib/../lms/routeList.lm']", 
+            "timeout": "10", 
+            "input_start_time": "08/05 19:42:05.454", 
+            "ACTION": "Listen", 
+            "bargein": "False", 
+            "events": [
+              "evPromptStart", 
+              "evPromptStop", 
+              "evSpeechStart", 
+              "evPhraseResult"
+            ]
+          }
+        ], 
+        "dialog_states": [
+          {
+            "state": "AskRoute", 
+            "activity": "Prompt type: NM"
+          }, 
+          {
+            "state": "AskRoute", 
+            "activity": "Looking for NM1"
+          }, 
+          {
+            "state": "AskRoute", 
+            "activity": "Automatically queuing prompts[NM1]"
+          }
+        ], 
+        "parsed_asr_result": {
+          "nbest": [
+            {
+              "rec_string": "g c", 
+              "rec_type": "ig", 
+              "fields": {
+                "routeSurface": "g c", 
+                "route-set": "set(['GC'])", 
+                "route": "GC"
+              }, 
+              "rec_conf": 0.21643
+            }, 
+            {
+              "rec_string": "sixty", 
+              "rec_type": "ig", 
+              "fields": {
+                "routeSurface": "sixty", 
+                "route-set": "set(['60'])", 
+                "route": "60"
+              }, 
+              "rec_conf": 0.273538
+            }, 
+            {
+              "rec_string": "one d", 
+              "rec_type": "ig", 
+              "fields": {
+                "routeSurface": "one d", 
+                "route-set": "set(['1D'])", 
+                "route": "1D"
+              }, 
+              "rec_conf": 0.011982
+            }, 
+            {
+              "rec_string": "p", 
+              "rec_type": "ig", 
+              "fields": {
+                "routeSurface": "p", 
+                "route-set": "set(['P'])", 
+                "route": "P"
+              }, 
+              "rec_conf": 0.000936
+            }, 
+            {
+              "rec_string": "six c", 
+              "rec_type": "ig", 
+              "fields": {
+                "routeSurface": "six c", 
+                "route-set": "set(['6C'])", 
+                "route": "6C"
+              }, 
+              "rec_conf": 5.3e-05
+            }, 
+            {
+              "rec_string": "g", 
+              "rec_type": "ig", 
+              "fields": {
+                "routeSurface": "g", 
+                "route-set": "set(['G'])", 
+                "route": "G"
+              }, 
+              "rec_conf": 2e-06
+            }, 
+            {
+              "rec_string": "forty eight", 
+              "rec_type": "ig", 
+              "fields": {
+                "routeSurface": "forty eight", 
+                "route-set": "set(['48'])", 
+                "route": "48"
+              }, 
+              "rec_conf": 0.0
+            }, 
+            {
+              "rec_string": "eleven c", 
+              "rec_type": "ig", 
+              "fields": {
+                "routeSurface": "eleven c", 
+                "route-set": "set(['11C'])", 
+                "route": "11C"
+              }, 
+              "rec_conf": 0.0
+            }
+          ]
+        }, 
+        "sys_action_summary": {
+          "struct": [
+            [
+              "request", 
+              "route"
+            ]
+          ], 
+          "surface": "Sorry, say a bus route, like 61C, or say I'm not sure."
+        }
+      }, 
+      "turn-index": 1, 
+      "restart": false, 
+      "output": {
+        "start-time": 7.974, 
+        "transcript": "Sorry, say a bus route, like 61C, or say I'm not sure.", 
+        "dialog-acts": [
+          {
+            "slots": [], 
+            "act": "sorry"
+          }, 
+          {
+            "slots": [
+              [
+                "route", 
+                null
+              ]
+            ], 
+            "act": "request"
+          }, 
+          {
+            "slots": [
+              [
+                "route", 
+                "61c"
+              ]
+            ], 
+            "act": "example"
+          }, 
+          {
+            "slots": [
+              [
+                "route", 
+                "dont_know"
+              ]
+            ], 
+            "act": "example"
+          }
+        ]
+      }
+    }, 
+    {
+      "input": {
+        "live": {
+          "asr-hyps": [], 
+          "slu-hyps": []
+        }, 
+        "audio-file": null, 
+        "start-time": 27.304
+      }, 
+      "system-specific": {
+        "beliefstate": {
+          "date": [
+            {
+              "count": 77522.0, 
+              "belief": 1.0, 
+              "slotValues": {
+                "date": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": 0.0, 
+              "logBel": 0.0, 
+              "surfaceForms": {
+                "date": "set([])"
+              }, 
+              "id": 0
+            }
+          ], 
+          "route": [
+            {
+              "count": 100.0, 
+              "belief": 0.00018, 
+              "slotValues": {
+                "route": {
+                  "vals": "['11C']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -6.703, 
+              "logBel": -8.637, 
+              "surfaceForms": {
+                "route": "set(['eleven c'])"
+              }, 
+              "id": 9
+            }, 
+            {
+              "count": 100.0, 
+              "belief": 0.00018, 
+              "slotValues": {
+                "route": {
+                  "vals": "['48']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -6.703, 
+              "logBel": -8.637, 
+              "surfaceForms": {
+                "route": "set(['forty eight'])"
+              }, 
+              "id": 8
+            }, 
+            {
+              "count": 100.0, 
+              "belief": 0.00018, 
+              "slotValues": {
+                "route": {
+                  "vals": "['G']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -6.703, 
+              "logBel": -8.632, 
+              "surfaceForms": {
+                "route": "set(['g'])"
+              }, 
+              "id": 7
+            }, 
+            {
+              "count": 100.0, 
+              "belief": 0.00021, 
+              "slotValues": {
+                "route": {
+                  "vals": "['6C']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -6.703, 
+              "logBel": -8.481, 
+              "surfaceForms": {
+                "route": "set(['six c'])"
+              }, 
+              "id": 6
+            }, 
+            {
+              "count": 100.0, 
+              "belief": 0.0007, 
+              "slotValues": {
+                "route": {
+                  "vals": "['P']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -6.703, 
+              "logBel": -7.259, 
+              "surfaceForms": {
+                "route": "set(['p'])"
+              }, 
+              "id": 5
+            }, 
+            {
+              "count": 100.0, 
+              "belief": 0.00692, 
+              "slotValues": {
+                "route": {
+                  "vals": "['1D']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -6.703, 
+              "logBel": -4.974, 
+              "surfaceForms": {
+                "route": "set(['one d'])"
+              }, 
+              "id": 4
+            }, 
+            {
+              "count": 100.0, 
+              "belief": 0.12188, 
+              "slotValues": {
+                "route": {
+                  "vals": "['GC']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -6.703, 
+              "logBel": -2.105, 
+              "surfaceForms": {
+                "route": "set(['g c'])"
+              }, 
+              "id": 2
+            }, 
+            {
+              "count": 100.0, 
+              "belief": 0.15399, 
+              "slotValues": {
+                "route": {
+                  "vals": "['60']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -6.703, 
+              "logBel": -1.871, 
+              "surfaceForms": {
+                "route": "set(['sixty'])"
+              }, 
+              "id": 3
+            }, 
+            {
+              "count": 80722.0, 
+              "belief": 0.71578, 
+              "slotValues": {
+                "route": {
+                  "countHiddenVals": 8, 
+                  "valsListed": false, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.01, 
+              "logBel": -0.334, 
+              "surfaceForms": {
+                "route": "set([])"
+              }, 
+              "id": 0
+            }
+          ], 
+          "fromstopids": [
+            {
+              "count": 163022.0, 
+              "belief": 1.0, 
+              "slotValues": {
+                "fromstopids": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": 0.0, 
+              "logBel": 0.0, 
+              "surfaceForms": {
+                "fromstopids": "set([])"
+              }, 
+              "id": 0
+            }
+          ], 
+          "tostopids": [
+            {
+              "count": 163222.0, 
+              "belief": 1.0, 
+              "slotValues": {
+                "tostopids": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": 0.0, 
+              "logBel": 0.0, 
+              "surfaceForms": {
+                "tostopids": "set([])"
+              }, 
+              "id": 0
+            }
+          ], 
+          "time": [
+            {
+              "count": 176762.0, 
+              "belief": 0.5, 
+              "slotValues": {
+                "searchType": {
+                  "vals": "['arrive']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }, 
+                "time": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.693, 
+              "logBel": -0.693, 
+              "surfaceForms": {
+                "searchType": "set([])", 
+                "time": "set([])"
+              }, 
+              "id": 0
+            }, 
+            {
+              "count": 176761.0, 
+              "belief": 0.5, 
+              "slotValues": {
+                "searchType": {
+                  "vals": "['depart']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }, 
+                "time": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.693, 
+              "logBel": -0.693, 
+              "surfaceForms": {
+                "searchType": "set([])", 
+                "time": "set([])"
+              }, 
+              "id": 1
+            }
+          ]
+        }, 
+        "turn_start_time": "08/05 19:42:06.903", 
+        "raw_asr_result": {
+          "audioParams": {
+            "sampleRate": 8000, 
+            "coding": "linear", 
+            "byteOrder": "LE"
+          }, 
+          "resultId": 4, 
+          "hostname": "dt-jdw", 
+          "metrics": {}, 
+          "sessionId": "", 
+          "version": "watson-6.5.5700", 
+          "evType": "evPhraseResult", 
+          "config": {
+            "lms": [
+              "/home/jdw/sdc/prod/lms/routeList.lm"
+            ], 
+            "am": "/home/jdw/watson/data/am/gt_06.1.ep.h4.20.mmi2b", 
+            "secondTimeout": 700, 
+            "beamWidth": 250.0, 
+            "maxActiveArcs": 50000, 
+            "firstTimeout": 400
+          }, 
+          "fileId": 0
+        }, 
+        "uttinfo": {
+          "uttfile_status": "not_expected", 
+          "uttid": null
+        }, 
+        "sys_action_details": [
+          {
+            "prompt": "file:/home/jdw/sdc/prod/lib/../prompts/AskRoute/NM2.wav", 
+            "output_start_time": "08/05 19:42:06.905", 
+            "waitfor": "['evPhraseResult', 'evDtmfInput', 'evNoInputTimeout']", 
+            "dtmf digit": "6", 
+            "dtmf": "", 
+            "input_types": "speech", 
+            "grammars": "['/home/jdw/sdc/prod/lib/../lms/routeList.lm']", 
+            "timeout": "10", 
+            "input_start_time": "08/05 19:42:18.686", 
+            "ACTION": "Listen", 
+            "bargein": "False", 
+            "events": [
+              "evPromptStart", 
+              "evPromptStop", 
+              "evDtmfInput"
+            ]
+          }
+        ], 
+        "dialog_states": [
+          {
+            "state": "AskRoute", 
+            "activity": "Calling OnRecognition handler"
+          }, 
+          {
+            "state": "AskRoute", 
+            "activity": "Looking for NM2"
+          }, 
+          {
+            "state": "AskRoute", 
+            "activity": "Automatically queuing prompts[NM2]"
+          }
+        ], 
+        "parsed_asr_result": {
+          "nbest": [
+            {
+              "rec_type": "offlist", 
+              "rec_conf": 1.0
+            }
+          ]
+        }, 
+        "sys_action_summary": {
+          "struct": [
+            [
+              "request", 
+              "route"
+            ]
+          ], 
+          "surface": "Sorry, say a route, like 54C, or say I'm not sure."
+        }
+      }, 
+      "turn-index": 2, 
+      "restart": false, 
+      "output": {
+        "start-time": 15.523, 
+        "transcript": "Sorry, say a route, like 54C, or say I'm not sure.", 
+        "dialog-acts": [
+          {
+            "slots": [], 
+            "act": "sorry"
+          }, 
+          {
+            "slots": [
+              [
+                "route", 
+                null
+              ]
+            ], 
+            "act": "request"
+          }, 
+          {
+            "slots": [
+              [
+                "route", 
+                "54c"
+              ]
+            ], 
+            "act": "example"
+          }, 
+          {
+            "slots": [
+              [
+                "route", 
+                "dont_know"
+              ]
+            ], 
+            "act": "example"
+          }
+        ]
+      }
+    }, 
+    {
+      "input": {
+        "live": {
+          "asr-hyps": [
+            {
+              "asr-hyp": "sixty one d", 
+              "score": 0.503452, 
+              "type": "recognition"
+            }, 
+            {
+              "asr-hyp": "sixty one b", 
+              "score": 0.215535, 
+              "type": "recognition"
+            }, 
+            {
+              "asr-hyp": "sixty one c", 
+              "score": 0.009442, 
+              "type": "recognition"
+            }, 
+            {
+              "asr-hyp": "sixty one a", 
+              "score": 0.000738, 
+              "type": "recognition"
+            }, 
+            {
+              "asr-hyp": "sixty one", 
+              "score": 4.2e-05, 
+              "type": "recognition"
+            }, 
+            {
+              "asr-hyp": "the sixty one d", 
+              "score": 1e-06, 
+              "type": "recognition"
+            }, 
+            {
+              "asr-hyp": "the sixty one b", 
+              "score": 0.0, 
+              "type": "recognition"
+            }, 
+            {
+              "asr-hyp": "the sixty one c", 
+              "score": 0.0, 
+              "type": "recognition"
+            }
+          ], 
+          "slu-hyps": [
+            {
+              "slu-hyp": [
+                {
+                  "slots": [
+                    [
+                      "route", 
+                      "61d"
+                    ]
+                  ], 
+                  "act": "inform"
+                }
+              ], 
+              "score": 0.503452
+            }, 
+            {
+              "slu-hyp": [
+                {
+                  "slots": [
+                    [
+                      "route", 
+                      "61b"
+                    ]
+                  ], 
+                  "act": "inform"
+                }
+              ], 
+              "score": 0.215535
+            }, 
+            {
+              "slu-hyp": [
+                {
+                  "slots": [
+                    [
+                      "route", 
+                      "61c"
+                    ]
+                  ], 
+                  "act": "inform"
+                }
+              ], 
+              "score": 0.009442
+            }, 
+            {
+              "slu-hyp": [
+                {
+                  "slots": [
+                    [
+                      "route", 
+                      "61a"
+                    ]
+                  ], 
+                  "act": "inform"
+                }
+              ], 
+              "score": 0.000738
+            }, 
+            {
+              "slu-hyp": [
+                {
+                  "slots": [
+                    [
+                      "route", 
+                      "61"
+                    ]
+                  ], 
+                  "act": "inform"
+                }
+              ], 
+              "score": 4.2e-05
+            }, 
+            {
+              "slu-hyp": [
+                {
+                  "slots": [
+                    [
+                      "route", 
+                      "61d"
+                    ]
+                  ], 
+                  "act": "inform"
+                }
+              ], 
+              "score": 1e-06
+            }, 
+            {
+              "slu-hyp": [
+                {
+                  "slots": [
+                    [
+                      "route", 
+                      "61b"
+                    ]
+                  ], 
+                  "act": "inform"
+                }
+              ], 
+              "score": 0.0
+            }, 
+            {
+              "slu-hyp": [
+                {
+                  "slots": [
+                    [
+                      "route", 
+                      "61c"
+                    ]
+                  ], 
+                  "act": "inform"
+                }
+              ], 
+              "score": 0.0
+            }
+          ]
+        }, 
+        "audio-file": "005.raw", 
+        "start-time": 33.852
+      }, 
+      "system-specific": {
+        "beliefstate": {
+          "date": [
+            {
+              "count": 77522.0, 
+              "belief": 1.0, 
+              "slotValues": {
+                "date": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": 0.0, 
+              "logBel": 0.0, 
+              "surfaceForms": {
+                "date": "set([])"
+              }, 
+              "id": 0
+            }
+          ], 
+          "route": [
+            {
+              "count": 100.0, 
+              "belief": 0.0, 
+              "slotValues": {
+                "route": {
+                  "vals": "['11C']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -6.703, 
+              "logBel": -12.54, 
+              "surfaceForms": {
+                "route": "set(['eleven c'])"
+              }, 
+              "id": 9
+            }, 
+            {
+              "count": 100.0, 
+              "belief": 0.0, 
+              "slotValues": {
+                "route": {
+                  "vals": "['48']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -6.703, 
+              "logBel": -12.54, 
+              "surfaceForms": {
+                "route": "set(['forty eight'])"
+              }, 
+              "id": 8
+            }, 
+            {
+              "count": 100.0, 
+              "belief": 0.0, 
+              "slotValues": {
+                "route": {
+                  "vals": "['G']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -6.703, 
+              "logBel": -12.535, 
+              "surfaceForms": {
+                "route": "set(['g'])"
+              }, 
+              "id": 7
+            }, 
+            {
+              "count": 100.0, 
+              "belief": 0.0, 
+              "slotValues": {
+                "route": {
+                  "vals": "['6C']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -6.703, 
+              "logBel": -12.384, 
+              "surfaceForms": {
+                "route": "set(['six c'])"
+              }, 
+              "id": 6
+            }, 
+            {
+              "count": 100.0, 
+              "belief": 0.0, 
+              "slotValues": {
+                "route": {
+                  "vals": "['61']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -6.703, 
+              "logBel": -12.321, 
+              "surfaceForms": {
+                "route": "set(['sixty one'])"
+              }, 
+              "id": 14
+            }, 
+            {
+              "count": 100.0, 
+              "belief": 1e-05, 
+              "slotValues": {
+                "route": {
+                  "vals": "['P']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -6.703, 
+              "logBel": -11.162, 
+              "surfaceForms": {
+                "route": "set(['p'])"
+              }, 
+              "id": 5
+            }, 
+            {
+              "count": 100.0, 
+              "belief": 0.00014, 
+              "slotValues": {
+                "route": {
+                  "vals": "['1D']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -6.703, 
+              "logBel": -8.877, 
+              "surfaceForms": {
+                "route": "set(['one d'])"
+              }, 
+              "id": 4
+            }, 
+            {
+              "count": 11234.0, 
+              "belief": 0.00213, 
+              "slotValues": {
+                "route": {
+                  "vals": "['61A']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -1.982, 
+              "logBel": -6.152, 
+              "surfaceForms": {
+                "route": "set(['sixty one a'])"
+              }, 
+              "id": 13
+            }, 
+            {
+              "count": 100.0, 
+              "belief": 0.00246, 
+              "slotValues": {
+                "route": {
+                  "vals": "['GC']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -6.703, 
+              "logBel": -6.008, 
+              "surfaceForms": {
+                "route": "set(['g c'])"
+              }, 
+              "id": 2
+            }, 
+            {
+              "count": 100.0, 
+              "belief": 0.00311, 
+              "slotValues": {
+                "route": {
+                  "vals": "['60']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -6.703, 
+              "logBel": -5.774, 
+              "surfaceForms": {
+                "route": "set(['sixty'])"
+              }, 
+              "id": 3
+            }, 
+            {
+              "count": 44928.0, 
+              "belief": 0.00804, 
+              "slotValues": {
+                "route": {
+                  "countHiddenVals": 13, 
+                  "valsListed": false, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.596, 
+              "logBel": -4.823, 
+              "surfaceForms": {
+                "route": "set([])"
+              }, 
+              "id": 0
+            }, 
+            {
+              "count": 9022.0, 
+              "belief": 0.01807, 
+              "slotValues": {
+                "route": {
+                  "vals": "['61C']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -2.201, 
+              "logBel": -4.014, 
+              "surfaceForms": {
+                "route": "set(['the sixty one c', 'sixty one c'])"
+              }, 
+              "id": 12
+            }, 
+            {
+              "count": 4540.0, 
+              "belief": 0.47631, 
+              "slotValues": {
+                "route": {
+                  "vals": "['61D']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -2.888, 
+              "logBel": -0.742, 
+              "surfaceForms": {
+                "route": "set(['sixty one d', 'the sixty one d'])"
+              }, 
+              "id": 10
+            }, 
+            {
+              "count": 10898.0, 
+              "belief": 0.48971, 
+              "slotValues": {
+                "route": {
+                  "vals": "['61B']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -2.012, 
+              "logBel": -0.714, 
+              "surfaceForms": {
+                "route": "set(['the sixty one b', 'sixty one b'])"
+              }, 
+              "id": 11
+            }
+          ], 
+          "fromstopids": [
+            {
+              "count": 163022.0, 
+              "belief": 1.0, 
+              "slotValues": {
+                "fromstopids": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": 0.0, 
+              "logBel": 0.0, 
+              "surfaceForms": {
+                "fromstopids": "set([])"
+              }, 
+              "id": 0
+            }
+          ], 
+          "tostopids": [
+            {
+              "count": 163222.0, 
+              "belief": 1.0, 
+              "slotValues": {
+                "tostopids": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": 0.0, 
+              "logBel": 0.0, 
+              "surfaceForms": {
+                "tostopids": "set([])"
+              }, 
+              "id": 0
+            }
+          ], 
+          "time": [
+            {
+              "count": 176762.0, 
+              "belief": 0.5, 
+              "slotValues": {
+                "searchType": {
+                  "vals": "['arrive']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }, 
+                "time": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.693, 
+              "logBel": -0.693, 
+              "surfaceForms": {
+                "searchType": "set([])", 
+                "time": "set([])"
+              }, 
+              "id": 0
+            }, 
+            {
+              "count": 176761.0, 
+              "belief": 0.5, 
+              "slotValues": {
+                "searchType": {
+                  "vals": "['depart']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }, 
+                "time": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.693, 
+              "logBel": -0.693, 
+              "surfaceForms": {
+                "searchType": "set([])", 
+                "time": "set([])"
+              }, 
+              "id": 1
+            }
+          ]
+        }, 
+        "turn_start_time": "08/05 19:42:18.724", 
+        "raw_asr_result": {
+          "audioParams": {
+            "sampleRate": 8000, 
+            "coding": "linear", 
+            "byteOrder": "LE"
+          }, 
+          "version": "watson-6.5.5700", 
+          "resultId": 5, 
+          "hostname": "dt-jdw", 
+          "nlu-sisr": [
+            {
+              "interp": {
+                "route": "61D"
+              }, 
+              "id": 0, 
+              "time": 0.0027959346771240234
+            }, 
+            {
+              "interp": {
+                "route": "61B"
+              }, 
+              "id": 1, 
+              "time": 0.0008630752563476562
+            }, 
+            {
+              "interp": {
+                "route": "61C"
+              }, 
+              "id": 2, 
+              "time": 0.0008440017700195312
+            }, 
+            {
+              "interp": {
+                "route": "61A"
+              }, 
+              "id": 3, 
+              "time": 0.0008411407470703125
+            }, 
+            {
+              "interp": {
+                "route": "61"
+              }, 
+              "id": 4, 
+              "time": 0.0007770061492919922
+            }, 
+            {
+              "interp": {
+                "route": "61D"
+              }, 
+              "id": 5, 
+              "time": 0.0008671283721923828
+            }, 
+            {
+              "interp": {
+                "route": "61B"
+              }, 
+              "id": 6, 
+              "time": 0.0009279251098632812
+            }, 
+            {
+              "interp": {
+                "route": "61C"
+              }, 
+              "id": 7, 
+              "time": 0.0009388923645019531
+            }
+          ], 
+          "metrics": {
+            "audioBytes": 65280, 
+            "gaussSelectSkipRatio": 0.784709632396698, 
+            "lhoodPrecalcHitRatio": 0.88409024477005, 
+            "avgFrameBatchSize": 3.0, 
+            "decodedFrameCount": 408, 
+            "bytesPerPacket": 320.0, 
+            "audioPackets": 204, 
+            "frameCount": 408
+          }, 
+          "sessionId": "", 
+          "trigger": "secondTimeout", 
+          "evType": "evPhraseResult", 
+          "wcn": {
+            "best_path_score": 0.7343927767793618, 
+            "best_path": {
+              "word": [
+                "sixty", 
+                "one", 
+                "d"
+              ], 
+              "prob": [
+                0.9983726143836975, 
+                1.0, 
+                0.39672771096229553
+              ]
+            }, 
+            "network": [
+              {
+                "word": [
+                  "sixty", 
+                  "the"
+                ], 
+                "prob": [
+                  0.9983726143836975, 
+                  0.001627364312298596
+                ]
+              }, 
+              {
+                "word": [
+                  "_epsilon", 
+                  "sixty"
+                ], 
+                "prob": [
+                  0.9983752965927124, 
+                  0.0016247204039245844
+                ]
+              }, 
+              {
+                "word": [
+                  "one"
+                ], 
+                "prob": [
+                  1.0
+                ]
+              }, 
+              {
+                "word": [
+                  "d", 
+                  "b", 
+                  "c", 
+                  "a", 
+                  "_epsilon"
+                ], 
+                "prob": [
+                  0.39672771096229553, 
+                  0.23939701914787292, 
+                  0.2264905720949173, 
+                  0.0921831727027893, 
+                  0.04520153999328613
+                ]
+              }
+            ]
+          }, 
+          "config": {
+            "lms": [
+              "/home/jdw/sdc/prod/lms/routeList.lm"
+            ], 
+            "am": "/home/jdw/watson/data/am/gt_06.1.ep.h4.20.mmi2b", 
+            "secondTimeout": 700, 
+            "beamWidth": 250.0, 
+            "maxActiveArcs": 50000, 
+            "confidenceThreshold": 50, 
+            "firstTimeout": 400
+          }, 
+          "nbest": [
+            {
+              "normSpeechLhood": -162.7716064453125, 
+              "lastSpeechFrame": 335, 
+              "lms": [
+                "/home/jdw/sdc/prod/lms/routeList.lm"
+              ], 
+              "score": 23, 
+              "nscore": 5, 
+              "numFrames": 402, 
+              "udelta": -3.880000114440918, 
+              "speechLikelihood": -21160.30859375, 
+              "firstSpeechFrame": 190, 
+              "ndelta": 8.081999778747559, 
+              "normCost": 149.88204956054688, 
+              "normLhood": 0.0, 
+              "gscore": 26, 
+              "cost": 60252.58203125, 
+              "hypothesis": "sixty one d", 
+              "glhood": -162.8820037841797, 
+              "uscore": 22, 
+              "numSpeechFrames": 130, 
+              "likelihood": 0.0, 
+              "gdelta": 0.10999999940395355, 
+              "ulhood": -158.89199829101562
+            }, 
+            {
+              "normSpeechLhood": -161.07359313964844, 
+              "lastSpeechFrame": 335, 
+              "lms": [
+                "/home/jdw/sdc/prod/lms/routeList.lm"
+              ], 
+              "score": 31, 
+              "nscore": 1, 
+              "numFrames": 402, 
+              "udelta": -3.625999927520752, 
+              "speechLikelihood": -22389.228515625, 
+              "firstSpeechFrame": 190, 
+              "ndelta": 0.8870000243186951, 
+              "normCost": 149.9021453857422, 
+              "normLhood": 0.0, 
+              "gscore": 36, 
+              "cost": 60260.6640625, 
+              "hypothesis": "sixty one b", 
+              "glhood": -163.35499572753906, 
+              "uscore": 27, 
+              "numSpeechFrames": 139, 
+              "likelihood": 0.0, 
+              "gdelta": 2.2809998989105225, 
+              "ulhood": -157.447998046875
+            }, 
+            {
+              "normSpeechLhood": -162.1606903076172, 
+              "lastSpeechFrame": 335, 
+              "lms": [
+                "/home/jdw/sdc/prod/lms/routeList.lm"
+              ], 
+              "score": 22, 
+              "nscore": 10, 
+              "numFrames": 402, 
+              "udelta": -4.230000019073486, 
+              "speechLikelihood": -21891.693359375, 
+              "firstSpeechFrame": 190, 
+              "ndelta": 14.383000373840332, 
+              "normCost": 149.90435791015625, 
+              "normLhood": 0.0, 
+              "gscore": 31, 
+              "cost": 60261.55078125, 
+              "hypothesis": "sixty one c", 
+              "glhood": -163.37899780273438, 
+              "uscore": 15, 
+              "numSpeechFrames": 135, 
+              "likelihood": 0.0, 
+              "gdelta": 1.218000054359436, 
+              "ulhood": -157.93099975585938
+            }, 
+            {
+              "normSpeechLhood": -158.45225524902344, 
+              "lastSpeechFrame": 335, 
+              "lms": [
+                "/home/jdw/sdc/prod/lms/routeList.lm"
+              ], 
+              "score": 33, 
+              "nscore": 8, 
+              "numFrames": 402, 
+              "udelta": -3.6579999923706055, 
+              "speechLikelihood": -19964.984375, 
+              "firstSpeechFrame": 190, 
+              "ndelta": 11.402000427246094, 
+              "normCost": 149.9401397705078, 
+              "normLhood": 0.0, 
+              "gscore": 41, 
+              "cost": 60275.93359375, 
+              "hypothesis": "sixty one a", 
+              "glhood": -161.71099853515625, 
+              "uscore": 27, 
+              "numSpeechFrames": 126, 
+              "likelihood": 0.0, 
+              "gdelta": 3.257999897003174, 
+              "ulhood": -154.79400634765625
+            }, 
+            {
+              "normSpeechLhood": -162.78591918945312, 
+              "lastSpeechFrame": 284, 
+              "lms": [
+                "/home/jdw/sdc/prod/lms/routeList.lm"
+              ], 
+              "score": 41, 
+              "nscore": 52, 
+              "numFrames": 402, 
+              "udelta": -3.3259999752044678, 
+              "speechLikelihood": -16278.591796875, 
+              "firstSpeechFrame": 190, 
+              "ndelta": 78.7229995727539, 
+              "normCost": 149.96849060058594, 
+              "normLhood": 0.0, 
+              "gscore": 50, 
+              "cost": 60287.3359375, 
+              "hypothesis": "sixty one", 
+              "glhood": -167.7010040283203, 
+              "uscore": 33, 
+              "numSpeechFrames": 100, 
+              "likelihood": 0.0, 
+              "gdelta": 4.915999889373779, 
+              "ulhood": -159.4600067138672
+            }, 
+            {
+              "normSpeechLhood": -162.38580322265625, 
+              "lastSpeechFrame": 335, 
+              "lms": [
+                "/home/jdw/sdc/prod/lms/routeList.lm"
+              ], 
+              "score": 9, 
+              "nscore": 5, 
+              "numFrames": 402, 
+              "udelta": -5.735000133514404, 
+              "speechLikelihood": -30853.302734375, 
+              "firstSpeechFrame": 130, 
+              "ndelta": 8.081999778747559, 
+              "normCost": 150.16432189941406, 
+              "normLhood": 0.0, 
+              "gscore": 19, 
+              "cost": 60366.05859375, 
+              "hypothesis": "the sixty one d", 
+              "glhood": -161.15899658203125, 
+              "uscore": 0, 
+              "numSpeechFrames": 190, 
+              "likelihood": 0.0, 
+              "gdelta": -1.2269999980926514, 
+              "ulhood": -156.6510009765625
+            }, 
+            {
+              "normSpeechLhood": -161.1123046875, 
+              "lastSpeechFrame": 335, 
+              "lms": [
+                "/home/jdw/sdc/prod/lms/routeList.lm"
+              ], 
+              "score": 13, 
+              "nscore": 1, 
+              "numFrames": 402, 
+              "udelta": -5.544000148773193, 
+              "speechLikelihood": -32061.34765625, 
+              "firstSpeechFrame": 130, 
+              "ndelta": 0.8870000243186951, 
+              "normCost": 150.18443298339844, 
+              "normLhood": 0.0, 
+              "gscore": 27, 
+              "cost": 60374.140625, 
+              "hypothesis": "the sixty one b", 
+              "glhood": -161.51400756835938, 
+              "uscore": 0, 
+              "numSpeechFrames": 199, 
+              "likelihood": 0.0, 
+              "gdelta": 0.4009999930858612, 
+              "ulhood": -155.5679931640625
+            }, 
+            {
+              "normSpeechLhood": -161.92762756347656, 
+              "lastSpeechFrame": 335, 
+              "lms": [
+                "/home/jdw/sdc/prod/lms/routeList.lm"
+              ], 
+              "score": 11, 
+              "nscore": 100, 
+              "numFrames": 402, 
+              "udelta": -5.997000217437744, 
+              "speechLikelihood": -31575.88671875, 
+              "firstSpeechFrame": 130, 
+              "ndelta": 150.0, 
+              "normCost": 150.18663024902344, 
+              "normLhood": 0.0, 
+              "gscore": 23, 
+              "cost": 60375.02734375, 
+              "hypothesis": "the sixty one c", 
+              "glhood": -161.531005859375, 
+              "uscore": 0, 
+              "numSpeechFrames": 195, 
+              "likelihood": 0.0, 
+              "gdelta": -0.3959999978542328, 
+              "ulhood": -155.92999267578125
+            }
+          ], 
+          "fileId": 0
+        }, 
+        "uttinfo": {
+          "uttfile_status": "logged", 
+          "uttid": "005.raw"
+        }, 
+        "sys_action_details": [
+          {
+            "prompt": "file:/home/jdw/sdc/prod/lib/../prompts/AskRoute/NM1.wav", 
+            "output_start_time": "08/05 19:42:18.725", 
+            "waitfor": "['evPhraseResult', 'evDtmfInput', 'evNoInputTimeout']", 
+            "dtmf": "", 
+            "input_types": "speech", 
+            "grammars": "['/home/jdw/sdc/prod/lib/../lms/routeList.lm']", 
+            "timeout": "10", 
+            "input_start_time": "08/05 19:42:25.234", 
+            "ACTION": "Listen", 
+            "bargein": "False", 
+            "events": [
+              "evPromptStart", 
+              "evPromptStop", 
+              "evSpeechStart", 
+              "evPhraseResult"
+            ]
+          }
+        ], 
+        "dialog_states": [
+          {
+            "state": "AskRoute", 
+            "activity": "Prompt type: NM"
+          }, 
+          {
+            "state": "AskRoute", 
+            "activity": "Looking for NM3"
+          }, 
+          {
+            "state": "AskRoute", 
+            "activity": "Looking for TooManyErrors()"
+          }, 
+          {
+            "state": "AskRoute", 
+            "activity": "Backing off; looking for NM1"
+          }, 
+          {
+            "state": "AskRoute", 
+            "activity": "Automatically queuing prompts[NM1]"
+          }
+        ], 
+        "parsed_asr_result": {
+          "nbest": [
+            {
+              "rec_string": "sixty one d", 
+              "rec_type": "ig", 
+              "fields": {
+                "routeSurface": "sixty one d", 
+                "route-set": "set(['61D'])", 
+                "route": "61D"
+              }, 
+              "rec_conf": 0.503452
+            }, 
+            {
+              "rec_string": "sixty one b", 
+              "rec_type": "ig", 
+              "fields": {
+                "routeSurface": "sixty one b", 
+                "route-set": "set(['61B'])", 
+                "route": "61B"
+              }, 
+              "rec_conf": 0.215535
+            }, 
+            {
+              "rec_string": "sixty one c", 
+              "rec_type": "ig", 
+              "fields": {
+                "routeSurface": "sixty one c", 
+                "route-set": "set(['61C'])", 
+                "route": "61C"
+              }, 
+              "rec_conf": 0.009442
+            }, 
+            {
+              "rec_string": "sixty one a", 
+              "rec_type": "ig", 
+              "fields": {
+                "routeSurface": "sixty one a", 
+                "route-set": "set(['61A'])", 
+                "route": "61A"
+              }, 
+              "rec_conf": 0.000738
+            }, 
+            {
+              "rec_string": "sixty one", 
+              "rec_type": "ig", 
+              "fields": {
+                "routeSurface": "sixty one", 
+                "route-set": "set(['61'])", 
+                "route": "61"
+              }, 
+              "rec_conf": 4.2e-05
+            }, 
+            {
+              "rec_string": "the sixty one d", 
+              "rec_type": "ig", 
+              "fields": {
+                "routeSurface": "the sixty one d", 
+                "route-set": "set(['61D'])", 
+                "route": "61D"
+              }, 
+              "rec_conf": 1e-06
+            }, 
+            {
+              "rec_string": "the sixty one b", 
+              "rec_type": "ig", 
+              "fields": {
+                "routeSurface": "the sixty one b", 
+                "route-set": "set(['61B'])", 
+                "route": "61B"
+              }, 
+              "rec_conf": 0.0
+            }, 
+            {
+              "rec_string": "the sixty one c", 
+              "rec_type": "ig", 
+              "fields": {
+                "routeSurface": "the sixty one c", 
+                "route-set": "set(['61C'])", 
+                "route": "61C"
+              }, 
+              "rec_conf": 0.0
+            }
+          ]
+        }, 
+        "sys_action_summary": {
+          "struct": [
+            [
+              "request", 
+              "route"
+            ]
+          ], 
+          "surface": "Sorry, say a bus route, like 61C, or say I'm not sure."
+        }
+      }, 
+      "turn-index": 3, 
+      "restart": false, 
+      "output": {
+        "start-time": 27.343, 
+        "transcript": "Sorry, say a bus route, like 61C, or say I'm not sure.", 
+        "dialog-acts": [
+          {
+            "slots": [], 
+            "act": "sorry"
+          }, 
+          {
+            "slots": [
+              [
+                "route", 
+                null
+              ]
+            ], 
+            "act": "request"
+          }, 
+          {
+            "slots": [
+              [
+                "route", 
+                "61c"
+              ]
+            ], 
+            "act": "example"
+          }, 
+          {
+            "slots": [
+              [
+                "route", 
+                "dont_know"
+              ]
+            ], 
+            "act": "example"
+          }
+        ]
+      }
+    }, 
+    {
+      "input": {
+        "live": {
+          "asr-hyps": [
+            {
+              "asr-hyp": "no", 
+              "score": 0.856407, 
+              "type": "recognition"
+            }, 
+            {
+              "asr-hyp": "yeah", 
+              "score": 0.06366, 
+              "type": "recognition"
+            }, 
+            {
+              "asr-hyp": "nope", 
+              "score": 0.0, 
+              "type": "recognition"
+            }
+          ], 
+          "slu-hyps": [
+            {
+              "slu-hyp": [
+                {
+                  "slots": [], 
+                  "act": "negate"
+                }
+              ], 
+              "score": 0.856407
+            }, 
+            {
+              "slu-hyp": [
+                {
+                  "slots": [], 
+                  "act": "affirm"
+                }
+              ], 
+              "score": 0.06366
+            }, 
+            {
+              "slu-hyp": [
+                {
+                  "slots": [], 
+                  "act": "negate"
+                }
+              ], 
+              "score": 0.0
+            }
+          ]
+        }, 
+        "audio-file": "007.raw", 
+        "start-time": 40.345
+      }, 
+      "system-specific": {
+        "beliefstate": {
+          "date": [
+            {
+              "count": 77522.0, 
+              "belief": 1.0, 
+              "slotValues": {
+                "date": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": 0.0, 
+              "logBel": 0.0, 
+              "surfaceForms": {
+                "date": "set([])"
+              }, 
+              "id": 0
+            }
+          ], 
+          "route": [
+            {
+              "count": 100.0, 
+              "belief": 1e-05, 
+              "slotValues": {
+                "route": {
+                  "vals": "['11C']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -6.703, 
+              "logBel": -11.939, 
+              "surfaceForms": {
+                "route": "set(['eleven c'])"
+              }, 
+              "id": 9
+            }, 
+            {
+              "count": 100.0, 
+              "belief": 1e-05, 
+              "slotValues": {
+                "route": {
+                  "vals": "['48']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -6.703, 
+              "logBel": -11.939, 
+              "surfaceForms": {
+                "route": "set(['forty eight'])"
+              }, 
+              "id": 8
+            }, 
+            {
+              "count": 100.0, 
+              "belief": 1e-05, 
+              "slotValues": {
+                "route": {
+                  "vals": "['G']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -6.703, 
+              "logBel": -11.933, 
+              "surfaceForms": {
+                "route": "set(['g'])"
+              }, 
+              "id": 7
+            }, 
+            {
+              "count": 100.0, 
+              "belief": 1e-05, 
+              "slotValues": {
+                "route": {
+                  "vals": "['6C']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -6.703, 
+              "logBel": -11.782, 
+              "surfaceForms": {
+                "route": "set(['six c'])"
+              }, 
+              "id": 6
+            }, 
+            {
+              "count": 100.0, 
+              "belief": 1e-05, 
+              "slotValues": {
+                "route": {
+                  "vals": "['61']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -6.703, 
+              "logBel": -11.72, 
+              "surfaceForms": {
+                "route": "set(['sixty one'])"
+              }, 
+              "id": 14
+            }, 
+            {
+              "count": 100.0, 
+              "belief": 3e-05, 
+              "slotValues": {
+                "route": {
+                  "vals": "['P']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -6.703, 
+              "logBel": -10.56, 
+              "surfaceForms": {
+                "route": "set(['p'])"
+              }, 
+              "id": 5
+            }, 
+            {
+              "count": 100.0, 
+              "belief": 0.00025, 
+              "slotValues": {
+                "route": {
+                  "vals": "['1D']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -6.703, 
+              "logBel": -8.276, 
+              "surfaceForms": {
+                "route": "set(['one d'])"
+              }, 
+              "id": 4
+            }, 
+            {
+              "count": 11234.0, 
+              "belief": 0.00388, 
+              "slotValues": {
+                "route": {
+                  "vals": "['61A']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -1.982, 
+              "logBel": -5.551, 
+              "surfaceForms": {
+                "route": "set(['sixty one a'])"
+              }, 
+              "id": 13
+            }, 
+            {
+              "count": 100.0, 
+              "belief": 0.00449, 
+              "slotValues": {
+                "route": {
+                  "vals": "['GC']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -6.703, 
+              "logBel": -5.406, 
+              "surfaceForms": {
+                "route": "set(['g c'])"
+              }, 
+              "id": 2
+            }, 
+            {
+              "count": 100.0, 
+              "belief": 0.00567, 
+              "slotValues": {
+                "route": {
+                  "vals": "['60']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -6.703, 
+              "logBel": -5.172, 
+              "surfaceForms": {
+                "route": "set(['sixty'])"
+              }, 
+              "id": 3
+            }, 
+            {
+              "count": 44928.0, 
+              "belief": 0.01467, 
+              "slotValues": {
+                "route": {
+                  "countHiddenVals": 13, 
+                  "valsListed": false, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.596, 
+              "logBel": -4.222, 
+              "surfaceForms": {
+                "route": "set([])"
+              }, 
+              "id": 0
+            }, 
+            {
+              "count": 9022.0, 
+              "belief": 0.03297, 
+              "slotValues": {
+                "route": {
+                  "vals": "['61C']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -2.201, 
+              "logBel": -3.412, 
+              "surfaceForms": {
+                "route": "set(['the sixty one c', 'sixty one c'])"
+              }, 
+              "id": 12
+            }, 
+            {
+              "count": 10898.0, 
+              "belief": 0.06883, 
+              "slotValues": {
+                "route": {
+                  "vals": "['61B']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -2.012, 
+              "logBel": -2.676, 
+              "surfaceForms": {
+                "route": "set(['the sixty one b', 'sixty one b'])"
+              }, 
+              "id": 11
+            }, 
+            {
+              "count": 4540.0, 
+              "belief": 0.86917, 
+              "slotValues": {
+                "route": {
+                  "vals": "['61D']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -2.888, 
+              "logBel": -0.14, 
+              "surfaceForms": {
+                "route": "set(['sixty one d', 'the sixty one d'])"
+              }, 
+              "id": 10
+            }
+          ], 
+          "fromstopids": [
+            {
+              "count": 163022.0, 
+              "belief": 1.0, 
+              "slotValues": {
+                "fromstopids": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": 0.0, 
+              "logBel": 0.0, 
+              "surfaceForms": {
+                "fromstopids": "set([])"
+              }, 
+              "id": 0
+            }
+          ], 
+          "tostopids": [
+            {
+              "count": 163222.0, 
+              "belief": 1.0, 
+              "slotValues": {
+                "tostopids": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": 0.0, 
+              "logBel": 0.0, 
+              "surfaceForms": {
+                "tostopids": "set([])"
+              }, 
+              "id": 0
+            }
+          ], 
+          "time": [
+            {
+              "count": 176762.0, 
+              "belief": 0.5, 
+              "slotValues": {
+                "searchType": {
+                  "vals": "['arrive']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }, 
+                "time": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.693, 
+              "logBel": -0.693, 
+              "surfaceForms": {
+                "searchType": "set([])", 
+                "time": "set([])"
+              }, 
+              "id": 0
+            }, 
+            {
+              "count": 176761.0, 
+              "belief": 0.5, 
+              "slotValues": {
+                "searchType": {
+                  "vals": "['depart']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }, 
+                "time": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.693, 
+              "logBel": -0.693, 
+              "surfaceForms": {
+                "searchType": "set([])", 
+                "time": "set([])"
+              }, 
+              "id": 1
+            }
+          ]
+        }, 
+        "turn_start_time": "08/05 19:42:27.580", 
+        "raw_asr_result": {
+          "audioParams": {
+            "sampleRate": 8000, 
+            "coding": "linear", 
+            "byteOrder": "LE"
+          }, 
+          "version": "watson-6.5.5700", 
+          "resultId": 7, 
+          "hostname": "dt-jdw", 
+          "nlu-sisr": [
+            {
+              "interp": {
+                "confirm": "no"
+              }, 
+              "id": 0, 
+              "time": 0.0028641223907470703
+            }, 
+            {
+              "interp": {
+                "confirm": "yes"
+              }, 
+              "id": 1, 
+              "time": 0.0007710456848144531
+            }, 
+            {
+              "interp": {
+                "confirm": "no"
+              }, 
+              "id": 2, 
+              "time": 0.0007650852203369141
+            }
+          ], 
+          "metrics": {
+            "audioBytes": 26560, 
+            "gaussSelectSkipRatio": 0.6810117959976196, 
+            "lhoodPrecalcHitRatio": 0.8358029127120972, 
+            "avgFrameBatchSize": 3.0, 
+            "decodedFrameCount": 123, 
+            "bytesPerPacket": 320.0, 
+            "audioPackets": 83, 
+            "frameCount": 166
+          }, 
+          "sessionId": "", 
+          "trigger": "firstTimeout", 
+          "evType": "evPhraseResult", 
+          "wcn": {
+            "best_path_score": 0.999137222760762, 
+            "best_path": {
+              "word": [
+                "no"
+              ], 
+              "prob": [
+                0.9991372227668762
+              ]
+            }, 
+            "network": [
+              {
+                "word": [
+                  "no", 
+                  "nope", 
+                  "yeah"
+                ], 
+                "prob": [
+                  0.9991372227668762, 
+                  0.00042359522194601595, 
+                  0.0004391539841890335
+                ]
+              }
+            ]
+          }, 
+          "config": {
+            "lms": [
+              "/home/jdw/sdc/prod/lms/confirm.lm"
+            ], 
+            "am": "/home/jdw/watson/data/am/gt_06.1.ep.h4.20.mmi2b", 
+            "secondTimeout": 700, 
+            "beamWidth": 250.0, 
+            "maxActiveArcs": 50000, 
+            "confidenceThreshold": 50, 
+            "firstTimeout": 400
+          }, 
+          "nbest": [
+            {
+              "normSpeechLhood": -147.03245544433594, 
+              "lastSpeechFrame": 92, 
+              "lms": [
+                "/home/jdw/sdc/prod/lms/confirm.lm"
+              ], 
+              "score": 58, 
+              "nscore": 82, 
+              "numFrames": 115, 
+              "udelta": -1.7740000486373901, 
+              "speechLikelihood": -12938.8564453125, 
+              "firstSpeechFrame": 52, 
+              "ndelta": 123.6760025024414, 
+              "normCost": 145.80027770996094, 
+              "normLhood": 0.0, 
+              "gscore": 52, 
+              "cost": 16767.03125, 
+              "hypothesis": "no", 
+              "glhood": -152.41600036621094, 
+              "uscore": 65, 
+              "numSpeechFrames": 88, 
+              "likelihood": 0.0, 
+              "gdelta": 5.382999897003174, 
+              "ulhood": -145.25799560546875
+            }, 
+            {
+              "normSpeechLhood": -152.50994873046875, 
+              "lastSpeechFrame": 92, 
+              "lms": [
+                "/home/jdw/sdc/prod/lms/confirm.lm"
+              ], 
+              "score": 20, 
+              "nscore": 0, 
+              "numFrames": 115, 
+              "udelta": -4.748000144958496, 
+              "speechLikelihood": -13420.875, 
+              "firstSpeechFrame": 55, 
+              "ndelta": 0.578000009059906, 
+              "normCost": 146.87571716308594, 
+              "normLhood": 0.0, 
+              "gscore": 37, 
+              "cost": 16890.70703125, 
+              "hypothesis": "yeah", 
+              "glhood": -154.9219970703125, 
+              "uscore": 5, 
+              "numSpeechFrames": 88, 
+              "likelihood": 0.0, 
+              "gdelta": 2.4119999408721924, 
+              "ulhood": -147.76199340820312
+            }, 
+            {
+              "normSpeechLhood": -153.6395721435547, 
+              "lastSpeechFrame": 92, 
+              "lms": [
+                "/home/jdw/sdc/prod/lms/confirm.lm"
+              ], 
+              "score": 10, 
+              "nscore": 100, 
+              "numFrames": 115, 
+              "udelta": -7.0289998054504395, 
+              "speechLikelihood": -13520.2822265625, 
+              "firstSpeechFrame": 52, 
+              "ndelta": 150.0, 
+              "normCost": 146.8807373046875, 
+              "normLhood": 0.0, 
+              "gscore": 22, 
+              "cost": 16891.28515625, 
+              "hypothesis": "nope", 
+              "glhood": -153.1230010986328, 
+              "uscore": 0, 
+              "numSpeechFrames": 88, 
+              "likelihood": 0.0, 
+              "gdelta": -0.5170000195503235, 
+              "ulhood": -146.61000061035156
+            }
+          ], 
+          "fileId": 0
+        }, 
+        "uttinfo": {
+          "uttfile_status": "logged", 
+          "uttid": "007.raw"
+        }, 
+        "sys_action_details": [
+          {
+            "prompt": "<prosody volume=\"x-loud\">61B.</prosody>", 
+            "output_start_time": "08/05 19:42:27.581", 
+            "waitfor": "['evPhraseResult', 'evDtmfInput', 'evNoInputTimeout']", 
+            "dtmf": "", 
+            "input_types": "speech", 
+            "grammars": "['/home/jdw/sdc/prod/lib/../lms/confirm.lm']", 
+            "timeout": "0.1", 
+            "input_start_time": "08/05 19:42:30.086", 
+            "ACTION": "Listen", 
+            "bargein": "False", 
+            "events": [
+              "evPromptStart", 
+              "evPromptStop", 
+              "evNoInputTimeout"
+            ]
+          }, 
+          {
+            "prompt": "file:/home/jdw/sdc/prod/lib/../prompts/ConfirmRoute/Init.wav", 
+            "output_start_time": "08/05 19:42:30.086", 
+            "waitfor": "['evPhraseResult', 'evDtmfInput', 'evNoInputTimeout']", 
+            "dtmf": "", 
+            "input_types": "speech", 
+            "grammars": "['/home/jdw/sdc/prod/lib/../lms/confirm.lm']", 
+            "timeout": "10", 
+            "input_start_time": "08/05 19:42:31.727", 
+            "ACTION": "Listen", 
+            "bargein": "False", 
+            "events": [
+              "evPromptStart", 
+              "evPromptStop", 
+              "evSpeechStart", 
+              "evPhraseResult"
+            ]
+          }
+        ], 
+        "dialog_states": [
+          {
+            "state": "AskRoute", 
+            "activity": "Calling OnRecognition handler"
+          }, 
+          {
+            "state": "ConfirmRoute", 
+            "activity": "Initializing"
+          }, 
+          {
+            "state": "ConfirmRoute", 
+            "activity": "Prompt type: Init"
+          }, 
+          {
+            "state": "ConfirmRoute", 
+            "activity": "Calling Init()"
+          }
+        ], 
+        "parsed_asr_result": {
+          "nbest": [
+            {
+              "rec_string": "no", 
+              "rec_type": "ig", 
+              "fields": {
+                "confirm": "no"
+              }, 
+              "rec_conf": 0.856407
+            }, 
+            {
+              "rec_string": "yeah", 
+              "rec_type": "ig", 
+              "fields": {
+                "confirm": "yes"
+              }, 
+              "rec_conf": 0.06366
+            }, 
+            {
+              "rec_string": "nope", 
+              "rec_type": "ig", 
+              "fields": {
+                "confirm": "no"
+              }, 
+              "rec_conf": 0.0
+            }
+          ]
+        }, 
+        "sys_action_summary": {
+          "struct": [
+            [
+              "expl-confirm", 
+              {
+                "route": "sixty one b"
+              }
+            ], 
+            [
+              "expl-confirm", 
+              {
+                "route": "sixty one b"
+              }
+            ]
+          ], 
+          "surface": "61B. Is that right?"
+        }
+      }, 
+      "turn-index": 4, 
+      "restart": false, 
+      "output": {
+        "start-time": 36.199, 
+        "transcript": "61B. Is that right?", 
+        "dialog-acts": [
+          {
+            "slots": [
+              [
+                "route", 
+                "61b"
+              ]
+            ], 
+            "act": "expl-conf"
+          }
+        ]
+      }
+    }, 
+    {
+      "input": {
+        "live": {
+          "asr-hyps": [
+            {
+              "asr-hyp": "sixty one", 
+              "score": 0.070804, 
+              "type": "recognition"
+            }, 
+            {
+              "asr-hyp": "the y one", 
+              "score": 0.430004, 
+              "type": "recognition"
+            }, 
+            {
+              "asr-hyp": "sixty one d", 
+              "score": 0.035625, 
+              "type": "recognition"
+            }, 
+            {
+              "asr-hyp": "sixty one a", 
+              "score": 0.00581, 
+              "type": "recognition"
+            }, 
+            {
+              "asr-hyp": "sixty one b", 
+              "score": 0.000876, 
+              "type": "recognition"
+            }, 
+            {
+              "asr-hyp": "the sixty one", 
+              "score": 0.00011, 
+              "type": "recognition"
+            }, 
+            {
+              "asr-hyp": "b m", 
+              "score": 1e-05, 
+              "type": "recognition"
+            }, 
+            {
+              "asr-hyp": "the sixty one d", 
+              "score": 1e-06, 
+              "type": "recognition"
+            }, 
+            {
+              "asr-hyp": "the sixty one a", 
+              "score": 0.0, 
+              "type": "recognition"
+            }, 
+            {
+              "asr-hyp": "p", 
+              "score": 0.0, 
+              "type": "recognition"
+            }, 
+            {
+              "asr-hyp": "b r", 
+              "score": 0.0, 
+              "type": "recognition"
+            }
+          ], 
+          "slu-hyps": [
+            {
+              "slu-hyp": [
+                {
+                  "slots": [
+                    [
+                      "route", 
+                      "61"
+                    ]
+                  ], 
+                  "act": "inform"
+                }
+              ], 
+              "score": 0.070804
+            }, 
+            {
+              "slu-hyp": [
+                {
+                  "slots": [
+                    [
+                      "route", 
+                      "y1"
+                    ]
+                  ], 
+                  "act": "inform"
+                }
+              ], 
+              "score": 0.430004
+            }, 
+            {
+              "slu-hyp": [
+                {
+                  "slots": [
+                    [
+                      "route", 
+                      "61d"
+                    ]
+                  ], 
+                  "act": "inform"
+                }
+              ], 
+              "score": 0.035625
+            }, 
+            {
+              "slu-hyp": [
+                {
+                  "slots": [
+                    [
+                      "route", 
+                      "61a"
+                    ]
+                  ], 
+                  "act": "inform"
+                }
+              ], 
+              "score": 0.00581
+            }, 
+            {
+              "slu-hyp": [
+                {
+                  "slots": [
+                    [
+                      "route", 
+                      "61b"
+                    ]
+                  ], 
+                  "act": "inform"
+                }
+              ], 
+              "score": 0.000876
+            }, 
+            {
+              "slu-hyp": [
+                {
+                  "slots": [
+                    [
+                      "route", 
+                      "61"
+                    ]
+                  ], 
+                  "act": "inform"
+                }
+              ], 
+              "score": 0.00011
+            }, 
+            {
+              "slu-hyp": [
+                {
+                  "slots": [
+                    [
+                      "route", 
+                      "bm"
+                    ]
+                  ], 
+                  "act": "inform"
+                }
+              ], 
+              "score": 1e-05
+            }, 
+            {
+              "slu-hyp": [
+                {
+                  "slots": [
+                    [
+                      "route", 
+                      "61d"
+                    ]
+                  ], 
+                  "act": "inform"
+                }
+              ], 
+              "score": 1e-06
+            }, 
+            {
+              "slu-hyp": [
+                {
+                  "slots": [
+                    [
+                      "route", 
+                      "61a"
+                    ]
+                  ], 
+                  "act": "inform"
+                }
+              ], 
+              "score": 0.0
+            }, 
+            {
+              "slu-hyp": [
+                {
+                  "slots": [
+                    [
+                      "route", 
+                      "p"
+                    ]
+                  ], 
+                  "act": "inform"
+                }
+              ], 
+              "score": 0.0
+            }, 
+            {
+              "slu-hyp": [
+                {
+                  "slots": [
+                    [
+                      "route", 
+                      "br"
+                    ]
+                  ], 
+                  "act": "inform"
+                }
+              ], 
+              "score": 0.0
+            }
+          ]
+        }, 
+        "audio-file": "008.raw", 
+        "start-time": 45.225
+      }, 
+      "system-specific": {
+        "beliefstate": {
+          "date": [
+            {
+              "count": 77522.0, 
+              "belief": 1.0, 
+              "slotValues": {
+                "date": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": 0.0, 
+              "logBel": 0.0, 
+              "surfaceForms": {
+                "date": "set([])"
+              }, 
+              "id": 0
+            }
+          ], 
+          "route": [
+            {
+              "count": 100.0, 
+              "belief": 0.0, 
+              "slotValues": {
+                "route": {
+                  "vals": "['P']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -6.703, 
+              "logBel": -15.241, 
+              "surfaceForms": {
+                "route": "set(['p'])"
+              }, 
+              "id": 5
+            }, 
+            {
+              "count": 100.0, 
+              "belief": 0.0, 
+              "slotValues": {
+                "route": {
+                  "vals": "['48']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -6.703, 
+              "logBel": -15.01, 
+              "surfaceForms": {
+                "route": "set(['forty eight'])"
+              }, 
+              "id": 8
+            }, 
+            {
+              "count": 100.0, 
+              "belief": 0.0, 
+              "slotValues": {
+                "route": {
+                  "vals": "['G']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -6.703, 
+              "logBel": -15.005, 
+              "surfaceForms": {
+                "route": "set(['g'])"
+              }, 
+              "id": 7
+            }, 
+            {
+              "count": 100.0, 
+              "belief": 0.0, 
+              "slotValues": {
+                "route": {
+                  "vals": "['BM']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -6.703, 
+              "logBel": -14.975, 
+              "surfaceForms": {
+                "route": "set(['b m'])"
+              }, 
+              "id": 16
+            }, 
+            {
+              "count": 100.0, 
+              "belief": 0.0, 
+              "slotValues": {
+                "route": {
+                  "vals": "['6C']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -6.703, 
+              "logBel": -14.854, 
+              "surfaceForms": {
+                "route": "set(['six c'])"
+              }, 
+              "id": 6
+            }, 
+            {
+              "count": 100.0, 
+              "belief": 1e-05, 
+              "slotValues": {
+                "route": {
+                  "vals": "['1D']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -6.703, 
+              "logBel": -11.347, 
+              "surfaceForms": {
+                "route": "set(['one d'])"
+              }, 
+              "id": 4
+            }, 
+            {
+              "count": 100.0, 
+              "belief": 2e-05, 
+              "slotValues": {
+                "route": {
+                  "vals": "['61']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -6.703, 
+              "logBel": -10.902, 
+              "surfaceForms": {
+                "route": "set(['the sixty one', 'sixty one'])"
+              }, 
+              "id": 14
+            }, 
+            {
+              "count": 100.0, 
+              "belief": 0.00021, 
+              "slotValues": {
+                "route": {
+                  "vals": "['GC']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -6.703, 
+              "logBel": -8.478, 
+              "surfaceForms": {
+                "route": "set(['g c'])"
+              }, 
+              "id": 2
+            }, 
+            {
+              "count": 100.0, 
+              "belief": 0.00026, 
+              "slotValues": {
+                "route": {
+                  "vals": "['60']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -6.703, 
+              "logBel": -8.244, 
+              "surfaceForms": {
+                "route": "set(['sixty'])"
+              }, 
+              "id": 3
+            }, 
+            {
+              "count": 100.0, 
+              "belief": 0.00045, 
+              "slotValues": {
+                "route": {
+                  "vals": "['Y1']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -6.703, 
+              "logBel": -7.712, 
+              "surfaceForms": {
+                "route": "set(['the y one'])"
+              }, 
+              "id": 15
+            }, 
+            {
+              "count": 44828.0, 
+              "belief": 0.00068, 
+              "slotValues": {
+                "route": {
+                  "countHiddenVals": 14, 
+                  "valsListed": false, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.598, 
+              "logBel": -7.297, 
+              "surfaceForms": {
+                "route": "set([])"
+              }, 
+              "id": 0
+            }, 
+            {
+              "count": 11234.0, 
+              "belief": 0.00075, 
+              "slotValues": {
+                "route": {
+                  "vals": "['61A']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -1.982, 
+              "logBel": -7.19, 
+              "surfaceForms": {
+                "route": "set(['the sixty one a', 'sixty one a'])"
+              }, 
+              "id": 13
+            }, 
+            {
+              "count": 9022.0, 
+              "belief": 0.00153, 
+              "slotValues": {
+                "route": {
+                  "vals": "['61C']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -2.201, 
+              "logBel": -6.484, 
+              "surfaceForms": {
+                "route": "set(['the sixty one c', 'sixty one c'])"
+              }, 
+              "id": 12
+            }, 
+            {
+              "count": 10898.0, 
+              "belief": 0.00256, 
+              "slotValues": {
+                "route": {
+                  "vals": "['61B']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -2.012, 
+              "logBel": -5.969, 
+              "surfaceForms": {
+                "route": "set(['the sixty one b', 'sixty one b'])"
+              }, 
+              "id": 11
+            }, 
+            {
+              "count": 4540.0, 
+              "belief": 0.99353, 
+              "slotValues": {
+                "route": {
+                  "vals": "['61D']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -2.888, 
+              "logBel": -0.006, 
+              "surfaceForms": {
+                "route": "set(['sixty one d', 'the sixty one d'])"
+              }, 
+              "id": 10
+            }
+          ], 
+          "fromstopids": [
+            {
+              "count": 163022.0, 
+              "belief": 1.0, 
+              "slotValues": {
+                "fromstopids": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": 0.0, 
+              "logBel": 0.0, 
+              "surfaceForms": {
+                "fromstopids": "set([])"
+              }, 
+              "id": 0
+            }
+          ], 
+          "tostopids": [
+            {
+              "count": 163222.0, 
+              "belief": 1.0, 
+              "slotValues": {
+                "tostopids": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": 0.0, 
+              "logBel": 0.0, 
+              "surfaceForms": {
+                "tostopids": "set([])"
+              }, 
+              "id": 0
+            }
+          ], 
+          "time": [
+            {
+              "count": 176762.0, 
+              "belief": 0.5, 
+              "slotValues": {
+                "searchType": {
+                  "vals": "['arrive']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }, 
+                "time": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.693, 
+              "logBel": -0.693, 
+              "surfaceForms": {
+                "searchType": "set([])", 
+                "time": "set([])"
+              }, 
+              "id": 0
+            }, 
+            {
+              "count": 176761.0, 
+              "belief": 0.5, 
+              "slotValues": {
+                "searchType": {
+                  "vals": "['depart']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }, 
+                "time": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.693, 
+              "logBel": -0.693, 
+              "surfaceForms": {
+                "searchType": "set([])", 
+                "time": "set([])"
+              }, 
+              "id": 1
+            }
+          ]
+        }, 
+        "turn_start_time": "08/05 19:42:32.791", 
+        "raw_asr_result": {
+          "audioParams": {
+            "sampleRate": 8000, 
+            "coding": "linear", 
+            "byteOrder": "LE"
+          }, 
+          "version": "watson-6.5.5700", 
+          "resultId": 8, 
+          "hostname": "dt-jdw", 
+          "nlu-sisr": [
+            {
+              "interp": {
+                "route": "61"
+              }, 
+              "id": 0, 
+              "time": 0.002758026123046875
+            }, 
+            {
+              "interp": {
+                "route": "Y1"
+              }, 
+              "id": 1, 
+              "time": 0.0008938312530517578
+            }, 
+            {
+              "interp": {
+                "route": "61D"
+              }, 
+              "id": 2, 
+              "time": 0.0008718967437744141
+            }, 
+            {
+              "interp": {
+                "route": "61A"
+              }, 
+              "id": 3, 
+              "time": 0.0009758472442626953
+            }, 
+            {
+              "interp": {
+                "route": "61B"
+              }, 
+              "id": 4, 
+              "time": 0.0009021759033203125
+            }, 
+            {
+              "interp": {
+                "route": "61"
+              }, 
+              "id": 5, 
+              "time": 0.0008859634399414062
+            }, 
+            {
+              "interp": {
+                "route": "BM"
+              }, 
+              "id": 6, 
+              "time": 0.0008578300476074219
+            }, 
+            {
+              "interp": {
+                "route": "61D"
+              }, 
+              "id": 7, 
+              "time": 0.0009410381317138672
+            }, 
+            {
+              "interp": {
+                "route": "61A"
+              }, 
+              "id": 8, 
+              "time": 0.0009551048278808594
+            }, 
+            {
+              "interp": {
+                "route": "P"
+              }, 
+              "id": 9, 
+              "time": 0.0007719993591308594
+            }, 
+            {
+              "interp": {
+                "route": "BR"
+              }, 
+              "id": 10, 
+              "time": 0.0008339881896972656
+            }
+          ], 
+          "metrics": {
+            "audioBytes": 78720, 
+            "gaussSelectSkipRatio": 0.7998456358909607, 
+            "lhoodPrecalcHitRatio": 0.8673402070999146, 
+            "avgFrameBatchSize": 3.0, 
+            "decodedFrameCount": 482, 
+            "bytesPerPacket": 320.0, 
+            "audioPackets": 246, 
+            "frameCount": 492
+          }, 
+          "sessionId": "", 
+          "trigger": "secondTimeout", 
+          "evType": "evPhraseResult", 
+          "wcn": {
+            "best_path_score": 0.5914455907380067, 
+            "best_path": {
+              "word": [
+                "sixty", 
+                "one"
+              ], 
+              "prob": [
+                0.5906456112861633, 
+                0.5922466516494751
+              ]
+            }, 
+            "network": [
+              {
+                "word": [
+                  "sixty", 
+                  "p", 
+                  "b", 
+                  "the"
+                ], 
+                "prob": [
+                  0.5906456112861633, 
+                  0.00018460415594745427, 
+                  0.0005041601834818721, 
+                  0.40866565704345703
+                ]
+              }, 
+              {
+                "word": [
+                  "_epsilon", 
+                  "sixty"
+                ], 
+                "prob": [
+                  0.9984014630317688, 
+                  0.0015984975034371018
+                ]
+              }, 
+              {
+                "word": [
+                  "one", 
+                  "y", 
+                  "r", 
+                  "m", 
+                  "_epsilon"
+                ], 
+                "prob": [
+                  0.5922466516494751, 
+                  0.4070645570755005, 
+                  0.00016849486564751714, 
+                  0.0003356651868671179, 
+                  0.00018459552666172385
+                ]
+              }, 
+              {
+                "word": [
+                  "_epsilon", 
+                  "one", 
+                  "b", 
+                  "a", 
+                  "d"
+                ], 
+                "prob": [
+                  0.632079005241394, 
+                  0.25729694962501526, 
+                  0.004385124426335096, 
+                  0.04960042983293533, 
+                  0.05663847178220749
+                ]
+              }
+            ]
+          }, 
+          "config": {
+            "lms": [
+              "/home/jdw/sdc/prod/lms/routeList.lm"
+            ], 
+            "am": "/home/jdw/watson/data/am/gt_06.1.ep.h4.20.mmi2b", 
+            "secondTimeout": 700, 
+            "beamWidth": 250.0, 
+            "maxActiveArcs": 50000, 
+            "confidenceThreshold": 50, 
+            "firstTimeout": 400
+          }, 
+          "nbest": [
+            {
+              "normSpeechLhood": -162.43003845214844, 
+              "lastSpeechFrame": 310, 
+              "lms": [
+                "/home/jdw/sdc/prod/lms/routeList.lm"
+              ], 
+              "score": 18, 
+              "nscore": 2, 
+              "numFrames": 482, 
+              "udelta": -6.566999912261963, 
+              "speechLikelihood": -18841.884765625, 
+              "firstSpeechFrame": 204, 
+              "ndelta": 3.1640000343322754, 
+              "normCost": 151.44833374023438, 
+              "normLhood": 0.0, 
+              "gscore": 37, 
+              "cost": 72998.09375, 
+              "hypothesis": "sixty one", 
+              "glhood": -164.85499572753906, 
+              "uscore": 0, 
+              "numSpeechFrames": 116, 
+              "likelihood": 0.0, 
+              "gdelta": 2.424999952316284, 
+              "ulhood": -155.86399841308594
+            }, 
+            {
+              "normSpeechLhood": -158.9598388671875, 
+              "lastSpeechFrame": 311, 
+              "lms": [
+                "/home/jdw/sdc/prod/lms/routeList.lm"
+              ], 
+              "score": 16, 
+              "nscore": 15, 
+              "numFrames": 482, 
+              "udelta": -6.2769999504089355, 
+              "speechLikelihood": -12557.8271484375, 
+              "firstSpeechFrame": 242, 
+              "ndelta": 22.172000885009766, 
+              "normCost": 151.45489501953125, 
+              "normLhood": 0.0, 
+              "gscore": 34, 
+              "cost": 73001.2578125, 
+              "hypothesis": "the y one", 
+              "glhood": -160.74600219726562, 
+              "uscore": 0, 
+              "numSpeechFrames": 79, 
+              "likelihood": 0.0, 
+              "gdelta": 1.7860000133514404, 
+              "ulhood": -152.68299865722656
+            }, 
+            {
+              "normSpeechLhood": -164.7757110595703, 
+              "lastSpeechFrame": 407, 
+              "lms": [
+                "/home/jdw/sdc/prod/lms/routeList.lm"
+              ], 
+              "score": 9, 
+              "nscore": 1, 
+              "numFrames": 482, 
+              "udelta": -6.415999889373779, 
+              "speechLikelihood": -21420.841796875, 
+              "firstSpeechFrame": 204, 
+              "ndelta": 1.3980000019073486, 
+              "normCost": 151.50088500976562, 
+              "normLhood": 0.0, 
+              "gscore": 19, 
+              "cost": 73023.4296875, 
+              "hypothesis": "sixty one d", 
+              "glhood": -163.56900024414062, 
+              "uscore": 0, 
+              "numSpeechFrames": 130, 
+              "likelihood": 0.0, 
+              "gdelta": -1.2070000171661377, 
+              "ulhood": -158.36000061035156
+            }, 
+            {
+              "normSpeechLhood": -162.20736694335938, 
+              "lastSpeechFrame": 407, 
+              "lms": [
+                "/home/jdw/sdc/prod/lms/routeList.lm"
+              ], 
+              "score": 13, 
+              "nscore": 26, 
+              "numFrames": 482, 
+              "udelta": -6.050000190734863, 
+              "speechLikelihood": -20762.54296875, 
+              "firstSpeechFrame": 204, 
+              "ndelta": 38.8120002746582, 
+              "normCost": 151.50379943847656, 
+              "normLhood": 0.0, 
+              "gscore": 27, 
+              "cost": 73024.828125, 
+              "hypothesis": "sixty one a", 
+              "glhood": -162.5279998779297, 
+              "uscore": 0, 
+              "numSpeechFrames": 128, 
+              "likelihood": 0.0, 
+              "gdelta": 0.32100000977516174, 
+              "ulhood": -156.15699768066406
+            }, 
+            {
+              "normSpeechLhood": -167.31565856933594, 
+              "lastSpeechFrame": 407, 
+              "lms": [
+                "/home/jdw/sdc/prod/lms/routeList.lm"
+              ], 
+              "score": 3, 
+              "nscore": 19, 
+              "numFrames": 482, 
+              "udelta": -8.515999794006348, 
+              "speechLikelihood": -21751.03515625, 
+              "firstSpeechFrame": 204, 
+              "ndelta": 28.773000717163086, 
+              "normCost": 151.58432006835938, 
+              "normLhood": 0.0, 
+              "gscore": 7, 
+              "cost": 73063.640625, 
+              "hypothesis": "sixty one b", 
+              "glhood": -163.79800415039062, 
+              "uscore": 0, 
+              "numSpeechFrames": 130, 
+              "likelihood": 0.0, 
+              "gdelta": -3.5169999599456787, 
+              "ulhood": -158.7989959716797
+            }, 
+            {
+              "normSpeechLhood": -161.21124267578125, 
+              "lastSpeechFrame": 310, 
+              "lms": [
+                "/home/jdw/sdc/prod/lms/routeList.lm"
+              ], 
+              "score": 12, 
+              "nscore": 13, 
+              "numFrames": 482, 
+              "udelta": -7.044000148773193, 
+              "speechLikelihood": -20796.25, 
+              "firstSpeechFrame": 191, 
+              "ndelta": 19.391000747680664, 
+              "normCost": 151.64401245117188, 
+              "normLhood": 0.0, 
+              "gscore": 25, 
+              "cost": 73092.4140625, 
+              "hypothesis": "the sixty one", 
+              "glhood": -161.2239990234375, 
+              "uscore": 0, 
+              "numSpeechFrames": 129, 
+              "likelihood": 0.0, 
+              "gdelta": 0.013000000268220901, 
+              "ulhood": -154.16700744628906
+            }, 
+            {
+              "normSpeechLhood": -158.91116333007812, 
+              "lastSpeechFrame": 311, 
+              "lms": [
+                "/home/jdw/sdc/prod/lms/routeList.lm"
+              ], 
+              "score": 15, 
+              "nscore": 4, 
+              "numFrames": 482, 
+              "udelta": -6.2220001220703125, 
+              "speechLikelihood": -9216.84765625, 
+              "firstSpeechFrame": 240, 
+              "ndelta": 5.936999797821045, 
+              "normCost": 151.68423461914062, 
+              "normLhood": 0.0, 
+              "gscore": 31, 
+              "cost": 73111.8046875, 
+              "hypothesis": "b m", 
+              "glhood": -160.06700134277344, 
+              "uscore": 0, 
+              "numSpeechFrames": 58, 
+              "likelihood": 0.0, 
+              "gdelta": 1.1549999713897705, 
+              "ulhood": -152.68899536132812
+            }, 
+            {
+              "normSpeechLhood": -163.27520751953125, 
+              "lastSpeechFrame": 407, 
+              "lms": [
+                "/home/jdw/sdc/prod/lms/routeList.lm"
+              ], 
+              "score": 6, 
+              "nscore": 1, 
+              "numFrames": 482, 
+              "udelta": -6.811999797821045, 
+              "speechLikelihood": -23348.35546875, 
+              "firstSpeechFrame": 191, 
+              "ndelta": 1.406000018119812, 
+              "normCost": 151.69656372070312, 
+              "normLhood": 0.0, 
+              "gscore": 14, 
+              "cost": 73117.7421875, 
+              "hypothesis": "the sixty one d", 
+              "glhood": -161.16700744628906, 
+              "uscore": 0, 
+              "numSpeechFrames": 143, 
+              "likelihood": 0.0, 
+              "gdelta": -2.1080000400543213, 
+              "ulhood": -156.46400451660156
+            }, 
+            {
+              "normSpeechLhood": -161.3489227294922, 
+              "lastSpeechFrame": 407, 
+              "lms": [
+                "/home/jdw/sdc/prod/lms/routeList.lm"
+              ], 
+              "score": 9, 
+              "nscore": 1, 
+              "numFrames": 482, 
+              "udelta": -6.538000106811523, 
+              "speechLikelihood": -22750.197265625, 
+              "firstSpeechFrame": 191, 
+              "ndelta": 2.2190001010894775, 
+              "normCost": 151.69947814941406, 
+              "normLhood": 0.0, 
+              "gscore": 20, 
+              "cost": 73119.1484375, 
+              "hypothesis": "the sixty one a", 
+              "glhood": -160.38699340820312, 
+              "uscore": 0, 
+              "numSpeechFrames": 141, 
+              "likelihood": 0.0, 
+              "gdelta": -0.9620000123977661, 
+              "ulhood": -154.81100463867188
+            }, 
+            {
+              "normSpeechLhood": -160.80746459960938, 
+              "lastSpeechFrame": 262, 
+              "lms": [
+                "/home/jdw/sdc/prod/lms/routeList.lm"
+              ], 
+              "score": 21, 
+              "nscore": 1, 
+              "numFrames": 482, 
+              "udelta": -6.796000003814697, 
+              "speechLikelihood": -5145.8388671875, 
+              "firstSpeechFrame": 240, 
+              "ndelta": 1.4609999656677246, 
+              "normCost": 151.70408630371094, 
+              "normLhood": 0.0, 
+              "gscore": 44, 
+              "cost": 73121.3671875, 
+              "hypothesis": "p", 
+              "glhood": -164.5590057373047, 
+              "uscore": 0, 
+              "numSpeechFrames": 32, 
+              "likelihood": 0.0, 
+              "gdelta": 3.750999927520752, 
+              "ulhood": -154.01199340820312
+            }, 
+            {
+              "normSpeechLhood": -160.91111755371094, 
+              "lastSpeechFrame": 299, 
+              "lms": [
+                "/home/jdw/sdc/prod/lms/routeList.lm"
+              ], 
+              "score": 14, 
+              "nscore": 100, 
+              "numFrames": 482, 
+              "udelta": -6.997000217437744, 
+              "speechLikelihood": -8045.55615234375, 
+              "firstSpeechFrame": 240, 
+              "ndelta": 150.0, 
+              "normCost": 151.7071075439453, 
+              "normLhood": 0.0, 
+              "gscore": 29, 
+              "cost": 73122.828125, 
+              "hypothesis": "b r", 
+              "glhood": -161.62100219726562, 
+              "uscore": 0, 
+              "numSpeechFrames": 50, 
+              "likelihood": 0.0, 
+              "gdelta": 0.7099999785423279, 
+              "ulhood": -153.91400146484375
+            }
+          ], 
+          "fileId": 0
+        }, 
+        "uttinfo": {
+          "uttfile_status": "logged", 
+          "uttid": "008.raw"
+        }, 
+        "sys_action_details": [
+          {
+            "prompt": "file:/home/jdw/sdc/prod/lib/../prompts/AskRoute/Init_retry.wav", 
+            "output_start_time": "08/05 19:42:32.792", 
+            "waitfor": "['evPhraseResult', 'evDtmfInput', 'evNoInputTimeout']", 
+            "dtmf": "", 
+            "input_types": "speech", 
+            "grammars": "['/home/jdw/sdc/prod/lib/../lms/routeList.lm']", 
+            "timeout": "10", 
+            "input_start_time": "08/05 19:42:36.607", 
+            "ACTION": "Listen", 
+            "bargein": "False", 
+            "events": [
+              "evPromptStart", 
+              "evPromptStop", 
+              "evSpeechStart", 
+              "evPhraseResult"
+            ]
+          }
+        ], 
+        "dialog_states": [
+          {
+            "state": "ConfirmRoute", 
+            "activity": "Calling OnRecognition handler"
+          }, 
+          {
+            "state": "AskRoute", 
+            "activity": "Initializing"
+          }, 
+          {
+            "state": "AskRoute", 
+            "activity": "Prompt type: Init"
+          }, 
+          {
+            "state": "AskRoute", 
+            "activity": "Calling Init()"
+          }
+        ], 
+        "parsed_asr_result": {
+          "nbest": [
+            {
+              "rec_string": "sixty one", 
+              "rec_type": "ig", 
+              "fields": {
+                "routeSurface": "sixty one", 
+                "route-set": "set(['61'])", 
+                "route": "61"
+              }, 
+              "rec_conf": 0.070804
+            }, 
+            {
+              "rec_string": "the y one", 
+              "rec_type": "ig", 
+              "fields": {
+                "routeSurface": "the y one", 
+                "route-set": "set(['Y1'])", 
+                "route": "Y1"
+              }, 
+              "rec_conf": 0.430004
+            }, 
+            {
+              "rec_string": "sixty one d", 
+              "rec_type": "ig", 
+              "fields": {
+                "routeSurface": "sixty one d", 
+                "route-set": "set(['61D'])", 
+                "route": "61D"
+              }, 
+              "rec_conf": 0.035625
+            }, 
+            {
+              "rec_string": "sixty one a", 
+              "rec_type": "ig", 
+              "fields": {
+                "routeSurface": "sixty one a", 
+                "route-set": "set(['61A'])", 
+                "route": "61A"
+              }, 
+              "rec_conf": 0.00581
+            }, 
+            {
+              "rec_string": "sixty one b", 
+              "rec_type": "ig", 
+              "fields": {
+                "routeSurface": "sixty one b", 
+                "route-set": "set(['61B'])", 
+                "route": "61B"
+              }, 
+              "rec_conf": 0.000876
+            }, 
+            {
+              "rec_string": "the sixty one", 
+              "rec_type": "ig", 
+              "fields": {
+                "routeSurface": "the sixty one", 
+                "route-set": "set(['61'])", 
+                "route": "61"
+              }, 
+              "rec_conf": 0.00011
+            }, 
+            {
+              "rec_string": "b m", 
+              "rec_type": "ig", 
+              "fields": {
+                "routeSurface": "b m", 
+                "route-set": "set(['BM'])", 
+                "route": "BM"
+              }, 
+              "rec_conf": 1e-05
+            }, 
+            {
+              "rec_string": "the sixty one d", 
+              "rec_type": "ig", 
+              "fields": {
+                "routeSurface": "the sixty one d", 
+                "route-set": "set(['61D'])", 
+                "route": "61D"
+              }, 
+              "rec_conf": 1e-06
+            }, 
+            {
+              "rec_string": "the sixty one a", 
+              "rec_type": "ig", 
+              "fields": {
+                "routeSurface": "the sixty one a", 
+                "route-set": "set(['61A'])", 
+                "route": "61A"
+              }, 
+              "rec_conf": 0.0
+            }, 
+            {
+              "rec_string": "p", 
+              "rec_type": "ig", 
+              "fields": {
+                "routeSurface": "p", 
+                "route-set": "set(['P'])", 
+                "route": "P"
+              }, 
+              "rec_conf": 0.0
+            }, 
+            {
+              "rec_string": "b r", 
+              "rec_type": "ig", 
+              "fields": {
+                "routeSurface": "b r", 
+                "route-set": "set(['BR'])", 
+                "route": "BR"
+              }, 
+              "rec_conf": 0.0
+            }
+          ]
+        }, 
+        "sys_action_summary": {
+          "struct": [
+            [
+              "request", 
+              "route"
+            ], 
+            [
+              "request", 
+              "route"
+            ]
+          ], 
+          "surface": "Oh, sorry, which route do you want?."
+        }
+      }, 
+      "turn-index": 5, 
+      "restart": false, 
+      "output": {
+        "start-time": 41.41, 
+        "transcript": "Oh, sorry, which route do you want?.", 
+        "dialog-acts": [
+          {
+            "slots": [], 
+            "act": "sorry"
+          }, 
+          {
+            "slots": [
+              [
+                "route", 
+                null
+              ]
+            ], 
+            "act": "request"
+          }
+        ]
+      }
+    }, 
+    {
+      "input": {
+        "live": {
+          "asr-hyps": [], 
+          "slu-hyps": []
+        }, 
+        "audio-file": "012.raw", 
+        "start-time": 56.227
+      }, 
+      "system-specific": {
+        "beliefstate": {
+          "date": [
+            {
+              "count": 77522.0, 
+              "belief": 1.0, 
+              "slotValues": {
+                "date": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": 0.0, 
+              "logBel": 0.0, 
+              "surfaceForms": {
+                "date": "set([])"
+              }, 
+              "id": 0
+            }
+          ], 
+          "route": [
+            {
+              "count": 100.0, 
+              "belief": 0.0, 
+              "slotValues": {
+                "route": {
+                  "vals": "['P']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -6.703, 
+              "logBel": -15.241, 
+              "surfaceForms": {
+                "route": "set(['p'])"
+              }, 
+              "id": 5
+            }, 
+            {
+              "count": 100.0, 
+              "belief": 0.0, 
+              "slotValues": {
+                "route": {
+                  "vals": "['48']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -6.703, 
+              "logBel": -15.01, 
+              "surfaceForms": {
+                "route": "set(['forty eight'])"
+              }, 
+              "id": 8
+            }, 
+            {
+              "count": 100.0, 
+              "belief": 0.0, 
+              "slotValues": {
+                "route": {
+                  "vals": "['G']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -6.703, 
+              "logBel": -15.005, 
+              "surfaceForms": {
+                "route": "set(['g'])"
+              }, 
+              "id": 7
+            }, 
+            {
+              "count": 100.0, 
+              "belief": 0.0, 
+              "slotValues": {
+                "route": {
+                  "vals": "['BM']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -6.703, 
+              "logBel": -14.975, 
+              "surfaceForms": {
+                "route": "set(['b m'])"
+              }, 
+              "id": 16
+            }, 
+            {
+              "count": 100.0, 
+              "belief": 0.0, 
+              "slotValues": {
+                "route": {
+                  "vals": "['6C']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -6.703, 
+              "logBel": -14.854, 
+              "surfaceForms": {
+                "route": "set(['six c'])"
+              }, 
+              "id": 6
+            }, 
+            {
+              "count": 100.0, 
+              "belief": 1e-05, 
+              "slotValues": {
+                "route": {
+                  "vals": "['1D']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -6.703, 
+              "logBel": -11.347, 
+              "surfaceForms": {
+                "route": "set(['one d'])"
+              }, 
+              "id": 4
+            }, 
+            {
+              "count": 100.0, 
+              "belief": 2e-05, 
+              "slotValues": {
+                "route": {
+                  "vals": "['61']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -6.703, 
+              "logBel": -10.902, 
+              "surfaceForms": {
+                "route": "set(['the sixty one', 'sixty one'])"
+              }, 
+              "id": 14
+            }, 
+            {
+              "count": 100.0, 
+              "belief": 0.00021, 
+              "slotValues": {
+                "route": {
+                  "vals": "['GC']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -6.703, 
+              "logBel": -8.478, 
+              "surfaceForms": {
+                "route": "set(['g c'])"
+              }, 
+              "id": 2
+            }, 
+            {
+              "count": 100.0, 
+              "belief": 0.00026, 
+              "slotValues": {
+                "route": {
+                  "vals": "['60']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -6.703, 
+              "logBel": -8.244, 
+              "surfaceForms": {
+                "route": "set(['sixty'])"
+              }, 
+              "id": 3
+            }, 
+            {
+              "count": 100.0, 
+              "belief": 0.00045, 
+              "slotValues": {
+                "route": {
+                  "vals": "['Y1']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -6.703, 
+              "logBel": -7.712, 
+              "surfaceForms": {
+                "route": "set(['the y one'])"
+              }, 
+              "id": 15
+            }, 
+            {
+              "count": 44828.0, 
+              "belief": 0.00068, 
+              "slotValues": {
+                "route": {
+                  "countHiddenVals": 14, 
+                  "valsListed": false, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.598, 
+              "logBel": -7.297, 
+              "surfaceForms": {
+                "route": "set([])"
+              }, 
+              "id": 0
+            }, 
+            {
+              "count": 11234.0, 
+              "belief": 0.00075, 
+              "slotValues": {
+                "route": {
+                  "vals": "['61A']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -1.982, 
+              "logBel": -7.19, 
+              "surfaceForms": {
+                "route": "set(['the sixty one a', 'sixty one a'])"
+              }, 
+              "id": 13
+            }, 
+            {
+              "count": 9022.0, 
+              "belief": 0.00153, 
+              "slotValues": {
+                "route": {
+                  "vals": "['61C']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -2.201, 
+              "logBel": -6.484, 
+              "surfaceForms": {
+                "route": "set(['the sixty one c', 'sixty one c'])"
+              }, 
+              "id": 12
+            }, 
+            {
+              "count": 10898.0, 
+              "belief": 0.00256, 
+              "slotValues": {
+                "route": {
+                  "vals": "['61B']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -2.012, 
+              "logBel": -5.969, 
+              "surfaceForms": {
+                "route": "set(['the sixty one b', 'sixty one b'])"
+              }, 
+              "id": 11
+            }, 
+            {
+              "count": 4540.0, 
+              "belief": 0.99353, 
+              "slotValues": {
+                "route": {
+                  "vals": "['61D']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -2.888, 
+              "logBel": -0.006, 
+              "surfaceForms": {
+                "route": "set(['sixty one d', 'the sixty one d'])"
+              }, 
+              "id": 10
+            }
+          ], 
+          "fromstopids": [
+            {
+              "count": 163022.0, 
+              "belief": 1.0, 
+              "slotValues": {
+                "fromstopids": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": 0.0, 
+              "logBel": 0.0, 
+              "surfaceForms": {
+                "fromstopids": "set([])"
+              }, 
+              "id": 0
+            }
+          ], 
+          "tostopids": [
+            {
+              "count": 163222.0, 
+              "belief": 1.0, 
+              "slotValues": {
+                "tostopids": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": 0.0, 
+              "logBel": 0.0, 
+              "surfaceForms": {
+                "tostopids": "set([])"
+              }, 
+              "id": 0
+            }
+          ], 
+          "time": [
+            {
+              "count": 176762.0, 
+              "belief": 0.5, 
+              "slotValues": {
+                "searchType": {
+                  "vals": "['arrive']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }, 
+                "time": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.693, 
+              "logBel": -0.693, 
+              "surfaceForms": {
+                "searchType": "set([])", 
+                "time": "set([])"
+              }, 
+              "id": 0
+            }, 
+            {
+              "count": 176761.0, 
+              "belief": 0.5, 
+              "slotValues": {
+                "searchType": {
+                  "vals": "['depart']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }, 
+                "time": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.693, 
+              "logBel": -0.693, 
+              "surfaceForms": {
+                "searchType": "set([])", 
+                "time": "set([])"
+              }, 
+              "id": 1
+            }
+          ]
+        }, 
+        "turn_start_time": "08/05 19:42:39.916", 
+        "raw_asr_result": {
+          "audioParams": {
+            "sampleRate": 8000, 
+            "coding": "linear", 
+            "byteOrder": "LE"
+          }, 
+          "version": "watson-6.5.5700", 
+          "resultId": 12, 
+          "hostname": "dt-jdw", 
+          "nlu-sisr": [
+            {
+              "interp": "", 
+              "id": 0, 
+              "time": 0.002460956573486328
+            }
+          ], 
+          "metrics": {
+            "audioBytes": 35840, 
+            "gaussSelectSkipRatio": 0.8445436954498291, 
+            "lhoodPrecalcHitRatio": 0.8656529188156128, 
+            "avgFrameBatchSize": 3.0, 
+            "decodedFrameCount": 208, 
+            "bytesPerPacket": 320.0, 
+            "audioPackets": 112, 
+            "frameCount": 224
+          }, 
+          "sessionId": "", 
+          "trigger": "secondTimeout", 
+          "evType": "evPhraseResult", 
+          "config": {
+            "lms": [
+              "/home/jdw/sdc/prod/lms/stopNames.onRoute.61D.fromstopids.lm"
+            ], 
+            "am": "/home/jdw/watson/data/am/gt_06.1.ep.h4.20.mmi2b", 
+            "secondTimeout": 700, 
+            "beamWidth": 250.0, 
+            "maxActiveArcs": 50000, 
+            "confidenceThreshold": 50, 
+            "firstTimeout": 400
+          }, 
+          "nbest": [
+            {
+              "numSpeechFrames": 0, 
+              "numFrames": 208, 
+              "lms": [
+                "/home/jdw/sdc/prod/lms/stopNames.onRoute.61D.fromstopids.lm"
+              ], 
+              "normLhood": 0.0, 
+              "normSpeechLhood": 0.0, 
+              "cost": 0.0, 
+              "hypothesis": "", 
+              "likelihood": 0.0, 
+              "normCost": 0.0
+            }
+          ], 
+          "fileId": 0
+        }, 
+        "uttinfo": {
+          "uttfile_status": "logged", 
+          "uttid": "012.raw"
+        }, 
+        "sys_action_details": [
+          {
+            "prompt": "file:/home/jdw/sdc/prod/lib/../prompts/AskRoute/Okay.wav", 
+            "output_start_time": "08/05 19:42:39.949", 
+            "waitfor": "['evPhraseResult', 'evDtmfInput', 'evNoInputTimeout']", 
+            "dtmf": "", 
+            "input_types": "speech", 
+            "grammars": "['/home/jdw/sdc/prod/lib/../lms/stopNames.onRoute.61D.fromstopids.lm']", 
+            "timeout": "0.1", 
+            "input_start_time": "08/05 19:42:40.789", 
+            "ACTION": "Listen", 
+            "bargein": "False", 
+            "events": [
+              "evPromptStart", 
+              "evPromptStop", 
+              "evNoInputTimeout"
+            ]
+          }, 
+          {
+            "prompt": "<prosody volume=\"x-loud\">61D.</prosody>", 
+            "output_start_time": "08/05 19:42:40.790", 
+            "waitfor": "['evPhraseResult', 'evDtmfInput', 'evNoInputTimeout']", 
+            "dtmf": "", 
+            "input_types": "speech", 
+            "grammars": "['/home/jdw/sdc/prod/lib/../lms/stopNames.onRoute.61D.fromstopids.lm']", 
+            "timeout": "0.1", 
+            "input_start_time": "08/05 19:42:43.171", 
+            "ACTION": "Listen", 
+            "bargein": "False", 
+            "events": [
+              "evPromptStart", 
+              "evPromptStop", 
+              "evNoInputTimeout"
+            ]
+          }, 
+          {
+            "prompt": "file:/home/jdw/sdc/prod/lib/../prompts/CommonPrompts/goback_1.wav", 
+            "output_start_time": "08/05 19:42:43.171", 
+            "waitfor": "['evPhraseResult', 'evDtmfInput', 'evNoInputTimeout']", 
+            "dtmf": "", 
+            "input_types": "speech", 
+            "grammars": "['/home/jdw/sdc/prod/lib/../lms/stopNames.onRoute.61D.fromstopids.lm']", 
+            "timeout": "0.1", 
+            "input_start_time": "08/05 19:42:45.111", 
+            "ACTION": "Listen", 
+            "bargein": "False", 
+            "events": [
+              "evPromptStart", 
+              "evPromptStop", 
+              "evNoInputTimeout"
+            ]
+          }, 
+          {
+            "prompt": "file:/home/jdw/sdc/prod/lib/../prompts/AskOrigin/Init.wav", 
+            "output_start_time": "08/05 19:42:45.111", 
+            "waitfor": "['evPhraseResult', 'evDtmfInput', 'evNoInputTimeout']", 
+            "dtmf": "", 
+            "input_types": "speech", 
+            "grammars": "['/home/jdw/sdc/prod/lib/../lms/stopNames.onRoute.61D.fromstopids.lm']", 
+            "timeout": "10", 
+            "input_start_time": "08/05 19:42:47.609", 
+            "ACTION": "Listen", 
+            "bargein": "False", 
+            "events": [
+              "evPromptStart", 
+              "evPromptStop", 
+              "evSpeechStart", 
+              "evPhraseResult"
+            ]
+          }
+        ], 
+        "dialog_states": [
+          {
+            "state": "AskRoute", 
+            "activity": "Calling OnRecognition handler"
+          }, 
+          {
+            "state": "AskOrigin", 
+            "activity": "Initializing"
+          }, 
+          {
+            "state": "AskOrigin", 
+            "activity": "Prompt type: Init"
+          }, 
+          {
+            "state": "AskOrigin", 
+            "activity": "Calling Init()"
+          }
+        ], 
+        "parsed_asr_result": {
+          "nbest": [
+            {
+              "rec_type": "offlist", 
+              "rec_conf": 1.0
+            }
+          ]
+        }, 
+        "sys_action_summary": {
+          "struct": [
+            [
+              "impl-confirm", 
+              {
+                "route": "61D"
+              }
+            ], 
+            [
+              "request", 
+              "fromstopids"
+            ], 
+            [
+              "request", 
+              "fromstopids"
+            ]
+          ], 
+          "surface": "Okay, 61D. To change, say go back. Where are you leaving from?"
+        }
+      }, 
+      "turn-index": 6, 
+      "restart": false, 
+      "output": {
+        "start-time": 48.567, 
+        "transcript": "Okay, 61D. To change, say go back. Where are you leaving from?", 
+        "dialog-acts": [
+          {
+            "slots": [
+              [
+                "route", 
+                "61d"
+              ]
+            ], 
+            "act": "impl-conf"
+          }, 
+          {
+            "slots": [
+              [
+                "act", 
+                "goback"
+              ]
+            ], 
+            "act": "example"
+          }, 
+          {
+            "slots": [
+              [
+                "from", 
+                null
+              ]
+            ], 
+            "act": "request"
+          }
+        ]
+      }
+    }, 
+    {
+      "input": {
+        "live": {
+          "asr-hyps": [], 
+          "slu-hyps": []
+        }, 
+        "audio-file": null, 
+        "start-time": null
+      }, 
+      "system-specific": {
+        "beliefstate": {}, 
+        "turn_start_time": "08/05 19:42:48.813", 
+        "raw_asr_result": null, 
+        "uttinfo": {
+          "uttfile_status": "not_expected", 
+          "uttid": null
+        }, 
+        "sys_action_details": [
+          {
+            "prompt": "file:/home/jdw/sdc/prod/lib/../prompts/AskOrigin/NM1.wav", 
+            "output_start_time": "08/05 19:42:48.814", 
+            "waitfor": "['evPhraseResult', 'evDtmfInput', 'evNoInputTimeout']", 
+            "dtmf": "", 
+            "input_types": "speech", 
+            "grammars": "['/home/jdw/sdc/prod/lib/../lms/stopNames.onRoute.61D.fromstopids.lm']", 
+            "timeout": "0.1", 
+            "input_start_time": null, 
+            "ACTION": "Listen", 
+            "bargein": "False", 
+            "events": [
+              "evPromptStart"
+            ]
+          }
+        ], 
+        "dialog_states": [
+          {
+            "state": "AskOrigin", 
+            "activity": "Prompt type: NM"
+          }, 
+          {
+            "state": "AskOrigin", 
+            "activity": "Looking for NM1"
+          }, 
+          {
+            "state": "AskOrigin", 
+            "activity": "Calling NM1()"
+          }
+        ], 
+        "parsed_asr_result": null, 
+        "sys_action_summary": {
+          "struct": [
+            [
+              "request", 
+              "fromstopids"
+            ]
+          ], 
+          "surface": "Sorry, say the neighborhood or place or intersection you're leaving from, like waterfront."
+        }
+      }, 
+      "turn-index": 7, 
+      "restart": false, 
+      "output": {
+        "start-time": 57.432, 
+        "transcript": "Sorry, say the neighborhood or place or intersection you're leaving from, like waterfront.", 
+        "dialog-acts": [
+          {
+            "slots": [], 
+            "act": "sorry"
+          }, 
+          {
+            "slots": [
+              [
+                "from", 
+                null
+              ]
+            ], 
+            "act": "request"
+          }, 
+          {
+            "slots": [
+              [
+                "from.desc", 
+                "waterfront"
+              ]
+            ], 
+            "act": "example"
+          }
+        ]
+      }
+    }
+  ], 
+  "session-time": "19:41:51", 
+  "system-specific": {
+    "initial_belief_state": {
+      "date": [
+        {
+          "count": 77522.0, 
+          "belief": 1.0, 
+          "slotValues": {
+            "date": {
+              "vals": "[]", 
+              "valsListed": true, 
+              "inclOrExcl": "x"
+            }
+          }, 
+          "pid": null, 
+          "logPri": 0.0, 
+          "logBel": 0.0, 
+          "surfaceForms": {
+            "date": "set([])"
+          }, 
+          "id": 0
+        }
+      ], 
+      "route": [
+        {
+          "count": 81522.0, 
+          "belief": 1.0, 
+          "slotValues": {
+            "route": {
+              "vals": "[]", 
+              "valsListed": true, 
+              "inclOrExcl": "x"
+            }
+          }, 
+          "pid": null, 
+          "logPri": 0.0, 
+          "logBel": 0.0, 
+          "surfaceForms": {
+            "route": "set([])"
+          }, 
+          "id": 0
+        }
+      ], 
+      "fromstopids": [
+        {
+          "count": 163022.0, 
+          "belief": 1.0, 
+          "slotValues": {
+            "fromstopids": {
+              "vals": "[]", 
+              "valsListed": true, 
+              "inclOrExcl": "x"
+            }
+          }, 
+          "pid": null, 
+          "logPri": 0.0, 
+          "logBel": 0.0, 
+          "surfaceForms": {
+            "fromstopids": "set([])"
+          }, 
+          "id": 0
+        }
+      ], 
+      "tostopids": [
+        {
+          "count": 163222.0, 
+          "belief": 1.0, 
+          "slotValues": {
+            "tostopids": {
+              "vals": "[]", 
+              "valsListed": true, 
+              "inclOrExcl": "x"
+            }
+          }, 
+          "pid": null, 
+          "logPri": 0.0, 
+          "logBel": 0.0, 
+          "surfaceForms": {
+            "tostopids": "set([])"
+          }, 
+          "id": 0
+        }
+      ], 
+      "time": [
+        {
+          "count": 176762.0, 
+          "belief": 0.5, 
+          "slotValues": {
+            "searchType": {
+              "vals": "['arrive']", 
+              "valsListed": true, 
+              "inclOrExcl": "="
+            }, 
+            "time": {
+              "vals": "[]", 
+              "valsListed": true, 
+              "inclOrExcl": "x"
+            }
+          }, 
+          "pid": null, 
+          "logPri": -0.693, 
+          "logBel": -0.693, 
+          "surfaceForms": {
+            "searchType": "set([])", 
+            "time": "set([])"
+          }, 
+          "id": 0
+        }, 
+        {
+          "count": 176761.0, 
+          "belief": 0.5, 
+          "slotValues": {
+            "searchType": {
+              "vals": "['depart']", 
+              "valsListed": true, 
+              "inclOrExcl": "="
+            }, 
+            "time": {
+              "vals": "[]", 
+              "valsListed": true, 
+              "inclOrExcl": "x"
+            }
+          }, 
+          "pid": null, 
+          "logPri": -0.693, 
+          "logBel": -0.693, 
+          "surfaceForms": {
+            "searchType": "set([])", 
+            "time": "set([])"
+          }, 
+          "id": 1
+        }
+      ]
+    }, 
+    "session-start-time": "08/05 19:41:51.382"
+  }, 
+  "session-date": "08-05-2010"
+}

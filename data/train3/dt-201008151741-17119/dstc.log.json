@@ -1,0 +1,3303 @@
+{
+  "session-id": "dt-201008151741-17119", 
+  "turns": [
+    {
+      "input": {
+        "live": {
+          "asr-hyps": [
+            {
+              "asr-hyp": "m l", 
+              "score": 0.823583, 
+              "type": "recognition"
+            }
+          ], 
+          "slu-hyps": [
+            {
+              "slu-hyp": [
+                {
+                  "slots": [
+                    [
+                      "route", 
+                      "ml"
+                    ]
+                  ], 
+                  "act": "inform"
+                }
+              ], 
+              "score": 0.823583
+            }
+          ]
+        }, 
+        "audio-file": "002.raw", 
+        "start-time": 5.774
+      }, 
+      "system-specific": {
+        "beliefstate": {
+          "date": [
+            {
+              "count": 77522.0, 
+              "belief": 1.0, 
+              "slotValues": {
+                "date": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": 0.0, 
+              "logBel": 0.0, 
+              "surfaceForms": {
+                "date": "set([])"
+              }, 
+              "id": 0
+            }
+          ], 
+          "route": [
+            {
+              "count": 81422.0, 
+              "belief": 0.35217, 
+              "slotValues": {
+                "route": {
+                  "vals": "['ML']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.001, 
+              "logBel": -1.044, 
+              "surfaceForms": {
+                "route": "set([])"
+              }, 
+              "id": 0
+            }, 
+            {
+              "count": 100.0, 
+              "belief": 0.64783, 
+              "slotValues": {
+                "route": {
+                  "vals": "['ML']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -6.703, 
+              "logBel": -0.434, 
+              "surfaceForms": {
+                "route": "set(['m l'])"
+              }, 
+              "id": 2
+            }
+          ], 
+          "fromstopids": [
+            {
+              "count": 163022.0, 
+              "belief": 1.0, 
+              "slotValues": {
+                "fromstopids": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": 0.0, 
+              "logBel": 0.0, 
+              "surfaceForms": {
+                "fromstopids": "set([])"
+              }, 
+              "id": 0
+            }
+          ], 
+          "tostopids": [
+            {
+              "count": 163222.0, 
+              "belief": 1.0, 
+              "slotValues": {
+                "tostopids": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": 0.0, 
+              "logBel": 0.0, 
+              "surfaceForms": {
+                "tostopids": "set([])"
+              }, 
+              "id": 0
+            }
+          ], 
+          "time": [
+            {
+              "count": 176762.0, 
+              "belief": 0.5, 
+              "slotValues": {
+                "searchType": {
+                  "vals": "['arrive']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }, 
+                "time": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.693, 
+              "logBel": -0.693, 
+              "surfaceForms": {
+                "searchType": "set([])", 
+                "time": "set([])"
+              }, 
+              "id": 0
+            }, 
+            {
+              "count": 176761.0, 
+              "belief": 0.5, 
+              "slotValues": {
+                "searchType": {
+                  "vals": "['depart']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }, 
+                "time": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.693, 
+              "logBel": -0.693, 
+              "surfaceForms": {
+                "searchType": "set([])", 
+                "time": "set([])"
+              }, 
+              "id": 1
+            }
+          ]
+        }, 
+        "turn_start_time": "08/15 17:41:17.835", 
+        "raw_asr_result": {
+          "audioParams": {
+            "sampleRate": 8000, 
+            "coding": "linear", 
+            "byteOrder": "LE"
+          }, 
+          "version": "watson-6.5.5733", 
+          "resultId": 2, 
+          "hostname": "dt-jdw", 
+          "nlu-sisr": [
+            {
+              "interp": {
+                "route": "ML"
+              }, 
+              "id": 0, 
+              "time": 0.005454063415527344
+            }
+          ], 
+          "metrics": {
+            "audioBytes": 18240, 
+            "gaussSelectSkipRatio": 0.7920167446136475, 
+            "lhoodPrecalcHitRatio": 0.8868639469146729, 
+            "avgFrameBatchSize": 3.0, 
+            "decodedFrameCount": 114, 
+            "bytesPerPacket": 320.0, 
+            "audioPackets": 57, 
+            "frameCount": 114
+          }, 
+          "sessionId": "", 
+          "trigger": "secondTimeout", 
+          "evType": "evPhraseResult", 
+          "wcn": {
+            "best_path_score": 1.0, 
+            "best_path": {
+              "word": [
+                "m", 
+                "l"
+              ], 
+              "prob": [
+                1.0, 
+                1.0
+              ]
+            }, 
+            "network": [
+              {
+                "word": [
+                  "m"
+                ], 
+                "prob": [
+                  1.0
+                ]
+              }, 
+              {
+                "word": [
+                  "l"
+                ], 
+                "prob": [
+                  1.0
+                ]
+              }
+            ]
+          }, 
+          "config": {
+            "lms": [
+              "/home/jdw/sdc/prod/lms/routeList.lm"
+            ], 
+            "am": "/home/jdw/watson/data/am/gt_06.1.ep.h4.20.mmi2b", 
+            "secondTimeout": 700, 
+            "beamWidth": 250.0, 
+            "maxActiveArcs": 50000, 
+            "confidenceThreshold": 50, 
+            "firstTimeout": 400
+          }, 
+          "nbest": [
+            {
+              "normSpeechLhood": -156.91673278808594, 
+              "lastSpeechFrame": 41, 
+              "lms": [
+                "/home/jdw/sdc/prod/lms/routeList.lm"
+              ], 
+              "score": 25, 
+              "numFrames": 114, 
+              "udelta": -4.150000095367432, 
+              "speechLikelihood": -5335.1689453125, 
+              "firstSpeechFrame": 7, 
+              "normLhood": 0.0, 
+              "normCost": 147.57781982421875, 
+              "gscore": 35, 
+              "cost": 16823.87109375, 
+              "hypothesis": "m l", 
+              "glhood": -158.8300018310547, 
+              "uscore": 17, 
+              "numSpeechFrames": 34, 
+              "likelihood": 0.0, 
+              "gdelta": 1.9129999876022339, 
+              "ulhood": -152.76699829101562
+            }
+          ], 
+          "fileId": 0
+        }, 
+        "uttinfo": {
+          "uttfile_status": "logged", 
+          "uttid": "002.raw"
+        }, 
+        "sys_action_details": [
+          {
+            "prompt": "file:/home/jdw/sdc/prod/lib/../prompts/START/Init.wav", 
+            "output_start_time": "08/15 17:41:17.836", 
+            "waitfor": "['evPhraseResult', 'evDtmfInput', 'evNoInputTimeout']", 
+            "dtmf": "", 
+            "input_types": "speech", 
+            "grammars": "['/home/jdw/sdc/prod/lib/../lms/routeList.lm']", 
+            "timeout": "0.1", 
+            "input_start_time": "08/15 17:41:19.596", 
+            "ACTION": "Listen", 
+            "bargein": "False", 
+            "events": [
+              "evPromptStart", 
+              "evPromptStop", 
+              "evNoInputTimeout"
+            ]
+          }, 
+          {
+            "prompt": "file:/home/jdw/sdc/prod/lib/../prompts/AskRoute/Init.wav", 
+            "output_start_time": "08/15 17:41:19.596", 
+            "waitfor": "['evPhraseResult', 'evDtmfInput', 'evNoInputTimeout']", 
+            "dtmf": "", 
+            "input_types": "speech", 
+            "grammars": "['/home/jdw/sdc/prod/lib/../lms/routeList.lm']", 
+            "timeout": "10", 
+            "input_start_time": "08/15 17:41:23.516", 
+            "ACTION": "Listen", 
+            "bargein": "False", 
+            "events": [
+              "evPromptStart", 
+              "evPromptStop", 
+              "evSpeechStart", 
+              "evPhraseResult"
+            ]
+          }
+        ], 
+        "dialog_states": [
+          {
+            "state": "START", 
+            "activity": "Initializing"
+          }, 
+          {
+            "state": "AskRoute", 
+            "activity": "Initializing"
+          }, 
+          {
+            "state": "AskRoute", 
+            "activity": "Prompt type: Init"
+          }, 
+          {
+            "state": "AskRoute", 
+            "activity": "Calling Init()"
+          }
+        ], 
+        "parsed_asr_result": {
+          "nbest": [
+            {
+              "rec_string": "m l", 
+              "rec_type": "ig", 
+              "fields": {
+                "routeSurface": "m l", 
+                "route-set": "set(['ML'])", 
+                "route": "ML"
+              }, 
+              "rec_conf": 0.823583
+            }
+          ]
+        }, 
+        "sys_action_summary": {
+          "struct": [
+            [
+              "request", 
+              "route"
+            ], 
+            [
+              "request", 
+              "route"
+            ]
+          ], 
+          "surface": "East Pittsburg Bus Schedules. Say a bus route, like 28X, or say I'm not sure."
+        }
+      }, 
+      "turn-index": 0, 
+      "restart": false, 
+      "output": {
+        "start-time": 0.094, 
+        "transcript": "East Pittsburg Bus Schedules. Say a bus route, like 28X, or say I'm not sure.", 
+        "dialog-acts": [
+          {
+            "slots": [], 
+            "act": "hello"
+          }, 
+          {
+            "slots": [
+              [
+                "route", 
+                null
+              ]
+            ], 
+            "act": "request"
+          }, 
+          {
+            "slots": [
+              [
+                "route", 
+                "28x"
+              ]
+            ], 
+            "act": "example"
+          }, 
+          {
+            "slots": [
+              [
+                "route", 
+                "dont_know"
+              ]
+            ], 
+            "act": "example"
+          }
+        ]
+      }
+    }, 
+    {
+      "input": {
+        "live": {
+          "asr-hyps": [
+            {
+              "asr-hyp": "m l", 
+              "score": 0.82327, 
+              "type": "recognition"
+            }
+          ], 
+          "slu-hyps": [
+            {
+              "slu-hyp": [
+                {
+                  "slots": [
+                    [
+                      "route", 
+                      "ml"
+                    ]
+                  ], 
+                  "act": "inform"
+                }
+              ], 
+              "score": 0.82327
+            }
+          ]
+        }, 
+        "audio-file": "005.raw", 
+        "start-time": 10.115
+      }, 
+      "system-specific": {
+        "beliefstate": {
+          "date": [
+            {
+              "count": 77522.0, 
+              "belief": 1.0, 
+              "slotValues": {
+                "date": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": 0.0, 
+              "logBel": 0.0, 
+              "surfaceForms": {
+                "date": "set([])"
+              }, 
+              "id": 0
+            }
+          ], 
+          "route": [
+            {
+              "count": 81422.0, 
+              "belief": 0.00139, 
+              "slotValues": {
+                "route": {
+                  "vals": "['ML']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.001, 
+              "logBel": -6.578, 
+              "surfaceForms": {
+                "route": "set([])"
+              }, 
+              "id": 0
+            }, 
+            {
+              "count": 100.0, 
+              "belief": 0.99861, 
+              "slotValues": {
+                "route": {
+                  "vals": "['ML']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -6.703, 
+              "logBel": -0.001, 
+              "surfaceForms": {
+                "route": "set(['m l'])"
+              }, 
+              "id": 2
+            }
+          ], 
+          "fromstopids": [
+            {
+              "count": 163022.0, 
+              "belief": 1.0, 
+              "slotValues": {
+                "fromstopids": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": 0.0, 
+              "logBel": 0.0, 
+              "surfaceForms": {
+                "fromstopids": "set([])"
+              }, 
+              "id": 0
+            }
+          ], 
+          "tostopids": [
+            {
+              "count": 163222.0, 
+              "belief": 1.0, 
+              "slotValues": {
+                "tostopids": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": 0.0, 
+              "logBel": 0.0, 
+              "surfaceForms": {
+                "tostopids": "set([])"
+              }, 
+              "id": 0
+            }
+          ], 
+          "time": [
+            {
+              "count": 176761.0, 
+              "belief": 0.5, 
+              "slotValues": {
+                "searchType": {
+                  "vals": "['depart']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }, 
+                "time": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.693, 
+              "logBel": -0.693, 
+              "surfaceForms": {
+                "searchType": "set([])", 
+                "time": "set([])"
+              }, 
+              "id": 1
+            }, 
+            {
+              "count": 176762.0, 
+              "belief": 0.5, 
+              "slotValues": {
+                "searchType": {
+                  "vals": "['arrive']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }, 
+                "time": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.693, 
+              "logBel": -0.693, 
+              "surfaceForms": {
+                "searchType": "set([])", 
+                "time": "set([])"
+              }, 
+              "id": 0
+            }
+          ]
+        }, 
+        "turn_start_time": "08/15 17:41:24.267", 
+        "raw_asr_result": {
+          "audioParams": {
+            "sampleRate": 8000, 
+            "coding": "linear", 
+            "byteOrder": "LE"
+          }, 
+          "version": "watson-6.5.5733", 
+          "resultId": 5, 
+          "hostname": "dt-jdw", 
+          "nlu-sisr": [
+            {
+              "interp": {
+                "route": "ML"
+              }, 
+              "id": 0, 
+              "time": 0.00279998779296875
+            }
+          ], 
+          "metrics": {
+            "audioBytes": 31040, 
+            "gaussSelectSkipRatio": 0.8012184500694275, 
+            "lhoodPrecalcHitRatio": 0.8993262648582458, 
+            "avgFrameBatchSize": 3.0, 
+            "decodedFrameCount": 194, 
+            "bytesPerPacket": 320.0, 
+            "audioPackets": 97, 
+            "frameCount": 194
+          }, 
+          "sessionId": "", 
+          "trigger": "secondTimeout", 
+          "evType": "evPhraseResult", 
+          "wcn": {
+            "best_path_score": 1.0, 
+            "best_path": {
+              "word": [
+                "m", 
+                "l"
+              ], 
+              "prob": [
+                1.0, 
+                1.0
+              ]
+            }, 
+            "network": [
+              {
+                "word": [
+                  "m"
+                ], 
+                "prob": [
+                  1.0
+                ]
+              }, 
+              {
+                "word": [
+                  "l"
+                ], 
+                "prob": [
+                  1.0
+                ]
+              }
+            ]
+          }, 
+          "config": {
+            "lms": [
+              "/home/jdw/sdc/prod/lms/routeList.lm"
+            ], 
+            "am": "/home/jdw/watson/data/am/gt_06.1.ep.h4.20.mmi2b", 
+            "secondTimeout": 700, 
+            "beamWidth": 250.0, 
+            "maxActiveArcs": 50000, 
+            "confidenceThreshold": 50, 
+            "firstTimeout": 400
+          }, 
+          "nbest": [
+            {
+              "normSpeechLhood": -162.82662963867188, 
+              "lastSpeechFrame": 104, 
+              "lms": [
+                "/home/jdw/sdc/prod/lms/routeList.lm"
+              ], 
+              "score": 24, 
+              "numFrames": 194, 
+              "udelta": -4.263999938964844, 
+              "speechLikelihood": -7327.1982421875, 
+              "firstSpeechFrame": 59, 
+              "normLhood": 0.0, 
+              "normCost": 141.50962829589844, 
+              "gscore": 35, 
+              "cost": 27452.8671875, 
+              "hypothesis": "m l", 
+              "glhood": -164.7790069580078, 
+              "uscore": 15, 
+              "numSpeechFrames": 45, 
+              "likelihood": 0.0, 
+              "gdelta": 1.9520000219345093, 
+              "ulhood": -158.56300354003906
+            }
+          ], 
+          "fileId": 0
+        }, 
+        "uttinfo": {
+          "uttfile_status": "logged", 
+          "uttid": "005.raw"
+        }, 
+        "sys_action_details": [
+          {
+            "prompt": "file:/home/jdw/sdc/prod/lib/../prompts/AskRoute/i_heard.wav", 
+            "output_start_time": "08/15 17:41:24.267", 
+            "waitfor": "['evPhraseResult', 'evDtmfInput', 'evNoInputTimeout']", 
+            "dtmf": "", 
+            "input_types": "speech", 
+            "grammars": "['/home/jdw/sdc/prod/lib/../lms/routeList.lm']", 
+            "timeout": "0.1", 
+            "input_start_time": "08/15 17:41:25.696", 
+            "ACTION": "Listen", 
+            "bargein": "True", 
+            "events": [
+              "evPromptStart", 
+              "evPromptStop", 
+              "evNoInputTimeout"
+            ]
+          }, 
+          {
+            "prompt": "<prosody volume=\"x-loud\">m l,</prosody>", 
+            "output_start_time": "08/15 17:41:25.696", 
+            "waitfor": "['evPhraseResult', 'evDtmfInput', 'evNoInputTimeout']", 
+            "dtmf": "", 
+            "input_types": "speech", 
+            "grammars": "['/home/jdw/sdc/prod/lib/../lms/routeList.lm']", 
+            "timeout": "0.1", 
+            "input_start_time": "08/15 17:41:26.995", 
+            "ACTION": "Listen", 
+            "bargein": "True", 
+            "events": [
+              "evPromptStart", 
+              "evPromptStop", 
+              "evNoInputTimeout"
+            ]
+          }, 
+          {
+            "prompt": "file:/home/jdw/sdc/prod/lib/../prompts/AskRoute/dont_have.wav", 
+            "output_start_time": "08/15 17:41:26.995", 
+            "waitfor": "['evPhraseResult', 'evDtmfInput', 'evNoInputTimeout']", 
+            "dtmf": "", 
+            "input_types": "speech", 
+            "grammars": "['/home/jdw/sdc/prod/lib/../lms/routeList.lm']", 
+            "timeout": "10", 
+            "input_start_time": "08/15 17:41:27.857", 
+            "ACTION": "Listen", 
+            "bargein": "True", 
+            "events": [
+              "evPromptStart", 
+              "evSpeechStart", 
+              "evPromptStop", 
+              "evPhraseResult"
+            ]
+          }
+        ], 
+        "dialog_states": [
+          {
+            "state": "AskRoute", 
+            "activity": "Calling OnRecognition handler"
+          }
+        ], 
+        "parsed_asr_result": {
+          "nbest": [
+            {
+              "rec_string": "m l", 
+              "rec_type": "ig", 
+              "fields": {
+                "routeSurface": "m l", 
+                "route-set": "set(['ML'])", 
+                "route": "ML"
+              }, 
+              "rec_conf": 0.82327
+            }
+          ]
+        }, 
+        "sys_action_summary": {
+          "struct": [
+            [
+              "request", 
+              "route"
+            ]
+          ], 
+          "surface": "I THOUGHT you said m l, but I don't have schedules for that route.  I only have schedules for the 28 X, 54 C, 56 U, 61 A B C and D, and the 64.  You can say one of these routes, say I'm not sure which route, or just hang up."
+        }
+      }, 
+      "turn-index": 1, 
+      "restart": false, 
+      "output": {
+        "start-time": 6.525, 
+        "transcript": "I THOUGHT you said m l, but I don't have schedules for that route.  I only have schedules for the 28 X, 54 C, 56 U, 61 A B C and D, and the 64.  You can say one of these routes, say I'm not sure which route, or just hang up.", 
+        "dialog-acts": [
+          {
+            "slots": [
+              [
+                "route", 
+                "ml"
+              ]
+            ], 
+            "act": "impl-conf"
+          }, 
+          {
+            "slots": [
+              [
+                "route", 
+                "ml"
+              ]
+            ], 
+            "act": "canthelp.uncovered_route"
+          }, 
+          {
+            "slots": [
+              [
+                "route", 
+                "28x"
+              ]
+            ], 
+            "act": "example"
+          }, 
+          {
+            "slots": [
+              [
+                "route", 
+                "54c"
+              ]
+            ], 
+            "act": "example"
+          }, 
+          {
+            "slots": [
+              [
+                "route", 
+                "56u"
+              ]
+            ], 
+            "act": "example"
+          }, 
+          {
+            "slots": [
+              [
+                "route", 
+                "61a"
+              ]
+            ], 
+            "act": "example"
+          }, 
+          {
+            "slots": [
+              [
+                "route", 
+                "61b"
+              ]
+            ], 
+            "act": "example"
+          }, 
+          {
+            "slots": [
+              [
+                "route", 
+                "61c"
+              ]
+            ], 
+            "act": "example"
+          }, 
+          {
+            "slots": [
+              [
+                "route", 
+                "61d"
+              ]
+            ], 
+            "act": "example"
+          }, 
+          {
+            "slots": [
+              [
+                "route", 
+                "64"
+              ]
+            ], 
+            "act": "example"
+          }, 
+          {
+            "slots": [
+              [
+                "route", 
+                null
+              ]
+            ], 
+            "act": "request"
+          }, 
+          {
+            "slots": [
+              [
+                "route", 
+                "dont_know"
+              ]
+            ], 
+            "act": "example"
+          }, 
+          {
+            "slots": [
+              [
+                "act", 
+                "hangup"
+              ]
+            ], 
+            "act": "example"
+          }
+        ]
+      }
+    }, 
+    {
+      "input": {
+        "live": {
+          "asr-hyps": [
+            {
+              "asr-hyp": "m l", 
+              "score": 0.836781, 
+              "type": "recognition"
+            }
+          ], 
+          "slu-hyps": [
+            {
+              "slu-hyp": [
+                {
+                  "slots": [
+                    [
+                      "route", 
+                      "ml"
+                    ]
+                  ], 
+                  "act": "inform"
+                }
+              ], 
+              "score": 0.836781
+            }
+          ]
+        }, 
+        "audio-file": "007.raw", 
+        "start-time": 13.515
+      }, 
+      "system-specific": {
+        "beliefstate": {
+          "date": [
+            {
+              "count": 77522.0, 
+              "belief": 1.0, 
+              "slotValues": {
+                "date": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": 0.0, 
+              "logBel": 0.0, 
+              "surfaceForms": {
+                "date": "set([])"
+              }, 
+              "id": 0
+            }
+          ], 
+          "route": [
+            {
+              "count": 81422.0, 
+              "belief": 0.00061, 
+              "slotValues": {
+                "route": {
+                  "vals": "['ML']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.001, 
+              "logBel": -7.406, 
+              "surfaceForms": {
+                "route": "set([])"
+              }, 
+              "id": 0
+            }, 
+            {
+              "count": 100.0, 
+              "belief": 0.99939, 
+              "slotValues": {
+                "route": {
+                  "vals": "['ML']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -6.703, 
+              "logBel": -0.001, 
+              "surfaceForms": {
+                "route": "set(['m l'])"
+              }, 
+              "id": 2
+            }
+          ], 
+          "fromstopids": [
+            {
+              "count": 163022.0, 
+              "belief": 1.0, 
+              "slotValues": {
+                "fromstopids": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": 0.0, 
+              "logBel": 0.0, 
+              "surfaceForms": {
+                "fromstopids": "set([])"
+              }, 
+              "id": 0
+            }
+          ], 
+          "tostopids": [
+            {
+              "count": 163222.0, 
+              "belief": 1.0, 
+              "slotValues": {
+                "tostopids": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": 0.0, 
+              "logBel": 0.0, 
+              "surfaceForms": {
+                "tostopids": "set([])"
+              }, 
+              "id": 0
+            }
+          ], 
+          "time": [
+            {
+              "count": 176761.0, 
+              "belief": 0.5, 
+              "slotValues": {
+                "searchType": {
+                  "vals": "['depart']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }, 
+                "time": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.693, 
+              "logBel": -0.693, 
+              "surfaceForms": {
+                "searchType": "set([])", 
+                "time": "set([])"
+              }, 
+              "id": 1
+            }, 
+            {
+              "count": 176762.0, 
+              "belief": 0.5, 
+              "slotValues": {
+                "searchType": {
+                  "vals": "['arrive']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }, 
+                "time": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.693, 
+              "logBel": -0.693, 
+              "surfaceForms": {
+                "searchType": "set([])", 
+                "time": "set([])"
+              }, 
+              "id": 0
+            }
+          ]
+        }, 
+        "turn_start_time": "08/15 17:41:29.011", 
+        "raw_asr_result": {
+          "audioParams": {
+            "sampleRate": 8000, 
+            "coding": "linear", 
+            "byteOrder": "LE"
+          }, 
+          "version": "watson-6.5.5733", 
+          "resultId": 7, 
+          "hostname": "dt-jdw", 
+          "nlu-sisr": [
+            {
+              "interp": {
+                "route": "ML"
+              }, 
+              "id": 0, 
+              "time": 0.0041408538818359375
+            }
+          ], 
+          "metrics": {
+            "audioBytes": 26560, 
+            "gaussSelectSkipRatio": 0.7834959030151367, 
+            "lhoodPrecalcHitRatio": 0.8816024661064148, 
+            "avgFrameBatchSize": 3.0, 
+            "decodedFrameCount": 166, 
+            "bytesPerPacket": 320.0, 
+            "audioPackets": 83, 
+            "frameCount": 166
+          }, 
+          "sessionId": "", 
+          "trigger": "secondTimeout", 
+          "evType": "evPhraseResult", 
+          "wcn": {
+            "best_path_score": 1.0, 
+            "best_path": {
+              "word": [
+                "m", 
+                "l"
+              ], 
+              "prob": [
+                1.0, 
+                1.0
+              ]
+            }, 
+            "network": [
+              {
+                "word": [
+                  "m"
+                ], 
+                "prob": [
+                  1.0
+                ]
+              }, 
+              {
+                "word": [
+                  "l"
+                ], 
+                "prob": [
+                  1.0
+                ]
+              }
+            ]
+          }, 
+          "config": {
+            "lms": [
+              "/home/jdw/sdc/prod/lms/routeList.lm"
+            ], 
+            "am": "/home/jdw/watson/data/am/gt_06.1.ep.h4.20.mmi2b", 
+            "secondTimeout": 700, 
+            "beamWidth": 250.0, 
+            "maxActiveArcs": 50000, 
+            "confidenceThreshold": 50, 
+            "firstTimeout": 400
+          }, 
+          "nbest": [
+            {
+              "normSpeechLhood": -151.48841857910156, 
+              "lastSpeechFrame": 92, 
+              "lms": [
+                "/home/jdw/sdc/prod/lms/routeList.lm"
+              ], 
+              "score": 25, 
+              "numFrames": 166, 
+              "udelta": -4.697000026702881, 
+              "speechLikelihood": -8634.83984375, 
+              "firstSpeechFrame": 35, 
+              "normLhood": 0.0, 
+              "normCost": 139.19454956054688, 
+              "gscore": 45, 
+              "cost": 23106.294921875, 
+              "hypothesis": "m l", 
+              "glhood": -155.42799377441406, 
+              "uscore": 6, 
+              "numSpeechFrames": 57, 
+              "likelihood": 0.0, 
+              "gdelta": 3.940000057220459, 
+              "ulhood": -146.79200744628906
+            }
+          ], 
+          "fileId": 0
+        }, 
+        "uttinfo": {
+          "uttfile_status": "logged", 
+          "uttid": "007.raw"
+        }, 
+        "sys_action_details": [
+          {
+            "prompt": "file:/home/jdw/sdc/prod/lib/../prompts/AskRoute/i_heard.wav", 
+            "output_start_time": "08/15 17:41:29.020", 
+            "waitfor": "['evPhraseResult', 'evDtmfInput', 'evNoInputTimeout']", 
+            "dtmf": "", 
+            "input_types": "speech", 
+            "grammars": "['/home/jdw/sdc/prod/lib/../lms/routeList.lm']", 
+            "timeout": "0.1", 
+            "input_start_time": "08/15 17:41:30.416", 
+            "ACTION": "Listen", 
+            "bargein": "True", 
+            "events": [
+              "evPromptStart", 
+              "evPromptStop", 
+              "evNoInputTimeout"
+            ]
+          }, 
+          {
+            "prompt": "<prosody volume=\"x-loud\">m l,</prosody>", 
+            "output_start_time": "08/15 17:41:30.416", 
+            "waitfor": "['evPhraseResult', 'evDtmfInput', 'evNoInputTimeout']", 
+            "dtmf": "", 
+            "input_types": "speech", 
+            "grammars": "['/home/jdw/sdc/prod/lib/../lms/routeList.lm']", 
+            "timeout": "0.1", 
+            "input_start_time": "08/15 17:41:31.257", 
+            "ACTION": "Listen", 
+            "bargein": "True", 
+            "events": [
+              "evPromptStart", 
+              "evSpeechStart", 
+              "evPromptStop", 
+              "evPhraseResult"
+            ]
+          }
+        ], 
+        "dialog_states": [
+          {
+            "state": "AskRoute", 
+            "activity": "Calling OnRecognition handler"
+          }
+        ], 
+        "parsed_asr_result": {
+          "nbest": [
+            {
+              "rec_string": "m l", 
+              "rec_type": "ig", 
+              "fields": {
+                "routeSurface": "m l", 
+                "route-set": "set(['ML'])", 
+                "route": "ML"
+              }, 
+              "rec_conf": 0.836781
+            }
+          ]
+        }, 
+        "sys_action_summary": {
+          "struct": [
+            [
+              "request", 
+              "route"
+            ]
+          ], 
+          "surface": "I THOUGHT you said m l, but I don't have schedules for that route.  I only have schedules for the 28 X, 54 C, 56 U, 61 A B C and D, and the 64.  You can say one of these routes, say I'm not sure which route, or just hang up."
+        }
+      }, 
+      "turn-index": 2, 
+      "restart": false, 
+      "output": {
+        "start-time": 11.278, 
+        "transcript": "I THOUGHT you said m l, but I don't have schedules for that route.  I only have schedules for the 28 X, 54 C, 56 U, 61 A B C and D, and the 64.  You can say one of these routes, say I'm not sure which route, or just hang up.", 
+        "dialog-acts": [
+          {
+            "slots": [
+              [
+                "route", 
+                "ml"
+              ]
+            ], 
+            "act": "impl-conf"
+          }, 
+          {
+            "slots": [
+              [
+                "route", 
+                "ml"
+              ]
+            ], 
+            "act": "canthelp.uncovered_route"
+          }, 
+          {
+            "slots": [
+              [
+                "route", 
+                "28x"
+              ]
+            ], 
+            "act": "example"
+          }, 
+          {
+            "slots": [
+              [
+                "route", 
+                "54c"
+              ]
+            ], 
+            "act": "example"
+          }, 
+          {
+            "slots": [
+              [
+                "route", 
+                "56u"
+              ]
+            ], 
+            "act": "example"
+          }, 
+          {
+            "slots": [
+              [
+                "route", 
+                "61a"
+              ]
+            ], 
+            "act": "example"
+          }, 
+          {
+            "slots": [
+              [
+                "route", 
+                "61b"
+              ]
+            ], 
+            "act": "example"
+          }, 
+          {
+            "slots": [
+              [
+                "route", 
+                "61c"
+              ]
+            ], 
+            "act": "example"
+          }, 
+          {
+            "slots": [
+              [
+                "route", 
+                "61d"
+              ]
+            ], 
+            "act": "example"
+          }, 
+          {
+            "slots": [
+              [
+                "route", 
+                "64"
+              ]
+            ], 
+            "act": "example"
+          }, 
+          {
+            "slots": [
+              [
+                "route", 
+                null
+              ]
+            ], 
+            "act": "request"
+          }, 
+          {
+            "slots": [
+              [
+                "route", 
+                "dont_know"
+              ]
+            ], 
+            "act": "example"
+          }, 
+          {
+            "slots": [
+              [
+                "act", 
+                "hangup"
+              ]
+            ], 
+            "act": "example"
+          }
+        ]
+      }
+    }, 
+    {
+      "input": {
+        "live": {
+          "asr-hyps": [
+            {
+              "asr-hyp": "m l", 
+              "score": 0.744103, 
+              "type": "recognition"
+            }, 
+            {
+              "asr-hyp": "one", 
+              "score": 0.141487, 
+              "type": "recognition"
+            }
+          ], 
+          "slu-hyps": [
+            {
+              "slu-hyp": [
+                {
+                  "slots": [
+                    [
+                      "route", 
+                      "ml"
+                    ]
+                  ], 
+                  "act": "inform"
+                }
+              ], 
+              "score": 0.744103
+            }, 
+            {
+              "slu-hyp": [
+                {
+                  "slots": [
+                    [
+                      "route", 
+                      "1"
+                    ]
+                  ], 
+                  "act": "inform"
+                }
+              ], 
+              "score": 0.141487
+            }
+          ]
+        }, 
+        "audio-file": "009.raw", 
+        "start-time": 16.374
+      }, 
+      "system-specific": {
+        "beliefstate": {
+          "date": [
+            {
+              "count": 77522.0, 
+              "belief": 1.0, 
+              "slotValues": {
+                "date": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": 0.0, 
+              "logBel": 0.0, 
+              "surfaceForms": {
+                "date": "set([])"
+              }, 
+              "id": 0
+            }
+          ], 
+          "route": [
+            {
+              "count": 100.0, 
+              "belief": 0.00023, 
+              "slotValues": {
+                "route": {
+                  "vals": "['1']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -6.703, 
+              "logBel": -8.364, 
+              "surfaceForms": {
+                "route": "set(['one'])"
+              }, 
+              "id": 3
+            }, 
+            {
+              "count": 81322.0, 
+              "belief": 0.00048, 
+              "slotValues": {
+                "route": {
+                  "vals": "['1', 'ML']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.002, 
+              "logBel": -7.644, 
+              "surfaceForms": {
+                "route": "set([])"
+              }, 
+              "id": 0
+            }, 
+            {
+              "count": 100.0, 
+              "belief": 0.99929, 
+              "slotValues": {
+                "route": {
+                  "vals": "['ML']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -6.703, 
+              "logBel": -0.001, 
+              "surfaceForms": {
+                "route": "set(['m l'])"
+              }, 
+              "id": 2
+            }
+          ], 
+          "fromstopids": [
+            {
+              "count": 163022.0, 
+              "belief": 1.0, 
+              "slotValues": {
+                "fromstopids": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": 0.0, 
+              "logBel": 0.0, 
+              "surfaceForms": {
+                "fromstopids": "set([])"
+              }, 
+              "id": 0
+            }
+          ], 
+          "tostopids": [
+            {
+              "count": 163222.0, 
+              "belief": 1.0, 
+              "slotValues": {
+                "tostopids": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": 0.0, 
+              "logBel": 0.0, 
+              "surfaceForms": {
+                "tostopids": "set([])"
+              }, 
+              "id": 0
+            }
+          ], 
+          "time": [
+            {
+              "count": 176761.0, 
+              "belief": 0.5, 
+              "slotValues": {
+                "searchType": {
+                  "vals": "['depart']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }, 
+                "time": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.693, 
+              "logBel": -0.693, 
+              "surfaceForms": {
+                "searchType": "set([])", 
+                "time": "set([])"
+              }, 
+              "id": 1
+            }, 
+            {
+              "count": 176762.0, 
+              "belief": 0.5, 
+              "slotValues": {
+                "searchType": {
+                  "vals": "['arrive']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }, 
+                "time": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.693, 
+              "logBel": -0.693, 
+              "surfaceForms": {
+                "searchType": "set([])", 
+                "time": "set([])"
+              }, 
+              "id": 0
+            }
+          ]
+        }, 
+        "turn_start_time": "08/15 17:41:32.147", 
+        "raw_asr_result": {
+          "audioParams": {
+            "sampleRate": 8000, 
+            "coding": "linear", 
+            "byteOrder": "LE"
+          }, 
+          "version": "watson-6.5.5733", 
+          "resultId": 9, 
+          "hostname": "dt-jdw", 
+          "nlu-sisr": [
+            {
+              "interp": {
+                "route": "ML"
+              }, 
+              "id": 0, 
+              "time": 0.0025930404663085938
+            }, 
+            {
+              "interp": {
+                "route": "1"
+              }, 
+              "id": 1, 
+              "time": 0.0006690025329589844
+            }
+          ], 
+          "metrics": {
+            "audioBytes": 23680, 
+            "gaussSelectSkipRatio": 0.7615833878517151, 
+            "lhoodPrecalcHitRatio": 0.8797665238380432, 
+            "avgFrameBatchSize": 3.0, 
+            "decodedFrameCount": 148, 
+            "bytesPerPacket": 320.0, 
+            "audioPackets": 74, 
+            "frameCount": 148
+          }, 
+          "sessionId": "", 
+          "trigger": "secondTimeout", 
+          "evType": "evPhraseResult", 
+          "wcn": {
+            "best_path_score": 0.9949008227736719, 
+            "best_path": {
+              "word": [
+                "m", 
+                "l"
+              ], 
+              "prob": [
+                0.9949008226394653, 
+                0.9949008226394653
+              ]
+            }, 
+            "network": [
+              {
+                "word": [
+                  "m", 
+                  "_epsilon"
+                ], 
+                "prob": [
+                  0.9949008226394653, 
+                  0.005099177360534668
+                ]
+              }, 
+              {
+                "word": [
+                  "l", 
+                  "one", 
+                  "_epsilon"
+                ], 
+                "prob": [
+                  0.9949008226394653, 
+                  0.005099135916680098, 
+                  5.9604641222676946e-08
+                ]
+              }
+            ]
+          }, 
+          "config": {
+            "lms": [
+              "/home/jdw/sdc/prod/lms/routeList.lm"
+            ], 
+            "am": "/home/jdw/watson/data/am/gt_06.1.ep.h4.20.mmi2b", 
+            "secondTimeout": 700, 
+            "beamWidth": 250.0, 
+            "maxActiveArcs": 50000, 
+            "confidenceThreshold": 50, 
+            "firstTimeout": 400
+          }, 
+          "nbest": [
+            {
+              "normSpeechLhood": -151.5830078125, 
+              "lastSpeechFrame": 58, 
+              "lms": [
+                "/home/jdw/sdc/prod/lms/routeList.lm"
+              ], 
+              "score": 39, 
+              "nscore": 58, 
+              "numFrames": 148, 
+              "udelta": -3.6519999504089355, 
+              "speechLikelihood": -8337.0654296875, 
+              "firstSpeechFrame": 3, 
+              "ndelta": 87.01599884033203, 
+              "normCost": 137.80496215820312, 
+              "normLhood": 0.0, 
+              "gscore": 52, 
+              "cost": 20395.134765625, 
+              "hypothesis": "m l", 
+              "glhood": -156.95799255371094, 
+              "uscore": 27, 
+              "numSpeechFrames": 55, 
+              "likelihood": 0.0, 
+              "gdelta": 5.375, 
+              "ulhood": -147.93099975585938
+            }, 
+            {
+              "normSpeechLhood": -147.20523071289062, 
+              "lastSpeechFrame": 54, 
+              "lms": [
+                "/home/jdw/sdc/prod/lms/routeList.lm"
+              ], 
+              "score": 7, 
+              "nscore": 100, 
+              "numFrames": 148, 
+              "udelta": -10.61400032043457, 
+              "speechLikelihood": -5741.00390625, 
+              "firstSpeechFrame": 15, 
+              "ndelta": 150.0, 
+              "normCost": 138.39291381835938, 
+              "normLhood": 0.0, 
+              "gscore": 16, 
+              "cost": 20482.150390625, 
+              "hypothesis": "one", 
+              "glhood": -145.41400146484375, 
+              "uscore": 0, 
+              "numSpeechFrames": 39, 
+              "likelihood": 0.0, 
+              "gdelta": -1.7910000085830688, 
+              "ulhood": -136.59100341796875
+            }
+          ], 
+          "fileId": 0
+        }, 
+        "uttinfo": {
+          "uttfile_status": "logged", 
+          "uttid": "009.raw"
+        }, 
+        "sys_action_details": [
+          {
+            "prompt": "file:/home/jdw/sdc/prod/lib/../prompts/AskRoute/i_heard.wav", 
+            "output_start_time": "08/15 17:41:32.148", 
+            "waitfor": "['evPhraseResult', 'evDtmfInput', 'evNoInputTimeout']", 
+            "dtmf": "", 
+            "input_types": "speech", 
+            "grammars": "['/home/jdw/sdc/prod/lib/../lms/routeList.lm']", 
+            "timeout": "0.1", 
+            "input_start_time": "08/15 17:41:33.576", 
+            "ACTION": "Listen", 
+            "bargein": "True", 
+            "events": [
+              "evPromptStart", 
+              "evPromptStop", 
+              "evNoInputTimeout"
+            ]
+          }, 
+          {
+            "prompt": "<prosody volume=\"x-loud\">m l,</prosody>", 
+            "output_start_time": "08/15 17:41:33.576", 
+            "waitfor": "['evPhraseResult', 'evDtmfInput', 'evNoInputTimeout']", 
+            "dtmf": "", 
+            "input_types": "speech", 
+            "grammars": "['/home/jdw/sdc/prod/lib/../lms/routeList.lm']", 
+            "timeout": "0.1", 
+            "input_start_time": "08/15 17:41:34.116", 
+            "ACTION": "Listen", 
+            "bargein": "True", 
+            "events": [
+              "evPromptStart", 
+              "evSpeechStart", 
+              "evPromptStop", 
+              "evPhraseResult"
+            ]
+          }
+        ], 
+        "dialog_states": [
+          {
+            "state": "AskRoute", 
+            "activity": "Calling OnRecognition handler"
+          }
+        ], 
+        "parsed_asr_result": {
+          "nbest": [
+            {
+              "rec_string": "m l", 
+              "rec_type": "ig", 
+              "fields": {
+                "routeSurface": "m l", 
+                "route-set": "set(['ML'])", 
+                "route": "ML"
+              }, 
+              "rec_conf": 0.744103
+            }, 
+            {
+              "rec_string": "one", 
+              "rec_type": "ig", 
+              "fields": {
+                "routeSurface": "one", 
+                "route-set": "set(['1'])", 
+                "route": "1"
+              }, 
+              "rec_conf": 0.141487
+            }
+          ]
+        }, 
+        "sys_action_summary": {
+          "struct": [
+            [
+              "request", 
+              "route"
+            ]
+          ], 
+          "surface": "I THOUGHT you said m l, but I don't have schedules for that route.  I only have schedules for the 28 X, 54 C, 56 U, 61 A B C and D, and the 64.  You can say one of these routes, say I'm not sure which route, or just hang up."
+        }
+      }, 
+      "turn-index": 3, 
+      "restart": false, 
+      "output": {
+        "start-time": 14.406, 
+        "transcript": "I THOUGHT you said m l, but I don't have schedules for that route.  I only have schedules for the 28 X, 54 C, 56 U, 61 A B C and D, and the 64.  You can say one of these routes, say I'm not sure which route, or just hang up.", 
+        "dialog-acts": [
+          {
+            "slots": [
+              [
+                "route", 
+                "ml"
+              ]
+            ], 
+            "act": "impl-conf"
+          }, 
+          {
+            "slots": [
+              [
+                "route", 
+                "ml"
+              ]
+            ], 
+            "act": "canthelp.uncovered_route"
+          }, 
+          {
+            "slots": [
+              [
+                "route", 
+                "28x"
+              ]
+            ], 
+            "act": "example"
+          }, 
+          {
+            "slots": [
+              [
+                "route", 
+                "54c"
+              ]
+            ], 
+            "act": "example"
+          }, 
+          {
+            "slots": [
+              [
+                "route", 
+                "56u"
+              ]
+            ], 
+            "act": "example"
+          }, 
+          {
+            "slots": [
+              [
+                "route", 
+                "61a"
+              ]
+            ], 
+            "act": "example"
+          }, 
+          {
+            "slots": [
+              [
+                "route", 
+                "61b"
+              ]
+            ], 
+            "act": "example"
+          }, 
+          {
+            "slots": [
+              [
+                "route", 
+                "61c"
+              ]
+            ], 
+            "act": "example"
+          }, 
+          {
+            "slots": [
+              [
+                "route", 
+                "61d"
+              ]
+            ], 
+            "act": "example"
+          }, 
+          {
+            "slots": [
+              [
+                "route", 
+                "64"
+              ]
+            ], 
+            "act": "example"
+          }, 
+          {
+            "slots": [
+              [
+                "route", 
+                null
+              ]
+            ], 
+            "act": "request"
+          }, 
+          {
+            "slots": [
+              [
+                "route", 
+                "dont_know"
+              ]
+            ], 
+            "act": "example"
+          }, 
+          {
+            "slots": [
+              [
+                "act", 
+                "hangup"
+              ]
+            ], 
+            "act": "example"
+          }
+        ]
+      }
+    }, 
+    {
+      "input": {
+        "live": {
+          "asr-hyps": [
+            {
+              "asr-hyp": "p", 
+              "score": 0.281734, 
+              "type": "recognition"
+            }, 
+            {
+              "asr-hyp": "r", 
+              "score": 0.215446, 
+              "type": "recognition"
+            }, 
+            {
+              "asr-hyp": "g", 
+              "score": 0.006693, 
+              "type": "recognition"
+            }, 
+            {
+              "asr-hyp": "six", 
+              "score": 0.000341, 
+              "type": "recognition"
+            }, 
+            {
+              "asr-hyp": "one", 
+              "score": 1.1e-05, 
+              "type": "recognition"
+            }, 
+            {
+              "asr-hyp": "five", 
+              "score": 0.0, 
+              "type": "recognition"
+            }, 
+            {
+              "asr-hyp": "p g", 
+              "score": 0.0, 
+              "type": "recognition"
+            }
+          ], 
+          "slu-hyps": [
+            {
+              "slu-hyp": [
+                {
+                  "slots": [
+                    [
+                      "route", 
+                      "p"
+                    ]
+                  ], 
+                  "act": "inform"
+                }
+              ], 
+              "score": 0.281734
+            }, 
+            {
+              "slu-hyp": [
+                {
+                  "slots": [
+                    [
+                      "route", 
+                      "r"
+                    ]
+                  ], 
+                  "act": "inform"
+                }
+              ], 
+              "score": 0.215446
+            }, 
+            {
+              "slu-hyp": [
+                {
+                  "slots": [
+                    [
+                      "route", 
+                      "g"
+                    ]
+                  ], 
+                  "act": "inform"
+                }
+              ], 
+              "score": 0.006693
+            }, 
+            {
+              "slu-hyp": [
+                {
+                  "slots": [
+                    [
+                      "route", 
+                      "6"
+                    ]
+                  ], 
+                  "act": "inform"
+                }
+              ], 
+              "score": 0.000341
+            }, 
+            {
+              "slu-hyp": [
+                {
+                  "slots": [
+                    [
+                      "route", 
+                      "1"
+                    ]
+                  ], 
+                  "act": "inform"
+                }
+              ], 
+              "score": 1.1e-05
+            }, 
+            {
+              "slu-hyp": [
+                {
+                  "slots": [
+                    [
+                      "route", 
+                      "5"
+                    ]
+                  ], 
+                  "act": "inform"
+                }
+              ], 
+              "score": 0.0
+            }, 
+            {
+              "slu-hyp": [
+                {
+                  "slots": [
+                    [
+                      "route", 
+                      "pg"
+                    ]
+                  ], 
+                  "act": "inform"
+                }
+              ], 
+              "score": 0.0
+            }
+          ]
+        }, 
+        "audio-file": "012.raw", 
+        "start-time": 28.078
+      }, 
+      "system-specific": {
+        "beliefstate": {
+          "date": [
+            {
+              "count": 77522.0, 
+              "belief": 1.0, 
+              "slotValues": {
+                "date": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": 0.0, 
+              "logBel": 0.0, 
+              "surfaceForms": {
+                "date": "set([])"
+              }, 
+              "id": 0
+            }
+          ], 
+          "route": [
+            {
+              "count": 100.0, 
+              "belief": 0.0001, 
+              "slotValues": {
+                "route": {
+                  "vals": "['PG']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -6.703, 
+              "logBel": -9.183, 
+              "surfaceForms": {
+                "route": "set(['p g'])"
+              }, 
+              "id": 9
+            }, 
+            {
+              "count": 100.0, 
+              "belief": 0.0001, 
+              "slotValues": {
+                "route": {
+                  "vals": "['5']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -6.703, 
+              "logBel": -9.182, 
+              "surfaceForms": {
+                "route": "set(['five'])"
+              }, 
+              "id": 8
+            }, 
+            {
+              "count": 100.0, 
+              "belief": 0.00013, 
+              "slotValues": {
+                "route": {
+                  "vals": "['1']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -6.703, 
+              "logBel": -8.976, 
+              "surfaceForms": {
+                "route": "set(['one'])"
+              }, 
+              "id": 3
+            }, 
+            {
+              "count": 100.0, 
+              "belief": 0.00021, 
+              "slotValues": {
+                "route": {
+                  "vals": "['6']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -6.703, 
+              "logBel": -8.446, 
+              "surfaceForms": {
+                "route": "set(['six'])"
+              }, 
+              "id": 7
+            }, 
+            {
+              "count": 100.0, 
+              "belief": 0.0023, 
+              "slotValues": {
+                "route": {
+                  "vals": "['G']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -6.703, 
+              "logBel": -6.077, 
+              "surfaceForms": {
+                "route": "set(['g'])"
+              }, 
+              "id": 6
+            }, 
+            {
+              "count": 100.0, 
+              "belief": 0.07069, 
+              "slotValues": {
+                "route": {
+                  "vals": "['R']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -6.703, 
+              "logBel": -2.649, 
+              "surfaceForms": {
+                "route": "set(['r'])"
+              }, 
+              "id": 5
+            }, 
+            {
+              "count": 100.0, 
+              "belief": 0.09241, 
+              "slotValues": {
+                "route": {
+                  "vals": "['P']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -6.703, 
+              "logBel": -2.381, 
+              "surfaceForms": {
+                "route": "set(['p'])"
+              }, 
+              "id": 4
+            }, 
+            {
+              "count": 80722.0, 
+              "belief": 0.41496, 
+              "slotValues": {
+                "route": {
+                  "countHiddenVals": 8, 
+                  "valsListed": false, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.01, 
+              "logBel": -0.88, 
+              "surfaceForms": {
+                "route": "set([])"
+              }, 
+              "id": 0
+            }, 
+            {
+              "count": 100.0, 
+              "belief": 0.41909, 
+              "slotValues": {
+                "route": {
+                  "vals": "['ML']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }
+              }, 
+              "pid": 0, 
+              "logPri": -6.703, 
+              "logBel": -0.87, 
+              "surfaceForms": {
+                "route": "set(['m l'])"
+              }, 
+              "id": 2
+            }
+          ], 
+          "fromstopids": [
+            {
+              "count": 163022.0, 
+              "belief": 1.0, 
+              "slotValues": {
+                "fromstopids": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": 0.0, 
+              "logBel": 0.0, 
+              "surfaceForms": {
+                "fromstopids": "set([])"
+              }, 
+              "id": 0
+            }
+          ], 
+          "tostopids": [
+            {
+              "count": 163222.0, 
+              "belief": 1.0, 
+              "slotValues": {
+                "tostopids": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": 0.0, 
+              "logBel": 0.0, 
+              "surfaceForms": {
+                "tostopids": "set([])"
+              }, 
+              "id": 0
+            }
+          ], 
+          "time": [
+            {
+              "count": 176761.0, 
+              "belief": 0.5, 
+              "slotValues": {
+                "searchType": {
+                  "vals": "['depart']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }, 
+                "time": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.693, 
+              "logBel": -0.693, 
+              "surfaceForms": {
+                "searchType": "set([])", 
+                "time": "set([])"
+              }, 
+              "id": 1
+            }, 
+            {
+              "count": 176762.0, 
+              "belief": 0.5, 
+              "slotValues": {
+                "searchType": {
+                  "vals": "['arrive']", 
+                  "valsListed": true, 
+                  "inclOrExcl": "="
+                }, 
+                "time": {
+                  "vals": "[]", 
+                  "valsListed": true, 
+                  "inclOrExcl": "x"
+                }
+              }, 
+              "pid": null, 
+              "logPri": -0.693, 
+              "logBel": -0.693, 
+              "surfaceForms": {
+                "searchType": "set([])", 
+                "time": "set([])"
+              }, 
+              "id": 0
+            }
+          ]
+        }, 
+        "turn_start_time": "08/15 17:41:35.172", 
+        "raw_asr_result": {
+          "audioParams": {
+            "sampleRate": 8000, 
+            "coding": "linear", 
+            "byteOrder": "LE"
+          }, 
+          "version": "watson-6.5.5733", 
+          "resultId": 12, 
+          "hostname": "dt-jdw", 
+          "nlu-sisr": [
+            {
+              "interp": {
+                "route": "P"
+              }, 
+              "id": 0, 
+              "time": 0.0025110244750976562
+            }, 
+            {
+              "interp": {
+                "route": "R"
+              }, 
+              "id": 1, 
+              "time": 0.000659942626953125
+            }, 
+            {
+              "interp": {
+                "route": "G"
+              }, 
+              "id": 2, 
+              "time": 0.0006430149078369141
+            }, 
+            {
+              "interp": {
+                "route": "6"
+              }, 
+              "id": 3, 
+              "time": 0.0006399154663085938
+            }, 
+            {
+              "interp": {
+                "route": "1"
+              }, 
+              "id": 4, 
+              "time": 0.0006339550018310547
+            }, 
+            {
+              "interp": {
+                "route": "5"
+              }, 
+              "id": 5, 
+              "time": 0.0006420612335205078
+            }, 
+            {
+              "interp": {
+                "route": "PG"
+              }, 
+              "id": 6, 
+              "time": 0.0006890296936035156
+            }
+          ], 
+          "metrics": {
+            "audioBytes": 166080, 
+            "gaussSelectSkipRatio": 0.8033689260482788, 
+            "lhoodPrecalcHitRatio": 0.9142135381698608, 
+            "avgFrameBatchSize": 3.0, 
+            "decodedFrameCount": 1038, 
+            "bytesPerPacket": 320.0, 
+            "audioPackets": 519, 
+            "frameCount": 1038
+          }, 
+          "sessionId": "", 
+          "trigger": "secondTimeout", 
+          "evType": "evPhraseResult", 
+          "wcn": {
+            "best_path_score": 0.7568694384614078, 
+            "best_path": {
+              "word": [
+                "p"
+              ], 
+              "prob": [
+                0.7568694353103638
+              ]
+            }, 
+            "network": [
+              {
+                "word": [
+                  "p", 
+                  "r", 
+                  "one", 
+                  "g", 
+                  "five", 
+                  "six"
+                ], 
+                "prob": [
+                  0.7568694353103638, 
+                  0.0995146632194519, 
+                  0.006549225188791752, 
+                  0.09280409663915634, 
+                  0.002037755912169814, 
+                  0.04222480207681656
+                ]
+              }, 
+              {
+                "word": [
+                  "_epsilon", 
+                  "g"
+                ], 
+                "prob": [
+                  0.9993419051170349, 
+                  0.0006581159541383386
+                ]
+              }
+            ]
+          }, 
+          "config": {
+            "lms": [
+              "/home/jdw/sdc/prod/lms/routeList.lm"
+            ], 
+            "am": "/home/jdw/watson/data/am/gt_06.1.ep.h4.20.mmi2b", 
+            "secondTimeout": 700, 
+            "beamWidth": 250.0, 
+            "maxActiveArcs": 50000, 
+            "confidenceThreshold": 50, 
+            "firstTimeout": 400
+          }, 
+          "nbest": [
+            {
+              "normSpeechLhood": -149.97454833984375, 
+              "lastSpeechFrame": 750, 
+              "lms": [
+                "/home/jdw/sdc/prod/lms/routeList.lm"
+              ], 
+              "score": 6, 
+              "nscore": 20, 
+              "numFrames": 1038, 
+              "udelta": -10.34000015258789, 
+              "speechLikelihood": -2699.5419921875, 
+              "firstSpeechFrame": 732, 
+              "ndelta": 30.327999114990234, 
+              "normCost": 129.95094299316406, 
+              "normLhood": 0.0, 
+              "gscore": 14, 
+              "cost": 134889.078125, 
+              "hypothesis": "p", 
+              "glhood": -147.72900390625, 
+              "uscore": 0, 
+              "numSpeechFrames": 18, 
+              "likelihood": 0.0, 
+              "gdelta": -2.246000051498413, 
+              "ulhood": -139.63400268554688
+            }, 
+            {
+              "normSpeechLhood": -163.81192016601562, 
+              "lastSpeechFrame": 744, 
+              "lms": [
+                "/home/jdw/sdc/prod/lms/routeList.lm"
+              ], 
+              "score": 12, 
+              "nscore": 1, 
+              "numFrames": 1038, 
+              "udelta": -9.371000289916992, 
+              "speechLikelihood": -1965.7430419921875, 
+              "firstSpeechFrame": 732, 
+              "ndelta": 1.8279999494552612, 
+              "normCost": 129.98016357421875, 
+              "normLhood": 0.0, 
+              "gscore": 25, 
+              "cost": 134919.40625, 
+              "hypothesis": "r", 
+              "glhood": -163.82000732421875, 
+              "uscore": 0, 
+              "numSpeechFrames": 12, 
+              "likelihood": 0.0, 
+              "gdelta": 0.00800000037997961, 
+              "ulhood": -154.4409942626953
+            }, 
+            {
+              "normSpeechLhood": -150.25250244140625, 
+              "lastSpeechFrame": 733, 
+              "lms": [
+                "/home/jdw/sdc/prod/lms/routeList.lm"
+              ], 
+              "score": 9, 
+              "nscore": 9, 
+              "numFrames": 1038, 
+              "udelta": -7.697000026702881, 
+              "speechLikelihood": -1502.5250244140625, 
+              "firstSpeechFrame": 723, 
+              "ndelta": 13.234000205993652, 
+              "normCost": 129.98191833496094, 
+              "normLhood": 0.0, 
+              "gscore": 20, 
+              "cost": 134921.234375, 
+              "hypothesis": "g", 
+              "glhood": -149.32400512695312, 
+              "uscore": 0, 
+              "numSpeechFrames": 10, 
+              "likelihood": 0.0, 
+              "gdelta": -0.9290000200271606, 
+              "ulhood": -142.55499267578125
+            }, 
+            {
+              "normSpeechLhood": -156.27084350585938, 
+              "lastSpeechFrame": 754, 
+              "lms": [
+                "/home/jdw/sdc/prod/lms/routeList.lm"
+              ], 
+              "score": 11, 
+              "nscore": 24, 
+              "numFrames": 1038, 
+              "udelta": -8.630000114440918, 
+              "speechLikelihood": -3906.77099609375, 
+              "firstSpeechFrame": 729, 
+              "ndelta": 36.1870002746582, 
+              "normCost": 129.9946746826172, 
+              "normLhood": 0.0, 
+              "gscore": 24, 
+              "cost": 134934.46875, 
+              "hypothesis": "six", 
+              "glhood": -156.10699462890625, 
+              "uscore": 0, 
+              "numSpeechFrames": 25, 
+              "likelihood": 0.0, 
+              "gdelta": -0.164000004529953, 
+              "ulhood": -147.64100646972656
+            }, 
+            {
+              "normSpeechLhood": -149.86277770996094, 
+              "lastSpeechFrame": 879, 
+              "lms": [
+                "/home/jdw/sdc/prod/lms/routeList.lm"
+              ], 
+              "score": 2, 
+              "nscore": 7, 
+              "numFrames": 1038, 
+              "udelta": -9.968999862670898, 
+              "speechLikelihood": -1348.7650146484375, 
+              "firstSpeechFrame": 870, 
+              "ndelta": 10.437000274658203, 
+              "normCost": 130.029541015625, 
+              "normLhood": 0.0, 
+              "gscore": 6, 
+              "cost": 134970.65625, 
+              "hypothesis": "one", 
+              "glhood": -146.00900268554688, 
+              "uscore": 0, 
+              "numSpeechFrames": 9, 
+              "likelihood": 0.0, 
+              "gdelta": -3.8540000915527344, 
+              "ulhood": -139.89300537109375
+            }, 
+            {
+              "normSpeechLhood": -168.19046020507812, 
+              "lastSpeechFrame": 746, 
+              "lms": [
+                "/home/jdw/sdc/prod/lms/routeList.lm"
+              ], 
+              "score": 0, 
+              "nscore": 19, 
+              "numFrames": 1038, 
+              "udelta": -13.312999725341797, 
+              "speechLikelihood": -2186.47607421875, 
+              "firstSpeechFrame": 733, 
+              "ndelta": 29.0939998626709, 
+              "normCost": 130.0395965576172, 
+              "normLhood": 0.0, 
+              "gscore": 0, 
+              "cost": 134981.09375, 
+              "hypothesis": "five", 
+              "glhood": -163.1959991455078, 
+              "uscore": 0, 
+              "numSpeechFrames": 13, 
+              "likelihood": 0.0, 
+              "gdelta": -4.994999885559082, 
+              "ulhood": -154.8769989013672
+            }, 
+            {
+              "normSpeechLhood": -148.65316772460938, 
+              "lastSpeechFrame": 1, 
+              "lms": [
+                "/home/jdw/sdc/prod/lms/routeList.lm"
+              ], 
+              "score": 2, 
+              "nscore": 100, 
+              "numFrames": 1038, 
+              "udelta": -9.8149995803833, 
+              "speechLikelihood": -3716.3291015625, 
+              "firstSpeechFrame": 732, 
+              "ndelta": 150.0, 
+              "normCost": 130.06761169433594, 
+              "normLhood": 0.0, 
+              "gscore": 6, 
+              "cost": 135010.1875, 
+              "hypothesis": "p g", 
+              "glhood": -144.8679962158203, 
+              "uscore": 0, 
+              "numSpeechFrames": 25, 
+              "likelihood": 0.0, 
+              "gdelta": -3.7850000858306885, 
+              "ulhood": -138.83799743652344
+            }
+          ], 
+          "fileId": 0
+        }, 
+        "uttinfo": {
+          "uttfile_status": "logged", 
+          "uttid": "012.raw"
+        }, 
+        "sys_action_details": [
+          {
+            "prompt": "file:/home/jdw/sdc/prod/lib/../prompts/AskRoute/i_heard.wav", 
+            "output_start_time": "08/15 17:41:35.173", 
+            "waitfor": "['evPhraseResult', 'evDtmfInput', 'evNoInputTimeout']", 
+            "dtmf": "", 
+            "input_types": "speech", 
+            "grammars": "['/home/jdw/sdc/prod/lib/../lms/routeList.lm']", 
+            "timeout": "0.1", 
+            "input_start_time": "08/15 17:41:36.602", 
+            "ACTION": "Listen", 
+            "bargein": "True", 
+            "events": [
+              "evPromptStart", 
+              "evPromptStop", 
+              "evNoInputTimeout"
+            ]
+          }, 
+          {
+            "prompt": "<prosody volume=\"x-loud\">m l,</prosody>", 
+            "output_start_time": "08/15 17:41:36.602", 
+            "waitfor": "['evPhraseResult', 'evDtmfInput', 'evNoInputTimeout']", 
+            "dtmf": "", 
+            "input_types": "speech", 
+            "grammars": "['/home/jdw/sdc/prod/lib/../lms/routeList.lm']", 
+            "timeout": "0.1", 
+            "input_start_time": "08/15 17:41:37.739", 
+            "ACTION": "Listen", 
+            "bargein": "True", 
+            "events": [
+              "evPromptStart", 
+              "evPromptStop", 
+              "evNoInputTimeout"
+            ]
+          }, 
+          {
+            "prompt": "file:/home/jdw/sdc/prod/lib/../prompts/AskRoute/dont_have.wav", 
+            "output_start_time": "08/15 17:41:37.739", 
+            "waitfor": "['evPhraseResult', 'evDtmfInput', 'evNoInputTimeout']", 
+            "dtmf": "", 
+            "input_types": "speech", 
+            "grammars": "['/home/jdw/sdc/prod/lib/../lms/routeList.lm']", 
+            "timeout": "10", 
+            "input_start_time": "08/15 17:41:45.820", 
+            "ACTION": "Listen", 
+            "bargein": "True", 
+            "events": [
+              "evPromptStart", 
+              "evSpeechStart", 
+              "evPromptStop", 
+              "evPhraseResult"
+            ]
+          }
+        ], 
+        "dialog_states": [
+          {
+            "state": "AskRoute", 
+            "activity": "Calling OnRecognition handler"
+          }
+        ], 
+        "parsed_asr_result": {
+          "nbest": [
+            {
+              "rec_string": "p", 
+              "rec_type": "ig", 
+              "fields": {
+                "routeSurface": "p", 
+                "route-set": "set(['P'])", 
+                "route": "P"
+              }, 
+              "rec_conf": 0.281734
+            }, 
+            {
+              "rec_string": "r", 
+              "rec_type": "ig", 
+              "fields": {
+                "routeSurface": "r", 
+                "route-set": "set(['R'])", 
+                "route": "R"
+              }, 
+              "rec_conf": 0.215446
+            }, 
+            {
+              "rec_string": "g", 
+              "rec_type": "ig", 
+              "fields": {
+                "routeSurface": "g", 
+                "route-set": "set(['G'])", 
+                "route": "G"
+              }, 
+              "rec_conf": 0.006693
+            }, 
+            {
+              "rec_string": "six", 
+              "rec_type": "ig", 
+              "fields": {
+                "routeSurface": "six", 
+                "route-set": "set(['6'])", 
+                "route": "6"
+              }, 
+              "rec_conf": 0.000341
+            }, 
+            {
+              "rec_string": "one", 
+              "rec_type": "ig", 
+              "fields": {
+                "routeSurface": "one", 
+                "route-set": "set(['1'])", 
+                "route": "1"
+              }, 
+              "rec_conf": 1.1e-05
+            }, 
+            {
+              "rec_string": "five", 
+              "rec_type": "ig", 
+              "fields": {
+                "routeSurface": "five", 
+                "route-set": "set(['5'])", 
+                "route": "5"
+              }, 
+              "rec_conf": 0.0
+            }, 
+            {
+              "rec_string": "p g", 
+              "rec_type": "ig", 
+              "fields": {
+                "routeSurface": "p g", 
+                "route-set": "set(['PG'])", 
+                "route": "PG"
+              }, 
+              "rec_conf": 0.0
+            }
+          ]
+        }, 
+        "sys_action_summary": {
+          "struct": [
+            [
+              "request", 
+              "route"
+            ]
+          ], 
+          "surface": "I THOUGHT you said m l, but I don't have schedules for that route.  I only have schedules for the 28 X, 54 C, 56 U, 61 A B C and D, and the 64.  You can say one of these routes, say I'm not sure which route, or just hang up."
+        }
+      }, 
+      "turn-index": 4, 
+      "restart": false, 
+      "output": {
+        "start-time": 17.431, 
+        "transcript": "I THOUGHT you said m l, but I don't have schedules for that route.  I only have schedules for the 28 X, 54 C, 56 U, 61 A B C and D, and the 64.  You can say one of these routes, say I'm not sure which route, or just hang up.", 
+        "dialog-acts": [
+          {
+            "slots": [
+              [
+                "route", 
+                "ml"
+              ]
+            ], 
+            "act": "impl-conf"
+          }, 
+          {
+            "slots": [
+              [
+                "route", 
+                "ml"
+              ]
+            ], 
+            "act": "canthelp.uncovered_route"
+          }, 
+          {
+            "slots": [
+              [
+                "route", 
+                "28x"
+              ]
+            ], 
+            "act": "example"
+          }, 
+          {
+            "slots": [
+              [
+                "route", 
+                "54c"
+              ]
+            ], 
+            "act": "example"
+          }, 
+          {
+            "slots": [
+              [
+                "route", 
+                "56u"
+              ]
+            ], 
+            "act": "example"
+          }, 
+          {
+            "slots": [
+              [
+                "route", 
+                "61a"
+              ]
+            ], 
+            "act": "example"
+          }, 
+          {
+            "slots": [
+              [
+                "route", 
+                "61b"
+              ]
+            ], 
+            "act": "example"
+          }, 
+          {
+            "slots": [
+              [
+                "route", 
+                "61c"
+              ]
+            ], 
+            "act": "example"
+          }, 
+          {
+            "slots": [
+              [
+                "route", 
+                "61d"
+              ]
+            ], 
+            "act": "example"
+          }, 
+          {
+            "slots": [
+              [
+                "route", 
+                "64"
+              ]
+            ], 
+            "act": "example"
+          }, 
+          {
+            "slots": [
+              [
+                "route", 
+                null
+              ]
+            ], 
+            "act": "request"
+          }, 
+          {
+            "slots": [
+              [
+                "route", 
+                "dont_know"
+              ]
+            ], 
+            "act": "example"
+          }, 
+          {
+            "slots": [
+              [
+                "act", 
+                "hangup"
+              ]
+            ], 
+            "act": "example"
+          }
+        ]
+      }
+    }, 
+    {
+      "input": {
+        "live": {
+          "asr-hyps": [], 
+          "slu-hyps": []
+        }, 
+        "audio-file": null, 
+        "start-time": null
+      }, 
+      "system-specific": {
+        "beliefstate": {}, 
+        "turn_start_time": "08/15 17:41:48.403", 
+        "raw_asr_result": null, 
+        "uttinfo": {
+          "uttfile_status": "not_expected", 
+          "uttid": null
+        }, 
+        "sys_action_details": [
+          {
+            "prompt": "file:/home/jdw/sdc/prod/lib/../prompts/AskRoute/i_heard.wav", 
+            "output_start_time": "08/15 17:41:48.404", 
+            "waitfor": "['evPhraseResult', 'evDtmfInput', 'evNoInputTimeout']", 
+            "dtmf": "", 
+            "input_types": "speech", 
+            "grammars": "['/home/jdw/sdc/prod/lib/../lms/routeList.lm']", 
+            "timeout": "0.1", 
+            "input_start_time": "08/15 17:41:49.840", 
+            "ACTION": "Listen", 
+            "bargein": "True", 
+            "events": [
+              "evPromptStart", 
+              "evPromptStop", 
+              "evNoInputTimeout"
+            ]
+          }, 
+          {
+            "prompt": "<prosody volume=\"x-loud\">m l,</prosody>", 
+            "output_start_time": "08/15 17:41:49.840", 
+            "waitfor": "['evPhraseResult', 'evDtmfInput', 'evNoInputTimeout']", 
+            "dtmf": "", 
+            "input_types": "speech", 
+            "grammars": "['/home/jdw/sdc/prod/lib/../lms/routeList.lm']", 
+            "timeout": "0.1", 
+            "input_start_time": "08/15 17:41:50.980", 
+            "ACTION": "Listen", 
+            "bargein": "True", 
+            "events": [
+              "evPromptStart", 
+              "evPromptStop", 
+              "evNoInputTimeout"
+            ]
+          }, 
+          {
+            "prompt": "file:/home/jdw/sdc/prod/lib/../prompts/AskRoute/dont_have.wav", 
+            "output_start_time": "08/15 17:41:50.980", 
+            "waitfor": "['evPhraseResult', 'evDtmfInput', 'evNoInputTimeout']", 
+            "dtmf": "", 
+            "input_types": "speech", 
+            "grammars": "['/home/jdw/sdc/prod/lib/../lms/routeList.lm']", 
+            "timeout": "10", 
+            "input_start_time": null, 
+            "ACTION": "Listen", 
+            "bargein": "True", 
+            "events": [
+              "evPromptStart"
+            ]
+          }
+        ], 
+        "dialog_states": [
+          {
+            "state": "AskRoute", 
+            "activity": "Calling OnRecognition handler"
+          }
+        ], 
+        "parsed_asr_result": null, 
+        "sys_action_summary": {
+          "struct": [
+            [
+              "request", 
+              "route"
+            ]
+          ], 
+          "surface": "I THOUGHT you said m l, but I don't have schedules for that route.  I only have schedules for the 28 X, 54 C, 56 U, 61 A B C and D, and the 64.  You can say one of these routes, say I'm not sure which route, or just hang up."
+        }
+      }, 
+      "turn-index": 5, 
+      "restart": false, 
+      "output": {
+        "start-time": 30.662, 
+        "transcript": "I THOUGHT you said m l, but I don't have schedules for that route.  I only have schedules for the 28 X, 54 C, 56 U, 61 A B C and D, and the 64.  You can say one of these routes, say I'm not sure which route, or just hang up.", 
+        "dialog-acts": [
+          {
+            "slots": [
+              [
+                "route", 
+                "ml"
+              ]
+            ], 
+            "act": "impl-conf"
+          }, 
+          {
+            "slots": [
+              [
+                "route", 
+                "ml"
+              ]
+            ], 
+            "act": "canthelp.uncovered_route"
+          }, 
+          {
+            "slots": [
+              [
+                "route", 
+                "28x"
+              ]
+            ], 
+            "act": "example"
+          }, 
+          {
+            "slots": [
+              [
+                "route", 
+                "54c"
+              ]
+            ], 
+            "act": "example"
+          }, 
+          {
+            "slots": [
+              [
+                "route", 
+                "56u"
+              ]
+            ], 
+            "act": "example"
+          }, 
+          {
+            "slots": [
+              [
+                "route", 
+                "61a"
+              ]
+            ], 
+            "act": "example"
+          }, 
+          {
+            "slots": [
+              [
+                "route", 
+                "61b"
+              ]
+            ], 
+            "act": "example"
+          }, 
+          {
+            "slots": [
+              [
+                "route", 
+                "61c"
+              ]
+            ], 
+            "act": "example"
+          }, 
+          {
+            "slots": [
+              [
+                "route", 
+                "61d"
+              ]
+            ], 
+            "act": "example"
+          }, 
+          {
+            "slots": [
+              [
+                "route", 
+                "64"
+              ]
+            ], 
+            "act": "example"
+          }, 
+          {
+            "slots": [
+              [
+                "route", 
+                null
+              ]
+            ], 
+            "act": "request"
+          }, 
+          {
+            "slots": [
+              [
+                "route", 
+                "dont_know"
+              ]
+            ], 
+            "act": "example"
+          }, 
+          {
+            "slots": [
+              [
+                "act", 
+                "hangup"
+              ]
+            ], 
+            "act": "example"
+          }
+        ]
+      }
+    }
+  ], 
+  "session-time": "17:41:17", 
+  "system-specific": {
+    "initial_belief_state": {
+      "date": [
+        {
+          "count": 77522.0, 
+          "belief": 1.0, 
+          "slotValues": {
+            "date": {
+              "vals": "[]", 
+              "valsListed": true, 
+              "inclOrExcl": "x"
+            }
+          }, 
+          "pid": null, 
+          "logPri": 0.0, 
+          "logBel": 0.0, 
+          "surfaceForms": {
+            "date": "set([])"
+          }, 
+          "id": 0
+        }
+      ], 
+      "route": [
+        {
+          "count": 81522.0, 
+          "belief": 1.0, 
+          "slotValues": {
+            "route": {
+              "vals": "[]", 
+              "valsListed": true, 
+              "inclOrExcl": "x"
+            }
+          }, 
+          "pid": null, 
+          "logPri": 0.0, 
+          "logBel": 0.0, 
+          "surfaceForms": {
+            "route": "set([])"
+          }, 
+          "id": 0
+        }
+      ], 
+      "fromstopids": [
+        {
+          "count": 163022.0, 
+          "belief": 1.0, 
+          "slotValues": {
+            "fromstopids": {
+              "vals": "[]", 
+              "valsListed": true, 
+              "inclOrExcl": "x"
+            }
+          }, 
+          "pid": null, 
+          "logPri": 0.0, 
+          "logBel": 0.0, 
+          "surfaceForms": {
+            "fromstopids": "set([])"
+          }, 
+          "id": 0
+        }
+      ], 
+      "tostopids": [
+        {
+          "count": 163222.0, 
+          "belief": 1.0, 
+          "slotValues": {
+            "tostopids": {
+              "vals": "[]", 
+              "valsListed": true, 
+              "inclOrExcl": "x"
+            }
+          }, 
+          "pid": null, 
+          "logPri": 0.0, 
+          "logBel": 0.0, 
+          "surfaceForms": {
+            "tostopids": "set([])"
+          }, 
+          "id": 0
+        }
+      ], 
+      "time": [
+        {
+          "count": 176762.0, 
+          "belief": 0.5, 
+          "slotValues": {
+            "searchType": {
+              "vals": "['arrive']", 
+              "valsListed": true, 
+              "inclOrExcl": "="
+            }, 
+            "time": {
+              "vals": "[]", 
+              "valsListed": true, 
+              "inclOrExcl": "x"
+            }
+          }, 
+          "pid": null, 
+          "logPri": -0.693, 
+          "logBel": -0.693, 
+          "surfaceForms": {
+            "searchType": "set([])", 
+            "time": "set([])"
+          }, 
+          "id": 0
+        }, 
+        {
+          "count": 176761.0, 
+          "belief": 0.5, 
+          "slotValues": {
+            "searchType": {
+              "vals": "['depart']", 
+              "valsListed": true, 
+              "inclOrExcl": "="
+            }, 
+            "time": {
+              "vals": "[]", 
+              "valsListed": true, 
+              "inclOrExcl": "x"
+            }
+          }, 
+          "pid": null, 
+          "logPri": -0.693, 
+          "logBel": -0.693, 
+          "surfaceForms": {
+            "searchType": "set([])", 
+            "time": "set([])"
+          }, 
+          "id": 1
+        }
+      ]
+    }, 
+    "session-start-time": "08/15 17:41:17.742"
+  }, 
+  "session-date": "08-15-2010"
+}
