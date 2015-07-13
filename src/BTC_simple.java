@@ -99,7 +99,9 @@ public class BTC_simple {
 
                             System.out.println("Here we use Query the ontology");
                             //bm.ShowHypo();
-                            ontoQ.State( bm.getHypo() );
+
+                            //ontoQ.State( bm.getHypo() );
+                            bm.ShowJointHypo();
 
                             bm.update(t.sysDialogActs, t.usrSLUHypos, turnid++);
                             bm.printJSON(output);

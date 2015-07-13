@@ -970,13 +970,79 @@ public class BeliefStruct {
             for ( ValueHypo vh : sh.value_hypos ){
                 System.out.print(vh.name + " ");
             }
-            System.out.print( "} ");
+            System.out.print( "}");
         }
         System.out.println();
     }
 
     public ArrayList<SlotHypo> getHypo(){
         return slot_hypos;
+    }
+
+    public void ShowJointHypo(){
+        for ( JointHypo jh : joint_hypos ){
+            System.out.print("<Name>" + " {\n"); //Miao I need a name to identify the Joint hypos uniquely here
+
+
+            boolean first = true;
+            for ( Map.Entry<String,String> sv : jh.content.entrySet() )
+            {
+                if ( first )
+                {
+                    System.out.print(sv.getKey() + "\": \"" + sv.getValue() + "\"");
+                    first = false;
+                }
+                else
+                    System.out.print("\n" + sv.getKey() + "\": \"" + sv.getValue() + "\"");
+            }
+          /*  if ( jh.timeHypo != null )
+                for ( Map.Entry<String,String> sv : timeHypo.content.entrySet() )
+                {
+                    if ( first )
+                    {
+                        if ( sv.getKey().equals("hour") || sv.getKey().equals("minute") )
+                            bw.write("\t\t\t\t\t\t\t\t\t\""+"time."+sv.getKey()+"\": "+sv.getValue());
+                        else
+                            bw.write("\t\t\t\t\t\t\t\t\t\""+"time."+sv.getKey()+"\": \""+sv.getValue()+"\"");
+                        first = false;
+                    }
+                    else
+                    {
+                        if ( sv.getKey().equals("hour") || sv.getKey().equals("minute") )
+                            bw.write(",\n\t\t\t\t\t\t\t\t\t\""+"time."+sv.getKey()+"\": "+sv.getValue());
+                        else
+                            bw.write(",\n\t\t\t\t\t\t\t\t\t\""+"time."+sv.getKey()+"\": \""+sv.getValue()+"\"");
+                    }
+                }
+            if ( dateHypo != null )
+                for ( Map.Entry<String,String> sv : dateHypo.content.entrySet() )
+                {
+                    if ( first )
+                    {
+                        if ( sv.getKey().startsWith("abs") )
+                            bw.write("\t\t\t\t\t\t\t\t\t\""+"date."+sv.getKey()+"\": "+sv.getValue());
+                        else
+                            bw.write("\t\t\t\t\t\t\t\t\t\""+"date."+sv.getKey()+"\": \""+sv.getValue()+"\"");
+                        first = false;
+                    }
+                    else
+                    {
+                        if ( sv.getKey().startsWith("abs") )
+                            bw.write(",\n\t\t\t\t\t\t\t\t\t\""+"date."+sv.getKey()+"\": "+sv.getValue());
+                        else
+                            bw.write(",\n\t\t\t\t\t\t\t\t\t\""+"date."+sv.getKey()+"\": \""+sv.getValue()+"\"");
+                    }
+                }
+
+            */
+
+            System.out.print( "\n}\n");
+        }
+        System.out.println();
+    }
+
+    public ArrayList<JointHypo> getJointHypo(){
+        return joint_hypos;
     }
 
 }

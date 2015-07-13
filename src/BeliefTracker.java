@@ -259,4 +259,12 @@ public class BeliefTracker {
         return curBelief.getHypo();
     }
 
+
+    public void ShowJointHypo(){
+        curBelief.ShowJointHypo();
+    }
+
+    public ArrayList<BeliefStruct.JointHypo> getJointHypo(){
+        return curBelief.getJointHypo();
+    }
 }
