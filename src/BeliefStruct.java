@@ -1045,9 +1045,9 @@ public class BeliefStruct {
         return joint_hypos;
     }
 
-    public boolean checkJointHypo(JointHypo jh){
+    public boolean checkJointHypo(JointHypo jh){    //can Nisansa finish a function like this by checking the JointHypo in Ontology
         /*
-        if (jh is valid)
+        if (jh is valid in Ontology)
             return true;
         else
             return false;
