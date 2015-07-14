@@ -981,7 +981,7 @@ public class BeliefStruct {
 
     public void ShowJointHypo(){
         for ( JointHypo jh : joint_hypos ){
-            System.out.print("<Name>" + " {\n"); //Miao I need a name to identify the Joint hypos uniquely here
+            System.out.print("<JointHypo>" + " {\n"); //Miao I need a name to identify the Joint hypos uniquely here
 
 
             boolean first = true;
@@ -1043,6 +1043,15 @@ public class BeliefStruct {
 
     public ArrayList<JointHypo> getJointHypo(){
         return joint_hypos;
+    }
+
+    public boolean checkJointHypo(JointHypo jh){
+        /*
+        if (jh is valid)
+            return true;
+        else
+            return false;
+        */
     }
 
 }
