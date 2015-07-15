@@ -102,6 +102,12 @@ public class BTC_simple {
                             //ontoQ.State( bm.getHypo() );
 
                             //bm.ShowJointHypo();
+
+
+
+
+
+
                             ontoQ.StateJ( bm.getJointHypo() );
 
                             bm.update(t.sysDialogActs, t.usrSLUHypos, turnid++);
