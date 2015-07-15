@@ -2,6 +2,7 @@ import ontology.COntology;
 import org.semanticweb.owlapi.model.OWLOntologyCreationException;
 
 import java.util.ArrayList;
+import java.util.Map;
 import java.util.Set;
 
 
@@ -56,11 +57,33 @@ public class ontoQuery {
         System.out.println();
     }
 
+    public void StateJ(ArrayList<BeliefStruct.JointHypo> jointHypo) {
+        for ( BeliefStruct.JointHypo jh : jointHypo ){
+            System.out.println("<Name> {");
+            System.out.println(checkJointHypo(jh));
+            System.out.println("}\n");
+        }
+    }
 
 
+    public boolean checkJointHypo(BeliefStruct.JointHypo jh){    //can Nisansa finish a function like this by checking the JointHypo in Ontology
+        for ( Map.Entry<String,String> sv : jh.content.entrySet()) {
+            System.out.print(sv.getKey() + ": " + sv.getValue()+"\n");
+        }
+
+
+        /*
+        if (jh is valid in Ontology)
+            return true;
+        else   */
+        return false;
+
+    }
 
     public static void main(String[] args) throws OWLOntologyCreationException {
         ontoQuery ontoQ = new ontoQuery( args[0], true );
         ontoQ.SetQueryEngine();
     }
+
+
 }
