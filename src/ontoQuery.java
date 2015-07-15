@@ -72,11 +72,11 @@ public class ontoQuery {
                     System.out.print(sv.getKey() + ": " + sv.getValue()+"\n");
                 }
                 System.out.println("}\n");
-                try {
+            /*    try {
                     System.in.read();
                 } catch (IOException e) {
                     e.printStackTrace();
-                }
+                }*/
             }
         }
     }
