@@ -350,6 +350,20 @@ public class BeliefStruct {
             return true;
         }
         
+        //add by Miao extract SVP list from JointHypo
+        public ArrayList<SVP> GetSVPs()
+        {
+        	ArrayList<SVP> SVPs = new ArrayList();
+        	// currently only return SVPs from content
+        	for ( Map.Entry<String,String> sv : content.entrySet() )
+            {
+        		SVP svp = new SVP(sv.getKey(),sv.getValue());
+        		if (! SVPs.contains(svp))
+        			SVPs.add(svp);
+            }
+        	return SVPs;
+        }
+        //end
         
         public boolean addSVP(SVP sv)
         {

@@ -267,4 +267,14 @@ public class BeliefTracker {
     public ArrayList<BeliefStruct.JointHypo> getJointHypo(){
         return curBelief.getJointHypo();
     }
+    
+    // Add by Miao
+    public void AddpendingBlockRules(SVP sv){
+    	if(!pendingBlockRules.contains(sv))
+    		pendingBlockRules.add(sv);
+    }
+    public void AddpendingJointBlockRules(ArrayList<SVP> svs){
+    	if(!pendingJointBlockRules.contains(svs))
+    		pendingJointBlockRules.add(svs);
+    }
 }

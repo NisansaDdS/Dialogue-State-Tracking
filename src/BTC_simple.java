@@ -89,7 +89,7 @@ public class BTC_simple {
                         System.out.println(sessionID);
                         
                         int turnid = 0;
-                        System.out.println(" Trun");
+                        System.out.println(" Turn");
                         for ( TurnObject t : turns )
                         {
                             if ( turnid > 0 )
@@ -97,18 +97,36 @@ public class BTC_simple {
                             //System.out.println("-----------Dialog Turn------------");
                             //System.out.println(t.toString());
 
-                            System.out.println("Here we use Query the ontology");
+                            //System.out.println("Here we use Query the ontology");
                             //bm.ShowHypo();
                             //ontoQ.State( bm.getHypo() );
 
                             //bm.ShowJointHypo();
+                            System.out.println(turnid);
 
-
-
-
-
-
-                            ontoQ.StateJ( bm.getJointHypo() );
+                            // Add by Miao start
+                            // check BeliefState
+                            for ( BeliefStruct.JointHypo jh : bm.getJointHypo() ){
+                                boolean ou=ontoQ.checkJointHypo(jh);
+                                if (ou){
+                                	//generate SVP list
+                                	ArrayList<SVP> b_SVPs = jh.GetSVPs();
+                                	System.out.println("find unvalid joint hypo!");
+                                	System.out.println(b_SVPs);
+                                	if(b_SVPs.isEmpty())
+                                		;
+                                	else if(b_SVPs.size()==1){
+                                		bm.AddpendingBlockRules(b_SVPs.get(0));
+                                	}
+                                	else {
+										bm.AddpendingJointBlockRules(b_SVPs);
+									}
+                                }
+                            }
+                                
+                            //ontoQ.StateJ( bm.getJointHypo() );
+                            
+                            // Add by Miao end.
 
                             bm.update(t.sysDialogActs, t.usrSLUHypos, turnid++);
                             bm.printJSON(output);
