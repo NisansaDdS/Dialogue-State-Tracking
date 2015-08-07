@@ -103,8 +103,10 @@ public class BTC_simple {
 
                             //bm.ShowJointHypo();
                             System.out.println(turnid);
-
+                            
+                            
                             // Add by Miao start
+                            /*
                             // check BeliefState
                             for ( BeliefStruct.JointHypo jh : bm.getJointHypo() ){
                                 boolean ou=ontoQ.checkJointHypo(jh);
@@ -125,9 +127,19 @@ public class BTC_simple {
                             }
                                 
                             //ontoQ.StateJ( bm.getJointHypo() );
+                            */
+                            // test JointHypos
+                            for ( BeliefStruct.JointHypo jh : bm.getJointHypo() ){
+                            	BeliefStruct.JointHypo jh1 = jh.createDummyJointHypo("to_place", "from_place", "61d");
+                                BeliefStruct.JointHypo jh2 = jh.createDummyJointHypo("", "from_place", "61d");
+                                BeliefStruct.JointHypo jh3 = jh.createDummyJointHypo("", "", "61d");
+                                boolean ou=ontoQ.checkJointHypo(jh1);
+                                ou=ontoQ.checkJointHypo(jh2);
+                                ou=ontoQ.checkJointHypo(jh3);
+                            }
                             
                             // Add by Miao end.
-
+							
                             bm.update(t.sysDialogActs, t.usrSLUHypos, turnid++);
                             bm.printJSON(output);
                             //System.out.println("+++++++++++++Beliefs++++++++++++++");

@@ -363,6 +363,24 @@ public class BeliefStruct {
             }
         	return SVPs;
         }
+        
+        // test code
+        public JointHypo createDummyJointHypo(String to, String from, String route){
+        	JointHypo jp = new JointHypo();
+        	if(!to.isEmpty()){
+        		SVP svp = new SVP("to.desc",to);
+        		jp.addSVP(svp);
+        	}
+        	if(!from.isEmpty()){
+        		SVP svp = new SVP("from.desc",from);
+        		jp.addSVP(svp);
+        	}
+        	if(!route.isEmpty()){
+        		SVP svp = new SVP("route",route);
+        		jp.addSVP(svp);
+        	}
+        	return jp;
+        }
         //end
         
         public boolean addSVP(SVP sv)
@@ -1054,7 +1072,6 @@ public class BeliefStruct {
         }
         System.out.println();
     }
-
     public ArrayList<JointHypo> getJointHypo(){
         return joint_hypos;
     }
