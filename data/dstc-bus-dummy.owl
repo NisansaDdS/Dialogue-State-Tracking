@@ -1,0 +1,776 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY bus-db "http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/Fernando/ontologies/dstc/bus-db#"
+     xml:base="http://www.semanticweb.org/Fernando/ontologies/dstc/bus-db"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:bus-db="http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db">
+        <rdfs:comment>Version 1.8
+Concepts and properties from databse &quot;letsgo.100326&quot;
+Limited number of individuals (mostly as examples).
+Properties for concept Route Sequence defined.
+Final version</rdfs:comment>
+        <rdfs:comment>Version 1.3
+Concepts and properties from databse &quot;letsgo.100326&quot;
+Limited number of individuals (mostly as examples).
+Data properties far_side and no_stop are boolean instead of integer.</rdfs:comment>
+        <rdfs:comment>Version 1.0
+Concepts and properties from databse &quot;letsgo.100326&quot;
+Limited number of individuals (mostly as examples)</rdfs:comment>
+        <rdfs:comment>Version 1.5
+Concepts and properties from databse &quot;letsgo.100326&quot;
+Limited number of individuals (mostly as examples).
+Properties for concept Route redefined.</rdfs:comment>
+        <owl:versionIRI rdf:resource="http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db/1.8"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/bus-db#bus-stop -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/Fernando/ontologies/dstc/bus-db#bus-stop"/>
+    
+
+
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/bus-db#has_stop -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/Fernando/ontologies/dstc/bus-db#has_stop"/>
+    
+
+
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/bus-db#stop_first -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/Fernando/ontologies/dstc/bus-db#stop_first">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Fernando/ontologies/dstc/bus-db#Bus_Stop"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/Fernando/ontologies/dstc/bus-db#Street"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/bus-db#stop_second -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/Fernando/ontologies/dstc/bus-db#stop_second">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Fernando/ontologies/dstc/bus-db#Bus_Stop"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/Fernando/ontologies/dstc/bus-db#Street"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/bus-db#type -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/Fernando/ontologies/dstc/bus-db#type"/>
+    
+
+
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#at_neighborhood -->
+
+    <owl:ObjectProperty rdf:about="&bus-db;at_neighborhood"/>
+    
+
+
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#has_bus_stop -->
+
+    <owl:ObjectProperty rdf:about="&bus-db;has_bus_stop"/>
+    
+
+
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#has_code -->
+
+    <owl:ObjectProperty rdf:about="&bus-db;has_code"/>
+    
+
+
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#has_days -->
+
+    <owl:ObjectProperty rdf:about="&bus-db;has_days"/>
+    
+
+
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#has_name -->
+
+    <owl:ObjectProperty rdf:about="&bus-db;has_name"/>
+    
+
+
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#has_number -->
+
+    <owl:ObjectProperty rdf:about="&bus-db;has_number"/>
+    
+
+
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#has_pattern -->
+
+    <owl:ObjectProperty rdf:about="&bus-db;has_pattern"/>
+    
+
+
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#has_route -->
+
+    <owl:ObjectProperty rdf:about="&bus-db;has_route"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/bus-db#far_side -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/Fernando/ontologies/dstc/bus-db#far_side">
+        <rdfs:range rdf:resource="&xsd;boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/bus-db#no_stop -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/Fernando/ontologies/dstc/bus-db#no_stop">
+        <rdfs:range rdf:resource="&xsd;boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#has_sequence_number -->
+
+    <owl:DatatypeProperty rdf:about="&bus-db;has_sequence_number"/>
+    
+
+
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#last_time_point -->
+
+    <owl:DatatypeProperty rdf:about="&bus-db;last_time_point"/>
+    
+
+
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#next_time_point -->
+
+    <owl:DatatypeProperty rdf:about="&bus-db;next_time_point"/>
+    
+
+
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#number_of_stops -->
+
+    <owl:DatatypeProperty rdf:about="&bus-db;number_of_stops">
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#route_has_number -->
+
+    <owl:DatatypeProperty rdf:about="&bus-db;route_has_number">
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#sequence_number -->
+
+    <owl:DatatypeProperty rdf:about="&bus-db;sequence_number">
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/bus-db#Bus_Stop -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Fernando/ontologies/dstc/bus-db#Bus_Stop">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/Fernando/ontologies/dstc/bus-db#stop_first"/>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/Fernando/ontologies/dstc/bus-db#Street"/>
+                        <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/Fernando/ontologies/dstc/bus-db#stop_second"/>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/Fernando/ontologies/dstc/bus-db#Street"/>
+                        <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/Fernando/ontologies/dstc/bus-db#type"/>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/Fernando/ontologies/dstc/bus-db#Intersection_Type"/>
+                        <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/Fernando/ontologies/dstc/bus-db#far_side"/>
+                        <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onDataRange rdf:resource="&xsd;boolean"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/Fernando/ontologies/dstc/bus-db#no_stop"/>
+                        <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onDataRange rdf:resource="&xsd;boolean"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/Fernando/ontologies/dstc/bus-db#Route"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/Fernando/ontologies/dstc/bus-db#Street"/>
+        <rdfs:comment>Similar to &quot;busstop&quot; table from &quot;letsgo&quot; database.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/bus-db#Intersection_Type -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Fernando/ontologies/dstc/bus-db#Intersection_Type">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/Fernando/ontologies/dstc/bus-db#Route"/>
+        <rdfs:comment>There is only two types of intersection: At (AT) or Opposite (OPP). Might need a better representation (subclass instead of individuals).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/bus-db#Route -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Fernando/ontologies/dstc/bus-db#Route">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&bus-db;has_bus_stop"/>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/Fernando/ontologies/dstc/bus-db#Bus_Stop"/>
+                        <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&bus-db;has_code"/>
+                        <owl:onClass rdf:resource="&bus-db;Route_Code"/>
+                        <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&bus-db;has_days"/>
+                        <owl:onClass rdf:resource="&bus-db;Days"/>
+                        <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&bus-db;has_name"/>
+                        <owl:onClass rdf:resource="&bus-db;Route_Name"/>
+                        <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&bus-db;has_pattern"/>
+                        <owl:onClass rdf:resource="&bus-db;Route_Patterns"/>
+                        <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&bus-db;has_sequence_number"/>
+                        <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onDataRange rdf:resource="&xsd;integer"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&bus-db;last_time_point"/>
+                        <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onDataRange rdf:resource="&xsd;integer"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&bus-db;next_time_point"/>
+                        <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onDataRange rdf:resource="&xsd;integer"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&bus-db;number_of_stops"/>
+                        <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onDataRange rdf:resource="&xsd;integer"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&bus-db;route_has_number"/>
+                        <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onDataRange rdf:resource="&xsd;string"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/Fernando/ontologies/dstc/bus-db#Street"/>
+        <rdfs:comment>Similar to &quot;route&quot; table from &quot;letsgo&quot; database.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/bus-db#Street -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Fernando/ontologies/dstc/bus-db#Street">
+        <rdfs:comment>Individuals of this class have been modified from there original database form, &quot;#&quot; symbol has been replaced for &quot;N&quot;</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/bus-db#Times -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Fernando/ontologies/dstc/bus-db#Times">
+        <rdfs:comment>Similar to &quot;times&quot; table from &quot;letsgo&quot; database.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#Days -->
+
+    <owl:Class rdf:about="&bus-db;Days"/>
+    
+
+
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#Neighborhood -->
+
+    <owl:Class rdf:about="&bus-db;Neighborhood"/>
+    
+
+
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#Route_Code -->
+
+    <owl:Class rdf:about="&bus-db;Route_Code"/>
+    
+
+
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#Route_Name -->
+
+    <owl:Class rdf:about="&bus-db;Route_Name"/>
+    
+
+
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#Route_Patterns -->
+
+    <owl:Class rdf:about="&bus-db;Route_Patterns"/>
+    
+
+
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#Route_Sequence -->
+
+    <owl:Class rdf:about="&bus-db;Route_Sequence">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&bus-db;has_bus_stop"/>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/Fernando/ontologies/dstc/bus-db#Bus_Stop"/>
+                        <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&bus-db;has_route"/>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/Fernando/ontologies/dstc/bus-db#Route"/>
+                        <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&bus-db;last_time_point"/>
+                        <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onDataRange rdf:resource="&xsd;integer"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&bus-db;next_time_point"/>
+                        <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onDataRange rdf:resource="&xsd;integer"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&bus-db;sequence_number"/>
+                        <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onDataRange rdf:resource="&xsd;integer"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#Stop_at_Neighborhood -->
+
+    <owl:Class rdf:about="&bus-db;Stop_at_Neighborhood">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&bus-db;at_neighborhood"/>
+                <owl:someValuesFrom rdf:resource="&bus-db;Neighborhood"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&bus-db;has_bus_stop"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/Fernando/ontologies/dstc/bus-db#Bus_Stop"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#AT -->
+
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#AT">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Fernando/ontologies/dstc/bus-db#Intersection_Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#OPP -->
+
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#OPP">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Fernando/ontologies/dstc/bus-db#Intersection_Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#Bus_N_1 -->
+
+    <owl:NamedIndividual rdf:about="&bus-db;Bus_N_1">
+        <rdf:type rdf:resource="&bus-db;Stop_at_Neighborhood"/>
+        <bus-db:has_bus_stop rdf:resource="&bus-db;Bus_Stop_1"/>
+        <bus-db:has_bus_stop rdf:resource="&bus-db;Bus_Stop_2"/>
+        <bus-db:at_neighborhood rdf:resource="&bus-db;Neighborhood_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#Bus_N_2 -->
+
+    <owl:NamedIndividual rdf:about="&bus-db;Bus_N_2">
+        <rdf:type rdf:resource="&bus-db;Stop_at_Neighborhood"/>
+        <bus-db:has_bus_stop rdf:resource="&bus-db;Bus_Stop_3"/>
+        <bus-db:has_bus_stop rdf:resource="&bus-db;Bus_Stop_4"/>
+        <bus-db:at_neighborhood rdf:resource="&bus-db;Neighborhood_2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#Bus_N_3 -->
+
+    <owl:NamedIndividual rdf:about="&bus-db;Bus_N_3">
+        <rdf:type rdf:resource="&bus-db;Stop_at_Neighborhood"/>
+        <bus-db:has_bus_stop rdf:resource="&bus-db;Bus_Stop_5"/>
+        <bus-db:at_neighborhood rdf:resource="&bus-db;Neighborhood_3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#Bus_Stop_1 -->
+
+    <owl:NamedIndividual rdf:about="&bus-db;Bus_Stop_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Fernando/ontologies/dstc/bus-db#Bus_Stop"/>
+        <stop_first rdf:resource="&bus-db;Street_AA"/>
+        <stop_second rdf:resource="&bus-db;Street_BB"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#Bus_Stop_2 -->
+
+    <owl:NamedIndividual rdf:about="&bus-db;Bus_Stop_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Fernando/ontologies/dstc/bus-db#Bus_Stop"/>
+        <stop_second rdf:resource="&bus-db;Street_BB"/>
+        <stop_second rdf:resource="&bus-db;Street_CC"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#Bus_Stop_3 -->
+
+    <owl:NamedIndividual rdf:about="&bus-db;Bus_Stop_3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Fernando/ontologies/dstc/bus-db#Bus_Stop"/>
+        <stop_first rdf:resource="&bus-db;Street_DD"/>
+        <stop_second rdf:resource="&bus-db;Street_EE"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#Bus_Stop_4 -->
+
+    <owl:NamedIndividual rdf:about="&bus-db;Bus_Stop_4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Fernando/ontologies/dstc/bus-db#Bus_Stop"/>
+        <stop_second rdf:resource="&bus-db;Street_FF"/>
+        <stop_first rdf:resource="&bus-db;Street_GG"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#Bus_Stop_5 -->
+
+    <owl:NamedIndividual rdf:about="&bus-db;Bus_Stop_5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Fernando/ontologies/dstc/bus-db#Bus_Stop"/>
+        <stop_first rdf:resource="&bus-db;Street_HH"/>
+        <stop_second rdf:resource="&bus-db;Street_II"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#I -->
+
+    <owl:NamedIndividual rdf:about="&bus-db;I">
+        <rdf:type rdf:resource="&bus-db;Route_Patterns"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#IC -->
+
+    <owl:NamedIndividual rdf:about="&bus-db;IC">
+        <rdf:type rdf:resource="&bus-db;Route_Patterns"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#Neighborhood_1 -->
+
+    <owl:NamedIndividual rdf:about="&bus-db;Neighborhood_1">
+        <rdf:type rdf:resource="&bus-db;Neighborhood"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#Neighborhood_2 -->
+
+    <owl:NamedIndividual rdf:about="&bus-db;Neighborhood_2">
+        <rdf:type rdf:resource="&bus-db;Neighborhood"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#Neighborhood_3 -->
+
+    <owl:NamedIndividual rdf:about="&bus-db;Neighborhood_3">
+        <rdf:type rdf:resource="&bus-db;Neighborhood"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#Route_0A -->
+
+    <owl:NamedIndividual rdf:about="&bus-db;Route_0A">
+        <rdf:type rdf:resource="&bus-db;Route_Code"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#Route_0B -->
+
+    <owl:NamedIndividual rdf:about="&bus-db;Route_0B">
+        <rdf:type rdf:resource="&bus-db;Route_Code"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#Route_1 -->
+
+    <owl:NamedIndividual rdf:about="&bus-db;Route_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Fernando/ontologies/dstc/bus-db#Route"/>
+        <bus-db:has_code rdf:resource="&bus-db;Route_0A"/>
+        <bus-db:has_name rdf:resource="&bus-db;Route_A"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#Route_2 -->
+
+    <owl:NamedIndividual rdf:about="&bus-db;Route_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Fernando/ontologies/dstc/bus-db#Route"/>
+        <bus-db:has_code rdf:resource="&bus-db;Route_0B"/>
+        <bus-db:has_name rdf:resource="&bus-db;Route_B"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#Route_A -->
+
+    <owl:NamedIndividual rdf:about="&bus-db;Route_A">
+        <rdf:type rdf:resource="&bus-db;Route_Name"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#Route_B -->
+
+    <owl:NamedIndividual rdf:about="&bus-db;Route_B">
+        <rdf:type rdf:resource="&bus-db;Route_Name"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#SATU -->
+
+    <owl:NamedIndividual rdf:about="&bus-db;SATU">
+        <rdf:type rdf:resource="&bus-db;Days"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#Sequence_1 -->
+
+    <owl:NamedIndividual rdf:about="&bus-db;Sequence_1">
+        <rdf:type rdf:resource="&bus-db;Route_Sequence"/>
+        <bus-db:has_bus_stop rdf:resource="&bus-db;Bus_Stop_1"/>
+        <bus-db:has_route rdf:resource="&bus-db;Route_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#Sequence_2 -->
+
+    <owl:NamedIndividual rdf:about="&bus-db;Sequence_2">
+        <rdf:type rdf:resource="&bus-db;Route_Sequence"/>
+        <bus-db:has_bus_stop rdf:resource="&bus-db;Bus_Stop_4"/>
+        <bus-db:has_route rdf:resource="&bus-db;Route_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#Sequence_3 -->
+
+    <owl:NamedIndividual rdf:about="&bus-db;Sequence_3">
+        <rdf:type rdf:resource="&bus-db;Route_Sequence"/>
+        <bus-db:has_bus_stop rdf:resource="&bus-db;Bus_Stop_2"/>
+        <bus-db:has_bus_stop rdf:resource="&bus-db;Route_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#Sequence_4 -->
+
+    <owl:NamedIndividual rdf:about="&bus-db;Sequence_4">
+        <rdf:type rdf:resource="&bus-db;Route_Sequence"/>
+        <bus-db:has_bus_stop rdf:resource="&bus-db;Bus_Stop_3"/>
+        <bus-db:has_route rdf:resource="&bus-db;Route_2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#Sequence_5 -->
+
+    <owl:NamedIndividual rdf:about="&bus-db;Sequence_5">
+        <rdf:type rdf:resource="&bus-db;Route_Sequence"/>
+        <bus-db:has_bus_stop rdf:resource="&bus-db;Bus_Stop_5"/>
+        <bus-db:has_route rdf:resource="&bus-db;Route_2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#Street_AA -->
+
+    <owl:NamedIndividual rdf:about="&bus-db;Street_AA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Fernando/ontologies/dstc/bus-db#Street"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#Street_BB -->
+
+    <owl:NamedIndividual rdf:about="&bus-db;Street_BB">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Fernando/ontologies/dstc/bus-db#Street"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#Street_CC -->
+
+    <owl:NamedIndividual rdf:about="&bus-db;Street_CC">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Fernando/ontologies/dstc/bus-db#Street"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#Street_DD -->
+
+    <owl:NamedIndividual rdf:about="&bus-db;Street_DD">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Fernando/ontologies/dstc/bus-db#Street"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#Street_EE -->
+
+    <owl:NamedIndividual rdf:about="&bus-db;Street_EE">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Fernando/ontologies/dstc/bus-db#Street"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#Street_FF -->
+
+    <owl:NamedIndividual rdf:about="&bus-db;Street_FF">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Fernando/ontologies/dstc/bus-db#Street"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#Street_GG -->
+
+    <owl:NamedIndividual rdf:about="&bus-db;Street_GG">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Fernando/ontologies/dstc/bus-db#Street"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#Street_HH -->
+
+    <owl:NamedIndividual rdf:about="&bus-db;Street_HH">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Fernando/ontologies/dstc/bus-db#Street"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#Street_II -->
+
+    <owl:NamedIndividual rdf:about="&bus-db;Street_II">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Fernando/ontologies/dstc/bus-db#Street"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#WEEK -->
+
+    <owl:NamedIndividual rdf:about="&bus-db;WEEK">
+        <rdf:type rdf:resource="&bus-db;Days"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.0) http://owlapi.sourceforge.net -->
+

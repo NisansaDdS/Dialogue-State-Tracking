@@ -130,12 +130,52 @@ public class BTC_simple {
                             */
                             // test JointHypos
                             for ( BeliefStruct.JointHypo jh : bm.getJointHypo() ){
-                            	BeliefStruct.JointHypo jh1 = jh.createDummyJointHypo("to_place", "from_place", "61d");
-                                BeliefStruct.JointHypo jh2 = jh.createDummyJointHypo("", "from_place", "61d");
-                                BeliefStruct.JointHypo jh3 = jh.createDummyJointHypo("", "", "61d");
-                                boolean ou=ontoQ.checkJointHypo(jh1);
+                                boolean ou;
+
+                                //To, from and route -> True Positive
+                                BeliefStruct.JointHypo jh1 = jh.createDummyJointHypo("Neighborhood_2", "Neighborhood_1", "Route_1");
+                                ou=ontoQ.checkJointHypo(jh1);
+                                System.out.println(ou);
+
+                                //To only -> True Positive
+                                BeliefStruct.JointHypo jh2 = jh.createDummyJointHypo("Neighborhood_2", "", "");
                                 ou=ontoQ.checkJointHypo(jh2);
+                                System.out.println(ou);
+
+                                //From only -> True Positive
+                                BeliefStruct.JointHypo jh3 = jh.createDummyJointHypo("", "Neighborhood_1", "");
                                 ou=ontoQ.checkJointHypo(jh3);
+                                System.out.println(ou);
+
+                                //To and From only -> True Positive
+                                BeliefStruct.JointHypo jh4 = jh.createDummyJointHypo("Neighborhood_2", "Neighborhood_1", "");
+                                ou=ontoQ.checkJointHypo(jh4);
+                                System.out.println(ou);
+
+                                //To, from and route -> True Negative
+                                BeliefStruct.JointHypo jh5 = jh.createDummyJointHypo("Neighborhood_2", "Neighborhood_1", "Route_2");
+                                ou=ontoQ.checkJointHypo(jh5);
+                                System.out.println(ou);
+
+                                //To only -> True Negative
+                                BeliefStruct.JointHypo jh6 = jh.createDummyJointHypo("Neighborhood_3", "", "");
+                                ou=ontoQ.checkJointHypo(jh6);
+                                System.out.println(ou);
+
+                                //From only -> True Negative
+                                BeliefStruct.JointHypo jh7 = jh.createDummyJointHypo("", "Neighborhood_4", "");
+                                ou=ontoQ.checkJointHypo(jh7);
+                                System.out.println(ou);
+
+                                //To and From only -> True Negative (Case 1)
+                                BeliefStruct.JointHypo jh8 = jh.createDummyJointHypo("Neighborhood_3", "Neighborhood_1", "");
+                                ou=ontoQ.checkJointHypo(jh8);
+                                System.out.println(ou);
+
+                                //To and From only -> True Negative (Case 2)
+                                BeliefStruct.JointHypo jh9 = jh.createDummyJointHypo("Neighborhood_2", "Neighborhood_4", "");
+                                ou=ontoQ.checkJointHypo(jh9);
+                                System.out.println(ou);
                             }
                             
                             // Add by Miao end.

@@ -89,7 +89,7 @@ public class ontoQuery {
             System.out.print(sv.getKey() + ": " + sv.getValue()+"\n");
         }*/
 
-        String neighborhoodLeading="inverse neighborhood_has_bus_stops value ";
+        String neighborhoodLeading="inverse has_bus_stop some (at_neighborhood value ";
 
         String toDesStr=jh.content.get("to.desc");
        // toDesStr="squirrel hill";
@@ -102,12 +102,12 @@ public class ontoQuery {
 
 
             if(toDesStr!=null) {
-                toDesStr = toDesStr.toUpperCase();
+               // toDesStr = toDesStr.toUpperCase();
                 toDesStr = toDesStr.replace(' ', '_');
 
 
                 try {
-                    Set<String> s = queryIndividuals(neighborhoodLeading + toDesStr);
+                    Set<String> s = queryIndividuals(neighborhoodLeading + toDesStr+")");
                     if (!s.isEmpty()) {
                         retVal = true;
                     }
@@ -121,11 +121,11 @@ public class ontoQuery {
 
 
             if(fromDesStr!=null) {
-                fromDesStr = fromDesStr.toUpperCase();
+               // fromDesStr = fromDesStr.toUpperCase();
                 fromDesStr = fromDesStr.replace(' ', '_');
 
                 try {
-                    Set<String> s = queryIndividuals(neighborhoodLeading + fromDesStr);
+                    Set<String> s = queryIndividuals(neighborhoodLeading + fromDesStr+")");
                     if (!s.isEmpty()) {
                         retVal = true;
                     }
@@ -139,22 +139,23 @@ public class ontoQuery {
 
         }
         else{ //Route has been set!
-            String routeQuery="inverse has_bus_stop some (route_has_number value \""+routeS+"\")";
+            String routeQuery="inverse has_bus_stop some (has_route value "+routeS+")";
             String toHalf=null;
             String fromHalf=null;
 
             if(toDesStr!=null) {
-                toHalf="("+routeQuery+") and ("+neighborhoodLeading + toDesStr+")";
+                toHalf="("+routeQuery+") and ("+neighborhoodLeading + toDesStr+"))";
             }
             if(fromDesStr!=null) {
-                fromHalf = "(" + routeQuery + ") and (" + neighborhoodLeading + fromDesStr + ")";
+                fromHalf = "(" + routeQuery + ") and (" + neighborhoodLeading + fromDesStr + "))";
             }
 
 
             if(toHalf!=null && fromHalf!=null) {
                 try {
-                    Set<String> s = queryIndividuals("( " + toHalf + ") and (" + fromHalf + " )");
-                    if (!s.isEmpty()) {
+                    Set<String> sTo = queryIndividuals(toHalf);
+                    Set<String> sFrom = queryIndividuals(fromHalf);
+                    if (!sTo.isEmpty() && !sFrom.isEmpty()) {
                         return true;
                     }
                 } catch (Exception e) {
