@@ -182,8 +182,15 @@ public class ontoQuery {
                     return false; //From is set to invalid val.
                 }
             }
-            else{
-                return false;
+            else{  //Only route has been set
+                try {
+                    Set<String> s = queryIndividuals("( " + routeQuery + ")");
+                    if (!s.isEmpty()) {
+                        return true;
+                    }
+                } catch (Exception e) {
+                    return false; //Route is set to invalid val.
+                }
             }
 
         }

@@ -176,6 +176,16 @@ public class BTC_simple {
                                 BeliefStruct.JointHypo jh9 = jh.createDummyJointHypo("Neighborhood_2", "Neighborhood_4", "");
                                 ou=ontoQ.checkJointHypo(jh9);
                                 System.out.println(ou);
+
+                                //Route only -> True Positive
+                                BeliefStruct.JointHypo jh10 = jh.createDummyJointHypo("", "", "Route_1");
+                                ou=ontoQ.checkJointHypo(jh10);
+                                System.out.println(ou);
+
+                                //Route only -> True Negative
+                                BeliefStruct.JointHypo jh11 = jh.createDummyJointHypo("", "", "Route_3");
+                                ou=ontoQ.checkJointHypo(jh11);
+                                System.out.println(ou);
                             }
                             
                             // Add by Miao end.
