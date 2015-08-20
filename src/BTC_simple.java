@@ -186,6 +186,14 @@ public class BTC_simple {
                                 BeliefStruct.JointHypo jh11 = jh.createDummyJointHypo("", "", "Route_3");
                                 ou=ontoQ.checkJointHypo(jh11);
                                 System.out.println(ou);
+                                
+                                //No Route, To or From, I think it should return a true value, 
+                                //because in the function "checkJointHypo", you will not query the ontology for this JointHypo
+                                //I think if you query the ontology, I believe what ontology say,
+                                //if you didn't query the ontology, I¡¡prefer to think it is a true one.
+                                BeliefStruct.JointHypo jh12 = jh.createDummyJointHypo("", "", "");
+                                ou=ontoQ.checkJointHypo(jh12);
+                                System.out.println(ou);
                             }
                             
                             // Add by Miao end.
