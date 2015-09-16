@@ -86,6 +86,12 @@ Properties for concept Route redefined.</rdfs:comment>
     
 
 
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#at_neighborhood -->
+
+    <owl:ObjectProperty rdf:about="&bus-db;at_neighborhood"/>
+    
+
+
     <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#has_bus_stop -->
 
     <owl:ObjectProperty rdf:about="&bus-db;has_bus_stop"/>
@@ -125,12 +131,6 @@ Properties for concept Route redefined.</rdfs:comment>
     <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#has_route -->
 
     <owl:ObjectProperty rdf:about="&bus-db;has_route"/>
-    
-
-
-    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#neighborhood_has_bus_stops -->
-
-    <owl:ObjectProperty rdf:about="&bus-db;neighborhood_has_bus_stops"/>
     
 
 
@@ -353,14 +353,7 @@ Properties for concept Route redefined.</rdfs:comment>
 
     <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#Neighborhood -->
 
-    <owl:Class rdf:about="&bus-db;Neighborhood">
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&bus-db;neighborhood_has_bus_stops"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/Fernando/ontologies/dstc/bus-db#Bus_Stop"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-    </owl:Class>
+    <owl:Class rdf:about="&bus-db;Neighborhood"/>
     
 
 
@@ -420,6 +413,25 @@ Properties for concept Route redefined.</rdfs:comment>
     
 
 
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#Stop_at_Neighborhood -->
+
+    <owl:Class rdf:about="&bus-db;Stop_at_Neighborhood">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&bus-db;at_neighborhood"/>
+                <owl:someValuesFrom rdf:resource="&bus-db;Neighborhood"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&bus-db;has_bus_stop"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/Fernando/ontologies/dstc/bus-db#Bus_Stop"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -447,18 +459,18 @@ Properties for concept Route redefined.</rdfs:comment>
     
 
 
-    <!-- http://www.co-ode.org/ontologies/ont.owl#PENN -->
+    <!-- http://www.co-ode.org/ontologies/ont.owl#street_PENN -->
 
-    <owl:NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#PENN">
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#street_PENN">
         <rdf:type rdf:resource="http://www.semanticweb.org/Fernando/ontologies/dstc/bus-db#Street"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#BRADDOCK -->
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#Avalon-Shadeland_Avenue_Express -->
 
-    <owl:NamedIndividual rdf:about="&bus-db;BRADDOCK">
-        <rdf:type rdf:resource="&bus-db;Neighborhood"/>
+    <owl:NamedIndividual rdf:about="&bus-db;Avalon-Shadeland_Avenue_Express">
+        <rdf:type rdf:resource="&bus-db;Route_Name"/>
     </owl:NamedIndividual>
     
 
@@ -467,24 +479,6 @@ Properties for concept Route redefined.</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="&bus-db;Braddock-Swissvale">
         <rdf:type rdf:resource="&bus-db;Route_Name"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#DOWNTOWN -->
-
-    <owl:NamedIndividual rdf:about="&bus-db;DOWNTOWN">
-        <rdf:type rdf:resource="&bus-db;Neighborhood"/>
-        <bus-db:neighborhood_has_bus_stops rdf:resource="&bus-db;bus_stop_330"/>
-        <bus-db:neighborhood_has_bus_stops rdf:resource="&bus-db;bus_stop_336"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#FIFTH -->
-
-    <owl:NamedIndividual rdf:about="&bus-db;FIFTH">
-        <rdf:type rdf:resource="http://www.semanticweb.org/Fernando/ontologies/dstc/bus-db#Street"/>
     </owl:NamedIndividual>
     
 
@@ -529,31 +523,48 @@ Properties for concept Route redefined.</rdfs:comment>
     
 
 
-    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#SIXTH_AVENUE -->
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#WEEK -->
 
-    <owl:NamedIndividual rdf:about="&bus-db;SIXTH_AVENUE">
-        <rdf:type rdf:resource="http://www.semanticweb.org/Fernando/ontologies/dstc/bus-db#Street"/>
+    <owl:NamedIndividual rdf:about="&bus-db;WEEK">
+        <rdf:type rdf:resource="&bus-db;Days"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#SMITHFIELD -->
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#bus_stop_10759 -->
 
-    <owl:NamedIndividual rdf:about="&bus-db;SMITHFIELD">
-        <rdf:type rdf:resource="http://www.semanticweb.org/Fernando/ontologies/dstc/bus-db#Street"/>
+    <owl:NamedIndividual rdf:about="&bus-db;bus_stop_10759">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Fernando/ontologies/dstc/bus-db#Bus_Stop"/>
+        <far_side rdf:datatype="&xsd;boolean">false</far_side>
+        <no_stop rdf:datatype="&xsd;boolean">false</no_stop>
+        <stop_first rdf:resource="&bus-db;street_TARENTUM-PARK-N-RIDE"/>
+        <stop_second rdf:resource="&bus-db;street_(TERMINUS)"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#bus_stop_330 -->
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#bus_stop_139 -->
 
-    <owl:NamedIndividual rdf:about="&bus-db;bus_stop_330">
+    <owl:NamedIndividual rdf:about="&bus-db;bus_stop_139">
         <rdf:type rdf:resource="http://www.semanticweb.org/Fernando/ontologies/dstc/bus-db#Bus_Stop"/>
         <no_stop rdf:datatype="&xsd;boolean">false</no_stop>
-        <far_side rdf:datatype="&xsd;boolean">true</far_side>
+        <far_side rdf:datatype="&xsd;boolean">false</far_side>
         <type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#AT"/>
-        <stop_second rdf:resource="&bus-db;FIFTH"/>
-        <stop_first rdf:resource="&bus-db;SIXTH_AVENUE"/>
+        <stop_second rdf:resource="&bus-db;street_CORBET"/>
+        <stop_first rdf:resource="&bus-db;street_FOURTH_AVENUE"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#bus_stop_285 -->
+
+    <owl:NamedIndividual rdf:about="&bus-db;bus_stop_285">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Fernando/ontologies/dstc/bus-db#Bus_Stop"/>
+        <no_stop rdf:datatype="&xsd;boolean">false</no_stop>
+        <far_side rdf:datatype="&xsd;boolean">false</far_side>
+        <type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#OPP"/>
+        <stop_second rdf:resource="&bus-db;street_ATWOOD"/>
+        <stop_first rdf:resource="&bus-db;street_FIFTH_AVENUE"/>
     </owl:NamedIndividual>
     
 
@@ -565,8 +576,80 @@ Properties for concept Route redefined.</rdfs:comment>
         <no_stop rdf:datatype="&xsd;boolean">false</no_stop>
         <far_side rdf:datatype="&xsd;boolean">false</far_side>
         <type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#AT"/>
-        <stop_first rdf:resource="&bus-db;SIXTH_AVENUE"/>
-        <stop_second rdf:resource="&bus-db;SMITHFIELD"/>
+        <stop_first rdf:resource="&bus-db;street_SIXTH_AVENUE"/>
+        <stop_second rdf:resource="&bus-db;street_SMITHFIELD"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#bus_stop_337 -->
+
+    <owl:NamedIndividual rdf:about="&bus-db;bus_stop_337">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Fernando/ontologies/dstc/bus-db#Bus_Stop"/>
+        <no_stop rdf:datatype="&xsd;boolean">false</no_stop>
+        <far_side rdf:datatype="&xsd;boolean">false</far_side>
+        <type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#AT"/>
+        <stop_first rdf:resource="&bus-db;street_SIXTH_AVENUE"/>
+        <stop_second rdf:resource="&bus-db;street_SMITHFIELD"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#bus_stop_374 -->
+
+    <owl:NamedIndividual rdf:about="&bus-db;bus_stop_374">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Fernando/ontologies/dstc/bus-db#Bus_Stop"/>
+        <no_stop rdf:datatype="&xsd;boolean">false</no_stop>
+        <far_side rdf:datatype="&xsd;boolean">false</far_side>
+        <type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#AT"/>
+        <stop_second rdf:resource="http://www.co-ode.org/ontologies/ont.owl#street_PENN"/>
+        <stop_first rdf:resource="&bus-db;street_SEVENTH_STREET"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#bus_stop_5318 -->
+
+    <owl:NamedIndividual rdf:about="&bus-db;bus_stop_5318">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Fernando/ontologies/dstc/bus-db#Bus_Stop"/>
+        <far_side rdf:datatype="&xsd;boolean">false</far_side>
+        <no_stop rdf:datatype="&xsd;boolean">false</no_stop>
+        <type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#AT"/>
+        <stop_second rdf:resource="&bus-db;street_CENTRE"/>
+        <stop_first rdf:resource="&bus-db;street_HIGHLAND_AVENUE"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#neighborhood_DOWNTOWN -->
+
+    <owl:NamedIndividual rdf:about="&bus-db;neighborhood_DOWNTOWN">
+        <rdf:type rdf:resource="&bus-db;Neighborhood"/>
+        <bus-db:at_neighborhood rdf:resource="&bus-db;bus_stop_336"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#neighborhood_EAST_LIBRARY -->
+
+    <owl:NamedIndividual rdf:about="&bus-db;neighborhood_EAST_LIBRARY">
+        <rdf:type rdf:resource="&bus-db;Neighborhood"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#neighborhood_OAKLAND -->
+
+    <owl:NamedIndividual rdf:about="&bus-db;neighborhood_OAKLAND">
+        <rdf:type rdf:resource="&bus-db;Neighborhood"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#neighborhood_TARENTUM -->
+
+    <owl:NamedIndividual rdf:about="&bus-db;neighborhood_TARENTUM">
+        <rdf:type rdf:resource="&bus-db;Neighborhood"/>
     </owl:NamedIndividual>
     
 
@@ -595,7 +678,6 @@ Properties for concept Route redefined.</rdfs:comment>
         <bus-db:has_pattern rdf:resource="&bus-db;IC"/>
         <bus-db:has_days rdf:resource="&bus-db;SATU"/>
         <bus-db:has_bus_stop rdf:resource="&bus-db;bus_stop_336"/>
-        <bus-db:has_code rdf:resource="&bus-db;061B"/>
     </owl:NamedIndividual>
     
 
@@ -634,11 +716,37 @@ Properties for concept Route redefined.</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="&bus-db;route_sequence_1">
         <rdf:type rdf:resource="&bus-db;Route_Sequence"/>
-        <bus-db:last_time_point rdf:datatype="&xsd;integer">330</bus-db:last_time_point>
-        <bus-db:next_time_point rdf:datatype="&xsd;integer">330</bus-db:next_time_point>
-        <bus-db:has_sequence_number rdf:datatype="&xsd;integer">5300</bus-db:has_sequence_number>
-        <bus-stop rdf:resource="&bus-db;bus_stop_330"/>
-        <bus-db:has_route rdf:resource="&bus-db;route_1164"/>
+        <bus-db:last_time_point rdf:datatype="&xsd;integer">139</bus-db:last_time_point>
+        <bus-db:next_time_point rdf:datatype="&xsd;integer">139</bus-db:next_time_point>
+        <bus-db:has_sequence_number rdf:datatype="&xsd;integer">700</bus-db:has_sequence_number>
+        <bus-db:has_bus_stop rdf:resource="&bus-db;bus_stop_139"/>
+        <bus-db:has_route rdf:resource="&bus-db;route_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#route_sequence_10 -->
+
+    <owl:NamedIndividual rdf:about="&bus-db;route_sequence_10">
+        <rdf:type rdf:resource="&bus-db;Route_Sequence"/>
+        <bus-db:next_time_point rdf:datatype="&xsd;integer">285</bus-db:next_time_point>
+        <bus-db:last_time_point rdf:datatype="&xsd;integer">285</bus-db:last_time_point>
+        <bus-db:has_sequence_number rdf:datatype="&xsd;integer">3700</bus-db:has_sequence_number>
+        <bus-db:has_bus_stop rdf:resource="&bus-db;bus_stop_285"/>
+        <bus-db:has_route rdf:resource="&bus-db;route_756"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#route_sequence_11 -->
+
+    <owl:NamedIndividual rdf:about="&bus-db;route_sequence_11">
+        <rdf:type rdf:resource="&bus-db;Route_Sequence"/>
+        <bus-db:has_sequence_number rdf:datatype="&xsd;integer">1600</bus-db:has_sequence_number>
+        <bus-db:last_time_point rdf:datatype="&xsd;integer">5318</bus-db:last_time_point>
+        <bus-db:next_time_point rdf:datatype="&xsd;integer">5318</bus-db:next_time_point>
+        <bus-db:has_bus_stop rdf:resource="&bus-db;bus_stop_5318"/>
+        <bus-db:has_route rdf:resource="&bus-db;route_756"/>
     </owl:NamedIndividual>
     
 
@@ -647,11 +755,252 @@ Properties for concept Route redefined.</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="&bus-db;route_sequence_2">
         <rdf:type rdf:resource="&bus-db;Route_Sequence"/>
+        <bus-db:has_sequence_number rdf:datatype="&xsd;integer">14500</bus-db:has_sequence_number>
+        <bus-db:last_time_point rdf:datatype="&xsd;integer">374</bus-db:last_time_point>
+        <bus-db:next_time_point rdf:datatype="&xsd;integer">374</bus-db:next_time_point>
+        <bus-db:has_bus_stop rdf:resource="&bus-db;bus_stop_374"/>
+        <bus-db:has_route rdf:resource="&bus-db;route_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#route_sequence_3 -->
+
+    <owl:NamedIndividual rdf:about="&bus-db;route_sequence_3">
+        <rdf:type rdf:resource="&bus-db;Route_Sequence"/>
+        <bus-db:has_sequence_number rdf:datatype="&xsd;integer">100</bus-db:has_sequence_number>
+        <bus-db:next_time_point rdf:datatype="&xsd;integer">10759</bus-db:next_time_point>
+        <bus-db:last_time_point rdf:datatype="&xsd;integer">10759</bus-db:last_time_point>
+        <bus-db:has_bus_stop rdf:resource="&bus-db;bus_stop_10759"/>
+        <bus-db:has_route rdf:resource="&bus-db;route_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#route_sequence_4 -->
+
+    <owl:NamedIndividual rdf:about="&bus-db;route_sequence_4">
+        <rdf:type rdf:resource="&bus-db;Route_Sequence"/>
+        <bus-db:next_time_point rdf:datatype="&xsd;integer">236</bus-db:next_time_point>
         <bus-db:last_time_point rdf:datatype="&xsd;integer">330</bus-db:last_time_point>
-        <bus-db:next_time_point rdf:datatype="&xsd;integer">330</bus-db:next_time_point>
+        <bus-db:has_sequence_number rdf:datatype="&xsd;integer">9700</bus-db:has_sequence_number>
+        <bus-db:has_bus_stop rdf:resource="&bus-db;bus_stop_336"/>
+        <bus-db:has_route rdf:resource="&bus-db;route_1052"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#route_sequence_5 -->
+
+    <owl:NamedIndividual rdf:about="&bus-db;route_sequence_5">
+        <rdf:type rdf:resource="&bus-db;Route_Sequence"/>
+        <bus-db:next_time_point rdf:datatype="&xsd;integer">236</bus-db:next_time_point>
+        <bus-db:last_time_point rdf:datatype="&xsd;integer">330</bus-db:last_time_point>
+        <bus-db:has_sequence_number rdf:datatype="&xsd;integer">9700</bus-db:has_sequence_number>
+        <bus-db:has_bus_stop rdf:resource="&bus-db;bus_stop_337"/>
+        <bus-db:has_route rdf:resource="&bus-db;route_1052"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#route_sequence_6 -->
+
+    <owl:NamedIndividual rdf:about="&bus-db;route_sequence_6">
+        <rdf:type rdf:resource="&bus-db;Route_Sequence"/>
+        <bus-db:next_time_point rdf:datatype="&xsd;integer">236</bus-db:next_time_point>
+        <bus-db:last_time_point rdf:datatype="&xsd;integer">330</bus-db:last_time_point>
+        <bus-db:has_sequence_number rdf:datatype="&xsd;integer">6400</bus-db:has_sequence_number>
+        <bus-db:has_bus_stop rdf:resource="&bus-db;bus_stop_336"/>
+        <bus-db:has_route rdf:resource="&bus-db;route_1065"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#route_sequence_7 -->
+
+    <owl:NamedIndividual rdf:about="&bus-db;route_sequence_7">
+        <rdf:type rdf:resource="&bus-db;Route_Sequence"/>
+        <bus-db:next_time_point rdf:datatype="&xsd;integer">236</bus-db:next_time_point>
+        <bus-db:last_time_point rdf:datatype="&xsd;integer">330</bus-db:last_time_point>
+        <bus-db:has_sequence_number rdf:datatype="&xsd;integer">6400</bus-db:has_sequence_number>
+        <bus-db:has_bus_stop rdf:resource="&bus-db;bus_stop_337"/>
+        <bus-db:has_route rdf:resource="&bus-db;route_1065"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#route_sequence_8 -->
+
+    <owl:NamedIndividual rdf:about="&bus-db;route_sequence_8">
+        <rdf:type rdf:resource="&bus-db;Route_Sequence"/>
+        <bus-db:next_time_point rdf:datatype="&xsd;integer">285</bus-db:next_time_point>
+        <bus-db:last_time_point rdf:datatype="&xsd;integer">285</bus-db:last_time_point>
+        <bus-db:has_sequence_number rdf:datatype="&xsd;integer">3400</bus-db:has_sequence_number>
+        <bus-db:has_bus_stop rdf:resource="&bus-db;bus_stop_285"/>
+        <bus-db:has_route rdf:resource="&bus-db;route_1164"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#route_sequence_9 -->
+
+    <owl:NamedIndividual rdf:about="&bus-db;route_sequence_9">
+        <rdf:type rdf:resource="&bus-db;Route_Sequence"/>
+        <bus-db:next_time_point rdf:datatype="&xsd;integer">236</bus-db:next_time_point>
+        <bus-db:last_time_point rdf:datatype="&xsd;integer">330</bus-db:last_time_point>
         <bus-db:has_sequence_number rdf:datatype="&xsd;integer">5500</bus-db:has_sequence_number>
-        <bus-db:has_bus_stop rdf:resource="&bus-db;bus_stop_330"/>
-        <bus-db:has_route rdf:resource="&bus-db;route_756"/>
+        <bus-db:has_bus_stop rdf:resource="&bus-db;bus_stop_285"/>
+        <bus-db:has_route rdf:resource="&bus-db;route_1164"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#stop_at_neighborhood_1 -->
+
+    <owl:NamedIndividual rdf:about="&bus-db;stop_at_neighborhood_1">
+        <rdf:type rdf:resource="&bus-db;Stop_at_Neighborhood"/>
+        <bus-db:has_bus_stop rdf:resource="&bus-db;bus_stop_139"/>
+        <bus-db:at_neighborhood rdf:resource="&bus-db;neighborhood_TARENTUM"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#stop_at_neighborhood_2 -->
+
+    <owl:NamedIndividual rdf:about="&bus-db;stop_at_neighborhood_2">
+        <rdf:type rdf:resource="&bus-db;Stop_at_Neighborhood"/>
+        <bus-db:has_bus_stop rdf:resource="&bus-db;bus_stop_285"/>
+        <bus-db:at_neighborhood rdf:resource="&bus-db;neighborhood_OAKLAND"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#stop_at_neighborhood_3 -->
+
+    <owl:NamedIndividual rdf:about="&bus-db;stop_at_neighborhood_3">
+        <rdf:type rdf:resource="&bus-db;Stop_at_Neighborhood"/>
+        <bus-db:has_bus_stop rdf:resource="&bus-db;bus_stop_336"/>
+        <bus-db:at_neighborhood rdf:resource="&bus-db;neighborhood_DOWNTOWN"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#stop_at_neighborhood_4 -->
+
+    <owl:NamedIndividual rdf:about="&bus-db;stop_at_neighborhood_4">
+        <rdf:type rdf:resource="&bus-db;Stop_at_Neighborhood"/>
+        <bus-db:has_bus_stop rdf:resource="&bus-db;bus_stop_337"/>
+        <bus-db:at_neighborhood rdf:resource="&bus-db;neighborhood_DOWNTOWN"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#stop_at_neighborhood_5 -->
+
+    <owl:NamedIndividual rdf:about="&bus-db;stop_at_neighborhood_5">
+        <rdf:type rdf:resource="&bus-db;Stop_at_Neighborhood"/>
+        <bus-db:has_bus_stop rdf:resource="&bus-db;bus_stop_374"/>
+        <bus-db:at_neighborhood rdf:resource="&bus-db;neighborhood_DOWNTOWN"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#stop_at_neighborhood_6 -->
+
+    <owl:NamedIndividual rdf:about="&bus-db;stop_at_neighborhood_6">
+        <rdf:type rdf:resource="&bus-db;Stop_at_Neighborhood"/>
+        <bus-db:at_neighborhood rdf:resource="&bus-db;bus_stop_5318"/>
+        <bus-db:at_neighborhood rdf:resource="&bus-db;neighborhood_EAST_LIBRARY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#stop_at_neighborhood_7 -->
+
+    <owl:NamedIndividual rdf:about="&bus-db;stop_at_neighborhood_7">
+        <rdf:type rdf:resource="&bus-db;Stop_at_Neighborhood"/>
+        <bus-db:has_bus_stop rdf:resource="&bus-db;bus_stop_10759"/>
+        <bus-db:at_neighborhood rdf:resource="&bus-db;neighborhood_TARENTUM"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#street_ATWOOD -->
+
+    <owl:NamedIndividual rdf:about="&bus-db;street_ATWOOD">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Fernando/ontologies/dstc/bus-db#Street"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#street_CENTRE -->
+
+    <owl:NamedIndividual rdf:about="&bus-db;street_CENTRE">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Fernando/ontologies/dstc/bus-db#Street"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#street_CORBET -->
+
+    <owl:NamedIndividual rdf:about="&bus-db;street_CORBET">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Fernando/ontologies/dstc/bus-db#Street"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#street_FIFTH_AVENUE -->
+
+    <owl:NamedIndividual rdf:about="&bus-db;street_FIFTH_AVENUE">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Fernando/ontologies/dstc/bus-db#Street"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#street_FOURTH_AVENUE -->
+
+    <owl:NamedIndividual rdf:about="&bus-db;street_FOURTH_AVENUE">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Fernando/ontologies/dstc/bus-db#Street"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#street_HIGHLAND_AVENUE -->
+
+    <owl:NamedIndividual rdf:about="&bus-db;street_HIGHLAND_AVENUE">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Fernando/ontologies/dstc/bus-db#Street"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#street_SEVENTH_STREET -->
+
+    <owl:NamedIndividual rdf:about="&bus-db;street_SEVENTH_STREET">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Fernando/ontologies/dstc/bus-db#Street"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#street_SIXTH_AVENUE -->
+
+    <owl:NamedIndividual rdf:about="&bus-db;street_SIXTH_AVENUE">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Fernando/ontologies/dstc/bus-db#Street"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#street_SMITHFIELD -->
+
+    <owl:NamedIndividual rdf:about="&bus-db;street_SMITHFIELD">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Fernando/ontologies/dstc/bus-db#Street"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#street_TARENTUM-PARK-N-RIDE -->
+
+    <owl:NamedIndividual rdf:about="&bus-db;street_TARENTUM-PARK-N-RIDE">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Fernando/ontologies/dstc/bus-db#Street"/>
     </owl:NamedIndividual>
     
 
@@ -659,6 +1008,14 @@ Properties for concept Route redefined.</rdfs:comment>
     <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#0001 -->
 
     <owl:NamedIndividual rdf:about="&bus-db;0001">
+        <rdf:type rdf:resource="&bus-db;Route_Code"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#018B -->
+
+    <owl:NamedIndividual rdf:about="&bus-db;018B">
         <rdf:type rdf:resource="&bus-db;Route_Code"/>
     </owl:NamedIndividual>
     
@@ -676,6 +1033,14 @@ Properties for concept Route redefined.</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="&bus-db;061D">
         <rdf:type rdf:resource="&bus-db;Route_Code"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Fernando/ontologies/dstc/ww.semanticweb.org/Fernando/ontologies/dstc/bus-db#street_(TERMINUS) -->
+
+    <owl:NamedIndividual rdf:about="&bus-db;street_(TERMINUS)">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Fernando/ontologies/dstc/bus-db#Street"/>
     </owl:NamedIndividual>
 </rdf:RDF>
 
