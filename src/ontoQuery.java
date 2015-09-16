@@ -62,11 +62,11 @@ public class ontoQuery {
     public void StateJ(ArrayList<BeliefStruct.JointHypo> jointHypo) {
         for ( BeliefStruct.JointHypo jh : jointHypo ){
             System.out.println("<Name> {");
-            boolean ou=checkJointHypo(jh);
+            int ou=checkJointHypo(jh);
             System.out.println(ou);
             System.out.println("}\n");
 
-            if(ou){
+            if(ou==1){
                 System.out.println("<Name> {");
                 for ( Map.Entry<String,String> sv : jh.content.entrySet()) {
                     System.out.print(sv.getKey() + ": " + sv.getValue()+"\n");
@@ -82,9 +82,13 @@ public class ontoQuery {
     }
 
 
-    public boolean checkJointHypo(BeliefStruct.JointHypo jh){    //can Nisansa finish a function like this by checking the JointHypo in Ontology
+    public int checkJointHypo(BeliefStruct.JointHypo jh){    //can Nisansa finish a function like this by checking the JointHypo in Ontology
 
-       boolean retVal=false;
+       int retVal=0;
+
+
+
+
        /* for ( Map.Entry<String,String> sv : jh.content.entrySet()) {
             System.out.print(sv.getKey() + ": " + sv.getValue()+"\n");
         }*/
@@ -96,6 +100,10 @@ public class ontoQuery {
         String fromDesStr=jh.content.get("from.desc");
        // fromDesStr="east pittsburgh";
         String routeS= jh.content.get("route");
+
+        if(toDesStr==null &&  fromDesStr==null && routeS==null){
+            return retVal; //Unknown
+        }
 
         if(routeS==null){ //If this is null, all we can do is check whether the 'to' and 'from' destinations really exist.
 
@@ -109,11 +117,11 @@ public class ontoQuery {
                 try {
                     Set<String> s = queryIndividuals(neighborhoodLeading + toDesStr+")");
                     if (!s.isEmpty()) {
-                        retVal = true;
+                        retVal = 1;
                     }
                 }
                 catch(Exception e){
-                    return false; //To is set to invalid val.
+                    return -1; //To is set to invalid val.
                 }
 
             }
@@ -127,11 +135,11 @@ public class ontoQuery {
                 try {
                     Set<String> s = queryIndividuals(neighborhoodLeading + fromDesStr+")");
                     if (!s.isEmpty()) {
-                        retVal = true;
+                        retVal = 1;
                     }
                 }
                 catch(Exception e){
-                    return false; //From is set to invalid val.
+                    return -1; //From is set to invalid val.
                 }
             }
 
@@ -156,40 +164,40 @@ public class ontoQuery {
                     Set<String> sTo = queryIndividuals(toHalf);
                     Set<String> sFrom = queryIndividuals(fromHalf);
                     if (!sTo.isEmpty() && !sFrom.isEmpty()) {
-                        return true;
+                        return 1;
                     }
                 } catch (Exception e) {
-                    return false; //Invalid route
+                    return -1; //Invalid route
                 }
             }
             else if(toHalf!=null) {
                 try {
                     Set<String> s = queryIndividuals("( " + toHalf + ")");
                     if (!s.isEmpty()) {
-                        return true;
+                        return 1;
                     }
                 } catch (Exception e) {
-                    return false; //To is set to invalid val.
+                    return -1; //To is set to invalid val.
                 }
             }
             else if(fromHalf!=null) {
                 try {
                     Set<String> s = queryIndividuals("( " + fromHalf + ")");
                     if (!s.isEmpty()) {
-                        return true;
+                        return 1;
                     }
                 } catch (Exception e) {
-                    return false; //From is set to invalid val.
+                    return -1; //From is set to invalid val.
                 }
             }
             else{  //Only route has been set
                 try {
                     Set<String> s = queryIndividuals("( " + routeQuery + ")");
                     if (!s.isEmpty()) {
-                        return true;
+                        return 1;
                     }
                 } catch (Exception e) {
-                    return false; //Route is set to invalid val.
+                    return -1; //Route is set to invalid val.
                 }
             }
 

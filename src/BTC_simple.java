@@ -130,7 +130,7 @@ public class BTC_simple {
                             */
                             // test JointHypos
                             for ( BeliefStruct.JointHypo jh : bm.getJointHypo() ){
-                                boolean ou;
+                                int ou;
 
                                 //To, from and route -> True Positive
                                 BeliefStruct.JointHypo jh1 = jh.createDummyJointHypo("Neighborhood_2", "Neighborhood_1", "Route_1");
