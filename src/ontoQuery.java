@@ -1,6 +1,8 @@
 import ontology.COntology;
 import org.semanticweb.owlapi.model.OWLOntologyCreationException;
 
+import com.sun.org.apache.xpath.internal.operations.And;
+
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -96,10 +98,16 @@ public class ontoQuery {
         String neighborhoodLeading="inverse has_bus_stop some (at_neighborhood value ";
 
         String toDesStr=jh.content.get("to.desc");
+        if(toDesStr!=null && toDesStr.equals("dont_know"))
+        	toDesStr=null;
        // toDesStr="squirrel hill";
         String fromDesStr=jh.content.get("from.desc");
+        if(fromDesStr!=null && fromDesStr.equals("dont_know"))
+        	fromDesStr=null;
        // fromDesStr="east pittsburgh";
         String routeS= jh.content.get("route");
+        if(routeS!=null && routeS.equals("dont_know"))
+        	routeS=null;
 
         if(toDesStr==null &&  fromDesStr==null && routeS==null){
             return retVal; //Unknown

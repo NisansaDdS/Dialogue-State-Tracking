@@ -106,11 +106,11 @@ public class BTC_simple {
                             
                             
                             // Add by Miao start
-                            /*
+                            
                             // check BeliefState
                             for ( BeliefStruct.JointHypo jh : bm.getJointHypo() ){
-                                boolean ou=ontoQ.checkJointHypo(jh);
-                                if (ou){
+                                int ou=ontoQ.checkJointHypo(jh);
+                                if (ou==-1){
                                 	//generate SVP list
                                 	ArrayList<SVP> b_SVPs = jh.GetSVPs();
                                 	System.out.println("find unvalid joint hypo!");
@@ -127,7 +127,8 @@ public class BTC_simple {
                             }
                                 
                             //ontoQ.StateJ( bm.getJointHypo() );
-                            */
+                            
+                            /*
                             // test JointHypos
                             for ( BeliefStruct.JointHypo jh : bm.getJointHypo() ){
                                 int ou;
@@ -195,7 +196,7 @@ public class BTC_simple {
                                 ou=ontoQ.checkJointHypo(jh12);
                                 System.out.println(ou);
                             }
-                            
+                            */
                             // Add by Miao end.
 							
                             bm.update(t.sysDialogActs, t.usrSLUHypos, turnid++);
