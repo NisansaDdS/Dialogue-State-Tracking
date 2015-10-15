@@ -96,18 +96,33 @@ public class ontoQuery {
         }*/
 
         String neighborhoodLeading="inverse has_bus_stop some (at_neighborhood value ";
-
+        
+        // toDesStr="squirrel hill";
         String toDesStr=jh.content.get("to.desc");
-        if(toDesStr!=null && toDesStr.equals("dont_know"))
+        if(toDesStr==null)
+        	;
+        else if(toDesStr.equals("dont_know"))
         	toDesStr=null;
-       // toDesStr="squirrel hill";
+        else
+        	toDesStr=toDesStr.toUpperCase();
+        // fromDesStr="east pittsburgh";
         String fromDesStr=jh.content.get("from.desc");
-        if(fromDesStr!=null && fromDesStr.equals("dont_know"))
+        if(fromDesStr==null)
+        	;
+        else if(fromDesStr.equals("dont_know"))
         	fromDesStr=null;
-       // fromDesStr="east pittsburgh";
+        else
+        	fromDesStr=fromDesStr.toUpperCase();
+
+       
         String routeS= jh.content.get("route");
-        if(routeS!=null && routeS.equals("dont_know"))
+        if(routeS==null)
+        	;
+        else if(routeS.equals("dont_know"))
         	routeS=null;
+        else
+        	//routeS=routeS.substring(0,1).toUpperCase() + routeS.substring(1);
+        	routeS=routeS.toUpperCase();
 
         if(toDesStr==null &&  fromDesStr==null && routeS==null){
             return retVal; //Unknown
