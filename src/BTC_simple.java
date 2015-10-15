@@ -109,12 +109,13 @@ public class BTC_simple {
                             
                             // check BeliefState
                             for ( BeliefStruct.JointHypo jh : bm.getJointHypo() ){
+                            	ArrayList<SVP> b_SVPs = jh.GetSVPs();
+                            	System.out.print("Check joint hypo: ");
+                            	System.out.print(b_SVPs);
                                 int ou=ontoQ.checkJointHypo(jh);
                                 if (ou==-1){
                                 	//generate SVP list
-                                	ArrayList<SVP> b_SVPs = jh.GetSVPs();
-                                	System.out.println("find unvalid joint hypo!");
-                                	System.out.println(b_SVPs);
+                                	System.out.println(" Illegal!");
                                 	if(b_SVPs.isEmpty())
                                 		;
                                 	else if(b_SVPs.size()==1){
@@ -123,6 +124,9 @@ public class BTC_simple {
                                 	else {
 										bm.AddpendingJointBlockRules(b_SVPs);
 									}
+                                }
+                                else{
+                                	System.out.println(" Legal!");
                                 }
                             }
                                 
